@@ -1587,7 +1587,7 @@ h3.agileits-icons-title {
 
 .faq p span span.pricing {
     border: none;
-    box-shadow: none;
+    box-shadow: 0 2px 4px 0 rgba(42, 58, 64, 0.12);
     text-align: right;
     padding: 0;
     font-size: 18px;
@@ -1605,6 +1605,7 @@ h3.agileits-icons-title {
     box-shadow: 0 2px 4px 0 rgba(42, 58, 64, 0.12);
     text-align: left;
     padding: 0;
+    padding-left : 10px;
     font-size: 20px;
     color: #000;
 	position: relative;
@@ -1617,7 +1618,7 @@ h3.agileits-icons-title {
 	font-weight : bold;
 }
 
-#social-plan p span span.subscribe {
+#social-plan p span span.subscribe,#social-plan p span span.pricing {
 	box-shadow : 0 2px 4px 0 rgba(254, 255, 255, 0.12);
 }
 
