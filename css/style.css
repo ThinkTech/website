@@ -542,6 +542,18 @@ a.w3ls_banner_more:hover{
     font-size: 82%;
 }
 
+#business-plan .number {
+    background: #7ac143;
+}
+
+#corporate-plan .number {
+    background: #05d2ff;
+}
+
+#personal-plan .number {
+    background: #fd5c63;
+}
+
 .guide  a.plan-details{
 	color : #fff;
 }
