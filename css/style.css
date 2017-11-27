@@ -532,6 +532,14 @@ a.w3ls_banner_more:hover{
 	list-style-type: none;
 }
 
+.faq li {
+	margin-left : 20px;
+}
+
+.guide li {
+	margin-left : 5px;
+}
+
 .guide .number {
 	background: #212121;
     color: #fff;
@@ -2670,7 +2678,7 @@ h2.typoh2{
 	.guide li > a {
        width: 60%;
        margin: auto;
-       text-align: center;
+       text-align: left;
        position: relative;
        left: -1%;
 	}
