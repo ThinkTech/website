@@ -571,8 +571,12 @@ a.w3ls_banner_more:hover{
 	background : #212121;
 }
 
-#personal-plan > p ,.personal{
+#personal-plan > p {
 	background : rgba(246, 43, 43, 0.85);
+}
+
+.personal{
+	background : rgba(246, 43, 43, 1);
 }
 
 #corporate-plan > p ,.corporate{
