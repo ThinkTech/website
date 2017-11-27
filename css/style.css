@@ -540,6 +540,8 @@ a.w3ls_banner_more:hover{
     padding-bottom: 5px;
     border-radius: 50%;
     font-size: 82%;
+    position: relative;
+    top: -2px;
 }
 
 #business-plan .number {
