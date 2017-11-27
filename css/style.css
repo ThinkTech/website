@@ -3902,7 +3902,7 @@ ul.contact_info li a:hover{
 	}
 }
 @media (max-width: 375px){
-	.content-process {height: 960px;}
+	.content-process {height: 860px;}
 	.w3_agile_logo h1 a {
 		font-size: .79em;
 	}
@@ -3964,7 +3964,7 @@ ul.contact_info li a:hover{
 		font-size: 12px;
 	}
 	.content-process {
-      height: 920px;
+      height: 830px;
     }
 	.w3_agile_logo h1 a {
 		font-size: .7em;
