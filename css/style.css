@@ -900,7 +900,7 @@ a.w3ls_banner_more:hover{
 	text-shadow: none;
 }
 .w3_footer_grid p{
-	color:#999;
+	color:#212121;
 	line-height:2em;
 	font-size:16px;
 }
@@ -938,7 +938,7 @@ a.w3ls_banner_more:hover{
 }
 .copyright{
 	padding:2em 0;
-	background:#212121;
+	background:#05d2ff;
 }
 .w3ls_copyright_left{
 	float:left;
@@ -962,11 +962,11 @@ a.w3ls_banner_more:hover{
 }
 .w3ls_copyright_left p{
 	margin-top:.5em;
-	color:#999;
+	color:#212121;
 	line-height:2em;
 }
 .w3ls_copyright_left p a{
-	color:#05d2ff;
+	color:#fff;
 	text-decoration:underline;
 }
 .w3ls_copyright_left p a:hover{
