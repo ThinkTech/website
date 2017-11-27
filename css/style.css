@@ -1602,7 +1602,7 @@ h3.agileits-icons-title {
 
 .faq p span span.subscribe {
     border: none;
-    box-shadow: none;
+    box-shadow: 0 2px 4px 0 rgba(42, 58, 64, 0.12);
     text-align: left;
     padding: 0;
     font-size: 20px;
@@ -1615,6 +1615,10 @@ h3.agileits-icons-title {
 	cursor : pointer;
 	white-space: nowrap;
 	font-weight : bold;
+}
+
+#social-plan p span span.subscribe {
+	box-shadow : 0 2px 4px 0 rgba(254, 255, 255, 0.12);
 }
 
 .faq p span span.subscribe:hover {
