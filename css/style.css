@@ -1605,7 +1605,7 @@ h3.agileits-icons-title {
     box-shadow: 0 2px 4px 0 rgba(42, 58, 64, 0.12);
     text-align: left;
     padding: 0;
-    padding-left : 10px;
+    padding-left : 5px;
     font-size: 20px;
     color: #000;
 	position: relative;
@@ -1622,9 +1622,6 @@ h3.agileits-icons-title {
 	box-shadow : 0 2px 4px 0 rgba(254, 255, 255, 0.12);
 }
 
-.faq p span span.subscribe:hover {
-	color: #af1818;
-}
 
 .faq p span span.pricing i { 
     margin-right: 6px;
