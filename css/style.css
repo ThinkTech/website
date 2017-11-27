@@ -554,7 +554,7 @@ a.w3ls_banner_more:hover{
 }
 
 #personal-plan .number {
-    background: #fd5c63;
+    background: rgba(246, 43, 43, 0.85);
 }
 
 .guide  a.plan-details{
@@ -572,7 +572,7 @@ a.w3ls_banner_more:hover{
 }
 
 #personal-plan > p ,.personal{
-	background : #fd5c63;
+	background : rgba(246, 43, 43, 0.85);
 }
 
 #corporate-plan > p ,.corporate{
@@ -1748,7 +1748,7 @@ h3.agileits-icons-title {
 }
 .pricing-top{
     padding: 1.2em 0;
-	background:#fd5c63;
+	background:rgba(246, 43, 43, 0.85);
 	text-align:center;
 	 border-top-left-radius: 5px;
 	-webkit-border-top-left-radius: 5px;
