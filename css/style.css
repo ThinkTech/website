@@ -3669,7 +3669,8 @@ ul.contact_info li a:hover{
 	}
 	.wthree_stat_left p {
       text-align: center;
-	  font-size: 12px;
+      font-size: 12px;
+      margin-top: 20px;
     }
 	.wthree_about_grid p {
       text-align: center;
