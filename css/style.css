@@ -419,6 +419,7 @@ a.w3ls_banner_more:hover{
     line-height: 2em;
     width: 95%;
 	margin-left: 5px;
+	margin-bottom: 10px;
 }
 
 .subscribe-form {
@@ -595,6 +596,15 @@ a.w3ls_banner_more:hover{
 .guide a {
 	color: #212121;
     font-weight: bold;
+}
+
+.guide li > a {
+    background: #fff;
+    padding: 10px;
+    padding-bottom: 5px;
+    white-space: nowrap;
+    width: 275px;
+    display: block;
 }
 
 /*-- //banner-bottom --*/
@@ -1020,6 +1030,7 @@ a.w3_agile_vimeo:hover{
 	opacity: 0;
 	-moz-opacity: 0;
 	filter: alpha(opacity=0);
+	z-index: 999999;
 }
 /*-- //to-top --*/
 /*-- bootstrap-pop-up --*/
@@ -2660,6 +2671,13 @@ h2.typoh2{
 	}
 }
 @media (max-width:480px){
+	.guide li > a {
+       width: 60%;
+       margin: auto;
+       text-align: center;
+       position: relative;
+       left: -1%;
+	}
 	.subscribe-form {
 		width: 97%;
         padding: 15px;
@@ -3931,6 +3949,13 @@ ul.contact_info li a:hover{
 	}
 }
 @media (max-width: 375px){
+	.guide li > a {
+       width: 60%;
+       margin: auto;
+       text-align: center;
+       position: relative;
+       left: -6%;
+	}
 	.content-process {height: 860px;}
 	.w3_agile_logo h1 a {
 		font-size: .79em;
