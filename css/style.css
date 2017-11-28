@@ -2641,7 +2641,6 @@ h2.typoh2{
 	}
 }
 @media (max-width:640px){
-	.banner .wthree_stat_right {margin-top: 0px;}
 	.banner .wthree_stat_right1 p {font-size: 2em;}
 	.subscribe-form {
 		width: 54%;
@@ -3269,9 +3268,6 @@ ul.contact_info li a:hover{
 	.wthree_stat_left {
 		margin: 0;
 	}
-	.wthree_stat_right {
-		margin-top: 2em;
-	}
 	.banner .wthree_stat_right {
       margin: auto;
       margin-top: -28px;
@@ -3498,6 +3494,9 @@ ul.contact_info li a:hover{
 	}
 }
 @media (max-width: 640px){
+	.banner .wthree_stat_right {
+      margin-top: 0px;
+     }
 	.plans {width : 40%}
 	.agileits_w3layouts_sign_in ul li {
 		margin-left: 1em;
