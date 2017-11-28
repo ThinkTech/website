@@ -2125,29 +2125,8 @@ span.line {
 }
 }
 
-@media (max-width: 568px){
-	span.line {
-    width: 56px;
-    left: 47%;
-}
-	.content2-header1 {
-    width: 23%;
-}
-	.imgcircle {
-    height: 50px;
-    width: 50px;
-}
-	.imgcircle img {
-    height: 25px;
-    top: 27%;
-    left: 25%;
-}
-	.confirm {
-    margin-left: 5%;
-}
-}
 
-@media (max-width: 414px){
+@media (max-width: 480px){
 	.wthree_stat_left h3:after {
     top: 35px;
     }
@@ -2197,6 +2176,11 @@ span.line {
     margin-bottom: 10px;
     margin-top: 10px;
 }
+    .content-process p {
+      width: 65%;
+      margin: auto;
+      white-space: nowrap;
+    }
 	.content1 h2 {
 	font-size:22px;
 }
