@@ -1,8 +1,11 @@
+
 $(document).ready(function() {
 	$().UItoTop({ easingType: 'easeOutQuart' });
 	$(".subscribe").click(function(event){
 	   $(".plans .pricing").hide();
 	   const form = $(".subscribe-form");
+	   form.find("form").show();
+	   form.find("p").hide();
 	   const plan = $(this).data("plan");
 	   $("input[name=plan]").val("plan "+plan);
 	   if(plan == "personal"){
@@ -18,7 +21,10 @@ $(document).ready(function() {
 	});	
     $(".subscribe-form form").submit(function(event){
  	   const form = $(this);
- 	   form.parent().hide();
+ 	   const parent = form.parent();
+ 	   form.hide();
+ 	   parent.find("p").show();
+ 	   form.find(':input').not(':input[readonly]').not(':input[type=submit]').val("");
  	   return false;
  	});	
     $(".plan-details").click(function(event){
