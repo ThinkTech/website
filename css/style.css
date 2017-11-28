@@ -3666,7 +3666,7 @@ ul.contact_info li a:hover{
 	}
 	.pricing {width: 90%;}
 	.w3_two_grid_right p.w3layouts_dummy_para {
-		font-size : 12px;
+		font-size : 15px;
 	}
 	.pricing-bottom-top p {
 		font-size: 16px;
@@ -3710,8 +3710,9 @@ ul.contact_info li a:hover{
 	}
 	.wthree_stat_left p {
       text-align: center;
-      font-size: 12px;
+      font-size: 15px;
       margin-top: 20px;
+      margin-bottom: 15px;
     }
 	.wthree_about_grid p {
       text-align: center;
@@ -3726,7 +3727,7 @@ ul.contact_info li a:hover{
 		font-size: 1.36em;
 	}
 	.w3_two_grid_right_gridr h4 {
-		font-size: 13px;
+		font-size: 15px;
 		white-space: nowrap;
 		margin-top: 20px;
 	}
