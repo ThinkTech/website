@@ -3674,9 +3674,11 @@ ul.contact_info li a:hover{
 	}
 	.faq p span span.pricing,.faq p span span.subscribe{
 		width: 49%;
-        font-size: 11px;
-        margin-top: 0px;
-        text-align: left;
+        font-size: 12px;
+    	margin-top: 0px;
+    	text-align: left;
+    	white-space: nowrap;
+    	letter-spacing: 0px;
 	}
 	.faq p span span.pricing {text-align : right}
 	.banner p {font-size: 11px;}
