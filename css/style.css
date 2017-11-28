@@ -446,6 +446,20 @@ a.w3ls_banner_more:hover{
     font-size: 19px;
 }
 
+.subscribe-form p span.close { 
+	float: right;
+    margin-top: 60px;
+    display: block;
+    padding: 7px;
+    width: 48px;
+    text-align: center;
+    border: 1px solid #dad7d7;
+    border-radius: 0;
+    background-color: #fff;
+    font-size: 15px;
+    box-shadow: none;
+}
+
 .subscribe-form h1{
 	color: #FFFFFF;
     font-size: 3em;
@@ -2629,8 +2643,9 @@ h2.typoh2{
 	.banner .wthree_stat_right {margin-top: 0px;}
 	.banner .wthree_stat_right1 p {font-size: 2em;}
 	.subscribe-form {
-		width: 80%;
+		width: 54%;
         padding: 8px;
+        padding-bottom: 15px;
 	}
 	h1, .h1, h2, .h2, h3, .h3 {
 		margin-top: 0px;
@@ -3366,6 +3381,11 @@ ul.contact_info li a:hover{
 	}
 }
 @media (max-width: 767px){
+	.faq.w3l_banner_bottom_left .subscribe-form p {
+      font-size: 13px;
+      text-align: left;
+      padding-right: 0;
+    }
 	.plans {width : 30%}
 	.faq p span span.subscribe {
 		font-size: 18px;
@@ -3607,6 +3627,17 @@ ul.contact_info li a:hover{
     }
 	.faq p span {
      width: 100%;
+    }
+    .faq.w3l_banner_bottom_left .subscribe-form p {
+     padding: 25px;
+     padding-top: 0px;
+     font-size: 13px;
+     text-align: center;
+     padding-right: 0;
+    }
+    .subscribe-form p span.close {
+    	margin-top: 50px;
+    	font-size: 12px;
     }
 	.faq.w3l_banner_bottom_left p {padding: 10px;}
 	.buy-button a {
