@@ -2619,6 +2619,7 @@ h2.typoh2{
 	.subscribe-form {
 		width: 70%;
         padding: 8px;
+        padding-bottom: 17px;
 	}
 	.subscribe-form h1 {
 		font-size: 22px;
@@ -3388,11 +3389,11 @@ ul.contact_info li a:hover{
     }
 	.plans {width : 30%}
 	.faq p span span.subscribe {
-		font-size: 18px;
+		font-size: 15px;
 	}
 	.faq p span span.pricing {
 		width : 77%;
-		font-size: 16px;
+		font-size: 13px;
 	}
 	.navbar-toggle {
 		float: none;
