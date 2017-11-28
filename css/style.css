@@ -3957,7 +3957,7 @@ ul.contact_info li a:hover{
 	.guide li > a {
        width: 60%;
        margin: auto;
-       text-align: center;
+       text-align: left;
        position: relative;
        left: -6%;
 	}
