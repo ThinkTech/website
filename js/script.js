@@ -21,10 +21,25 @@ $(document).ready(function() {
 	});	
     $(".subscribe-form form").submit(function(event){
  	   const form = $(this);
- 	   const parent = form.parent();
- 	   form.hide();
- 	   parent.find("p").show();
- 	   form.find(':input').not(':input[readonly]').not(':input[type=submit]').val("");
+ 	   const subscription = {};
+ 	   subscription.contact = form.find("input[name=contact]").val();
+ 	   subscription.email = form.find("input[name=email]").val();
+ 	   subscription.structure = form.find("input[name=structure]").val();
+ 	   subscription.project = form.find("input[name=project]").val();
+ 	   subscription.plan = form.find("input[name=plan]").val();
+ 	   $.ajax({
+ 	     type: "POST",
+ 	     url: form.attr("action"),
+ 	     data: JSON.stringify(subscription),
+ 	     contentType : "application/json",
+ 	     success : function(response){
+ 		   const parent = form.parent();
+ 	 	   form.hide();
+ 	 	   parent.find("p").show();
+ 	 	   form.find(':input').not(':input[readonly]').not(':input[type=submit]').val("");
+ 	     },
+ 	     dataType : "json"
+ 	   });
  	   return false;
  	});	
     $(".plan-details").click(function(event){
