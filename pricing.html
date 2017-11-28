@@ -499,6 +499,7 @@
 <script>
 	$(function(){ $(".flipster").show().flipster({ style: 'carousel', start: 0 }); });
 </script>
+<script type="text/javascript" src="js/script.js"></script>
 <script type="text/javascript">
 	jQuery(document).ready(function($) {
 		$(".scroll").click(function(event){		
@@ -513,30 +514,6 @@
 		});
 	});
 </script>
-<!-- start-smoth-scrolling -->
-<!-- here stars scrolling icon -->
-	<script type="text/javascript">
-		$(document).ready(function() {		
-			$().UItoTop({ easingType: 'easeOutQuart' });
-			$(".subscribe").click(function(event){
-			   const form = $(".subscribe-form");
-			   const plan = $(this).data("plan");
-			   $("input[name=plan]").val("plan "+plan);
-			   if(plan == "personal"){
-			      $("input[name=structure]").hide().prev().hide();
-			   }else{
-			      $("input[name=structure]").show().prev().show();
-			   }
-			   form.removeClass().addClass("subscribe-form "+plan).show();
-			   $('html,body').animate({scrollTop:form.offset().top-20},1000);
-			});	
-            $(".subscribe-form .close").click(function(event){
-			   const form = $(".subscribe-form");
-			   form.hide();
-			});						
-		});
-	</script>
-<!-- //here ends scrolling icon -->
 <script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=590f03b42c145800128d5487&product=inline-share-buttons" async></script>
 </body>
 </html>
