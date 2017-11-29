@@ -3186,6 +3186,9 @@ ul.contact_info li a:hover{
 	}
 }
 @media (max-width: 991px){
+	.wthree_stat_left p {
+      margin-bottom: 15px;
+    }
 	.plans {width : 30%}
 	.navbar-nav > li > a {
 		padding: 2em 1em;
@@ -3666,7 +3669,9 @@ ul.contact_info li a:hover{
 	}
 	.pricing {width: 90%;}
 	.w3_two_grid_right p.w3layouts_dummy_para {
-		font-size : 15px;
+		font-size: 15px;
+        margin-bottom: 0;
+        padding-bottom: 0;
 	}
 	.pricing-bottom-top p {
 		font-size: 16px;
@@ -3752,6 +3757,8 @@ ul.contact_info li a:hover{
 	}
 	.w3layouts_newsletter_left h3 {
 		font-size: 1.6em;
+		text-align: left;
+        margin-left: 0;
 	}
 	.w3layouts_newsletter_right {
 		width: 100%;
