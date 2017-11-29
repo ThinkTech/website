@@ -2637,7 +2637,7 @@ h2.typoh2{
 		font-size: 13px;
 	}
 	.subscribe-form input[type=submit]{
-		margin-top : 15px;float: right;padding-top: 3px;
+		margin-top : 15px;float: right;padding-top: 3px;font-size: 13px;
 	}
 }
 @media (max-width:640px){
@@ -4054,6 +4054,9 @@ ul.contact_info li a:hover{
 	}
 }
 @media (max-width: 320px){
+	.subscribe-form p span.close {
+      margin-top: 20px;
+    }
 	.w3l_banner_bottom_left a {
 		font-size: 12px;
 	}
