@@ -1,6 +1,7 @@
 html, body{
 	background:#ffffff;
 	margin: 0;
+	overflow-x : hidden;
 }
 p,ul li,ol li{
 	margin:0;
@@ -1762,7 +1763,8 @@ h3.agileits-icons-title {
 }
 
 .portal.w3l_banner_bottom_left p {
-    margin-bottom : 30px;
+    margin-bottom : 30
+    px;
 }
 
 .content{
