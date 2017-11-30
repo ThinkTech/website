@@ -1761,6 +1761,10 @@ h3.agileits-icons-title {
     border-radius: 50%;
 }
 
+.portal.w3l_banner_bottom_left p {
+    margin-bottom : 30px;
+}
+
 .content{
     padding: 4em 0;
 }
@@ -2159,6 +2163,12 @@ span.line {
 		font-size: 13px;
         width: 108%;
         margin-left: -28px;
+	}
+	.portal.w3l_banner_bottom_left p {
+        width: 100%;
+        margin-left: auto;
+        margin-right : auto;
+        margin-bottom : 15px;
 	}
 	.banner-bottom .w3l_banner_bottom_left p {
     font-size: 13px;
