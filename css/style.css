@@ -545,6 +545,7 @@ a.w3ls_banner_more:hover{
 	padding-bottom : 5px;
 	padding-right : 1em;
 	font-size: 17px;
+	border: 1px solid #fafafa;
 }
 
 .faq.w3l_banner_bottom_left p{
@@ -1346,6 +1347,7 @@ button.close {
     padding: 1.5em;
 	padding-top: 5px;
 	padding-bottom : 5px;
+	border: 1px solid #fafafa;
 }
 .wthree_about_grid h4{
 	 font-size: 1.8em;
@@ -1967,6 +1969,7 @@ span.line {
 	background: transparent;
     white-space: nowrap;
 	font-family: 'Work Sans';
+	border : none;
 } 
 .imgcircle {
 	height:75px;
