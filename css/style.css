@@ -613,8 +613,10 @@ a.w3ls_banner_more:hover{
 	padding : 1em;
 }
 
-.guide ol {
+.faq.guide ol {
 	list-style-type: none;
+	padding-top: 45px;
+    padding-bottom: 45px;
 }
 
 .faq li {
@@ -1692,6 +1694,7 @@ h3.agileits-icons-title {
     padding-bottom: 15px;
 	border: 1px solid #d5d6de;
 }
+
 
 .faq p img {
 	display : inline-block;
@@ -3219,6 +3222,10 @@ ul.contact_info li a:hover{
 	}
 }
 @media (max-width: 1024px){
+	.faq.guide ol {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
 	.wthree_banner_grid h4 {
 		width: 95%;
 		white-space: nowrap;
@@ -3717,6 +3724,10 @@ ul.contact_info li a:hover{
 	ul.contact_info li {font-size: 12px;}
 }
 @media (max-width: 480px){
+	 .faq.guide ol {
+       padding-top: 15px;
+       padding-bottom: 15px;
+     }
 	.terms {width : 94%;}
 	.plans {width: 60%;}
 	.plans .close { font-size: 15px;padding: 5px;}
