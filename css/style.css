@@ -4107,6 +4107,7 @@ ul.contact_info li a:hover{
        text-align: left;
        position: relative;
        left: -6%;
+       font-size: 15px;
 	}
 	.content-process {height: 860px;}
 	.w3_agile_logo h1 a {
