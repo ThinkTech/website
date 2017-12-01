@@ -561,6 +561,14 @@ a.w3ls_banner_more:hover{
     position: relative;
 }
 
+.subscribe-form .terms .close {
+    background: #060606;
+    border-radius: 50%;
+    top: 4px;
+    color: #fff;
+    right: 10px;
+}
+
 .guide .subscribe-form a {
 	display: block;
     position: absolute;
