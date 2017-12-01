@@ -274,6 +274,8 @@ nav.navbar.navbar-default {
     overflow-y: auto;
     top: 0;
     display : none;
+    width: 95%;
+    margin-left: 0;
 }
 
 .terms h2 {
@@ -565,6 +567,7 @@ a.w3ls_banner_more:hover{
     background: #060606;
     border-radius: 50%;
     top: 4px;
+    
     color: #fff;
     right: 10px;
 }
