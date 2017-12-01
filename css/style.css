@@ -597,7 +597,7 @@ a.w3ls_banner_more:hover{
 	color:#131212;
 	line-height:2em;
 	text-align: justify;
-	background : #ffe;
+	background : #fdfdfd;
 	padding : 1em;
 	padding-top: 5px;
 	padding-bottom : 5px;
@@ -1401,7 +1401,7 @@ button.close {
     line-height: 2em;
     margin-bottom: 2em;
 	text-align: justify;
-	background: #ffe;
+	background: #fdfdfd;
     padding: 1.5em;
 	padding-top: 5px;
 	padding-bottom : 5px;
