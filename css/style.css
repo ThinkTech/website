@@ -266,6 +266,40 @@ nav.navbar.navbar-default {
 	font-weight: bold;
 }
 
+.terms {
+	position: absolute;
+    background: #fff;
+    height: 95%;
+    margin: 6px;
+    overflow-y: auto;
+    top: 0;
+    display : none;
+}
+
+.terms h2 {
+	font-weight : bold;
+	line-height: 2em;
+}
+
+.terms i {
+	margin-right : 5px;
+}
+
+.faq.w3l_banner_bottom_left .subscribe-form .terms p {
+	color: #212121;
+    line-height: 2em;
+    font-size: 15px;
+    display: block;
+    margin: 5px;
+    padding-bottom: 0px;
+    width: 98%;
+}
+
+.subscribe-form .terms h1 {
+    color: #212121;
+    margin-top: 10px;
+}
+
 .wthree_banner_grids{
 	padding:5em 0;
 }
@@ -436,6 +470,7 @@ a.w3ls_banner_more:hover{
 	z-index: 9999;
 }
 
+
 .faq.w3l_banner_bottom_left .subscribe-form p {
     display: none;
     background: transparent;
@@ -524,6 +559,18 @@ a.w3ls_banner_more:hover{
     border-radius: 50%;
     top: -4px;
     position: relative;
+}
+
+.guide .subscribe-form a {
+	display: block;
+    position: absolute;
+    margin: 16px;
+    margin-left: 27%;
+    color: #fff;
+}
+
+.guide .subscribe-form a i{
+	margin-right : 5px;
 }
 
 .wthree_stat_left h3:after{
@@ -3398,6 +3445,25 @@ ul.contact_info li a:hover{
 	.effect .mask {
 		border-width: 126px;
 	}
+	.faq.w3l_banner_bottom_left .subscribe-form .terms p {
+      margin: 0px;
+      padding: 5px;
+      width : 100%;
+      font-size : 12px;
+     }
+     .terms {
+       padding-right: 16px;
+       width: 97%;
+       margin-left: 0;
+       margin-right: 0;
+     }
+     .subscribe-form .terms h1 {
+      	text-align : center;
+     } 
+     .terms h2 {
+        font-size : 13px;
+        line-height: 2em;
+     }
 }
 @media (max-width: 767px){
 	.faq.w3l_banner_bottom_left .subscribe-form p {
@@ -3510,6 +3576,9 @@ ul.contact_info li a:hover{
 	}
 }
 @media (max-width: 640px){
+	.terms {
+       width: 96%;
+     }
 	.banner .wthree_stat_right {
       margin-top: 0px;
      }
@@ -3637,6 +3706,7 @@ ul.contact_info li a:hover{
 	ul.contact_info li {font-size: 12px;}
 }
 @media (max-width: 480px){
+	.terms {width : 94%;}
 	.plans {width: 60%;}
 	.plans .close { font-size: 15px;padding: 5px;}
 	.faq p img {
