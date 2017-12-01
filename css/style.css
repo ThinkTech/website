@@ -2711,7 +2711,7 @@ h2.typoh2{
 		font-size: 13px;
 	}
 	.subscribe-form input[type=submit]{
-		margin-top : 15px;float: right;padding-top: 3px;font-size: 13px;
+		margin-top : 15px;float: right;padding-top: 4px;font-size: 13px;
 	}
 }
 @media (max-width:640px){
