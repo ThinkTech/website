@@ -1060,7 +1060,7 @@ a.w3ls_banner_more:hover{
 	text-decoration:none;
 }
 .w3ls_copyright_left ul li a:hover,.w3ls_copyright_left ul li.active a{
-	color:#05d2ff;
+	color: #212121;
 }
 .w3ls_copyright_left p{
 	margin-top:.5em;
