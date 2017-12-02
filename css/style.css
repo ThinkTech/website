@@ -610,6 +610,7 @@ a.w3ls_banner_more:hover{
 	border: 1px solid #d5d6de;
     background: #fffefe;
     margin-bottom: 10px;
+    margin-top: 3px;
 	padding : 1em;
 }
 
@@ -627,16 +628,23 @@ a.w3ls_banner_more:hover{
 	margin-left : 5px;
 }
 
-.guide .number {
-	background: #212121;
+.faq .number {
+	background: #52defd;
     color: #fff;
     padding: 13px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
     border-radius: 50%;
     font-size: 82%;
     position: relative;
     top: -2px;
+    display: inline-block;
+    width: 60px;
+    text-align: center;
+}
+
+.faq.guide .number {
+	background : #212121;
 }
 
 #business-plan .number {
@@ -1692,6 +1700,7 @@ h3.agileits-icons-title {
     padding-top: 15px;
     padding-bottom: 15px;
 	border: 1px solid #d5d6de;
+	list-style-type: none;
 }
 
 
@@ -2714,6 +2723,7 @@ h2.typoh2{
 	}
 }
 @media (max-width:640px){
+	.faq .number {width: 35px;}
 	.banner .wthree_stat_right1 p {font-size: 2em;}
 	.subscribe-form {
 		width: 54%;
