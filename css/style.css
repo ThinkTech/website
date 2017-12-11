@@ -4063,6 +4063,9 @@ ul.contact_info li a:hover{
 	.modal-body p {
 		padding: 1em 1em 0em;
 	}
+	.faq ol {
+    padding-left: 10px;
+}
 }
 @media (max-width: 384px){
 	.agileits_w3layouts_sign_in ul li {
