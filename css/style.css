@@ -3815,7 +3815,7 @@ ul.contact_info li a:hover{
 		font-size: 2.4em;
 	}
 	.w3l_banner_bottom_left h3{
-		font-size: 3em;
+		font-size: 2em;
 		white-space: nowrap;
 	}
 	.agile_head, .wthree_stat_left h3 {
@@ -4065,6 +4065,7 @@ ul.contact_info li a:hover{
 	}
 	.faq ol {
     padding-left: 10px;
+    white-space: nowrap;
 }
 }
 @media (max-width: 384px){
