@@ -2301,7 +2301,7 @@ span.line {
 		margin-left: 10px;
 	}
      .content-process {
-    height: 930px;
+    height: 900px;
     margin-bottom: 10px;
     margin-top: 10px;
 }
@@ -2365,9 +2365,6 @@ span.line {
 }
 
 @media (max-width: 384px){
-	.content-process {
-    height: 1000px;
-}
 	.content1 h2 {
     font-size: 21px;
 }
@@ -4211,9 +4208,6 @@ ul.contact_info li a:hover{
 	.w3l_banner_bottom_left a {
 		font-size: 12px;
 	}
-	.content-process {
-      height: 830px;
-    }
 	.w3_agile_logo h1 a {
 		font-size: .7em;
 	}
