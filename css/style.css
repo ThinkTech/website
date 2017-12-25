@@ -277,6 +277,11 @@ nav.navbar.navbar-default {
     margin-left : 20%;
 }
 
+.subscribe-form .terms-agreement input{
+	position : relative;
+	top : 2px;
+	width : 20px;
+}
 
 .guide .subscribe-form .terms-agreement a {
 	display : inline-block;
