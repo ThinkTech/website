@@ -2365,6 +2365,9 @@ span.line {
 }
 
 @media (max-width: 384px){
+	.content-process {
+    height: 950px;
+}
 	.content1 h2 {
     font-size: 21px;
 }
