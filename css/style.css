@@ -2272,6 +2272,7 @@ span.line {
    .faq p span span.text {
     font-size: 13px;
 	text-align: center;
+	white-space : normal;
    }
   .faq p img {
     display: inline-block;
