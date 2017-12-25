@@ -2295,6 +2295,7 @@ span.line {
     vertical-align: top;
     margin: auto;
 	text-align: center;
+	white-space : nowrap;
 }
 	.content3 p {
 		margin-left: 10px;
