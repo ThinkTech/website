@@ -278,9 +278,11 @@ nav.navbar.navbar-default {
 }
 
 .subscribe-form .terms-agreement input{
-	position : relative;
-	top : 2px;
-	width : 20px;
+	position: relative;
+	top: 2px;
+	width: 20px;
+	margin: 0;
+	height: auto;
 }
 
 .guide .subscribe-form .terms-agreement a {
@@ -3295,6 +3297,7 @@ ul.contact_info li a:hover{
 	}
 }
 @media (max-width: 991px){
+	.subscribe-form label{font-size : 18px}
 	.wthree_stat_left p {
       margin-bottom: 15px;
     }
