@@ -2712,7 +2712,7 @@ h2.typoh2{
     margin: 0 0 10px;
 }
 
-@media (max-width:1024px){
+@media (max-width:1280px){
 	.subscribe-form label {
 		font-size : 18px;
 	}
