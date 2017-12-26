@@ -2298,6 +2298,7 @@ span.line {
     margin: auto;
 	text-align: center;
 	white-space : normal;
+	font-size: 11px;
 }
 	.content3 p {
 		margin-left: 10px;
