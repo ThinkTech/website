@@ -2719,7 +2719,7 @@ h2.typoh2{
 }
 
 @media (max-width:768px){
-	*{
+	.banner1 h3,.w3l_banner_bottom_left h3, .agile_head, .wthree_stat_left h3{
 	  text-shadow : none;
 	}
 	.grid_5 {
