@@ -2719,6 +2719,9 @@ h2.typoh2{
 }
 
 @media (max-width:768px){
+	*{
+	  text-shadow : none;
+	}
 	.grid_5 {
 		padding: 0 0 1em;
 	}
