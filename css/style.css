@@ -2712,6 +2712,12 @@ h2.typoh2{
     margin: 0 0 10px;
 }
 
+@media (max-width:1024px){
+	.subscribe-form label {
+		font-size : 18px;
+	}
+}
+
 @media (max-width:768px){
 	.grid_5 {
 		padding: 0 0 1em;
@@ -3297,7 +3303,6 @@ ul.contact_info li a:hover{
 	}
 }
 @media (max-width: 991px){
-	.subscribe-form label{font-size : 18px}
 	.wthree_stat_left p {
       margin-bottom: 15px;
     }
