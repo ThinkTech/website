@@ -73,8 +73,9 @@ $(document).ready(function() {
     $(".subscribe-form form").submit(function(event){
  	   const form = $(this);
  	   const subscription = {};
- 	   subscription.contact = form.find("input[name=contact]").val();
+ 	   subscription.name = form.find("input[name=contact]").val();
  	   subscription.email = form.find("input[name=email]").val();
+ 	   subscription.password = form.find("input[name=password]").val();
  	   subscription.structure = form.find("input[name=structure]").val();
  	   subscription.project = form.find("input[name=project]").val();
  	   subscription.plan = form.find("input[name=plan]").val();
