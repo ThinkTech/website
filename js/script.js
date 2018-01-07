@@ -35,16 +35,26 @@ $(document).ready(function() {
  	   subscription.structure = form.find("input[name=structure]").val();
  	   subscription.project = form.find("input[name=project]").val();
  	   subscription.plan = form.find("input[name=plan]").val();
+ 	   page.wait({top : form.offset().top});
  	   $.ajax({
  	     type: "POST",
  	     url: form.attr("action"),
  	     data: JSON.stringify(subscription),
  	     contentType : "application/json",
  	     success : function(response){
- 		   const parent = form.parent();
- 	 	   form.hide();
- 	 	   parent.find("> p").show();
- 	 	   form.find(':input').not(':input[readonly]').not(':input[type=submit]').val("");
+ 	     // page.release();
+ 	       if(response.status == 1){
+ 	    	   const parent = form.parent();
+ 	    	   form.hide();
+ 	    	   parent.find("> p").show();
+ 	    	   form.find(':input').not(':input[readonly]').not(':input[type=submit]').val("");
+ 	       }else{
+ 	    	   alert("ce compte client existe d&edot;ja");
+ 	       }
+ 	     },
+ 	     error : function(){
+ 	    	page.release();
+ 	    	alert("erreur lors de la connexion au serveur"); 
  	     },
  	     dataType : "json"
  	   });
