@@ -73,12 +73,12 @@ $(document).ready(function() {
     $(".subscribe-form form").submit(function(event){
  	   const form = $(this);
  	   const subscription = {};
- 	   subscription.name = form.find("input[name=contact]").val();
- 	   subscription.email = form.find("input[name=email]").val();
- 	   subscription.password = form.find("input[name=password]").val();
- 	   subscription.structure = form.find("input[name=structure]").val();
- 	   subscription.project = form.find("input[name=project]").val();
- 	   subscription.plan = form.find("input[name=plan]").val();
+ 	   subscription.name = form.find("input[name=contact]").val().trim();
+ 	   subscription.email = form.find("input[name=email]").val().trim();
+ 	   subscription.password = form.find("input[name=password]").val().trim();
+ 	   subscription.structure = form.find("input[name=structure]").val().trim();
+ 	   subscription.project = form.find("input[name=project]").val().trim();
+ 	   subscription.plan = form.find("input[name=plan]").val().trim();
  	   form.find("input[type=submit]").hide();
  	   page.wait({top : form.offset().top});
  	   $.ajax({
