@@ -848,11 +848,11 @@ a.w3ls_banner_more:hover{
 }
 
 #personal-plan > p {
-	background : rgba(246, 43, 43, 0.85);
+	background : rgb(246, 43, 43);
 }
 
 .personal{
-	background : rgba(246, 43, 43, 1);
+	background : rgb(246, 43, 43);
 }
 
 #corporate-plan > p ,.corporate{
