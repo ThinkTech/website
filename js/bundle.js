@@ -99,6 +99,7 @@ $(document).ready(function() {
   	       }
  	     },
  	     error : function(){
+ 	    	form.find("input[type=submit]").show();
  	    	page.release();
  	    	alert("erreur lors de la connexion au serveur");
  	     },
