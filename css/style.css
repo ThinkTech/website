@@ -3177,11 +3177,15 @@ h2.typoh2{
 	background:#f62b2b;
 }
 .agileits_w3layouts_contact_gridr label {
-    font-size: 1.5em;
+    ont-size: 1.3em;
     color: #212121;
     font-weight: 600;
     margin-bottom: 10px;
     margin-top: 10px;
+    background: #05d2ff;
+    width: 100%;
+    padding: 10px;
+    color: #fff;
 }
 .agileits_leave {
     width: 100%;
