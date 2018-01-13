@@ -779,6 +779,7 @@ a.w3ls_banner_more:hover{
 	background : #f8f9fb;
 	padding : 1em;
 	font-size: 17px;
+	font-weight : bold;
 	border: 1px solid #cec6c6;
 }
 
