@@ -786,6 +786,7 @@ a.w3ls_banner_more:hover{
 	font-size: 17px;
 	font-weight : bold;
 	border: 1px solid #cec6c6;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 
 .faq.w3l_banner_bottom_left p{
@@ -1885,6 +1886,7 @@ h3.agileits-icons-title {
     padding-top: 15px;
     padding-bottom: 15px;
 	border: 1px solid #d5d6de;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 	list-style-type: none;
 }
 
@@ -2021,6 +2023,7 @@ h3.agileits-icons-title {
 
 .portal.w3l_banner_bottom_left p {
     margin-bottom : 30px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 
 .content{
@@ -2158,6 +2161,7 @@ p.text {
     background-color: #ffffee;
     margin-bottom: 10px;
     margin-top: 10px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 .content1 {
 	background-color:#212121;
@@ -2226,6 +2230,7 @@ span.line {
     white-space: nowrap;
 	font-family: 'Work Sans';
 	border : none;
+	box-shadow: none;
 } 
 .imgcircle {
 	height:75px;
