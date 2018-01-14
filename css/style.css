@@ -465,10 +465,6 @@ nav.navbar.navbar-default {
 	margin-right : 5px;
 }
 
-.terms > p {
-	box-shadow : none;
-}
-
 .faq.w3l_banner_bottom_left .subscribe-form .terms p {
 	color: #212121;
     line-height: 2em;
@@ -477,6 +473,7 @@ nav.navbar.navbar-default {
     margin: 5px;
     padding-bottom: 0px;
     width: 98%;
+    box-shadow : none;
 }
 
 .subscribe-form .terms h1 {
