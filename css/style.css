@@ -193,7 +193,7 @@ input[type="submit"],input[type="reset"],.w3l_team_grd,.agileits_w3layouts_featu
 	color:#212121;
 	text-decoration:none;
 	text-shadow: 1px -1px #af9682;
-	font-weight: 550;
+	font-weight: bold;
 }
 .w3_agile_logo h1 a span {
     color: #05d2ff;
@@ -1175,7 +1175,7 @@ a.w3ls_banner_more:hover{
     color: #212121;
     text-decoration: none;
 	text-shadow: 1px -1px #af9682;
-	font-weight: 550;
+	font-weight: bold;
 }
 .w3_footer_grid h2 a span {
     color: #05d2ff;
