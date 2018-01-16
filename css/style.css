@@ -248,7 +248,7 @@ input[type="submit"],input[type="reset"],.w3l_team_grd,.agileits_w3layouts_featu
 }
 .navbar-default .navbar-nav > li > a {
     color: #212121;
-    font-weight: 600;
+    font-weight: bold;
     text-shadow: 0px -1px #212121;
 }
 .navbar-nav > li > a {
