@@ -245,7 +245,7 @@ input[type="submit"],input[type="reset"],.w3l_team_grd,.agileits_w3layouts_featu
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
     color:#fff;
     background: #05d2ff;
-	text-shadow: 1px -1px #c7b5b5;
+	text-shadow: 1px -2px #212121;
 }
 .navbar-default .navbar-nav > li > a {
     color: #212121;
