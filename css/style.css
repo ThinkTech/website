@@ -1661,6 +1661,7 @@ button.close {
 }
 .agile_head1,.w3_agile_para1{
 	color:#fff;
+	text-shadow: 0px 5px #212121;
 }
 .agileits_w3layouts_features_grid{
 	padding:1em;
