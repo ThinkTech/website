@@ -1260,9 +1260,11 @@ a.w3ls_banner_more:hover{
 	color:#fff;
 	text-decoration:underline;
 }
+
 .w3ls_copyright_left p a:hover{
 	color:#fff;
 }
+
 .w3ls_copyright_right{
 	float:right;
 	margin-top: 7px;
