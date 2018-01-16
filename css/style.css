@@ -201,6 +201,7 @@ input[type="submit"],input[type="reset"],.w3l_team_grd,.agileits_w3layouts_featu
     border: 8px solid;
     padding: 0 .2em;
 	text-shadow: none;
+	box-shadow : 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 .agileits_w3layouts_sign_in{
 	float:right;
@@ -1186,6 +1187,7 @@ a.w3ls_banner_more:hover{
     border: 8px solid;
     padding: 0 .2em;
 	text-shadow: none;
+	box-shadow : 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 .w3_footer_grid p{
 	color:#212121;
