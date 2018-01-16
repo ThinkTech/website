@@ -1278,10 +1278,9 @@ a.w3ls_banner_more:hover{
     color: #fff;
     text-align: center;
     display: inline-block;
-    padding-top: .5em;
+    padding-top: .6em;
     font-size: 13px;
     background: #05d2ff;
-    border-radius: 90%;
 }
 a.w3_agile_facebook:hover{
 	background:#3b5998;
