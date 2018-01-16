@@ -1190,7 +1190,8 @@ a.w3ls_banner_more:hover{
 .w3_footer_grid p{
 	color:#212121;
 	line-height:2em;
-	font-size:16px;
+	font-size: 16px;
+    font-weight: bold;
 }
 .w3_footer_grid p a{
 	color:#f62b2b;
@@ -1252,6 +1253,8 @@ a.w3ls_banner_more:hover{
 	margin-top:.5em;
 	color:#212121;
 	line-height:2em;
+	font-weight: bold;
+    font-size: 16.9px;
 }
 .w3ls_copyright_left p a{
 	color:#fff;
