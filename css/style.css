@@ -410,7 +410,7 @@ nav.navbar.navbar-default {
 }
 .banner h2 span{
 	color:#05d2ff;
-	text-shadow: 1px 1px #212121;
+	text-shadow: 1px -2px #212121;
 }
 .banner p{
 	color: #212121;
