@@ -50,6 +50,12 @@ input[type="submit"],input[type="reset"],.w3l_team_grd,.agileits_w3layouts_featu
     font-weight: bold;
     margin-left: -5.1%;
 }
+
+.banner a:hover {
+	background : #212121;
+	color : #fff;
+}
+
 .scrollToTop:hover, .scrollToTop:focus{
   text-decoration: none;
   outline: none;
