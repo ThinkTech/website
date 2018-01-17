@@ -35,7 +35,21 @@ input[type="submit"],input[type="reset"],.w3l_team_grd,.agileits_w3layouts_featu
     -o-transition: 0.5s ease-in;
     transition:0.5s ease-in;
 }
-
+.banner a {
+	position: absolute;
+    margin-top: 20px;
+    width: 140px;
+    background: #05d2ff;
+    padding: 10px;
+    color: #fff;
+    font-size: 16px;
+    border: 1px solid #212121;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    border-radius: 5px;
+    border: 1px solid #000;
+    font-weight: bold;
+    margin-left: -5.1%;
+}
 .scrollToTop:hover, .scrollToTop:focus{
   text-decoration: none;
   outline: none;
@@ -142,14 +156,32 @@ input[type="submit"],input[type="reset"],.w3l_team_grd,.agileits_w3layouts_featu
 } 
 
 
-@media(max-width:991px ){
+@media(max-width:1280px){
+	.banner a {
+	  width: 110px;
+      font-size: 13px;
+      margin-left: -4.1%;
+	}
+}
+
+@media(max-width:1024px){
+	.banner a {
+      margin-left: -5.1%;
+	}
+}
+
+
+@media(max-width:991px){
 	table th:nth-child(6) {display:none}
 	table th:nth-child(7) {display:none}
 	table td:nth-child(6) {display:none}
 	table td:nth-child(7) {display:none}
+	.banner a {
+      margin-left: -6.1%;
+	}
 }
 
-@media(max-width:870px ){
+@media(max-width:870px){
 	#confirm-dialog-container, #alert-dialog-container {padding-top:30%}
 }
 
@@ -157,12 +189,19 @@ input[type="submit"],input[type="reset"],.w3l_team_grd,.agileits_w3layouts_featu
 	#confirm-dialog-container, #alert-dialog-container {padding-top:32%}
 	.buttons {position:relative;margin-top:-10px;right:0px;top:0px}
 	.scrollToTop {right:45%}
+	.banner a {
+	    margin-left: -7.1%;
+	}
 }
 @media(max-width:640px){
 	#confirm-dialog-container, #alert-dialog-container {padding-top:40%}
 	.buttons a {margin-bottom : 5px}
 	table th:nth-child(5) {display:none}
 	table td:nth-child(5) {display:none}
+	.banner a {
+	  margin-left: -8.1%;
+	  margin-top : 10px;
+	}
 }
  
 @media(max-width:480px ){
@@ -174,12 +213,21 @@ input[type="submit"],input[type="reset"],.w3l_team_grd,.agileits_w3layouts_featu
 	table td:nth-child(4) {display:none}
 	table th:nth-child(5) {display:none}
 	table td:nth-child(5) {display:none}
+	.banner a {
+	  margin-left: -11.1%;
+	}
 }
 @media(max-width:360px ){
+	.banner a {
+      margin-left: -15.1%;
+	}
 	#confirm-dialog-container > div, #alert-dialog-container > div {width:90%}
 }
 @media(max-width:320px ){
 	.scrollToTop {bottom : 5px}
+	.banner a {
+	  width: 104px;
+	}
 }
 
 /*-- header --*/
