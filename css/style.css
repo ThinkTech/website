@@ -1978,7 +1978,7 @@ h3.agileits-icons-title {
 
 .faq p span span {
 	display: block;
-    width: 99%;
+    width: 100%;
     margin: auto;
     text-align: center;
     padding: 1em;
@@ -2033,7 +2033,7 @@ h3.agileits-icons-title {
 	font-weight: 600;
     margin: 0;
     border-top: 1px solid #fff;
-    padding: 3px;
+    padding: 0px;
     padding-top: 6px;
 }
 
