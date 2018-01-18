@@ -258,6 +258,22 @@ input[type="submit"],input[type="reset"],.w3l_team_grd,.agileits_w3layouts_featu
 	text-shadow: none;
 	box-shadow : 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
+.links {
+	text-align: center;
+    top: 2em;
+    position: relative;
+}
+
+.links a {
+	font-size: 14px;
+    position: relative;
+    top: 1.5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #000;
+    margin-left : 5px;
+    margin-right : 5px;
+}
 .agileits_w3layouts_sign_in{
 	float:right;
 	margin-top: .3em;
