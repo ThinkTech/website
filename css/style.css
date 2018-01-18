@@ -528,7 +528,7 @@ nav.navbar.navbar-default {
     font-size: 15px;
     display: block;
     margin: 5px;
-    padding-bottom: 0px;
+    padding: 0px;
     width: 98%;
     box-shadow : none;
 }
