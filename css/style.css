@@ -3298,7 +3298,7 @@ h2.typoh2{
 }
 .agileits_w3layouts_contact_gridr input[type="submit"]{
 	outline: none;
-    background:#05d2ff;
+    background:#212121;
     border: none;
     font-size: 16px;
     color: #fff;
@@ -3310,7 +3310,8 @@ h2.typoh2{
     margin-top: 2em;
 }
 .agileits_w3layouts_contact_gridr input[type="submit"]:hover{
-	background:#f62b2b;
+	background:#fff;
+	color:#212121;
 }
 .agileits_w3layouts_contact_gridr label {
     font-size: 1.5em;
