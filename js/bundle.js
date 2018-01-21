@@ -77,7 +77,7 @@ $(document).ready(function() {
  	   subscription.email = form.find("input[name=email]").val().trim();
  	   subscription.password = form.find("input[name=password]").val().trim();
  	   subscription.structure = form.find("input[name=structure]").val().trim();
- 	   subscription.project = form.find("input[name=project]").val().trim();
+ 	   subscription.project = form.find("select[name=project]").val().trim();
  	   subscription.plan = form.find("input[name=plan]").val().trim();
  	   form.find("input[type=submit]").hide();
  	   page.wait({top : form.offset().top});
