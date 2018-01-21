@@ -820,6 +820,11 @@ a.w3ls_banner_more:hover{
 	font-size: 16px;
 }
 
+.subscribe-form select{
+    text-indent: 1px;
+    padding-left: 0;
+}
+
 .subscribe-form input[readonly] {
 	background : #eee;
 }
