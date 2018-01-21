@@ -3,6 +3,37 @@ html, body{
 	margin: 0;
 	overflow-x : hidden;
 }
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 104%;
+  padding: 0;
+  margin: 0;
+}
+
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+}
+
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0;
+}
 p,ul li,ol li{
 	margin:0;
 	font-size:20px;
@@ -208,6 +239,9 @@ input[type="submit"],input[type="reset"],.w3l_team_grd,.agileits_w3layouts_featu
 	.banner a {
 	  margin-left: -8.1%;
 	  margin-top : 10px;
+	}
+	.rslides{
+		width : 105%;
 	}
 }
  
