@@ -34,6 +34,40 @@ html, body{
   width: 100%;
   border: 0;
 }
+
+.rslides_tabs {
+	text-align : center;
+	list-style-type: none;
+	margin-top : 40px;
+}
+
+.w3l_banner_bottom_left .rslides_tabs li {
+	background: #52defd;
+    color: #fff;
+    padding: 13px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-radius: 50%;
+    margin-right : 10px;
+    position: relative;
+    top: -2px;
+    display: inline-block;
+    width: 60px;
+    height : 60px;
+    text-align: center;
+}
+
+.w3l_banner_bottom_left .rslides_tabs li.rslides_here {
+	background : #212121;
+	color : #fff;
+}
+
+.w3l_banner_bottom_left .rslides_tabs li a {
+	color : #fff;
+	font-weight : bold;
+	display : block;
+}
+
 p,ul li,ol li{
 	margin:0;
 	font-size:20px;
@@ -3053,6 +3087,7 @@ h2.typoh2{
 }
 @media (max-width:640px){
 	.faq .number {width: 35px;}
+	.w3l_banner_bottom_left .rslides_tabs li{width:35px;height:35px}
 	.banner .wthree_stat_right1 p {font-size: 2em;}
 	.subscribe-form {
 		width: 54%;
