@@ -1615,7 +1615,7 @@ button.close {
     color: #212121;
     padding-top: 1.6em;
 	text-shadow: 1px 6px #af9682;
-	font-weight: 600;
+	font-weight: bold;
 }
 .agile_services_grid{
 	position:relative;
