@@ -3390,7 +3390,8 @@ ul.contact_info li {
     font-weight: bold;
 }
 ul.contact_info li i {
-    color: #999;
+    color: #fff;
+    background: #212121;
     border: 1px solid #999;
     padding: .5em;
     border-radius: 100%;
