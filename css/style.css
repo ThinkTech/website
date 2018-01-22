@@ -122,6 +122,38 @@ input[type="submit"],input[type="reset"],.w3l_team_grd,.agileits_w3layouts_featu
 	color : #fff;
 }
 
+
+.scrollToTop{
+  background-color: #06d0d8;
+  color: #fff;
+}
+.scrollToTop:hover,.scrollToTop:focus{  
+  color: #fff;
+}
+
+/*scroll to top*/
+
+.scrollToTop {
+  bottom: 35px;
+  display: none;
+  font-size: 2em;
+  font-weight: bold;
+  height: 50px;
+  position: fixed;
+  right: 10px;
+  text-align: center;
+  text-decoration: none;
+  width: 50px;
+  z-index: 999999999;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  border-radius : 50%;
+  line-height : 45px;
+}
+
 .scrollToTop:hover, .scrollToTop:focus{
   text-decoration: none;
   outline: none;
@@ -1464,7 +1496,7 @@ a.w3_agile_vimeo:hover{
 	height: 32px;
 	border: none;
 	text-indent: 100%;
-	background: url(../images/arrow.png) no-repeat 0px 0px;
+	background: #05d2ff;
 }
 #toTopHover {
 	width: 32px;
