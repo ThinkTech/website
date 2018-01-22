@@ -4059,6 +4059,7 @@ ul.contact_info li a:hover{
 	.modal-header {
 		font-size: 1.7em;
 	}
+	.w3ls_copyright_left p {font-size: 10px;}
 }
 @media (max-width: 600px){
 	.modal-body {
