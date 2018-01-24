@@ -122,6 +122,9 @@ input[type="submit"],input[type="reset"],.w3l_team_grd,.agileits_w3layouts_featu
 	color : #fff;
 }
 
+h3 .fa-briefcase {
+	vertical-align: bottom;
+}
 
 .scrollToTop{
   background-color: #06d0d8;
