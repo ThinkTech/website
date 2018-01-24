@@ -4144,6 +4144,10 @@ ul.contact_info li a:hover{
 	ul.contact_info li {font-size: 12px;}
 }
 @media (max-width: 480px){
+	 .w3ls_copyright_right ul li a, .w3agile_social_icons ul li a, .title li a, .wthree_mail_social li a {
+    	width: 30px;
+    	height: 30px;
+     }
 	 .faq.guide ol {
        padding-top: 15px;
        padding-bottom: 15px;
