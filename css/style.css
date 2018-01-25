@@ -1688,6 +1688,7 @@ button.close {
 	text-shadow: 1px 6px #af9682;
 	font-weight: bold;
 	text-transform : capitalize;
+	letter-spacing: -4px;
 }
 .agile_services_grid{
 	position:relative;
@@ -4058,6 +4059,7 @@ ul.contact_info li a:hover{
 	.banner1 h3 {
 		font-size: 2em;
 		padding-top: 0;
+		letter-spacing: 0px;
 	}
 	.banner1 {
 		min-height: auto;
