@@ -1366,7 +1366,7 @@ a.w3ls_banner_more:hover{
 .w3_footer_grid h2 a span {
     color: #05d2ff;
     display: inline-block;
-    border: 8px solid;
+    border: 12px solid;
     padding: 0 .2em;
 	text-shadow: none;
 	box-shadow : 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
