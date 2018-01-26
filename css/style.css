@@ -1717,6 +1717,7 @@ button.close {
     color: #212121;
     margin: 2.5em 0 0.5em;
     text-transform: capitalize;
+    font-weight : bold;
 }
 .w3_agile_services_grid p{
 	color:#999;
