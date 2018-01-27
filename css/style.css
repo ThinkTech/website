@@ -2094,6 +2094,7 @@ h3.agileits-icons-title {
 	width : 25%;
 	margin-right: 5px;
 	margin-top: 2px;
+	box-shadow: 0 4px 9px 0 rgba(90, 88, 88, 0.5), 0 2px 9px 0 rgb(253, 253, 253);
 }
 
 .faq p span {
@@ -3690,6 +3691,9 @@ ul.contact_info li a:hover{
 	}
 }
 @media (max-width: 991px){
+	.w3l_banner_bottom_left a {
+		font-size: 12px;
+	}
 	.wthree_stat_left p {
       margin-bottom: 15px;
     }
@@ -4613,9 +4617,6 @@ ul.contact_info li a:hover{
 	.subscribe-form p span.close {
       margin-top: 20px;
     }
-	.w3l_banner_bottom_left a {
-		font-size: 12px;
-	}
 	.w3_agile_logo h1 a {
 		font-size: .7em;
 	}
