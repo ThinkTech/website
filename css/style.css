@@ -1405,6 +1405,7 @@ a.w3ls_banner_more:hover{
     margin: 1em 0 .5em;
     text-transform: uppercase;
     letter-spacing: 2px;
+    font-weight: bold;
 }
 .w3_footer_grid p span{
 	display:block;
