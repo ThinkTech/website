@@ -1397,7 +1397,7 @@ a.w3ls_banner_more:hover{
 .w3l_footer_grid i{
 	font-size:1.5em;
 	color:#fff;
-	line-height:2em;
+	line-height:2.3em;
 }
 .w3_footer_grid h4{
 	font-size: 1.2em;
@@ -4557,6 +4557,7 @@ ul.contact_info li a:hover{
 	}
 	.w3_agile_logo {
 		margin-top: 0em;
+		margin-left: -11px;
 	}
 	.modal-header {
 		font-size: 1.4em;
