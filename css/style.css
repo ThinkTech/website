@@ -1057,7 +1057,7 @@ a.w3ls_banner_more:hover{
 
 #social-plan > p span,#personal-plan > p span,#corporate-plan > p span,#business-plan > p span {
 	background : transparent;
-	color: #fff;
+	color: #ffe;
 }
 
 #social-plan > p span span:last-of-type,#personal-plan > p span span:last-of-type,#corporate-plan > p span span:last-of-type,#business-plan > p span span:last-of-type{
@@ -2182,7 +2182,7 @@ h3.agileits-icons-title {
     font-size: 98%;
     vertical-align: top;
 	line-height: 3em;
-	color: #fff;
+	color: #ffe;
 }
 
 .faq p span span a:hover {
@@ -2191,7 +2191,6 @@ h3.agileits-icons-title {
 
 .faq p span span a i {
 	margin-right: 10px;
-    color: #fff;
 }
 
 .faq p span.full {
