@@ -3659,6 +3659,9 @@ ul.contact_info li a:hover{
 	}
 }
 @media (max-width: 1024px){
+	.w3_footer_grid h2 a{
+	  font-size: 1.6em;
+	}
 	.faq.guide ol {
       padding-top: 30px;
       padding-bottom: 30px;
