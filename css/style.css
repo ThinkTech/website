@@ -2791,7 +2791,8 @@ span.line {
 }
 
 p.footer {
-	color : white;
+	color: #fafafa;
+    font-weight: bold;
 	text-align : center;
 	width: 97%;
     margin: auto;
