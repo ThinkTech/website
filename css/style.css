@@ -1429,7 +1429,7 @@ a.w3ls_banner_more:hover{
 .w3ls_copyright_left ul li a{
 	text-transform:uppercase;
 	font-weight:600;
-	color:#fff;
+	color:#fafafa;
 	text-decoration:none;
 }
 .w3ls_copyright_left ul li a:hover,.w3ls_copyright_left ul li.active a{
@@ -1443,12 +1443,12 @@ a.w3ls_banner_more:hover{
     font-size: 16.9px;
 }
 .w3ls_copyright_left p a{
-	color:#fff;
+	color:#fafafa;
 	text-decoration:underline;
 }
 
 .w3ls_copyright_left p a:hover{
-	color:#fff;
+	color:#fafafa;
 }
 
 .w3ls_copyright_right{
