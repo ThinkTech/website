@@ -1476,20 +1476,9 @@ a.w3ls_banner_more:hover{
     font-size: 13px;
     background: #05d2ff;
 }
-a.w3_agile_facebook:hover{
-	background:#3b5998;
-}
 a.agile_twitter:hover{
-	background:#1da1f2;
+	background:#000000;
 }
-a.w3_agile_dribble:hover{
-	background:#ea4c89;
-}
-a.w3_agile_vimeo:hover{
-	background:#1ab7ea;
-}
-/*-- //footer --*/
-/*-- to-top --*/
 #toTop {
 	display: none;
 	text-decoration: none;
