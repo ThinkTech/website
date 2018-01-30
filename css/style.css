@@ -349,7 +349,7 @@ h3 .fa-briefcase {
 	font-size:1.75em;
 	color:#000000;
 	text-decoration:none;
-	text-shadow: 1px -1px #af9682;
+	text-shadow: 1px -2px #af9682;
 	font-weight: bold;
 	text-transform: uppercase;
 }
@@ -425,7 +425,7 @@ h3 .fa-briefcase {
 .navbar-default .navbar-nav > li > a {
     color: #000000;
     font-weight: bold;
-    text-shadow: -1px -1px #000000;
+    text-shadow: -1px -2px #000000;
 }
 .navbar-nav > li > a {
     margin: 0;
@@ -860,7 +860,7 @@ a.w3ls_banner_more:hover{
     letter-spacing: 1px;
     margin-bottom: 20px;
     font-weight: bold;
-	text-shadow: 1px -1px #af9682;
+	text-shadow: 1px -2px #af9682;
 }
 
 .subscribe-form h1 i{
@@ -1094,7 +1094,7 @@ a.w3ls_banner_more:hover{
 	font-size:2em;
 	color:#fff;
 	text-transform:capitalize;
-	text-shadow: 1px -1px #af9682;
+	text-shadow: 1px -2px #af9682;
 }
 .w3_two_grid_right p.w3layouts_dummy_para{
 	margin: 1em 0;
@@ -1321,7 +1321,7 @@ a.w3ls_banner_more:hover{
 	text-transform:uppercase;
 	margin-top: 4px;
 	margin-left: 15px;
-	text-shadow: 1px -1px #fff;
+	text-shadow: 1px -2px #fff;
 }
 .w3layouts_newsletter_right input[type="email"]{
 	outline: none;
@@ -1359,7 +1359,7 @@ a.w3ls_banner_more:hover{
 	font-size: 1.9em;
     color: #000000;
     text-decoration: none;
-	text-shadow: 1px -1px #af9682;
+	text-shadow: 1px -2px #af9682;
 	font-weight: bold;
 	text-transform: uppercase;
 }
