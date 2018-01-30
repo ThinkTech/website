@@ -672,6 +672,7 @@ nav.navbar.navbar-default {
 	text-transform: capitalize;
     font-size: 1.3em;
     color: #fff;
+    text-shadow: 1px 1px #4a4040;
     background: #000000;
     padding: 1em;
 	font-weight: bold;
@@ -1296,6 +1297,7 @@ a.w3ls_banner_more:hover{
 	color:#fff;
 	margin:1em 0;
 	font-weight: bold;
+	text-shadow: 1px 1px #4a4040;
 }
 .wthree_stat_right1 p{
 	font-size:3em;
