@@ -3,6 +3,9 @@ html, body{
 	margin: 0;
 	overflow-x : hidden;
 }
+img {
+	filter: saturate(1.5);
+}
 .rslides {
   position: relative;
   list-style: none;
