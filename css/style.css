@@ -2791,6 +2791,10 @@ p.footer {
     margin: auto;
 }
 
+.footer .w3ls_copyright_right {
+	margin-right : 0px;
+}
+
 /*-- responsive --*/
 @media (max-width: 568px){
 	.flipster-carousel .flip-future {
