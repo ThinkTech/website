@@ -2228,6 +2228,9 @@ h3.agileits-icons-title {
 	 box-shadow: 0 4px 9px 0 rgba(90, 88, 88, 0.5), 0 2px 9px 0 rgb(253, 253, 253);
 }
 
+#Main-Content{
+    padding: 4em 0;
+}
 .content h1{
 	color: #FFFFFF;
     font-size: 3em;
@@ -2847,7 +2850,7 @@ p.footer {
 	.content h1 {
 	font-size: 1.6em;
 	}
-	.content {
+	#Main-Content {
 		padding: 2em 0;
 	}
 	.pricing-top h3 {
