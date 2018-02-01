@@ -3136,6 +3136,7 @@ h2.typoh2{
 }
 @media (max-width:640px){
 	.faq .number {width: 35px;}
+	.rslides_tabs {margin-top: 20px}
 	.w3l_banner_bottom_left .rslides_tabs li{width:31px;height:33px}
 	.banner .wthree_stat_right1 p {font-size: 2em;}
 	.subscribe-form {
