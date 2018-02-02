@@ -830,6 +830,7 @@ a.w3ls_banner_more:hover{
 	display: none;
 	box-shadow: 0 0px 6px #daaf82;
 	z-index: 9999;
+	text-align: center;
 }
 
 
