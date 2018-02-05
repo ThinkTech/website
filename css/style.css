@@ -84,7 +84,7 @@ ul,label{
 	padding:0;
 }
 a {
-	color : #05d2ff;
+	color : #08ccf7;
 }
 a:focus, a:hover {
     text-decoration: none;
@@ -354,7 +354,7 @@ h3 .fa-briefcase {
 	text-transform: uppercase;
 }
 .w3_agile_logo h1 a span {
-    color: #05d2ff;
+    color: #08ccf7;
     display: inline-block;
     border: 14px solid;
     padding: 0 .2em;
@@ -395,7 +395,7 @@ h3 .fa-briefcase {
     font-family: 'Work Sans', sans-serif;
 }
 .agileits_w3layouts_sign_in ul li a:hover{
-	background: #05d2ff;
+	background: #08ccf7;
 }
 .agileits_w3layouts_sign_in ul li span {
     font-size: 1.5em;
@@ -418,7 +418,7 @@ h3 .fa-briefcase {
 }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
     color:#fff;
-    background: #05d2ff;
+    background: #08ccf7;
     border: 1px solid #11c5c5;
 	text-shadow: 1px -2px #000000;
 	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
@@ -443,7 +443,7 @@ nav.navbar.navbar-default {
     background: none;
 }
 .navbar-default .navbar-nav  > .active.open > a:focus {
-	background: #05d2ff;
+	background: #08ccf7;
 	color: #fff;
 }
 .agile_short_dropdown {
@@ -525,7 +525,7 @@ nav.navbar.navbar-default {
 	text-align: center;
 	padding: 6em 0 0;
 	background-color : #f5f5f5;
-	border-bottom: 35px solid #05d2ff;
+	border-bottom: 35px solid #08ccf7;
 }
 .banner1{
 	background:url(../images/banner.jpeg) no-repeat 0px 0px;
@@ -1022,7 +1022,7 @@ a.w3ls_banner_more:hover{
 }
 
 #corporate-plan .number {
-    background: #05d2ff;
+    background: #08ccf7;
 }
 
 #personal-plan .number {
@@ -1052,7 +1052,7 @@ a.w3ls_banner_more:hover{
 }
 
 #corporate-plan > p ,.corporate{
-	background : #05d2ff;
+	background : #08ccf7;
 }
 
 #business-plan > p,.business {
@@ -1087,7 +1087,7 @@ a.w3ls_banner_more:hover{
 /*-- //banner-bottom --*/
 /*-- two-grids --*/
 .two-grids{
-	background:#05d2ff;
+	background:#08ccf7;
 }
 .w3_two_grid_left{
 	padding:0;
@@ -1180,7 +1180,7 @@ a.w3ls_banner_more:hover{
 	text-decoration:none;
 }
 .agileits_w3layouts_news_grid h5 a:hover{
-    color:#05d2ff;
+    color:#08ccf7;
 }
 .agileits_w3layouts_news_grid h5 a:focus,.agileits_more ul li a.hvr-icon-hang:focus,.agileits_w3layouts_sign_in ul li a:focus{
 	outline:none;
@@ -1342,7 +1342,7 @@ a.w3ls_banner_more:hover{
 	outline: none;
     border: 1px solid #0993b2;
     padding: 10px 0;
-    background: #05d2ff;
+    background: #08ccf7;
     color: #fff;
     font-size: 14px;
     width: 25%;
@@ -1370,7 +1370,7 @@ a.w3ls_banner_more:hover{
 	text-transform: uppercase;
 }
 .w3_footer_grid h2 a span {
-    color: #05d2ff;
+    color: #08ccf7;
     display: inline-block;
     border: 14px solid;
     padding: 0 .2em;
@@ -1398,7 +1398,7 @@ a.w3ls_banner_more:hover{
 	text-align:center;
 }
 .w3_footer_grid:hover .w3l_footer_grid {
-	background:#05d2ff;
+	background:#08ccf7;
 }
 .w3l_footer_grid i{
 	font-size:1.5em;
@@ -1407,7 +1407,7 @@ a.w3ls_banner_more:hover{
 }
 .w3_footer_grid h4{
 	font-size: 1.2em;
-    color: #05d2ff;
+    color: #08ccf7;
     margin: 1em 0 .5em;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -1418,7 +1418,7 @@ a.w3ls_banner_more:hover{
 }
 .copyright{
 	padding:2em 0;
-	background:#05d2ff;
+	background:#08ccf7;
 }
 .w3ls_copyright_left{
 	float:left;
@@ -1498,7 +1498,7 @@ a.agile_twitter:hover{
 	height: 32px;
 	border: none;
 	text-indent: 100%;
-	background: #05d2ff;
+	background: #08ccf7;
 }
 #toTopHover {
 	width: 32px;
@@ -1515,7 +1515,7 @@ a.agile_twitter:hover{
 /*-- bootstrap-pop-up --*/
 .modal-header {
     font-size: 2em;
-    color:#05d2ff;
+    color:#08ccf7;
     font-family: 'Work Sans', sans-serif;
     text-align: center;
     text-transform: uppercase;
@@ -1589,7 +1589,7 @@ button.close {
     padding:2em 0;
 }
 .agileits_signin_form p a {
-    color: #05d2ff;
+    color: #08ccf7;
 	text-decoration:underline;
 }
 .agileits_signin_form p a:hover{
@@ -1667,7 +1667,7 @@ button.close {
 }
 .agile_remember_right a {
     font-size: 14px;
-    color:#05d2ff;
+    color:#08ccf7;
     text-decoration: underline;
 }
 .agile_remember_right a:hover {
@@ -1696,7 +1696,7 @@ button.close {
     left: 5%;
     width: 85px;
     height: 85px;
-    background: #05d2ff;
+    background: #08ccf7;
     border-radius: 50px;
     border: 5px solid #fff;
     text-align: center;
@@ -1777,7 +1777,7 @@ button.close {
 }
 .wthree_about_grid h3 span{
 	color: #fff;
-	background: #05d2ff;
+	background: #08ccf7;
     text-transform: uppercase;
     font-weight: 600;
 	display:inline-block;
@@ -1807,7 +1807,7 @@ button.close {
     font-size: .5em;
     font-weight: 600;
     text-transform: uppercase;
-    color: #05d2ff;
+    color: #08ccf7;
     letter-spacing: 5px;
 }
 .wthree_about_grid ul{
@@ -1854,7 +1854,7 @@ button.close {
 .agile_feature_grid{
 	width: 80px;
     height: 80px;
-    background: #05d2ff;
+    background: #08ccf7;
     text-align: center;
     border: 4px solid #057189;
 }
@@ -1863,7 +1863,7 @@ button.close {
     border:4px solid #b61616;
 }
 .w3_agileits_features_grid:hover .agileits_w3layouts_features_gridr h4{
-    color: #05d2ff;
+    color: #08ccf7;
 }
 .agile_feature_grid i{
 	font-size: 1.5em;
@@ -2019,7 +2019,7 @@ ul.bs-glyphicons-list li:hover span {
 }
 h3.icon-subheading {
 	font-size: 25px;
-    color:#05d2ff !important;
+    color:#08ccf7 !important;
     margin: 30px 0 15px;
 }
 h3.agileits-icons-title {
@@ -2257,7 +2257,7 @@ h3.agileits-icons-title {
     border-top-right-radius: 5px;
 }
 .blue-top{
-	background:#05d2ff;
+	background:#08ccf7;
 }
 
 .black-top {
@@ -3376,7 +3376,7 @@ h2.typoh2{
     margin-top: 2em;
 }
 .agileits_w3layouts_contact_gridr input[type="submit"]:hover{
-	background: #05d2ff;
+	background: #08ccf7;
 }
 .agileits_w3layouts_contact_gridr label {
     font-size: 1.5em;
@@ -3391,7 +3391,7 @@ h2.typoh2{
 }
 
 .agileits_w3layouts_contact_gridr label i {
-	color : #05d2ff;
+	color : #08ccf7;
 }
 
 .agileits_leave {
@@ -3432,7 +3432,7 @@ ul.contact_info li a {
     text-decoration: none;
 }
 ul.contact_info li a:hover{
-	color:#05d2ff;
+	color:#08ccf7;
 }
 .map iframe{
 	width:100%;
