@@ -1082,6 +1082,8 @@ a.w3ls_banner_more:hover{
     white-space: nowrap;
     width: 100%;
     display: block;
+    border: 1px solid #f1eded;
+    border-bottom : none;
 }
 
 /*-- //banner-bottom --*/
