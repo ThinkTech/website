@@ -1365,7 +1365,7 @@ a.w3ls_banner_more:hover{
 	font-size: 1.9em;
     color: #000000;
     text-decoration: none;
-	text-shadow: 1px -2px #af9682;
+	text-shadow: 1px -3px #000000;
 	font-weight: bold;
 	text-transform: uppercase;
 }
