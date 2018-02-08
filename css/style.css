@@ -1757,12 +1757,7 @@ button.close {
 /*-- //services --*/
 /*-- services-bottom --*/
 .services-bottom{
-	background: url(../images/8.jpg) no-repeat 0px 0px;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    -ms-background-size: cover;
+	background: #000000;
     text-align: center;
 }
 .services-bottom h3{
