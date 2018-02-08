@@ -1687,6 +1687,7 @@ button.close {
     padding-top: 1.25em;
 	text-shadow: 1px 6px #cfd3d4;
 	font-weight: bold;
+	font-family : Tahoma;
 	text-transform : capitalize;
 	letter-spacing: -6px;
 }
