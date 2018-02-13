@@ -4112,6 +4112,7 @@ ul.contact_info li a:hover{
 	}
 	.w3_agile_logo h1 a {
 		font-size: .85em;
+		text-shadow : none;
 	}
 	.banner h2 {
 		font-size: 1.7em;
