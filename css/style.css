@@ -3166,9 +3166,8 @@ h2.typoh2{
 	.guide li > a {
        width: 60%;
        margin: auto;
-       text-align: left;
+       text-align: center;
        position: relative;
-       left: -1%;
 	}
 	.subscribe-form {
 		width: 97%;
@@ -4532,12 +4531,11 @@ ul.contact_info li a:hover{
 }
 @media (max-width: 375px){
 	.guide li > a {
-       width: 70%;
-       margin: auto;
-       text-align: left;
-       position: relative;
-       left: -6%;
-       font-size: 15px;
+      width: 70%;
+      margin: auto;
+      text-align: center;
+      position: relative;
+      font-size: 15px;
 	}
 	.content-process {height: 860px;}
 	.w3_agile_logo h1 a {
