@@ -3896,6 +3896,7 @@ ul.contact_info li a:hover{
      }
      .subscribe-form .terms h1 {
       	text-align : center;
+      	text-shadow: none;
      } 
      .terms h2 {
         font-size : 13px;
@@ -4013,6 +4014,7 @@ ul.contact_info li a:hover{
 	}
 }
 @media (max-width: 640px){
+	.navbar-default .navbar-nav > li > a {text-shadow: none;}
 	.terms {
        width: 96%;
      }
