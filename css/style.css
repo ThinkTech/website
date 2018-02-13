@@ -806,6 +806,7 @@ a.w3ls_banner_more:hover{
 	position:relative;
 	text-shadow: 1px -2px #af9682;
 	font-weight: bold;
+	font-family : Tahoma;
 }
 
 .w3l_banner_bottom_left a {
@@ -2358,6 +2359,7 @@ p.text {
 	line-height: 2em;
 	font-size: 4em;
 	font-weight: bold;
+	font-family : Tahoma;
 }
 .content2 {
 	background-color:#b5e6ae;
