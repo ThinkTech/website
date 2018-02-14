@@ -4114,7 +4114,7 @@ ul.contact_info li a:hover{
 	.agileits_w3layouts_sign_in ul li {
 		margin-left: 0em;
 	}
-	.w3_agile_logo h1 a {
+	.w3_agile_logo h1 a,.w3_footer_grid h2 a {
 		font-size: .85em;
 		text-shadow : none;
 	}
