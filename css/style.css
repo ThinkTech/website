@@ -4158,6 +4158,7 @@ ul.contact_info li a:hover{
        padding-top: 15px;
        padding-bottom: 15px;
        box-shadow : none;
+       border: none;
      }
 	.terms {width : 94%;}
 	.plans {width: 60%;}
@@ -4187,7 +4188,7 @@ ul.contact_info li a:hover{
     	margin-top: 50px;
     	font-size: 12px;
     }
-	.faq.w3l_banner_bottom_left p {padding: 10px;}
+	.faq.w3l_banner_bottom_left p {padding: 10px;border:none}
 	.buy-button a {
       font-size: 13px;
 	}
