@@ -2268,13 +2268,13 @@ h3.agileits-icons-title {
 }
 
 .pricing-top h3{
-	color:#FFF;
+	color: #ffe;
 	font-size:2em;
 	margin:0;
 /*-- agileits --*/
 }
 .pricing-top p{
-	color:#FFF;
+	color: #ffe;
 	font-size:.875em;
 	margin:1em 0 0 0;
 	font-weight: bold;
@@ -3172,9 +3172,11 @@ h2.typoh2{
        position: relative;
 	}
 	.subscribe-form {
-		width: 97%;
-        padding: 15px;
-        top: 30%;
+	   width: 97%;
+       padding: 8px;
+       padding-bottom: 12px;
+       top: 30%;
+       box-shadow: none;
 	}
 	.grid_5 h3, .grid_5 h2, .grid_5 h1, .grid_5 h4, .grid_5 h5, h3.hdg, h3.bars {
 		font-size: 1.2em;
