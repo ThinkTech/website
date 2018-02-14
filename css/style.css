@@ -3100,6 +3100,7 @@ h2.typoh2{
 		font-size: 22px;
 		margin-bottom: 10px;
 		text-align : left;
+		text-shadow: none;
 	}
 	.subscribe-form label {
 		font-size : 0px;
