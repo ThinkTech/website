@@ -4501,6 +4501,8 @@ ul.contact_info li a:hover{
 	.faq ol {
     padding-left: 10px;
     white-space: nowrap;
+    box-shadow: none;
+    border: none;
 }
 }
 @media (max-width: 384px){
