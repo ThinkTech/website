@@ -4549,7 +4549,7 @@ ul.contact_info li a:hover{
 	.guide li > a {
       width: 70%;
       margin: auto;
-      text-align: center;
+      text-align: left;
       position: relative;
       font-size: 15px;
 	}
