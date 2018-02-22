@@ -3688,9 +3688,6 @@ ul.contact_info li a:hover{
 	}
 }
 @media (max-width: 991px){
-	.w3l_banner_bottom_left a {
-		font-size: 12px;
-	}
 	.wthree_stat_left p {
       margin-bottom: 15px;
     }
