@@ -402,7 +402,6 @@ h3 .fa-briefcase {
 
 @media(max-width:1024px){
 	.banner a {margin-left: -5.1%;}
-	.faq p span span.pricing,.faq p span span.subscribe {font-size: 97%}
 }
 
 
@@ -3643,6 +3642,7 @@ ul.contact_info li a:hover{
 	}
 }
 @media (max-width: 1024px){
+	.faq p span span.pricing,.faq p span span.subscribe {font-size: 97%}
 	.w3_footer_grid h2 a{
 	  font-size: 1.6em;
 	}
