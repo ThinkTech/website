@@ -401,9 +401,8 @@ h3 .fa-briefcase {
 }
 
 @media(max-width:1024px){
-	.banner a {
-      margin-left: -5.1%;
-	}
+	.banner a {margin-left: -5.1%;}
+	.faq p span span.pricing,.faq p span span.subscribe {font-size: 97%}
 }
 
 
