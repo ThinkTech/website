@@ -415,6 +415,7 @@ h3 .fa-briefcase {
 	.banner a {
       margin-left: -6.1%;
 	}
+	.banner1 h3 {padding-top: 1.5em;}
 }
 
 @media(max-width:870px){
