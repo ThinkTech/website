@@ -3560,7 +3560,7 @@ ul.contact_info li a:hover{
 		left: 93%;
 	}
 	.banner-bottom, .news, .services, .services-bottom, .features {
-		padding: 4em 0;
+		padding: 1em 0;
 	}
 	.about,.portfolio {
 		padding-top: 4em;
@@ -3671,6 +3671,9 @@ ul.contact_info li a:hover{
 	.w3l_banner_bottom_left h3, .agile_head, .wthree_stat_left h3 {
 		font-size: 1.8em;
 	}
+	.w3l_banner_bottom_left h3, .agile_head, .wthree_stat_left h3 {
+       text-shadow: 1px 0px #af9682;
+    }
 	.w3_two_grid_right h3 {
 		font-size: 1.5em;
 	}
@@ -3768,7 +3771,7 @@ ul.contact_info li a:hover{
 		left: 90%;
 	}
 	.banner-bottom, .news,.footer, .services, .services-bottom, .features,.wthree_stat {
-		padding: 3em 0;
+		padding: 1em 0;
 	}
 	.wthree_stat_left {
 		margin: 0;
