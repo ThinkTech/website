@@ -3986,7 +3986,7 @@ ul.contact_info li a:hover{
 		margin-top : 5px;
 	}
 	.w3l_banner_bottom_left li {
-		font-size: 1.1em;
+		font-size: 1em;
 		line-height: 1.9em;
 		margin-left: 0;
 	}
@@ -4161,8 +4161,8 @@ ul.contact_info li a:hover{
     	height: 30px;
      }
 	 .faq.guide ol {
-       padding-top: 15px;
-       padding-bottom: 15px;
+       padding-top: 0px;
+       padding-bottom: 0px;
        box-shadow : none;
        border: none;
      }
@@ -4254,7 +4254,7 @@ ul.contact_info li a:hover{
     	text-shadow: none;
 	}
 	.w3l_banner_bottom_left h3{
-		font-size: 2em;
+		font-size: 1.8em;
 		white-space: nowrap;
 	}
 	.agile_head, .wthree_stat_left h3 {
