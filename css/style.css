@@ -3,6 +3,9 @@ html, body{
 	margin: 0;
 	overflow-x : hidden;
 }
+body{
+	opacity : 0;
+}
 /*-- header --*/
 .w3_agile_logo{
 	float:left;
