@@ -4509,7 +4509,7 @@ ul.contact_info li a:hover{
     white-space: nowrap;
     box-shadow: none;
     border: none;
-    margin-top: -5px;
+    margin-top: -10px;
 }
 }
 @media (max-width: 384px){
