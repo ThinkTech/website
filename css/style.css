@@ -4168,6 +4168,9 @@ ul.contact_info li a:hover{
        border: none;
        margin-top: 5px;
      }
+     .faq li {
+   	 margin-left: -16px;
+	}
 	.terms {width : 99%;}
 	.plans {width: 60%;}
 	.plans .close { font-size: 15px;padding: 5px;}
