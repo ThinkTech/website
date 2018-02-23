@@ -3988,7 +3988,7 @@ ul.contact_info li a:hover{
 	.w3l_banner_bottom_left li {
 		font-size: 1em;
 		line-height: 1.9em;
-		margin-left: 0;
+		margin-left: -20px;
 	}
 	.w3_agileits_news_grid_pos {
 		bottom: -14%;
