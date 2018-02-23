@@ -4513,7 +4513,8 @@ ul.contact_info li a:hover{
     box-shadow: none;
     border: none;
     margin-top: -10px;
-}
+    padding-bottom: 0;
+  }
 }
 @media (max-width: 384px){
 	.agileits_w3layouts_sign_in ul li {
