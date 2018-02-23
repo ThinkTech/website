@@ -4171,6 +4171,9 @@ ul.contact_info li a:hover{
      .faq li {
    	 margin-left: -16px;
 	}
+	.guide li {
+    margin-left: 0px;
+    }
 	.terms {width : 99%;}
 	.plans {width: 60%;}
 	.plans .close { font-size: 15px;padding: 5px;}
