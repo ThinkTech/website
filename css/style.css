@@ -3186,7 +3186,7 @@ h2.typoh2{
 	   padding-bottom: 12px;
 	   top: 30%;
 	   box-shadow: none;
-	   border: none;
+	   border: 1px solid #dcb7b7;
 	}
 	.grid_5 h3, .grid_5 h2, .grid_5 h1, .grid_5 h4, .grid_5 h5, h3.hdg, h3.bars {
 		font-size: 1.2em;
