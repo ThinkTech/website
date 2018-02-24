@@ -3748,6 +3748,7 @@ ul.contact_info li a:hover{
 	}
 	.w3l_banner_bottom_right img {
 		margin: 0 auto;
+		margin-bottom: 25px;
 	}
 	.w3_two_grid_left img {
 		min-height: auto;
