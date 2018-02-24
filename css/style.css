@@ -4183,6 +4183,7 @@ ul.contact_info li a:hover{
 	.guide li {
     margin-left: 0px;
     }
+    .faq p span span.pricing i { display: none;}
 	.terms {width : 99%;}
 	.plans {width: 60%;}
 	.plans .close { font-size: 15px;padding: 5px;}
