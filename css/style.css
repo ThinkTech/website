@@ -3181,8 +3181,7 @@ h2.typoh2{
        position: relative;
 	}
 	.subscribe-form {
-	   width: 93%;
-	   right: 1px;
+	   width: 100%;
 	   padding: 7px;
 	   padding-bottom: 12px;
 	   top: 30%;
