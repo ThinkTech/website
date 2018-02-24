@@ -6,6 +6,9 @@ html, body{
 body{
 	opacity : 0;
 }
+a:focus, a:hover {
+    color: #f74a4a;
+}
 /*-- header --*/
 .w3_agile_logo{
 	float:left;
