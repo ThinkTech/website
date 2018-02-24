@@ -935,6 +935,7 @@ a.w3ls_banner_more:hover{
     font-size: 17px;
     font-weight: bold;
     padding: 8px;
+    padding-bottom: 6px;
     background: #fff;
     border-radius: 50%;
     top: -4px;
