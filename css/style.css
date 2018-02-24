@@ -3396,6 +3396,7 @@ h2.typoh2{
     background: #000000;
     width: 100%;
     padding: 10px;
+    padding-left: 8px;
     color: #f5f5f5;
     text-shadow: 1px -2px #000000;
 }
