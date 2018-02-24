@@ -454,6 +454,8 @@ h3 .fa-briefcase {
 	table td:nth-child(5) {display:none}
 	.banner a {
 	  margin-left: -11.1%;
+	  text-transform: uppercase;
+      font-size: 11px;
 	}
 }
 @media(max-width:360px ){
