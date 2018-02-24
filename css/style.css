@@ -2668,7 +2668,7 @@ span.line {
      .content-process {
     height: 900px;
     margin-bottom: 10px;
-    margin-top: 10px;
+    margin-top: -10px;
 }
     .content-process p {
       width: 65%;
