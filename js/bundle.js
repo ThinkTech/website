@@ -79,14 +79,18 @@ $(document).ready(function() {
  	     success : function(response){
  	    	page.release();
  	    	form.find("input[type=submit]").show();
- 	    	if(response.status){
+ 	    	if(response.status == 1){
   	    	   const parent = form.parent();
   	    	   form.hide();
   	    	   parent.find("> p").show();
   	    	   form.find(':input').not(':input[readonly]').not(':input[type=submit]').val("");
-  	       }else{
-  	    	   alert("ce compte client existe d&edot;ja");
+  	       }else if(response.status == 2){
+  	    	   $(".subscribe-form").hide();
+  	    	   alert("souscription reussie");
   	       }
+ 	       else if(response.status == 0){
+   	    	   alert("vous &ecirc;tes d&edot;ja souscrit &agrave; ce service");
+   	       }
  	     },
  	     error : function(){
  	    	form.find("input[type=submit]").show();
