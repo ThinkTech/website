@@ -4153,6 +4153,8 @@ ul.contact_info li a:hover{
 	 .faq.guide ol {
        padding-top: 0px;
        padding-bottom: 0px;
+       padding-left: 0;
+       padding-right: 0;
        box-shadow : none;
        border: none;
        margin-top: 5px;
@@ -4162,6 +4164,7 @@ ul.contact_info li a:hover{
 	}
 	.guide li {
     margin-left: 0px;
+    width: 100%;
     }
     .faq p span span.pricing i { display: none;}
 	.terms {width : 99%;}
