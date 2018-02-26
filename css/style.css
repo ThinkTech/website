@@ -96,7 +96,6 @@ a:focus, a:hover {
 .navbar-default .navbar-nav > li > a {
     color: #000000;
     font-weight: bold;
-    text-shadow: -1px -1px #000000;
 }
 .navbar-nav > li > a {
     margin: 0;
@@ -573,6 +572,7 @@ h3 .fa-briefcase {
 
 .banner h2{
     color: #fff;
+    text-transform: uppercase;
     font-size: 5.15em;
     padding-bottom: 13px;
     font-weight: bold;
