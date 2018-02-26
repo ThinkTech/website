@@ -234,15 +234,15 @@ input[type="submit"],input[type="reset"],.w3l_team_grd,.agileits_w3layouts_featu
 	position: absolute;
     margin-top: 25px;
     width: 160px;
-    background: #08ccf7;
+    background: #ffffff;
     padding: 10px;
-    color: #fff;
+    color: #08ccf7;
     font-size: 19px;
     font-family: Tahoma;
     border: 1px solid #000000;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
     border-radius: 5px;
-    border: 1px solid #000;
+    border: 1px solid #08ccf7;
     font-weight: bold;
     margin-left: -5.1%;
 }
@@ -572,7 +572,7 @@ h3 .fa-briefcase {
 
 .banner h2{
     color: #fff;
-    text-transform: uppercase;
+    text-transform: capitalize;
     font-size: 5.15em;
     padding-bottom: 13px;
     font-weight: bold;
