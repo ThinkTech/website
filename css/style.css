@@ -1246,12 +1246,7 @@ a.w3ls_banner_more:hover{
 /*-- //news --*/
 /*-- stats --*/
 .stats{
-	background: url(../images/banner.jpeg) no-repeat 0px 0px;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    -ms-background-size: cover;
+	background: #000000;
 }
 .wthree_stat{
 	background:rgba(33, 33, 33, 0.72);
