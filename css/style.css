@@ -2839,6 +2839,10 @@ p.footer {
 }
 
 @media (max-width:991px){
+	.banner1 h3 {
+     padding-top: 1.6em;
+     letter-spacing: -3px;
+    }
 	.subscribe-form {
 		width: 90%;
 		padding: 8px;
@@ -4048,8 +4052,9 @@ ul.contact_info li a:hover{
 	}
 	.banner1 h3 {
 		font-size: 2em;
-		padding-top: 0;
-		letter-spacing: 0px;
+    padding-top: 0px;
+    padding-bottom: 1em;
+    letter-spacing: 0px;
 	}
 	.banner1 {
 		min-height: auto;
@@ -4476,6 +4481,7 @@ ul.contact_info li a:hover{
 	}
 	.banner1 h3 {
 		font-size: 1.3em;
+		padding-bottom: 1.7em;
 	}
 	.effect .mask {
 		border-width: 199px;
