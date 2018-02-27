@@ -3088,9 +3088,9 @@ h2.typoh2{
         padding-bottom: 17px;
 	}
 	.subscribe-form form {
-	  line-height: 18px;
+	  line-height: 17px;
 	}
-	.terms-agreement {font-size: 13px;}
+	.terms-agreement {font-size: 13px;margin-top: 15px;}
 	.subscribe-form h1 {
 		font-size: 22px;
 		margin-bottom: 0px;
