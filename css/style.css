@@ -1287,6 +1287,7 @@ a.w3ls_banner_more:hover{
     background: #fff;
     border-radius: 50px;
     line-height: 2em;
+    border: 1px solid #de9e9e;
 }
 .wthree_stat_right1 h4{
 	font-size:1.3em;
