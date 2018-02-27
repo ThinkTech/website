@@ -3681,7 +3681,7 @@ ul.contact_info li a:hover{
 	}
 }
 @media (max-width: 991px){
-	.faq p span span.text{ line-height: 20px;}
+	.faq p span span.text{ line-height: 20px;letter-spacing: -0.9px;}
 	.wthree_stat_left p {
       margin-bottom: 15px;
     }
