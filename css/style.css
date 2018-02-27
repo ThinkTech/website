@@ -4282,12 +4282,13 @@ ul.contact_info li a:hover{
       margin-bottom: 15px;
     }
 	.wthree_about_grid p {
-      text-align: center;
-      margin: -2em 0;
-      padding: 6px;
-      margin-bottom: 0;
-      box-shadow: none;
-    }
+	    text-align: center;
+	    margin: -2em 0;
+	    padding: 6px;
+	    margin-bottom: 0;
+	    box-shadow: none;
+	    font-size: 12px;
+	}
 	.agileinfo_about_grid_right img {
 	   display : none;	
 	}
