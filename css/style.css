@@ -3096,6 +3096,7 @@ h2.typoh2{
 	  line-height: 16px;
 	}
 	.terms-agreement {font-size: 13px;margin-top: 15px;padding: 2px;}
+	.subscribe-form .terms-agreement input {top: 3px;}
 	.subscribe-form h1 {
 		font-size: 22px;
 		margin-bottom: 0px;
