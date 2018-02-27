@@ -3105,13 +3105,13 @@ h2.typoh2{
 	.subscribe-form input,.subscribe-form select{
 		width: 100%;
 		margin-bottom: -9px;
-		height: 30px;
+		height: 28px;
 		margin-top: -9px;
 		font-size: 13px;
 		border: 1px solid #dcb7b7;
 	}
 	.subscribe-form input[type=submit]{
-		margin-top : 15px;margin-bottom : 0px;float: right;padding-top: 5px;font-size: 13px;
+		margin-top : 15px;margin-bottom : 0px;float: right;padding-top: 3px;font-size: 13px;
 	}
 }
 @media (max-width:640px){
