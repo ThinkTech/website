@@ -3118,6 +3118,7 @@ h2.typoh2{
 	}
 }
 @media (max-width:640px){
+	.wthree_stat_right1 h4 {text-shadow: none;}
 	.faq .number {width: 35px;}
 	.rslides_tabs {margin-top: 20px;margin-bottom: -25px}
 	.w3l_banner_bottom_left .rslides_tabs li{width:31px;height:33px;margin-left:0px}
