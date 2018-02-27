@@ -657,6 +657,8 @@ h3 .fa-briefcase {
 }
 .wthree_banner_grid{
 	text-align:center;
+	padding-left: 17px;
+    padding-right: 17px;
 }
 .wthree_banner_grid i{
 	font-size: 3em;
