@@ -3711,9 +3711,6 @@ ul.contact_info li a:hover{
 		width: 12%;
 		background: url(../images/search.png) no-repeat 5px 2px;
 	}
-	.banner h2 {
-		font-size: 2.4em;
-	}
 	.faq p span {
 		width : 73%;
 	}
@@ -3772,7 +3769,7 @@ ul.contact_info li a:hover{
 	}
 	.banner .wthree_stat_right {
       margin: auto;
-      margin-top: -28px;
+      margin-top: -55px;
       width: 99%;
       margin-bottom: 10px;
      }
@@ -4019,7 +4016,7 @@ ul.contact_info li a:hover{
        width: 96%;
      }
 	.banner .wthree_stat_right {
-      margin-top: 0px;
+      margin-top: -10px;
      }
 	.plans {width : 40%}
 	.agileits_w3layouts_sign_in ul li {
