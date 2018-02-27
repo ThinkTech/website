@@ -3632,7 +3632,7 @@ ul.contact_info li a:hover{
 }
 @media (max-width: 1024px){
 	.faq p span span.pricing,.faq p span span.subscribe {font-size: 97%}
-	.faq p span span.text{ line-height: 20px;}
+	.faq p span span.text{ line-height: 30px;}
 	.w3_footer_grid h2 a{
 	  font-size: 1.6em;
 	}
@@ -3681,6 +3681,7 @@ ul.contact_info li a:hover{
 	}
 }
 @media (max-width: 991px){
+	.faq p span span.text{ line-height: 20px;}
 	.wthree_stat_left p {
       margin-bottom: 15px;
     }
