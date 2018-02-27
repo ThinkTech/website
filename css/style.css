@@ -3649,7 +3649,7 @@ ul.contact_info li a:hover{
 	  left : 0;
       margin: auto;
       display: block;
-      font-size: 13px;
+      font-size: 11px;
       margin-top: 0px;
       text-align: center;
     }
@@ -3657,7 +3657,7 @@ ul.contact_info li a:hover{
       padding-top: 2.2em;
     }
 	.w3_footer_grid p { font-size: 13px;}
-	.faq p span span a {display: block;width: 100%;font-size: 11px}
+	.faq p span span a {display: block;width: 100%;font-size: 10px}
 	.w3l_banner_bottom_left h3, .agile_head, .wthree_stat_left h3 {
 		font-size: 2.8em;
 	}
