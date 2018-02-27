@@ -530,12 +530,12 @@ h3 .fa-briefcase {
 	min-height:200px;
 	text-align: center;
 	background-color : #08ccf7;
-	border-bottom: 35px solid #08ccf7;
+	border-bottom: 35px solid #000000;
 }
 
 .banner .wthree_stat_right {
 	margin: auto;
-    margin-top: -43px;
+    margin-top: -67px;
     width: 99%;
 }
 
