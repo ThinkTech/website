@@ -2148,6 +2148,7 @@ h3.agileits-icons-title {
     border-top: 1px solid #fff;
     padding: 0px;
     padding-top: 6px;
+    line-height: 36px;
 }
 
 .faq p span span.subscribe i { 
@@ -3631,6 +3632,7 @@ ul.contact_info li a:hover{
 }
 @media (max-width: 1024px){
 	.faq p span span.pricing,.faq p span span.subscribe {font-size: 97%}
+	.faq p span span.text{ line-height: 20px;}
 	.w3_footer_grid h2 a{
 	  font-size: 1.6em;
 	}
