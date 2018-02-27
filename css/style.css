@@ -1338,6 +1338,7 @@ a.w3ls_banner_more:hover{
     font-size: 14px;
     width: 25%;
     text-transform: uppercase;
+    font-weight: bold;
 }
 
 /*-- //stats --*/
