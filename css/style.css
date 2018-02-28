@@ -92,7 +92,7 @@ a:focus, a:hover {
     background: #08ccf7;
     border: 1px solid #11c5c5;
     border-bottom: none;
-    text-shadow: none;
+    text-shadow: 0px 1px #fff;
 }
 .navbar-default .navbar-nav > li > a {
     color: #000000;
