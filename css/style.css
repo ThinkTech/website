@@ -4265,6 +4265,7 @@ ul.contact_info li a:hover{
 	}
 	.agile_head, .wthree_stat_left h3 {
 		font-size:1.7em;
+		margin-top: 5px;
 	}
 	.banner-bottom, .news, .footer, .services, .services-bottom, .features, .wthree_stat {
 		padding: 5px 0;
