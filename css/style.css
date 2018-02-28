@@ -4270,6 +4270,9 @@ ul.contact_info li a:hover{
 	.banner-bottom, .news, .footer, .services, .services-bottom, .features, .wthree_stat {
 		padding: 5px 0;
 	}
+	.wthree_stat {
+		padding-bottom: 20px;
+	}
 	.wthree_stat_left p {
       text-align: center;
       font-size: 12px;
