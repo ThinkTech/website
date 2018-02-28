@@ -92,10 +92,12 @@ a:focus, a:hover {
     background: #08ccf7;
     border: 1px solid #11c5c5;
     border-bottom: none;
+    text-shadow: none;
 }
 .navbar-default .navbar-nav > li > a {
     color: #000000;
     font-weight: bold;
+    text-shadow: 1px 0px #000000;
 }
 .navbar-nav > li > a {
     margin: 0;
