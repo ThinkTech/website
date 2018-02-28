@@ -4152,6 +4152,7 @@ ul.contact_info li a:hover{
 @media (max-width: 480px){
 	#social-plan > p span span:last-of-type, #personal-plan > p span span:last-of-type, #corporate-plan > p span span:last-of-type, #business-plan > p span span:last-of-type {
    	    background: transparent;
+   	    box-shadow : none;
 	}
 	 .w3ls_copyright_right ul li a, .w3agile_social_icons ul li a, .title li a, .wthree_mail_social li a {
     	width: 30px;
