@@ -4267,7 +4267,7 @@ ul.contact_info li a:hover{
 		font-size:1.7em;
 	}
 	.banner-bottom, .news, .footer, .services, .services-bottom, .features, .wthree_stat {
-		padding: 1em 0;
+		padding: 5px 0;
 	}
 	.wthree_stat_left p {
       text-align: center;
