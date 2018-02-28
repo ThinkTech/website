@@ -3122,7 +3122,7 @@ h2.typoh2{
 	.faq .number {width: 35px;}
 	.rslides_tabs {margin-top: 20px;margin-bottom: -25px}
 	.w3l_banner_bottom_left .rslides_tabs li{width:31px;height:33px;margin-left:0px}
-	.banner .wthree_stat_right1 h4,.banner .wthree_stat_right1 p {font-size: 18px;}
+	.wthree_stat_right1 p,.wthree_stat_right1 h4,.banner .wthree_stat_right1 h4,.banner .wthree_stat_right1 p {font-size: 18px;}
 	.subscribe-form {
 		width: 54%;
         padding: 8px;
@@ -4113,9 +4113,6 @@ ul.contact_info li a:hover{
 	.nbs-flexisel-nav-left {
 		left: 87%;
 	}
-	.wthree_stat_right1 p {
-		font-size: 1.5em;
-	}
 }
 @media (max-width: 568px){
 	.agileits_w3layouts_sign_in ul li {
@@ -4140,9 +4137,6 @@ ul.contact_info li a:hover{
 	}
 	.nbs-flexisel-nav-left {
 		left: 85%;
-	}
-	.wthree_stat_right1 h4 {
-		font-size: 1.2em;
 	}
 	.wthree_stat_right ul li {
 		padding: 1em 1em;
