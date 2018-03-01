@@ -647,6 +647,7 @@ h3 .fa-briefcase {
     padding: 0px;
     width: 98%;
     box-shadow : none;
+    border: none;
 }
 
 .subscribe-form .terms h1 {
