@@ -1063,7 +1063,7 @@ a.w3ls_banner_more:hover{
 }
 
 #social-plan > p span span:last-of-type,#personal-plan > p span span:last-of-type,#corporate-plan > p span span:last-of-type,#business-plan > p span span:last-of-type{
-	background: #000;
+	background: transparent;
 	color: #fff;
 	border: 1px solid #d8d0d0;
 }
