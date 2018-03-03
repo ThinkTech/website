@@ -1066,6 +1066,7 @@ a.w3ls_banner_more:hover{
 	background: transparent;
 	color: #fff;
 	border: 1px solid #fff;
+	padding: 0.5em;
 }
 
 .guide a {
