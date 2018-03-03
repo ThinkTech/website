@@ -1065,7 +1065,7 @@ a.w3ls_banner_more:hover{
 #social-plan > p span span:last-of-type,#personal-plan > p span span:last-of-type,#corporate-plan > p span span:last-of-type,#business-plan > p span span:last-of-type{
 	background: #000;
 	color: #fff;
-	box-shadow : 0 4px 9px 0 rgba(0, 0, 0, 0.5), 0 2px 7px 0 rgba(0, 0, 0, 1);
+	border: 1px solid #d8d0d0;
 }
 
 .guide a {
@@ -4155,9 +4155,11 @@ ul.contact_info li a:hover{
 }
 @media (max-width: 480px){
 	#social-plan > p span span:last-of-type, #personal-plan > p span span:last-of-type, #corporate-plan > p span span:last-of-type, #business-plan > p span span:last-of-type {
-   	    background: transparent;
-   	    box-shadow : none;
-   	    margin-top: -10px;
+   	   background: transparent;
+       box-shadow: none;
+       margin-top: 5px;
+       padding-top: 5px;
+       padding-bottom: 5px;
 	}
 	 .w3ls_copyright_right ul li a, .w3agile_social_icons ul li a, .title li a, .wthree_mail_social li a {
     	width: 30px;
