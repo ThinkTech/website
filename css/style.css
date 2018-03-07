@@ -48,6 +48,18 @@ a:focus, a:hover {
     margin-left : 5px;
     margin-right : 5px;
 }
+.delay-1 {
+animation-delay: .25s;
+}
+.delay-2 {
+animation-delay: .5s;
+}
+.delay-3 {
+animation-delay: .75s;
+}
+.delay-4 {
+animation-delay: 1s;
+}
 .agileits_w3layouts_sign_in{
 	float:right;
 	margin-top: .3em;
