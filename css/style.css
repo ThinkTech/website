@@ -49,7 +49,7 @@ a:focus, a:hover {
     margin-right : 5px;
 }
 .delay-1 {
-animation-delay: .25s;
+animation-delay: .15s;
 }
 .delay-2 {
 animation-delay: .5s;
