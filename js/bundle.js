@@ -36,7 +36,7 @@ $(document).ready(function() {
 	$("body").css("opacity",1);
 	$(".w3_agile_logo h1").addClass("animated flip");
 	$(".banner h2,.banner p").addClass("animated pulse delay-1");
-	$(".banner a").addClass("animated flash delay-3");
+	$(".banner a").addClass("animated pulse delay-3");
 	$(".subscribe").click(function(event){
 	   $(".plans .pricing").hide();
 	   const form = $(".subscribe-form");
