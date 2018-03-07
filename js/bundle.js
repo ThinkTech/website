@@ -69,6 +69,11 @@ $(document).ready(function() {
  	   subscription.name = form.find("input[name=contact]").val().trim();
  	   subscription.email = form.find("input[name=email]").val().trim();
  	   subscription.password = form.find("input[name=password]").val().trim();
+ 	   const confirmation = form.find("input[name=confirmation]").val().trim();
+ 	   if(subscription.password != confirmation){
+ 		   alert("les deux mots ne sont pas identiques.");
+ 		   return false;
+ 	   }
  	   subscription.structure = form.find("input[name=structure]").val().trim();
  	   subscription.project = form.find("select[name=project]").val().trim();
  	   subscription.plan = form.find("input[name=plan]").val().trim();
