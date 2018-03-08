@@ -3631,7 +3631,7 @@ ul.contact_info li a:hover{
 		height: 60px;
 	}
 	.agile_feature_grid i {
-		line-height: 2em;
+		line-height: 2.5em;
 	}
 	.agileits_w3layouts_features_gridr {
 		padding: 0;
@@ -3838,6 +3838,7 @@ ul.contact_info li a:hover{
 	.agileinfo_about_grid_right {
 		width: 40%;
 		margin: 2em auto 0;
+		margin-bottom: 2em;
 	}
 	.w3_agileits_features_grid {
 		float: left;
