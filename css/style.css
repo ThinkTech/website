@@ -903,6 +903,8 @@ a.w3ls_banner_more:hover{
 	margin-bottom: 10px;
     padding: 5px;
 	font-size: 16px;
+	position: relative;
+    top: 1px;
 }
 
 .subscribe-form select{
