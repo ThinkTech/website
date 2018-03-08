@@ -1859,7 +1859,7 @@ button.close {
     height: 80px;
     background: #08ccf7;
     text-align: center;
-    border: 4px solid #057189;
+    border: 4px solid #000000;
 }
 .w3_agileits_features_grid:hover .agile_feature_grid{
 	background: #f62b2b;
