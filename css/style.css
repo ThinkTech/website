@@ -4229,6 +4229,8 @@ ul.contact_info li a:hover{
 	.faq.w3l_banner_bottom_left p {padding: 7px;border:none}
 	.buy-button a {
       font-size: 13px;
+	}
+	.content .buy-button a {
       left: -8px;
       position: relative;
 	}
