@@ -624,7 +624,7 @@ h3 .fa-briefcase {
 	display : inline-block;
 	margin : 0;
 	position : relative;
-	color : #000000
+	color : #000000;
 }
 
 .terms {
@@ -2418,6 +2418,13 @@ span.line {
 	border : none;
 	box-shadow: none;
 } 
+.content-process.user{
+	text-align : center;
+	height: 520px;
+}
+.content-process.user .fa{
+	font-size: 15em;
+}
 .imgcircle {
 	height:75px;
 	width:75px;
@@ -4169,6 +4176,7 @@ ul.contact_info li a:hover{
 	ul.contact_info li {font-size: 12px;}
 }
 @media (max-width: 480px){
+	.content-process.user{height: 360px;}
 	#social-plan > p span span:last-of-type, #personal-plan > p span span:last-of-type, #corporate-plan > p span span:last-of-type, #business-plan > p span span:last-of-type {
    	   background: transparent;
        box-shadow: none;
@@ -4607,6 +4615,7 @@ ul.contact_info li a:hover{
       font-size: 15px;
 	}
 	.content-process {height: 860px;}
+	.content-process.user{height: 360px;}
 	.w3_agile_logo h1 a {
 		font-size: .79em;
 	}
