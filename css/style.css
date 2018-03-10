@@ -2435,6 +2435,7 @@ span.line {
     white-space: normal;
     text-transform: uppercase;
     text-shadow: 1px 0px #000000;
+    margin: auto;
 }
 .imgcircle {
 	height:75px;
