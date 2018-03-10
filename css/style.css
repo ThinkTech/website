@@ -2420,7 +2420,8 @@ span.line {
 } 
 .content-process.user{
 	text-align : center;
-	height: 520px;
+	height: auto;
+    padding-bottom: 10px;
 }
 .content-process.user .fa{
 	font-size: 15em;
@@ -4176,7 +4177,6 @@ ul.contact_info li a:hover{
 	ul.contact_info li {font-size: 12px;}
 }
 @media (max-width: 480px){
-	.content-process.user{height: 360px;}
 	#social-plan > p span span:last-of-type, #personal-plan > p span span:last-of-type, #corporate-plan > p span span:last-of-type, #business-plan > p span span:last-of-type {
    	   background: transparent;
        box-shadow: none;
@@ -4615,7 +4615,6 @@ ul.contact_info li a:hover{
       font-size: 15px;
 	}
 	.content-process {height: 860px;}
-	.content-process.user{height: 360px;}
 	.w3_agile_logo h1 a {
 		font-size: .79em;
 	}
