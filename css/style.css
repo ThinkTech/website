@@ -2432,6 +2432,7 @@ span.line {
     font-size: 2em;
     font-family: Tahoma;
     white-space: normal;
+    text-transform: uppercase;
 }
 .imgcircle {
 	height:75px;
