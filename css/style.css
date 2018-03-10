@@ -2427,6 +2427,12 @@ span.line {
 	font-size: 15em;
 	color : #000000;
 }
+.content-process.user p{
+    text-align: center;
+    font-size: 2em;
+    font-family: Tahoma;
+    white-space: normal;
+}
 .imgcircle {
 	height:75px;
 	width:75px;
@@ -3144,6 +3150,7 @@ h2.typoh2{
 	}
 }
 @media (max-width:640px){
+	.content-process.user p{font-size: 1.1em;}
 	.wthree_stat_right1 h4 {text-shadow: none;}
 	.faq .number {width: 35px;}
 	.rslides_tabs {margin-top: 20px;margin-bottom: -25px}
