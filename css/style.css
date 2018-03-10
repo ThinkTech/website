@@ -2426,6 +2426,7 @@ span.line {
 .content-process.user .fa{
 	font-size: 15em;
 	color : #000000;
+	margin-top: 20px;
 }
 .content-process.user p{
     text-align: center;
