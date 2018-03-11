@@ -920,7 +920,7 @@ a.w3ls_banner_more:hover{
 	width: auto;
     padding: 8px;
     outline: none;
-    background: #000;
+    background: transparent;
     color: #fff;
     display: block;
     border: 1px solid #fdf6f6;
