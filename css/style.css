@@ -1089,7 +1089,7 @@ a.w3ls_banner_more:hover{
 }
 
 .guide li > a {
-    background: #fff;
+    background: transparent;
     padding: 10px;
     padding-bottom: 5px;
     white-space: nowrap;

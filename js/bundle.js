@@ -123,7 +123,27 @@ $(document).ready(function() {
 	});	
     $(".plans .pricing .close").click(function(event){
 	   $(".plans .pricing").hide();
-	});				
+	});	
+    
+    $(window).scroll(function(){
+		  const top = $(this).scrollTop();
+		  $.each($(".guide li"),function(index,element){
+			const li = $(element);
+			if(li.length){
+			 if(top >= li.offset().top-600) {
+				li.addClass("animated fadeIn");
+			 }
+			}
+		  });
+		  $.each($(".content1 h2"),function(index,element){
+				const h2 = $(element);
+				if(h2.length){
+				 if(top >= h2.offset().top-650) {
+					h2.addClass("animated zoomIn");
+				 }
+				}
+	    });
+    });
 });
 
 const app = {};
