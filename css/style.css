@@ -946,6 +946,7 @@ a.w3ls_banner_more:hover{
     position: relative;
     background: transparent;
     border: 1px solid #fafafa;
+    color: #fff;
 }
 
 .subscribe-form .terms .close {
