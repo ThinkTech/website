@@ -135,6 +135,14 @@ $(document).ready(function() {
 			 }
 			}
 		  });
+		  $.each($(".guide li img"),function(index,element){
+				const img = $(element);
+				if(img.length){
+				 if(top >= img.offset().top-600) {
+					img.addClass("animated flip");
+				 }
+				}
+		  });
 		  $.each($(".content1 h2"),function(index,element){
 				const h2 = $(element);
 				if(h2.length){
