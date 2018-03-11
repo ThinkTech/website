@@ -3128,7 +3128,7 @@ h2.typoh2{
 	.subscribe-form form {
 	  line-height: 15px;
 	}
-	.terms-agreement {font-size: 12px;margin-top: 15px;padding: 2px;}
+	.terms-agreement {font-size: 12px;margin-top:8px;padding: 2px;}
 	.subscribe-form .terms-agreement input {top: 3px;}
 	.subscribe-form h1 {
 		font-size: 22px;
@@ -3149,6 +3149,10 @@ h2.typoh2{
 		font-size: 13px;
 		border: 1px solid #dcb7b7;
 	}
+	.subscribe-form input[readonly] {
+        position: relative;
+        top: -3px;
+    }
 	.subscribe-form input[type=submit]{
 		margin-top : 15px;margin-bottom : 0px;float: right;padding-top: 4px;font-size: 13px;
 	}
