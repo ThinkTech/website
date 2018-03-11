@@ -941,10 +941,11 @@ a.w3ls_banner_more:hover{
     font-weight: bold;
     padding: 8px;
     padding-bottom: 6px;
-    background: #fff;
     border-radius: 50%;
     top: -4px;
     position: relative;
+    background: transparent;
+    border: 1px solid #fafafa;
 }
 
 .subscribe-form .terms .close {
@@ -953,6 +954,7 @@ a.w3ls_banner_more:hover{
     top: 4px;
     color: #fff;
     right: 0;
+    border : none;
 }
 
 .guide .subscribe-form a {
