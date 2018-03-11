@@ -3154,7 +3154,7 @@ h2.typoh2{
 	}
 }
 @media (max-width:640px){
-	.content-process.user p{font-size: 1.1em;}
+	.content-process.user p{font-size: 1.1em;text-shadow: none;}
 	.wthree_stat_right1 h4 {text-shadow: none;}
 	.faq .number {width: 35px;}
 	.rslides_tabs {margin-top: 20px;margin-bottom: -25px}
