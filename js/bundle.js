@@ -138,7 +138,7 @@ $(document).ready(function() {
 		  $.each($(".content1 h2"),function(index,element){
 				const h2 = $(element);
 				if(h2.length){
-				 if(top >= h2.offset().top-650) {
+				 if(top >= h2.offset().top-700) {
 					h2.addClass("animated zoomIn");
 				 }
 				}
