@@ -138,7 +138,7 @@ $(document).ready(function() {
 		  $.each($(".guide li img"),function(index,element){
 				const img = $(element);
 				if(img.length){
-				 if(top >= img.offset().top-600) {
+				 if(top >= img.offset().top-650) {
 					img.addClass("animated flip");
 				 }
 				}
