@@ -950,12 +950,12 @@ a.w3ls_banner_more:hover{
 }
 
 .subscribe-form .terms .close {
-    background: #060606;
+    background: transparent;
     border-radius: 50%;
     top: 4px;
-    color: #fff;
+    color: #000;
     right: 0;
-    border : none;
+    border: 1px solid #000000;
 }
 
 .guide .subscribe-form a {
