@@ -3159,7 +3159,7 @@ h2.typoh2{
         top: -3px;
     }
 	.subscribe-form input[type=submit]{
-		height: 27px;margin-top : 10px;margin-bottom : 0px;float: right;padding-top: 4px;font-size: 13px;
+		height: 26px;margin-top : 10px;margin-bottom : 0px;float: right;padding-top: 4px;font-size: 13px;
 	}
 }
 @media (max-width:640px){
