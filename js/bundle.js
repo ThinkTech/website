@@ -127,6 +127,14 @@ $(document).ready(function() {
     
     $(window).scroll(function(){
 		  const top = $(this).scrollTop();
+		  $.each($(".w3l_banner_bottom_left h3"),function(index,element){
+				const h3 = $(element);
+				if(h3.length){
+				 if(top >= h3.offset().top-600) {
+					h3.addClass("animated fadeIn");
+				 }
+				}
+		  });
 		  $.each($(".guide li"),function(index,element){
 			const li = $(element);
 			if(li.length){
