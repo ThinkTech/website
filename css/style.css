@@ -929,6 +929,7 @@ a.w3ls_banner_more:hover{
     font-size: 18px;
     font-family: Tahoma;
     margin-top: 6px;
+    height: auto;
 }
 
 .subscribe-form input[type=submit]:hover {
