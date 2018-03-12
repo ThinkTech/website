@@ -3133,7 +3133,7 @@ h2.typoh2{
 	.subscribe-form form {
 	  line-height: 15px;
 	}
-	.terms-agreement {font-size: 12px;margin-top:6px;padding: 2px;text-align: left}
+	.terms-agreement {font-size: 12px;margin-top:6px;padding: 2px;text-align: left;width: 100%;}
 	.subscribe-form .terms-agreement input {top: 3px;}
 	.subscribe-form h1 {
 		font-size: 22px;
