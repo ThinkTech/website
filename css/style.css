@@ -2327,14 +2327,13 @@ p.text {
     margin: 1.5em 0 0 0;
 }
 .buy-button a{
-    background: #000;
     padding: .5em 2em;
-	border: solid 1px #333;
-    color: #ffe;
+    border: solid 1px #333;
+    color: #000;
     border-radius: 5px;
-	white-space: nowrap;
-	cursor : pointer;
-	font-weight: bold;
+    white-space: nowrap;
+    cursor: pointer;
+    font-weight: bold;
 }
 .buy-button a:hover{
 	background: none;
