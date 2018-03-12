@@ -2220,8 +2220,10 @@ h3.agileits-icons-title {
 	font-size: 17px;
     font-weight: bold;
     padding: 8px;
-    background: #fff;
     border-radius: 50%;
+    background: transparent;
+    border: 1px solid #fafafa;
+    color: #fff;
 }
 
 .portal.w3l_banner_bottom_left p {
