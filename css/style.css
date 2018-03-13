@@ -1098,7 +1098,7 @@ a.w3ls_banner_more:hover{
 }
 
 .guide li > a {
-    background: transparent;
+    background: #fff;
     padding: 10px;
     padding-bottom: 5px;
     white-space: nowrap;
@@ -2089,7 +2089,7 @@ h3.agileits-icons-title {
 }
 
 .faq ol {
-    background: #fff;
+    background: #ffe;
     padding-top: 15px;
     padding-bottom: 15px;
 	border: 1px solid #d5d6de;
