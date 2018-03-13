@@ -127,7 +127,7 @@ $(document).ready(function() {
     
     $(window).scroll(function(){
 		  const top = $(this).scrollTop();
-		  $.each($(".w3l_banner_bottom_left h3,.wthree_stat_left h3"),function(index,element){
+		  $.each($(".w3l_banner_bottom_left h3,.wthree_stat_left h3,.wthree_stat_left p"),function(index,element){
 				const h3 = $(element);
 				if(h3.length){
 				 if(top >= h3.offset().top-650) {
