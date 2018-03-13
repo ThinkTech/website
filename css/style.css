@@ -1009,6 +1009,7 @@ a.w3ls_banner_more:hover{
 	list-style-type: none;
 	padding-top: 45px;
     padding-bottom: 45px;
+    background: #ffe;
 }
 
 .faq li {
@@ -2082,10 +2083,6 @@ h3.agileits-icons-title {
     display: block;
     text-align: center;
     word-wrap: break-word;
-}
-
-.guide ol {
-    background: #ffe;
 }
 
 .faq {
