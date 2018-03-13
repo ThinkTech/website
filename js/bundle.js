@@ -151,7 +151,7 @@ $(document).ready(function() {
 				 }
 				}
 		  });
-		  $.each($(".content1 h2"),function(index,element){
+		  $.each($(".content1 h2,.content-process.user p"),function(index,element){
 				const h2 = $(element);
 				if(h2.length){
 				 if(top >= h2.offset().top-700) {
