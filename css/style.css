@@ -2084,12 +2084,16 @@ h3.agileits-icons-title {
     word-wrap: break-word;
 }
 
+.guide ol {
+    background: #ffe;
+}
+
 .faq {
 	padding-bottom : 10px;
 }
 
 .faq ol {
-    background: #ffe;
+    background: #fff;
     padding-top: 15px;
     padding-bottom: 15px;
 	border: 1px solid #d5d6de;
