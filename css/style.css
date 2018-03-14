@@ -4476,6 +4476,15 @@ ul.contact_info li a:hover{
 		padding-left: 1em;
         padding-right: 1em;
 	}
+	.faq ol {
+    padding-left: 10px;
+    white-space: nowrap;
+    box-shadow: none;
+    border: none;
+    margin-top: -10px;
+    padding-bottom: 0;
+    background: transparent;
+  }
 }
 @media (max-width: 414px){
 	.agileits_w3layouts_sign_in ul li {
@@ -4582,14 +4591,6 @@ ul.contact_info li a:hover{
 	.modal-body p {
 		padding: 1em 1em 0em;
 	}
-	.faq ol {
-    padding-left: 10px;
-    white-space: nowrap;
-    box-shadow: none;
-    border: none;
-    margin-top: -10px;
-    padding-bottom: 0;
-  }
 }
 @media (max-width: 384px){
 	.agileits_w3layouts_sign_in ul li {
