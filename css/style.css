@@ -4223,6 +4223,7 @@ ul.contact_info li a:hover{
        box-shadow : none;
        border: none;
        margin-top: 5px;
+       background: transparent;
      }
      .faq li {
    	 margin-left: -16px;
