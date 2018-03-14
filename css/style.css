@@ -153,12 +153,13 @@ nav.navbar.navbar-default {
     background-color: #f62b2b;
 }
 .rslides {
-  position: relative;
-  list-style: none;
-  overflow: hidden;
-  width: 104.4%;
-  padding: 0;
-  margin: 0;
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+    width: 104.2%;
+    padding: 0;
+    margin: 0;
+    margin-left: -5px;
 }
 .rslides li {
   -webkit-backface-visibility: hidden;
@@ -457,7 +458,7 @@ h3 .fa-briefcase {
 	  margin-top : 10px;
 	}
 	.rslides{
-		width : 105%;
+		width : 104%;
 	}
 }
  
