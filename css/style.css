@@ -4216,14 +4216,13 @@ ul.contact_info li a:hover{
     	height: 30px;
      }
 	 .faq.guide ol {
-       padding-top: 0px;
-       padding-bottom: 0px;
+       padding-top: 10px;
+       padding-bottom: 10px;
        padding-left: 0;
        padding-right: 0;
        box-shadow : none;
        border: none;
        margin-top: 5px;
-       background: transparent;
      }
      .faq li {
    	 margin-left: -16px;
