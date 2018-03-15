@@ -3697,6 +3697,7 @@ ul.contact_info li a:hover{
 	}
 }
 @media (max-width: 1024px){
+	.content1 h2 {font-size: 2em;}
 	.faq p span span.pricing,.faq p span span.subscribe {font-size: 97%}
 	.faq p span span.text{ line-height: 30px;}
 	.w3_footer_grid h2 a{
