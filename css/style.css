@@ -2904,6 +2904,9 @@ p.footer {
      padding-top: 1.6em;
      letter-spacing: -3px;
     }
+    .w3_two_grid_right p.w3layouts_dummy_para {
+     margin: -2em 0 0;
+    }
 	.subscribe-form {
 		width: 90%;
 		padding: 8px;
