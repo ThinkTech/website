@@ -2786,9 +2786,15 @@ span.line {
 	.shipment {
     margin-left: 17%;
 }
+ .content-process {
+    height: 930px;
+}
 }
 
 @media (max-width: 320px){
+	 .content-process {
+    height: 950px;
+  }
 	.content1 h2 {
     font-size: 16px;
 }
