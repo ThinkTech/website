@@ -3952,7 +3952,8 @@ ul.contact_info li a:hover{
      }
      .terms {
        padding-right: 16px;
-       margin-left: -5px;
+       margin: 0;
+       margin-left: -7px;
        width: 100%;
      }
      .subscribe-form .terms h1 {
