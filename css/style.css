@@ -3952,8 +3952,8 @@ ul.contact_info li a:hover{
      }
      .terms {
        padding-right: 16px;
-       width: 97%;
        margin-left: -5px;
+       width: 100%;
      }
      .subscribe-form .terms h1 {
       	text-align : center;
@@ -4074,9 +4074,6 @@ ul.contact_info li a:hover{
 }
 @media (max-width: 640px){
 	.navbar-default .navbar-nav > li > a {text-shadow: none;}
-	.terms {
-       width: 96%;
-     }
 	.banner .wthree_stat_right {
       margin-top: -10px;
      }
@@ -4233,7 +4230,6 @@ ul.contact_info li a:hover{
     width: 100%;
     }
     .faq p span span.pricing i { display: none;}
-	.terms {width : 99%;}
 	.plans {width: 60%;}
 	.plans .close { font-size: 15px;padding: 5px;}
 	.faq p img {
