@@ -854,9 +854,11 @@ a.w3ls_banner_more:hover{
     display: none;
     padding: 21px;
     line-height: 2.4em;
-    color: #000;
+    background: transparent;
+    color: #fff;
     font-size: 17px;
-    border: 1px solid #dcb7b7;
+    border: none;
+    box-shadow: none;
 }
 
 .subscribe-form p span.close { 
