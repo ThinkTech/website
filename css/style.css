@@ -2904,9 +2904,6 @@ p.footer {
      padding-top: 1.6em;
      letter-spacing: -3px;
     }
-    .w3_two_grid_right p.w3layouts_dummy_para {
-     margin: -2em 0 0;
-    }
 	.subscribe-form {
 		width: 90%;
 		padding: 8px;
@@ -3763,6 +3760,9 @@ ul.contact_info li a:hover{
 	.faq p span.full {letter-spacing: 0px;}
 	.wthree_stat_left p {
       margin-bottom: 15px;
+    }
+    .w3_two_grid_right p.w3layouts_dummy_para {
+     margin: -2em 0 0;
     }
 	.plans {width : 30%}
 	.navbar-nav > li > a {
