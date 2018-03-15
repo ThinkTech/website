@@ -252,6 +252,7 @@ input[type="submit"],input[type="reset"],.w3l_team_grd,.agileits_w3layouts_featu
 .banner a {
 	position: absolute;
     margin-top: 25px;
+    z-index : 1;
     width: 160px;
     background: #ffffff;
     padding: 10px;
