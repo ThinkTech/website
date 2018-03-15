@@ -2697,7 +2697,7 @@ span.line {
 		margin-left: 10px;
 	}
      .content-process {
-    height: 900px;
+    height: 950px;
     margin-bottom: 10px;
     margin-top: -10px;
 }
@@ -4646,7 +4646,6 @@ ul.contact_info li a:hover{
       position: relative;
       font-size: 15px;
 	}
-	.content-process {height: 860px;}
 	.w3_agile_logo h1 a {
 		font-size: .79em;
 	}
