@@ -37,7 +37,7 @@ $(document).ready(function() {
 	$(".w3_agile_logo h1").addClass("animated flip");
 	$(".banner h2,.banner p").addClass("animated pulse delay-1");
 	$(".banner a").addClass("animated pulse delay-3");
-	$(".wthree_banner_grids").addClass("animated zoomIn delay-1");
+	$(".wthree_banner_grids").addClass("animated flipInX delay-1");
 	$(".w3_agileits_nav a").addClass("animated fadeIn delay-1");
 	$(".w3ls_copyright_right ul li").addClass("animated fadeIn delay-3");
 	$(".subscribe").click(function(event){
