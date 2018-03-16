@@ -144,11 +144,11 @@ $(document).ready(function() {
 			 }
 			}
 		  });
-		  $.each($(".guide li img"),function(index,element){
+		  $.each($(".guide li img,.portal img"),function(index,element){
 				const img = $(element);
 				if(img.length){
 				 if(top >= img.offset().top-650) {
-					img.addClass("animated fadeIn");
+					img.addClass("animated bounce");
 				 }
 				}
 		  });
