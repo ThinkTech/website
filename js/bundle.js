@@ -148,7 +148,7 @@ $(document).ready(function() {
 				const img = $(element);
 				if(img.length){
 				 if(top >= img.offset().top-650) {
-					img.addClass("animated bounce");
+					img.addClass("animated fadeIn");
 				 }
 				}
 		  });
