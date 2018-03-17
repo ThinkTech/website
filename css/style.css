@@ -684,6 +684,7 @@ h3 .fa-briefcase {
 	font-size: 4em;
     color: #000000;
     margin-bottom: 10px;
+    text-shadow: 1px -2px #af9682;
 }
 .wthree_banner_grid h4{
 	text-transform: capitalize;
