@@ -23,7 +23,7 @@ a:focus, a:hover {
 	font-size:1.9em;
 	color:#000000;
 	text-decoration:none;
-	text-shadow: 1px -3px #000000;
+	text-shadow: 1px 0px #000000;
 	font-weight: bold;
 	text-transform: uppercase;
 	font-family : Tahoma;
@@ -1385,7 +1385,7 @@ a.w3ls_banner_more:hover{
 	font-size: 1.9em;
     color: #000000;
     text-decoration: none;
-	text-shadow: 1px -3px #000000;
+	text-shadow: 1px 0px #000000;
 	font-weight: bold;
 	font-family : Tahoma;
 	text-transform: uppercase;
