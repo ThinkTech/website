@@ -2924,9 +2924,6 @@ p.footer {
 	h3.icon-subheading {
 		font-size: 22px;
 	}
-	.agileits_w3layouts_contact_gridr label {
-        font-size: 13px;
-	}
 }
 @media (max-width:768px){
 	h3.agileits-icons-title {
@@ -3766,6 +3763,9 @@ ul.contact_info li a:hover{
 	.wthree_stat_left p {
       margin-bottom: 15px;
     }
+    .agileits_w3layouts_contact_gridr label {
+        font-size: 13px;
+	}
     .w3_two_grid_right p.w3layouts_dummy_para {
      margin: -2em 0 0;
     }
