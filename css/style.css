@@ -113,7 +113,7 @@ animation-delay: 1s;
 .navbar-default .navbar-nav > li > a {
     color: #000000;
     font-weight: bold;
-    text-shadow: 1px -2px #af9682;
+    text-shadow: 1px 0px #000000;
 }
 .navbar-nav > li > a {
     margin: 0;
