@@ -249,7 +249,7 @@ input[type="submit"],input[type="reset"],.w3l_team_grd,.agileits_w3layouts_featu
     -o-transition: 0.5s ease-in;
     transition:0.5s ease-in;
 }
-.banner a {
+.banner a, .banner a:focus {
 	position: absolute;
     margin-top: 25px;
     z-index : 1;
