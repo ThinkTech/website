@@ -4250,7 +4250,9 @@ ul.contact_info li a:hover{
        margin-top: 5px;
      }
      .faq li {
-   	 margin-left: -16px;
+   	   margin-left: auto;
+       margin-right: auto;
+       width: 100%;
 	}
 	.guide li {
     margin-left: 0px;
