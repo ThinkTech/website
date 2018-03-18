@@ -264,6 +264,7 @@ input[type="submit"],input[type="reset"],.w3l_team_grd,.agileits_w3layouts_featu
     border: 1px solid #000000;
     font-weight: bold;
     margin-left: -5.1%;
+    text-shadow: 1px 0px #af9682;
 }
 
 .banner a:hover {
