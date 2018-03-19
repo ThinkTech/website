@@ -96,6 +96,12 @@ animation-delay: 1s;
   background: #fff;
 }
 
+.guide .wave.-two {
+  animation: drift 12000ms infinite linear;
+  opacity: 0.04;
+  background: #fff;
+}
+
 .box:after {
   content: '';
   display: block;
