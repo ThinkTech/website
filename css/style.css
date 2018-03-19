@@ -490,7 +490,7 @@ h3 .fa-briefcase {
       margin-left: -6.1%;
 	}
 	.banner1 h3 {padding-top: 1.5em;}
-	.w3_footer_grid h2 a,.w3_agile_logo h1 a, .w3_agile_logo h1 a:visited {text-shadow: 1px -2px #af9682;}
+	.w3_footer_grid h2 a,.w3_agile_logo h1 a, .w3_agile_logo h1 a:visited {text-shadow: 1px -2px #000000}
 }
 
 @media(max-width:870px){
