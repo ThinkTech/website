@@ -511,6 +511,7 @@ h3 .fa-briefcase {
 	.rslides{
 		width : 104%;
 	}
+	.wave {opacity: .1;}
 }
  
 @media(max-width:480px ){
