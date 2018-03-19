@@ -565,11 +565,10 @@
 	jQuery(document).ready(function($) {
 		$(".scroll").click(function(event){		
 			event.preventDefault();
-			$(".guide p").hide();
 			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
-			$(this.hash+" > a").click();
 		});
 		$(".faq p").hide();
+		$(".guide p").show();
 		$(".faq li a").click(function(event){
 		   $(this).next().toggle();
 		});
