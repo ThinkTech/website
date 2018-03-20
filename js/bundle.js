@@ -34,7 +34,6 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
 
 $(document).ready(function() {
 	$("body").css("opacity",1);
-	$(".w3_agile_logo h1").addClass("animated flip");
 	$(".banner h2,.banner p").addClass("animated pulse delay-1");
 	$(".banner a").addClass("animated pulse delay-3");
 	$(".wthree_banner_grids").addClass("animated fadeIn");
