@@ -595,6 +595,7 @@ h3 .fa-briefcase {
 }
 /*-- //header --*/
 /*-- banner --*/
+
 .banner{
 	min-height:700px;
 	position: relative;
@@ -602,6 +603,7 @@ h3 .fa-briefcase {
 	padding: 4em 0 0;
 	background-color : #08ccf7;
 	border-bottom: 35px solid #000000;
+	overflow : hidden;
 }
 .banner1{
 	min-height:200px;
