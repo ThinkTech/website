@@ -33,6 +33,7 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
 
 
 $(document).ready(function() {
+	$("html,body").css("overflow","hidden");
 	$("body").css("opacity",1);
 	$(".w3_agile_logo h1").addClass("animated flip");
 	$(".banner h2,.banner p").addClass("animated pulse delay-1");
@@ -40,6 +41,7 @@ $(document).ready(function() {
 	$(".wthree_banner_grids").addClass("animated fadeIn");
 	$(".w3_agileits_nav a").addClass("animated fadeIn delay-1");
 	$(".w3ls_copyright_right ul li").addClass("animated fadeIn delay-3");
+	$("html,body").css("overflow","auto");
 	$(".subscribe").click(function(event){
 	   $(".plans .pricing").hide();
 	   const form = $(".subscribe-form");
