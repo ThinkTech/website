@@ -5,6 +5,7 @@ html, body{
 }
 body{
 	opacity : 0;
+	overflow: hidden;
 }
 a:focus, a:hover {
     color: #36cff9;
