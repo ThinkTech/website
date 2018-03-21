@@ -2758,6 +2758,7 @@ span.line {
 	white-space : normal;
 	font-size: 11px;
 	margin-left: 1px;
+	padding-right: 15px;
 }
 	.content3 p {
 		margin-left: 10px;
