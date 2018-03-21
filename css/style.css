@@ -2969,6 +2969,10 @@ p.footer {
      padding-top: 1.6em;
      letter-spacing: -3px;
     }
+    .banner a:hover {
+     background: #fff;
+     color: #000;
+    }
 	.subscribe-form {
 		width: 90%;
 		padding: 8px;
