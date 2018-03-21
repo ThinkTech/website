@@ -37,7 +37,6 @@ $(document).ready(function() {
 	$(".banner h2,.banner p").addClass("animated pulse delay-1");
 	$(".banner a").addClass("animated pulse delay-3");
 	$(".wthree_banner_grids").addClass("animated fadeIn");
-	$(".w3ls_copyright_right ul li").addClass("animated fadeIn delay-3");
 	$(".subscribe").click(function(event){
 	   $(".plans .pricing").hide();
 	   const form = $(".subscribe-form");
