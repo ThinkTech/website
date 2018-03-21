@@ -2707,7 +2707,6 @@ span.line {
 @media (max-width: 480px){
 	.w3_agile_logo h1 a span,.w3_footer_grid h2 a span {border: 7px solid;margin-right: 1px;}
 	.terms-agreement {margin-left : 0%;font-size: 12px;}
-	.wthree_stat_left h3:after { top: 35px;}
     .w3l_banner_bottom_left p {
 		font-size: 13px;
 		box-shadow: none;
