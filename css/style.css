@@ -2711,6 +2711,10 @@ span.line {
 		font-size: 13px;
 		box-shadow: none;
 	}
+	.content-process.user img{
+	   width : 128px;
+	   height : 128px;
+    }
 	.portal.w3l_banner_bottom_left p {
         width: 100%;
         margin-left: auto;
