@@ -1470,8 +1470,8 @@ a.w3ls_banner_more:hover{
     font-weight: bold;
 }
 .w3_footer_grid p a{
-	color:#f62b2b;
-	text-decoration:underline;
+	color: #000000;
+    text-decoration: none;
 }
 .w3_footer_grid p a:hover{
 	color:#999;
