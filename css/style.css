@@ -660,6 +660,7 @@ h3 .fa-briefcase {
     padding-bottom: 13px;
     font-weight: bold;
 	font-family : Tahoma;
+	text-shadow: 1px 2px #fff;
 }
 .banner h2 span{
 	color:#fff;
