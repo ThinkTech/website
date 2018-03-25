@@ -2510,6 +2510,9 @@ span.line {
 	margin-left: auto;
     margin-right: auto;
 }
+.thumbs{
+	margin-top: 0px;
+}
 .content-process.user p{
     text-align: center;
     font-size: 2.2em;
