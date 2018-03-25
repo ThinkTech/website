@@ -2505,10 +2505,10 @@ span.line {
 	height: auto;
     padding-bottom: 15px;
 }
-.content-process.user img{
-	font-size: 15em;
-	color : #000000;
+.content-process.user img,, .thumbs{
 	margin-top: 20px;
+	margin-left: auto;
+    margin-right: auto;
 }
 .content-process.user p{
     text-align: center;
@@ -2714,7 +2714,7 @@ span.line {
 		font-size: 13px;
 		box-shadow: none;
 	}
-	.content-process.user img{
+	.content-process.user img, .thumbs{
 	   width : 128px;
 	   height : 128px;
     }
