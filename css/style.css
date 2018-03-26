@@ -4303,8 +4303,7 @@ ul.contact_info li a:hover{
 	.w3ls_copyright_left,.w3ls_copyright_right {
 		float: none;
 		text-align: center;
-		width: 96%;
-		margin-right: -70px;
+		margin-right: -60px;
 	}
 	ul.contact_info li {font-size: 12px;}
 }
