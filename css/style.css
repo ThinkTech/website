@@ -609,6 +609,19 @@ h3 .fa-briefcase {
 	border-bottom: 35px solid #000000;
 	overflow : hidden;
 }
+.banner:before{
+	content: "";
+    position: absolute;
+    top: -135px;
+    opacity: 0.04;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 512px;
+    height: 100%;
+    background-image: url(../images/infinite.png);
+}
 .banner1{
 	min-height:200px;
 	text-align: center;
@@ -3792,6 +3805,14 @@ ul.contact_info li a:hover{
 	}
 }
 @media (max-width: 1024px){
+	.banner:before {
+      top: -110px;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 512px;
+      width: 512px;
+    }
 	.content1 h2 {font-size: 2em;}
 	.faq p span span.pricing,.faq p span span.subscribe {font-size: 97%}
 	.faq p span span.text{ line-height: 30px;}
@@ -3843,6 +3864,14 @@ ul.contact_info li a:hover{
 	}
 }
 @media (max-width: 991px){
+	.banner:before {
+      top: -110px;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 512px;
+      width: 512px;
+    }
 	.faq p span span.text{ line-height: 20px;letter-spacing: -0.9px;}
 	.faq p span.full {letter-spacing: 0px;}
 	.wthree_stat_left p {
@@ -4034,6 +4063,14 @@ ul.contact_info li a:hover{
 	}
 }
 @media (max-width: 768px){
+	.banner:before {
+      top: -135px;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 512px;
+      width: 512px;
+    }
 	.w3_agileits_news_grid_pos {
 		bottom: -9%;
 	}
@@ -4180,6 +4217,14 @@ ul.contact_info li a:hover{
 	}
 }
 @media (max-width: 640px){
+	.banner:before {
+     top: -135px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 512px;
+    width: 512px;
+    }
 	.navbar-default .navbar-nav > li > a {text-shadow: none;}
 	.banner .wthree_stat_right {
       margin-top: -10px;
@@ -4309,6 +4354,12 @@ ul.contact_info li a:hover{
 	ul.contact_info li {font-size: 12px;}
 }
 @media (max-width: 480px){
+	.banner:before {
+     top: -170px;
+     left: 0;
+     right: 0;
+     width: 107%;
+    }
 	#social-plan > p span span:last-of-type, #personal-plan > p span span:last-of-type, #corporate-plan > p span span:last-of-type, #business-plan > p span span:last-of-type {
    	   background: transparent;
        box-shadow: none;
@@ -4740,6 +4791,12 @@ ul.contact_info li a:hover{
 	}
 }
 @media (max-width: 375px){
+	.banner:before {
+    top: -139px;
+    left: -76px;
+    right: 0;
+    width: 130%;
+   }
 	.guide li > a {
       width: 70%;
       margin: auto;
@@ -4805,6 +4862,14 @@ ul.contact_info li a:hover{
 	}
 }
 @media (max-width: 320px){
+	.banner:before {
+     top: -160px;
+     left: -100px;
+     right: 0;
+     margin-left: auto;
+     margin-right: auto;
+     width: 143%;
+    }
 	.subscribe-form p span.close {
       margin-top: 20px;
     }
