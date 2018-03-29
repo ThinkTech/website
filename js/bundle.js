@@ -42,11 +42,18 @@ $(document).ready(function() {
 	   form.find("form").show();
 	   form.find("> p").hide();
 	   const plan = $(this).data("plan");
-	   $("input[name=plan]").val("plan "+plan);
+	   $("input[name=plan]",form).val("plan "+plan);
 	   if(plan == "personal"){
-	      $("input[name=structure]").removeAttr("required").hide().prev().hide();
+	      $("input[name=structure]",form).removeAttr("required").hide().prev().hide();
 	   }else{
-	      $("input[name=structure]").attr("required","true").show().prev().show();
+	      $("input[name=structure]",form).attr("required","true").show().prev().show();
+	   }
+	   const select = $("select[name=project]",form);
+	   $("option:first",select).prop('selected', true);
+	   if(plan == "custom"){
+		  $("option:last",select).show().prev().show();
+	   }else{
+		   $("option:last",select).hide().prev().hide();
 	   }
 	   form.removeClass().addClass("subscribe-form "+plan).show();
 	   $('html,body').animate({scrollTop:form.offset().top-20},1000);
