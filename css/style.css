@@ -89,11 +89,11 @@ animation-delay: 1s;
 }
 
 .wave.-three {
-  animation: drift 55000ms infinite linear;
+  animation: drift 45000ms infinite linear;
 }
 
 .wave.-two {
-  animation: drift 65000ms infinite linear;
+  animation: drift 55000ms infinite linear;
   opacity: .1;
   background: #fff;
 }
