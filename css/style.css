@@ -1165,12 +1165,16 @@ a.w3ls_banner_more:hover{
 	background : #7ac143;
 }
 
-#social-plan > p span,#personal-plan > p span,#corporate-plan > p span,#business-plan > p span {
+#custom-plan > p,.custom,#custom-plan .number {
+	background : #f3ad2e;
+}
+
+#social-plan > p span,#custom-plan > p span,#personal-plan > p span,#corporate-plan > p span,#business-plan > p span {
 	background : transparent;
 	color: #fff;
 }
 
-#social-plan > p span span:last-of-type,#personal-plan > p span span:last-of-type,#corporate-plan > p span span:last-of-type,#business-plan > p span span:last-of-type{
+#social-plan > p span span:last-of-type,#custom-plan > p span span:last-of-type,#personal-plan > p span span:last-of-type,#corporate-plan > p span span:last-of-type,#business-plan > p span span:last-of-type{
 	background: transparent;
 	color: #fff;
 	border: 1px solid #fff;
