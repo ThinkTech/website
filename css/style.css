@@ -897,7 +897,7 @@ a.w3ls_banner_more:hover{
 	text-transform:capitalize;
 	padding-bottom:.2em;
 	position:relative;
-	text-shadow: 1px -2px #af9682;
+	text-shadow: 1px -2px #000000;
 	font-weight: bold;
 	font-family : Tahoma;
 }
@@ -3851,7 +3851,7 @@ ul.contact_info li a:hover{
 		font-size: 2.8em;
 	}
 	.w3l_banner_bottom_left h3, .agile_head, .wthree_stat_left h3 {
-       text-shadow: 1px 0px #af9682;
+       text-shadow: 1px 0px #000000;
     }
 	.w3_two_grid_right h3 {
 		font-size: 1.5em;
