@@ -139,14 +139,6 @@ $(document).ready(function() {
 				 }
 				}
 		  });
-		  $.each($(".guide li"),function(index,element){
-			const li = $(element);
-			if(li.length){
-			 if(top >= li.offset().top-600) {
-				li.addClass("animated fadeIn");
-			 }
-			}
-		  });
 		  $.each($(".guide li img,.portal img"),function(index,element){
 				const img = $(element);
 				if(img.length){
