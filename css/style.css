@@ -4888,8 +4888,8 @@ ul.contact_info li a:hover{
 }
 @media (max-width: 320px){
 	.banner:before {
-     top: -160px;
-     left: -100px;
+     top: -170px;
+     left: -92px
      right: 0;
      margin-left: auto;
      margin-right: auto;
