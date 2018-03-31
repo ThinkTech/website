@@ -4818,7 +4818,7 @@ ul.contact_info li a:hover{
 @media (max-width: 375px){
 	.banner:before {
     top: -165px;
-    left: -76px;
+    left: -75px;
     right: 0;
     width: 130%;
    }
@@ -4889,7 +4889,7 @@ ul.contact_info li a:hover{
 @media (max-width: 320px){
 	.banner:before {
      top: -170px;
-     left: -92px
+     left: -96px;
      right: 0;
      margin-left: auto;
      margin-right: auto;
