@@ -3835,6 +3835,9 @@ ul.contact_info li a:hover{
       width: 512px;
       width: 512px;
     }
+    .banner:after{
+	  width: auto;
+	}
 	.content1 h2 {font-size: 2em;}
 	.faq p span span.pricing,.faq p span span.subscribe {font-size: 97%}
 	.faq p span span.text{ line-height: 30px;}
