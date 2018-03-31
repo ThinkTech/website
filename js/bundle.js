@@ -51,9 +51,9 @@ $(document).ready(function() {
 	   const select = $("select[name=project]",form);
 	   $("option:first",select).prop('selected', true);
 	   if(plan == "custom"){
-		  $("option:last",select).show().prev().show();
+		  $("option:last",select).show().removeAttr('disabled').prev().show().removeAttr('disabled');
 	   }else{
-		   $("option:last",select).hide().prev().hide();
+		   $("option:last",select).hide().attr('disabled','disabled').prev().hide().attr('disabled','disabled');
 	   }
 	   form.removeClass().addClass("subscribe-form "+plan).show();
 	   $('html,body').animate({scrollTop:form.offset().top-20},1000);
