@@ -627,7 +627,7 @@ h3 .fa-briefcase {
 .banner:after{
 	content: "";
     position: absolute;
-    top: -70px;
+    top: -77px;
     opacity: 0.05;
     left: 0;
     right: 0;
