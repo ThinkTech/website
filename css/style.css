@@ -322,11 +322,6 @@ input[type="submit"],input[type="reset"],.w3l_team_grd,.agileits_w3layouts_featu
     text-shadow: 1px 0px #af9682;
 }
 
-.banner a:hover {
-	background : #000000;
-	color : #fff;
-}
-
 h3 .fa-briefcase {
 	vertical-align: bottom;
 }
