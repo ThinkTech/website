@@ -14,7 +14,7 @@ a:focus, a:hover {
     filter: alpha(opacity=90);
     opacity: 0.9;
 }
-/*-- header --*/
+/*-- --*/
 .w3_agile_logo{
 	float:left;
 	margin-bottom: 10px;
@@ -593,8 +593,7 @@ h3 .fa-briefcase {
 
 .header{
      overflow : hidden;
-     background-image: url(../images/pexels-photo-830891.jpeg);
-    background-repeat : no-repeat;
+     
 }
 
 .banner{
