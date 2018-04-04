@@ -595,9 +595,16 @@ h3 .fa-briefcase {
      overflow : hidden;
      
 }
+
+.header .container{
+   position: relative;
+    z-index : 2;
+}
+
 .header:after{
   content: "";
     position: absolute;
+    z-index : 1;
     top: 0px;
     opacity: 0.08;
     left: 0;
