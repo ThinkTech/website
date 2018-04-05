@@ -631,7 +631,7 @@ h3 .fa-briefcase {
 	content: "";
     position: absolute;
     top: -135px;
-    opacity: 0.09;
+    opacity: 0.3;
     left: 0;
     right: 0;
     margin-left: auto;
@@ -646,7 +646,7 @@ h3 .fa-briefcase {
 	content: "";
     position: absolute;
     top: -77px;
-    opacity: 0.08;
+    opacity: 0.2;
     left: 0;
     right: 0;
     margin-left: auto;
