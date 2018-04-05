@@ -27,7 +27,7 @@ a:focus, a:hover {
 	text-shadow: 0px -2px #000000;
 	font-weight: bold;
 	text-transform: uppercase;
-	font-family : 'Arial Black';
+	font-family : 'Arial Black',Tahoma;
 	letter-spacing: -5.5px;
 }
 .w3_agile_logo h1 a span {
