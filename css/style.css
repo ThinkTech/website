@@ -175,6 +175,7 @@ animation-delay: 1s;
     padding: 2em;
     line-height: 1em;
     text-transform: uppercase;
+    font-size: 98%;
 }
 nav.navbar.navbar-default {
     background: none;
