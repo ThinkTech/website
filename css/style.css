@@ -160,7 +160,7 @@ animation-delay: 1s;
 }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
     color: #fff;
-    background: #0abfe6;
+    background: #08ccf7;
     border: none;
     border-bottom: 1px solid #08ccf7;
 }
