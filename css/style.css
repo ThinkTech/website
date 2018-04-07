@@ -159,9 +159,9 @@ animation-delay: 1s;
     margin-right: 0;
 }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-    color:#fff;
-    background: #08ccf7;
-    border: 1px solid #11c5c5;
+    color: #000;
+    background: #fff;
+    border: none;
     border-bottom: none;
 }
 .navbar-default .navbar-nav > li > a {
@@ -4197,6 +4197,7 @@ ul.contact_info li a:hover{
 	}
 	.navbar-nav {
 		margin: 0;
+		margin-top: 8px;
 	}
 	.navbar-nav > li > a {
 		padding: 1.2em 0;
