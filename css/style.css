@@ -2265,6 +2265,7 @@ h3.agileits-icons-title {
 	width : 79%;
 	letter-spacing: 1.5px;
 	font-weight : bold;
+	font-family: Exo;
 }
 
 .faq p span span.subscribe {
@@ -2282,6 +2283,7 @@ h3.agileits-icons-title {
 	cursor : pointer;
 	white-space: nowrap;
 	font-weight : bold;
+	font-family: Exo;
 }
 
 .faq p span span.pricing i { 
