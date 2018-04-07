@@ -94,7 +94,7 @@ animation-delay: 1s;
 
 .wave.-two {
   animation: drift 95000ms infinite linear;
-  opacity: .1;
+  opacity: .05;
   background: #fff;
 }
 
