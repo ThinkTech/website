@@ -1555,6 +1555,7 @@ a.w3ls_banner_more:hover{
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: bold;
+    font-family: Exo;
 }
 .w3_footer_grid p span{
 	display:block;
