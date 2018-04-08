@@ -1339,6 +1339,9 @@ a.w3ls_banner_more:hover{
 .agileits_w3layouts_news_grids,.w3layouts_team_grids,.w3_agile_portfolio_grids,.agileits_w3layouts_contact_grids{
     margin: 1em 0 0;
 }
+.agileits_w3layouts_contact_gridl{
+  background: #f7f9fc;
+}
 .agileits_w3layouts_news_grid p{
 	line-height:2em;
 	color:#999;
