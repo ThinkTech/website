@@ -3724,6 +3724,9 @@ ul.contact_info li a:hover{
 		-ms-transform: translateY(120px);
 		transform: translateY(120px);
 	}
+	.banner:after{
+	  width: 92%;
+	}
 }
 @media (max-width: 1080px){
 	.navbar-nav > li > a {
