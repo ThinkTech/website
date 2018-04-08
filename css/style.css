@@ -4290,7 +4290,7 @@ ul.contact_info li a:hover{
     width: 512px;
     width: 512px;
     }
-	.navbar-default .navbar-nav > li > a {text-shadow: none;}
+	.navbar-default .navbar-nav > li > a {text-shadow: none;border: none;}
 	.banner .wthree_stat_right {
       margin-top: -10px;
      }
