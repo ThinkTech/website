@@ -175,6 +175,9 @@ animation-delay: 1s;
     color: #000000;
     font-weight: bold;
     text-shadow: 1px 1px #000000;
+    border: 1px solid #afb0b1;
+    border-bottom: none;
+    margin-right: 2px;
 }
 .navbar-nav > li > a {
     margin: 0;
