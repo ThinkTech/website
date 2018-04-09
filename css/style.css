@@ -943,6 +943,7 @@ a.w3ls_banner_more:hover{
 	text-shadow: 1px -2px #000000;
 	font-weight: bold;
 	font-family : Tahoma;
+	text-align : left;
 }
 
 .w3l_banner_bottom_left a {
