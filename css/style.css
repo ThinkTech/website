@@ -4719,6 +4719,7 @@ ul.contact_info li a:hover{
     margin-top: -10px;
     padding-bottom: 0;
     background: transparent;
+    margin-left: -15px;
   }
 }
 @media (max-width: 414px){
