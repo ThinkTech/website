@@ -4460,6 +4460,7 @@ ul.contact_info li a:hover{
        box-shadow : none;
        border: none;
        margin-top: 5px;
+       margin-left: 0px;
      }
      .faq li {
    	   margin-left: auto;
