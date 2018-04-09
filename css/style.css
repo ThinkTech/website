@@ -149,6 +149,11 @@ animation-delay: 1s;
     font-size: 1.5em;
     color: #f62b2b;
 }
+
+.w3l_banner_bottom_left {
+    text-align : center;
+}
+
 /*-- nav --*/
 .navbar-default {
     background: none;
