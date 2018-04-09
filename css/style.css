@@ -4736,7 +4736,7 @@ ul.contact_info li a:hover{
 		padding: 4em 0;
 	}
 	.w3l_banner_bottom_left,.agileinfo_about_grid_left,.agileits_w3layouts_contact_gridl {
-		padding: 0;
+		padding: 10px;
 	}
 	.w3_two_grid_right h3 {
 		font-size: 1.4em;
