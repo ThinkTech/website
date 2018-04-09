@@ -2785,7 +2785,11 @@ span.line {
 	.content-process.user img, .thumbs{
 	   width : 128px;
 	   height : 128px;
-    }
+        }
+	.agileits_w3layouts_contact_gridr .thumbs {
+    	  width: 64px;
+    	 height: 64px;
+	}
 	.portal.w3l_banner_bottom_left p {
         width: 100%;
         margin-left: auto;
