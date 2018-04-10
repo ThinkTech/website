@@ -124,7 +124,19 @@ animation-delay: 1s;
   from { transform: rotate(0deg); }
   from { transform: rotate(360deg); }
 }
-
+.agile_header_grid:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    opacity: 0.2;
+    left: 62%;
+    right: 0;
+    width: 100%;
+    background-image: url(../images/head-256.png);
+    background-repeat: no-repeat;
+}
 .agileits_w3layouts_sign_in{
 	float:right;
 	margin-top: .3em;
