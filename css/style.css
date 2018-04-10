@@ -84,6 +84,21 @@ animation-delay: 1s;
     transform: translate3d(0, 0, 0);
 }
 
+.box:before {
+    content: "";
+    position: absolute;
+    top: -4px;
+    opacity: 0.08;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/binary-code.jpg);
+    background-repeat: no-repeat;
+}
+
 .wave {
   opacity: .2;
   position: absolute;
