@@ -4449,7 +4449,7 @@ ul.contact_info li a:hover{
 }
 @media (max-width: 480px){
    .agile_header_grid:after {
-    top: -80px;
+    top: -12px;
     left: 10%;
     width: 100%;
 }
