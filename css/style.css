@@ -4448,7 +4448,12 @@ ul.contact_info li a:hover{
 	ul.contact_info li {font-size: 12px;}
 }
 @media (max-width: 480px){
-	.banner:before {
+   .agile_header_grid:after {
+    top: -80px;
+    left: 13%;
+    width: 70%;
+}
+   .banner:before {
      top: -170px;
      left: 0;
      right: 0;
