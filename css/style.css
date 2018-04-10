@@ -88,6 +88,7 @@ animation-delay: 1s;
     content: "";
     position: absolute;
     top: -4px;
+    z-index: 9;
     opacity: 0.08;
     left: 0;
     right: 0;
