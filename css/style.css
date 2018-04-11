@@ -146,7 +146,7 @@ animation-delay: 1s;
     z-index: -1;
     top: 0;
     bottom: 0;
-    opacity: 0.6;
+    opacity: 0.8;
     left: 62%;
     right: 0;
     width: 100%;
@@ -4469,6 +4469,7 @@ ul.contact_info li a:hover{
     top: -12px;
     left: 10%;
     width: 100%;
+    opacity: 0.6;
 }
    .banner:before {
      top: -170px;
