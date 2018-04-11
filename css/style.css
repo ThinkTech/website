@@ -4336,10 +4336,15 @@ ul.contact_info li a:hover{
     width: 512px;
     width: 512px;
     }
-	.navbar-default .navbar-nav > li > a {text-shadow: none;border: none;padding: 13px;}
+	.navbar-default .navbar-nav > li > a {text-shadow: none;border: none;padding: 8px;}
+	nav>li, .nav>li>a {
+          width: 49%;
+          display: inline-block;
+          white-space: nowrap;
+       }
 	.banner .wthree_stat_right {
-      margin-top: -10px;
-     }
+          margin-top: -10px;
+        }
 	.plans {width : 40%}
 	.agileits_w3layouts_sign_in ul li {
 		margin-left: 1em;
