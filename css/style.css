@@ -341,13 +341,7 @@ a:focus, a:hover {
 body a:hover{
 	text-decoration:none;
 }
-input[type="submit"],input[type="reset"],.w3l_team_grd,.agileits_w3layouts_features_gridr h4,.agile_feature_grid,.agile_services_grid_pos,a,.w3l_footer_grid,.w3_two_grid_right_grid1,.w3_two_grid_right_grid1 i{
-	-webkit-transition: 0.5s ease-in;
-    -moz-transition: 0.5s ease-in;
-    -ms-transition: 0.5s ease-in;
-    -o-transition: 0.5s ease-in;
-    transition:0.5s ease-in;
-}
+
 .banner a {
 	position: absolute;
     margin-top: 25px;
@@ -392,11 +386,6 @@ h3 .fa-briefcase {
   text-decoration: none;
   width: 50px;
   z-index: 999999999;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
   border-radius : 50%;
   line-height : 45px;
 }
@@ -868,8 +857,6 @@ h3 .fa-briefcase {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     -moz-osx-font-smoothing: grayscale;
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
 }
 a.w3ls_banner_more{
     background: #f62b2b;
@@ -1809,61 +1796,6 @@ button.close {
     text-transform: capitalize;
     margin: 0;
 }
-.agile_remember_right {
-    float: right;
-}
-.checkbox {
-    position: relative;
-	padding-left:30px !important;
-    cursor: pointer;
-}
-.checkbox i {
-    position: absolute;
-    bottom: 2px;
-    left: 0;
-    display: block;
-    width: 15px;
-    height: 15px;
-    outline: none;
-    border: 1px solid #5B5B5B;
-    background: #FFF;
-}
-.checkbox input + i:after,.radio input + i:after {
-    position: absolute;
-    opacity: 0;
-    transition: opacity 0.1s;
-    -o-transition: opacity 0.1s;
-    -ms-transition: opacity 0.1s;
-    -moz-transition: opacity 0.1s;
-    -webkit-transition: opacity 0.1s;
-}
-.checkbox input:checked + i:after,.radio input:checked + i:after{
-    opacity: 1;
-}
-.checkbox input,.radio input {
-    position: absolute;
-    left: -9999px;
-}
-.checkbox input + i:after {
-    content: '';
-    background: url(../images/tick.png) no-repeat 0px 0px;
-    top: -4px;
-    left: 0px;
-    width: 18px;
-    height: 18px;
-    text-align: center;
-}
-.agile_remember_right a {
-    font-size: 14px;
-    color:#08ccf7;
-    text-decoration: underline;
-}
-.agile_remember_right a:hover {
-    color: #000000;
-}
-.agile_remember {
-    padding: 1.5em 0;
-}
 /*-- //sign-in --*/
 /*-- services --*/
 .banner1 h3{
@@ -2149,20 +2081,10 @@ ul.bs-glyphicons-list li:hover span {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     font-size: 13px;
-    transition: 0.5s all;
-    -webkit-transition: 0.5s all;
-    -o-transition: 0.5s all;
-    -ms-transition: 0.5s all;
-    -moz-transition: 0.5s all;
     cursor: pointer;
 } 
 .icon-box:hover {
     background: #000;
-	transition:0.5s all;
-	-webkit-transition:0.5s all;
-	-o-transition:0.5s all;
-	-ms-transition:0.5s all;
-	-moz-transition:0.5s all;
 }
 .icon-box:hover i.fa {
 	color:#fff !important;
@@ -2525,11 +2447,6 @@ p.text {
 	background: none;
 	border: solid 1px #333;
 	color:#333;
-	transition: 0.5s all;
-	-webkit-transition: 0.5s all;
-	-moz-transition: 0.5s all;
-	-o-transition: 0.5s all;
-	-ms-transition: 0.5s all;
 	text-decoration: none;
 }
 
