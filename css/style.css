@@ -2421,6 +2421,7 @@ h3.agileits-icons-title {
 .agileinfo_about_grid_right img {
 	filter: saturate(1.5);
 	 box-shadow: 0 4px 9px 0 rgba(90, 88, 88, 0.5), 0 2px 9px 0 rgb(253, 253, 253);
+	border: 1px solid #08ccf7;
 }
 
 .content{
