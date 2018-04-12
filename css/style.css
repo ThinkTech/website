@@ -2027,8 +2027,10 @@ button.close {
 	text-shadow: 0px 5px #000000;
 }
 .agileits_w3layouts_features_grid{
-	padding:1em;
-	background:#fff;
+    padding: 1em;
+    background: #fff;
+    border: 1px solid #08ccf7;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 .agileits_w3layouts_features_gridl {
     padding-left: 0;
