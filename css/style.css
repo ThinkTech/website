@@ -1526,8 +1526,8 @@ a.w3ls_banner_more:hover{
     width: 74.2%;
 }
 .w3layouts_newsletter_right input[type="submit"]{
-	outline: none;
-    border: 1px solid #ffffff;
+    outline: none;
+    border: 1px solid #867e7e;
     padding: 10px 0;
     background: #ffffff;
     color: #08ccf7;
