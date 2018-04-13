@@ -1269,8 +1269,20 @@ a.w3ls_banner_more:hover{
 .w3_two_grid_left{
 	padding:0;
 }
-.w3_two_grid_right{
-	padding:3em 8em 3em 4em;
+.col-md-6.w3_two_grid_right:before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    z-index: 9;
+    opacity: 0.08;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 110%;
+    background-image: url(../images/binary-code.jpg);
+    background-repeat: no-repeat;
 }
 .w3_two_grid_right h3{
 	font-size:2em;
