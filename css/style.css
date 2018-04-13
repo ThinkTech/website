@@ -1290,7 +1290,7 @@ a.w3ls_banner_more:hover{
     font-weight: 600;
 }
 .w3_two_grid_right1{
-	padding-top:1.1em;
+	padding-top:0.3em;
 }
 .w3_two_grid_right_grid1{
 	width: 65px;
@@ -1318,6 +1318,7 @@ a.w3ls_banner_more:hover{
 	font-size:1.4em;
 	color:#fff;
 	margin:1em 0 0;
+	white-space: nowrap;
 }
 .w3_two_grid_right_gridr p{
 	color:#003743;
@@ -1835,7 +1836,7 @@ button.close {
     line-height:2.3em;
 }
 .w3_agile_services_grid h4{
-	font-size:1.5em;
+    font-size:1.35em;
     color: #000000;
     margin: 2.5em 0 0.5em;
     text-transform: capitalize;
@@ -3655,9 +3656,6 @@ ul.contact_info li a:hover{
 	.w3_two_grid_right p.w3layouts_dummy_para {
 		margin: 0.3em 0 0;
 	}
-	.w3_two_grid_right1 {
-		padding-top: 0.9em;
-	}
 	.effect .mask {
 		border-width: 238px;
 	}
@@ -3675,18 +3673,12 @@ ul.contact_info li a:hover{
         margin-top: 10px;
 		white-space: nowrap;
 	}
-	.w3_two_grid_right_gridr h4 {
-		font-size: 1.4em;
-	}
 	.w3_two_grid_right_grid1 {
 		width: 55px;
 		height: 55px;
 	}
 	.w3_two_grid_right_grid1 i {
 		line-height: 2.6em;
-	}
-	.w3_two_grid_right1 {
-		padding-top: 0.88em;
 	}
 	.effect .mask {
 		border-width: 225px;
