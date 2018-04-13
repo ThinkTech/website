@@ -1163,7 +1163,7 @@ a.w3ls_banner_more:hover{
 
 .guide li {
 	margin-left : 0px;
-	margin-bottom: 30px;
+	margin-bottom: 40px;
 }
 
 .guide li:last-of-type {
@@ -4438,8 +4438,9 @@ ul.contact_info li a:hover{
        width: 100%;
 	}
 	.guide li {
-    margin-left: 0px;
-    width: 100%;
+        margin-left: 0px;
+        width: 100%;
+	margin-bottom: 30px;
     }
     .faq p span span.pricing i { display: none;}
 	.plans {width: 60%;}
