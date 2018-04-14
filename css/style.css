@@ -1959,16 +1959,8 @@ button.close {
 /*-- //about --*/
 /*-- features --*/
 .features{
-	background: url(../images/11.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: 100% 100%;
-    -webkit-background-size: 100% 100%;
-    -moz-background-size: 100% 100%;
-    -o-background-size: 100% 100%;
-    -ms-background-size: 100% 100%;
-	margin-top: 0px;
+    background: #000;
+    margin-top: 0px;
     padding-top: 30px;
 }
 .agile_head1,.w3_agile_para1{
