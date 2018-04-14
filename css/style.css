@@ -181,10 +181,6 @@ animation-delay: 1s;
     text-align : center;
 }
 
-.w3l_banner_bottom_left.portal img {
-    background: #cdd1d2;
-}
-
 /*-- nav --*/
 .navbar-default {
     background: none;
