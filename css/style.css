@@ -201,6 +201,7 @@ animation-delay: 1s;
     background: #3abfdd;
     text-shadow: 0px 1px #fff;
     border-bottom: 1px solid #08ccf7;
+    border-right: none;
 }
 .navbar-default .navbar-nav > li > a {
     color: #000000;
