@@ -1868,18 +1868,6 @@ button.close {
 }
 
 /* Rotate */
-.hover06 figure img {
-	-ms-transform: rotate(15deg) scale(1.4);
-	-o-transform: rotate(15deg) scale(1.4);
-	-moz-transform: rotate(15deg) scale(1.4);
-	-webkit-transform: rotate(15deg) scale(1.4);
-	transform: rotate(15deg) scale(1.4);
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
-	-moz-transition: .3s ease-in-out;
-	-o-transition: .3s ease-in-out;
-	-ms-transition: .3s ease-in-out;
-}
 .hover06 figure:hover img,.w3_agile_services_grid:hover .hover06 figure img{
 	-webkit-transform: rotate(0) scale(1);
 	transform: rotate(0) scale(1);
