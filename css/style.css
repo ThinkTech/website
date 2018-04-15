@@ -1867,6 +1867,10 @@ button.close {
     overflow: hidden;
 }
 
+.agile_services_grid figure img {
+    border: 1px solid #08ccf7;
+}
+
 /* Rotate */
 .hover06 figure:hover img,.w3_agile_services_grid:hover .hover06 figure img{
 	-webkit-transform: rotate(0) scale(1);
