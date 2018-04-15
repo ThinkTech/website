@@ -8,5 +8,3 @@
  cache-control : public, max-age=7200, must-revalidate
 /images/head-256.png
  cache-control : public, max-age=7200, must-revalidate
-/about.html
- cache-control : public, max-age=7200, must-revalidate
