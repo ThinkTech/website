@@ -8,3 +8,11 @@
  cache-control : public, max-age=7200, must-revalidate
 /images/head-256.png
  cache-control : public, max-age=7200, must-revalidate
+/images/design.jpg
+ cache-control : public, max-age=7200, must-revalidate
+/images/web-256.png
+ cache-control : public, max-age=7200, must-revalidate
+/images/user-256.png
+ cache-control : public, max-age=7200, must-revalidate
+/images/*
+ cache-control : public, max-age=7200, must-revalidate
