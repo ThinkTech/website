@@ -16,3 +16,7 @@
  cache-control : public, max-age=7200, must-revalidate
 /images/*
  cache-control : public, max-age=7200, must-revalidate
+/js/*
+ cache-control : public, max-age=7200, must-revalidate
+/css/*
+ cache-control : public, max-age=7200, must-revalidate
