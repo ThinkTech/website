@@ -1,22 +1,2 @@
-/images/infinite.png
- cache-control : public, max-age=7200, must-revalidate
-/images/binary-code.jpg
- cache-control : public, max-age=7200, must-revalidate
-/images/businessguys.jpg
- cache-control : public, max-age=7200, must-revalidate
-/images/pexels-photo-830891.jpeg
- cache-control : public, max-age=7200, must-revalidate
-/images/head-256.png
- cache-control : public, max-age=7200, must-revalidate
-/images/design.jpg
- cache-control : public, max-age=7200, must-revalidate
-/images/web-256.png
- cache-control : public, max-age=7200, must-revalidate
-/images/user-256.png
- cache-control : public, max-age=7200, must-revalidate
-/images/*
- cache-control : public, max-age=7200, must-revalidate
-/js/*
- cache-control : public, max-age=7200, must-revalidate
-/css/*
+/*
  cache-control : public, max-age=7200, must-revalidate
