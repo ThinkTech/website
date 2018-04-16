@@ -1835,7 +1835,7 @@ button.close {
     height: 85px;
     background: #08ccf7;
     border-radius: 50px;
-    border: 5px solid #fff;
+    border: 5px solid #e2e5ec;
     text-align: center;
 }
 .w3_agile_services_grid:hover .agile_services_grid_pos{
