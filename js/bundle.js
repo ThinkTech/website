@@ -56,7 +56,7 @@ $(document).ready(function() {
 		   $("option:last",select).hide().attr('disabled','disabled').prev().hide().attr('disabled','disabled');
 	   }
 	   form.removeClass().addClass("subscribe-form "+plan).show();
-	   $('html,body').animate({scrollTop:form.offset().top-20},1000);
+	   $('html,body').animate({scrollTop:form.offset().top-20},300);
 	});	
 	$(".subscribe-form a").click(function(event){
 		   const div = $(".subscribe-form .terms").show();
@@ -122,7 +122,7 @@ $(document).ready(function() {
 	   const top = event.pageY;
 	   $(".plans").css("top",top-250);
 	   const div = $(".plans ."+plan).show();
-	   $('html,body').animate({scrollTop:div.offset().top-20},1000);
+	   $('html,body').animate({scrollTop:div.offset().top-20},300);
 	   return false;
 	});	
     $(".plans .pricing .close").click(function(event){
