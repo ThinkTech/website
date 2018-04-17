@@ -2513,10 +2513,10 @@ span.line {
 	margin-left:8%;
 }
 .confirm .imgcircle , .process .imgcircle, .quality .imgcircle {
-	background-color:#98d091;
+	background-color:#6fbd33;
 }
 .confirm span.line, .process span.line {
-	background-color:#98d091; 
+	background-color:#6fbd33; 
 }
 .content3 p {
 	font-size:16px;
@@ -2562,7 +2562,7 @@ span.line {
 	height:75px;
 	width:75px;
 	border-radius:50%;
-	background-color:#98d091;
+	background-color:#6fbd33;
 	position:relative;
 }
 .imgcircle img {
