@@ -617,6 +617,7 @@ h3 .fa-briefcase {
 
 .header{
      overflow : hidden;
+     margin-top: -2px;
 }
 
 .header .container{
