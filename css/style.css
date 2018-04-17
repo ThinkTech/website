@@ -1198,7 +1198,7 @@ a.w3ls_banner_more:hover{
 }
 
 #personal-plan .number {
-    background: rgba(246, 43, 43, 0.85);
+    background: #ca2233;
 }
 
 .guide  a.plan-details{
@@ -1216,7 +1216,7 @@ a.w3ls_banner_more:hover{
 }
 
 #personal-plan > p {
-	background : rgb(246, 43, 43);
+	background : #ca2233;
 }
 
 .personal{
