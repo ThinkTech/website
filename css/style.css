@@ -4,7 +4,6 @@ html, body{
 	overflow-x : hidden;
 }
 body{
-	opacity : 0;
 	overflow: hidden;
 }
 a:focus, a:hover {
@@ -217,7 +216,7 @@ animation-delay: 1s;
     line-height: 1em;
     text-transform: uppercase;
     font-size: 105%;
-    font-family: Exo;
+    font-family: Exo,monospace;
 }
 nav.navbar.navbar-default {
     background: none;
@@ -783,6 +782,19 @@ h3 .fa-briefcase {
     width: 100%;
     margin-left: -20px;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.partners table {
+	width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+}
+
+.partners table td {
+	border : 1px solid #3abfdd;
+	text-align: center;
+    padding: 20px;
 }
 
 .terms h2 {
@@ -1618,6 +1630,7 @@ a.w3ls_banner_more:hover{
 .w3ls_copyright_left ul li{
 	display:inline-block;
 	margin-right:1em;
+	font-size: 1.3em;
 }
 .w3ls_copyright_left ul li:last-child{
 	margin-right:0;
@@ -3753,9 +3766,6 @@ ul.contact_info li a:hover{
 	.banner-bottom, .news, .services, .services-bottom, .features {
 		padding: 1em 0;
 	}
-	.about,.portfolio {
-		padding-top: 4em;
-	}
 	.wthree_stat_right {
 		padding: 0;
 	}
@@ -3774,6 +3784,7 @@ ul.contact_info li a:hover{
 	.banner1 h3 {
 		font-size: 2.8em;
 		padding-top: 2.3em;
+		letter-spacing: 0px;
 	}
 	.w3_agile_services_grid h4 {
 		font-size: 1.18em;
@@ -3833,6 +3844,10 @@ ul.contact_info li a:hover{
 	}
 }
 @media (max-width: 1024px){
+    .partners table tr td:first-of-type{
+		width: 30%;
+		margin-right : 20px;
+    }
 	.banner:before {
       top: -110px;
       left: 0;
@@ -4071,7 +4086,7 @@ ul.contact_info li a:hover{
 		background-position: -170px 0px;
 	}
 	.agileits_w3layouts_news_grids, .w3layouts_team_grids, .w3_agile_portfolio_grids, .agileits_w3layouts_contact_grids {
-		margin: 0em 0 0;
+		margin: 1em 0 0;
 	}
 	.w3_wthree_agileits_icons.main-grid-border {
 		padding: 0em 0 3em;
@@ -4094,6 +4109,10 @@ ul.contact_info li a:hover{
 	}
 }
 @media (max-width: 768px){
+    .partners table tr td:first-of-type{
+		width: 30%;
+		margin-right : 20px;
+    }
 	.banner:before {
       top: -135px;
       left: 0;
@@ -4397,6 +4416,9 @@ ul.contact_info li a:hover{
 	ul.contact_info li {font-size: 12px;}
 }
 @media (max-width: 480px){
+    .partners table img {
+		width: 100%;
+    }
    .agile_header_grid:after {
     top: -12px;
     left: 10%;
@@ -4718,6 +4740,10 @@ ul.contact_info li a:hover{
 	.w3l_banner_bottom_left,.agileinfo_about_grid_left,.agileits_w3layouts_contact_gridl {
 		padding: 10px;
 		margin-bottom: -10px;
+	}
+	.agileinfo_about_grid_left {
+		padding: 10px;
+		margin-bottom: -35px;
 	}
 	.w3_two_grid_right h3 {
 		font-size: 1.4em;
