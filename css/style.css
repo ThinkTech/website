@@ -796,6 +796,8 @@ h3 .fa-briefcase {
 	border : 1px solid #3abfdd;
 	text-align: center;
     padding: 20px;
+    font-size: 98%;
+    font-family: Exo;
 }
 
 .terms h2 {
