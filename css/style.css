@@ -798,6 +798,7 @@ h3 .fa-briefcase {
     padding: 20px;
     font-size: 98%;
     font-family: Exo;
+    font-size: 16px;
 }
 
 .terms h2 {
@@ -3037,6 +3038,9 @@ p.footer {
 @media (max-width:991px){
 	.w3_agile_logo h1 a,.w3_agile_logo h1 a:visited{
 	  letter-spacing: 0px;
+    }
+    .partners table td {
+     font-size: 13px;
     }
 	.banner1 h3 {
      padding-top: 1.6em;
