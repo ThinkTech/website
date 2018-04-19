@@ -2512,8 +2512,12 @@ h3.agileits-icons-title {
 }
 
 .cd-close-panel {
-  position: absolute;
-  margin-top: -19px;
+  position: fixed;
+  top: 5px;
+  right: -100%;
+  display: block;
+  height: 40px;
+  white-space: nowrap;
   z-index: 2;
   /* Force Hardware Acceleration in WebKit */
   -webkit-transform: translateZ(0);
