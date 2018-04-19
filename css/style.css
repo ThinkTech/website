@@ -1963,8 +1963,11 @@ button.close {
 	padding-right:2em;
 	color:#f62b2b;
 }
-.about,.portfolio{
+.portfolio{
 	padding-top:0em;
+}
+.about{
+	padding-top:1em;
 }
 /*-- //about --*/
 /*-- features --*/
