@@ -2350,6 +2350,7 @@ h3.agileits-icons-title {
   position: relative;
   display: block;
   overflow: hidden;
+  font-weight: bold;
   height: 50px;
   line-height: 50px;
   padding: 0 28px 0 16px;
@@ -2714,6 +2715,9 @@ h3.agileits-icons-title {
 	}
 	.cd-faq-trigger {
       font-size: 15px;
+    }
+    cd-faq-categories a {
+     font-size: 15px;
     }
 }
 
