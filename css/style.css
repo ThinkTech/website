@@ -1964,7 +1964,8 @@ button.close {
 	color:#f62b2b;
 }
 .portfolio{
-	padding-top:0em;
+	padding-top: 0em;
+    margin-top: -1em;
 }
 .about{
 	padding-top:1em;
@@ -4477,7 +4478,7 @@ ul.contact_info li a:hover{
 	.effect .mask {
 		border-width: 162px;
 	}
-	.about, .portfolio {
+	.about {
 		padding-top: 3em;
 	}
 	.agileits_w3layouts_contact_gridr {
