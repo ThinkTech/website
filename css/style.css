@@ -650,7 +650,7 @@ h3 .fa-briefcase {
 
 .btn-pluss-wrapper {
     position: absolute;
-    z-index: 2;
+    z-index: 6;
     right: 4%;
     top: 27px;
 }
