@@ -3640,6 +3640,9 @@ p.footer {
 	.btn-pluss-wrapper {
     	top: 69px;
 	}
+	.btn-pluss a {
+    	font-size: 13px;
+	}
 	.w3_agile_logo h1 a,.w3_agile_logo h1 a:visited{
 	  letter-spacing: 0px;
     }
