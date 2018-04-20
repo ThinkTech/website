@@ -669,11 +669,12 @@ h3 .fa-briefcase {
     transition: width .3s .5s ease, border-radius 1.1s ease;
 }
 .btn-pluss a {
-  display: block;
+ display: block;
     font-size: 15px;
     font-family: Exo,monospace;
     position: relative;
-    color: #2ea2d1;
+    font-weight: bold;
+    color: #000;
     text-decoration: none;
     overflow: hidden;
 }
