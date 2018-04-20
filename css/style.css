@@ -826,8 +826,8 @@ h3 .fa-briefcase {
             transform: translateY(3px);
   }
   50% {
-    -webkit-transform: translateY(-15px);
-            transform: translateY(-15px);
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
   }
   100% {
     -webkit-transform: translateY(3px);
