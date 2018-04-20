@@ -988,12 +988,13 @@ h3 .fa-briefcase {
 }
 
 .partners table td {
-	border : 1px solid #3abfdd;
-	text-align: center;
+    border : 1px solid #3abfdd;
+     text-align: center;
     padding: 20px;
     font-size: 98%;
     font-family: Exo;
     font-size: 16px;
+    color: #000;
 }
 
 .terms h2 {
