@@ -3642,8 +3642,8 @@ p.footer {
 
 @media (max-width:991px){
 	.btn-pluss-wrapper {
-    	top: 66px;
-    	right: 2%;
+    	top: 59px;
+       right: 2%;
 	}
 	.btn-pluss a {
     	font-size: 13px;
