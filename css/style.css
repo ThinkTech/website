@@ -345,7 +345,7 @@ body a:hover{
     margin-top: 25px;
     z-index : 1;
     width: 160px;
-    background: #dce8ef;
+    background: #fff;
     padding: 10px;
     color: #000000;
     font-size: 19px;
@@ -4797,6 +4797,7 @@ ul.contact_info li a:hover{
 	}
 	.navbar-default .navbar-toggle {
 		border-color: #000000;
+		background : #fff;
 	}
 	.navbar-default .navbar-toggle .icon-bar {
 		background-color: #000000;
