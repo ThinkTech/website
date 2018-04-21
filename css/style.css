@@ -1519,16 +1519,16 @@ a.w3ls_banner_more:hover{
     font-weight: 600;
 }
 .w3_two_grid_right1{
-	padding-top:0.5em;
+    padding-top: 0.3em;
 }
 .w3_two_grid_right_grid1{
-	width: 65px;
+    width: 65px;
     height: 65px;
     border-radius: 50px;
     background:#fff;
     text-align: center;
-	float : right;
-	border: 1px solid #de9e9e;
+    float : right;
+    border: 1px solid #de9e9e;
 }
 .w3_two_grid_right1:hover .w3_two_grid_right_grid1{
 	background:#fff;
