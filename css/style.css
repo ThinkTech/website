@@ -4297,6 +4297,7 @@ ul.contact_info li a:hover{
 	}
 	.w3_two_grid_right p.w3layouts_dummy_para {
 		margin: 0.3em 0 0;
+		margin-bottom: -9px;
 	}
 	.effect .mask {
 		border-width: 238px;
