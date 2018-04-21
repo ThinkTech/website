@@ -5562,6 +5562,10 @@ ul.contact_info li a:hover{
 	}
 }
 @media (max-width: 320px){
+	.agile_header_grid:after {
+     top: -18px;
+     left: 11.6%;
+    }
 	.banner:before {
      top: -170px;
      left: -96px;
