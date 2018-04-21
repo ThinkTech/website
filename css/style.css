@@ -4806,7 +4806,7 @@ ul.contact_info li a:hover{
 		text-align: center;
 	}
 	.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-		background-color: transparent;
+		background-color: #fff;
 	}
 	.navbar-default .navbar-collapse, .navbar-default .navbar-form {
 		border: none;
