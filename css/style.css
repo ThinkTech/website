@@ -5028,10 +5028,10 @@ ul.contact_info li a:hover{
 		padding: 1em 1em;
 	}
 	.w3ls_copyright_left,.w3ls_copyright_right {
-		float: none;
-		text-align: center;
-		width : 96%;
-		margin-right: -60px;
+		float: right;
+  	    text-align: center;
+   	    width: 96%;
+        margin-right: -7px;
 	}
 	ul.contact_info li {font-size: 12px;}
 }
