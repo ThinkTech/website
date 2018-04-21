@@ -5262,16 +5262,16 @@ ul.contact_info li a:hover{
 		width: 100%;
 	}
 	.agile_services_grid_pos {
-		width: 75px;
-		height: 75px;
+		width: 40px;
+   	        height: 40px;
 		border: 5px solid #fff;
 		bottom: -15%;
 	}
 	.agile_services_grid_pos i {
-		line-height: 3.3em;
+		line-height: 1.75em;
 	}
 	.w3_agile_services_grid h4 {
-		margin: 2.5em 0 0.5em;
+		margin: 1.5em 0 -1.5em;
 		font-size: 1.15em;
 	}
 	.w3_agile_services_grid:nth-child(2) {
