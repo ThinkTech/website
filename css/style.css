@@ -2084,6 +2084,7 @@ button.close {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.2);
 }
 
 .agile_services_grid figure img {
