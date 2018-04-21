@@ -4256,7 +4256,7 @@ h2.typoh2{
 ul.contact_info li {
     list-style-type: none;
     margin-bottom: 1em;
-    color: #999;
+    color: #000;
     font-size: 14px;
     font-weight: bold;
 }
@@ -4269,7 +4269,7 @@ ul.contact_info li i {
     margin-right: 1em;
 }
 ul.contact_info li a {
-    color: #999;
+    color: #000;
     text-decoration: none;
 }
 ul.contact_info li a:hover{
