@@ -3998,7 +3998,7 @@ h2.typoh2{
 	}
 }
 @media (max-width:480px){
-	.header:after {height: 24%;}
+	.header:after {height: 35%;}
 	.guide li > a {
        width: 60%;
        margin: auto;
