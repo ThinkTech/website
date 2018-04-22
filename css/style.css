@@ -1749,6 +1749,22 @@ a.w3ls_banner_more:hover{
     font-size: 14px;
     width: 74.2%;
 }
+
+.w3layouts_newsletter_right input[type="email"]::placeholder {
+	color : #fff;
+	opacity : 1;
+}
+
+.w3layouts_newsletter_right input[type="email"]:-ms-input-placeholder {
+	color : #fff;
+	opacity : 1;
+}
+
+.w3layouts_newsletter_right input[type="email"]::-ms-input-placeholder {
+	color : #fff;
+	opacity : 1;
+}
+
 .w3layouts_newsletter_right input[type="submit"]{
     outline: none;
     border: 1px solid #867e7e;
