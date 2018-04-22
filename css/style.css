@@ -5,6 +5,7 @@ html, body{
 }
 body{
 	overflow: hidden;
+	opacity : 0;
 }
 a:focus, a:hover {
     color: #36cff9;
@@ -1721,7 +1722,7 @@ a.w3ls_banner_more:hover{
 }
 .w3layouts_newsletter{
 	padding:3em 0;
-	background:#0094ee;
+	background:#2ea2d1;
 }
 .w3layouts_newsletter_left{
 	float:left;
@@ -1828,7 +1829,7 @@ a.w3ls_banner_more:hover{
 }
 .copyright{
 	padding:2em 0;
-	background:#0094ee;
+	background:#2ea2d1;
 }
 .w3ls_copyright_left{
 	float:left;
@@ -3054,6 +3055,10 @@ h3.agileits-icons-title {
 }
 p.text {
     margin-bottom: 0;
+}
+
+body{
+	opacity : 1;
 }
 .buy-button {
 /*-- w3layouts --*/
