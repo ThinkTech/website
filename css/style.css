@@ -1199,7 +1199,7 @@ a.w3ls_banner_more:hover{
 	left: 0;
 	right: 0;
 	margin: auto;
-	border: 1px solid #6b5e5e;
+	border: 1px solid #3abfdd;
 	position: absolute;
 	top: 40%;
 	display: none;
@@ -4011,7 +4011,6 @@ h2.typoh2{
 	   padding-bottom: 12px;
 	   top: 30%;
 	   box-shadow: none;
-	   border: 1px solid #dcb7b7;
 	}
 	.grid_5 h3, .grid_5 h2, .grid_5 h1, .grid_5 h4, .grid_5 h5, h3.hdg, h3.bars {
 		font-size: 1.2em;
