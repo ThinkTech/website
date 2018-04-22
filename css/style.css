@@ -4819,6 +4819,7 @@ ul.contact_info li a:hover{
 	.navbar-default .navbar-toggle {
 		border-color: #000000;
 		background : #fff;
+		margin-top : 10px;
 	}
 	.navbar-default .navbar-toggle .icon-bar {
 		background-color: #000000;
@@ -4915,7 +4916,11 @@ ul.contact_info li a:hover{
 	}
 }
 @media (max-width: 640px){
-	.banner:before {
+    .agile_header_grid:after {
+   	 top: 6px;
+    	left: 31%;
+     }    
+   .banner:before {
      top: -135px;
     left: 0;
     right: 0;
