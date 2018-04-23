@@ -381,7 +381,7 @@ h3 .fa-briefcase {
 /*scroll to top*/
 
 .scrollToTop {
-  bottom: 35px;
+  bottom: 5px;
   display: none;
   font-size: 2em;
   font-weight: bold;
@@ -885,7 +885,7 @@ h3 .fa-briefcase {
 .banner1{
 	min-height:200px;
 	text-align: center;
-	background-color : #3abfdd;
+	background-color : #2ea2d1;
 	border-bottom: 35px solid #000000;
 }
 
@@ -4819,6 +4819,7 @@ ul.contact_info li a:hover{
 	.navbar-default .navbar-toggle {
 		border-color: #000000;
 		background : #fff;
+		margin-top : 10px;
 	}
 	.navbar-default .navbar-toggle .icon-bar {
 		background-color: #000000;
@@ -4915,7 +4916,11 @@ ul.contact_info li a:hover{
 	}
 }
 @media (max-width: 640px){
-	.banner:before {
+    .agile_header_grid:after {
+   	 top: 6px;
+    	left: 31%;
+     }    
+   .banner:before {
      top: -135px;
     left: 0;
     right: 0;
@@ -5359,6 +5364,9 @@ ul.contact_info li a:hover{
   }
 }
 @media (max-width: 414px){
+	.banner .wthree_stat_right {
+     	   margin-top: 30px;
+        }
 	.agileits_w3layouts_sign_in ul li {
 		font-size: 13px;
 	}
