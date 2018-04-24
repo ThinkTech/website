@@ -62,6 +62,7 @@ $(document).ready(function() {
 	$(".terms-agreement a").click(function(event){
 		   const div = $(".terms").show();
 		   div.css("top",event.pageY-400);
+		   $('html,body').animate({scrollTop:div.offset().top-20},300);
 		   return false;
 	});
 	$(".subscribe-form > .close").click(function(event){
