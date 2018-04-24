@@ -1234,6 +1234,7 @@ a.w3ls_banner_more:hover{
     letter-spacing: 1px;
     margin-bottom: 20px;
     font-weight: bold;
+    font-family: Exo;
 }
 
 .subscribe-form h1 i{
@@ -1285,7 +1286,7 @@ a.w3ls_banner_more:hover{
     border: 1px solid #fdf6f6;
     margin-left: 74.5%;
     font-size: 18px;
-    font-family: Tahoma;
+    font-family: Exo;
     margin-top: 6px;
     height: auto;
     font-weight: bold;
