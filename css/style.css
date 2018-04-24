@@ -3578,13 +3578,14 @@ button::-moz-focus-inner {
     border-top-width: 25px;
 }
 .pricing-grid h4 {
-    font-size: 1.8em; 
+    font-size: 1.3em; 
 }
 .w3ls-bottom {
     padding: 2.5em 1em 0;
 }
 .more a { 
     padding: .5em 3em; 
+    font-size: 1.3em;
 }
 .w3l_banner_bottom_left .pricing-grid h3 {
     font-size: 1.4em;
