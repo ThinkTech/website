@@ -2982,7 +2982,7 @@ h3.agileits-icons-title {
 	background: #73316C;
 	text-align: left;
 	max-width: 500px;
-	margin: 40px auto;
+	margin: 20px auto;
 	position: relative; 
 }
 #small-dialog-it,#small-dialog-in,#small-dialog-fr,#small-dialog-sh,#small-dialog-sf,#small-dialog-su,#small-dialog-me,#small-dialog-ch,#small-dialog-pi,#small-dialog-am {
@@ -2990,7 +2990,7 @@ h3.agileits-icons-title {
 	padding:0px;
 	text-align: left;
 	max-width: 450px;
-	margin: 40px auto;
+	margin: 20px auto;
 	position: relative;
 	text-align:center;
 }
@@ -3456,7 +3456,8 @@ button::-moz-focus-inner {
 }
 /*--pop-up--*/
 .book-form {
-    padding: 2em;
+   padding: 2em;
+   padding-top: 1em;
 }
 .book-form h2 {
     font-size: 1.8em;
