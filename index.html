@@ -524,7 +524,7 @@ Nous avons aussi un excellent service client dédié à vous fournir une assista
 				</ul>
 	  </div>
 	</div>
-	<br><br>
+	<br>
 	<div class="clearfix"></div>	 
        <div class="container">
 		<div class="col-md-12 w3l_banner_bottom_left faq guide">
@@ -549,7 +549,7 @@ Nous avons aussi un excellent service client dédié à vous fournir une assista
 							<li>1 nom de domaine</li>
 						</ul>
 						<div class="more">
-							<a class="book popup-with-zoom-anim button-isi zoomIn animated" data-wow-delay=".5s" href="#small-dialog">Souscrire</a>				
+							<a data-plan="free" class="book popup-with-zoom-anim button-isi zoomIn animated" data-wow-delay=".5s" href="#small-dialog">Souscrire</a>				
 						</div>
 					</div>
 				</div>
@@ -569,7 +569,7 @@ Nous avons aussi un excellent service client dédié à vous fournir une assista
 							<li>Multiple Domaines</li>
 						</ul>
 						<div class="more">
-							<a class="book popup-with-zoom-anim button-isi zoomIn animated" data-wow-delay=".5s" href="#small-dialog">Souscrire</a>				
+							<a data-plan="standard" class="book popup-with-zoom-anim button-isi zoomIn animated" data-wow-delay=".5s" href="#small-dialog">Souscrire</a>				
 						</div>
 					</div>
 				</div>
@@ -589,7 +589,7 @@ Nous avons aussi un excellent service client dédié à vous fournir une assista
 							<li>Multiple Domaines</li>
 						</ul>
 						<div class="more">
-							<a class="book popup-with-zoom-anim button-isi zoomIn animated" data-wow-delay=".5s" href="#small-dialog">Souscrire</a>				
+							<a data-plan="pro" class="book popup-with-zoom-anim button-isi zoomIn animated" data-wow-delay=".5s" href="#small-dialog">Souscrire</a>				
 						</div>
 					</div>
 				</div>
@@ -609,7 +609,7 @@ Nous avons aussi un excellent service client dédié à vous fournir une assista
 							<li>Multiple Domaines</li>
 						</ul>
 						<div class="more">
-							<a class="book popup-with-zoom-anim button-isi zoomIn animated" data-wow-delay=".5s" href="#small-dialog">Souscrire</a>				
+							<a data-plan="enterprise" class="book popup-with-zoom-anim button-isi zoomIn animated" data-wow-delay=".5s" href="#small-dialog">Souscrire</a>				
 						</div>
 					</div>
 				</div>	
@@ -620,10 +620,11 @@ Nous avons aussi un excellent service client dédié à vous fournir une assista
 				<h2><i class="fa fa-envelope" aria-hidden="true"></i> Souscription </h2>
 				<form action="https://thinktech-platform.herokuapp.com/services/subscribe" method="post">
 					<input type="text" name="contact" placeholder="Prénom et Nom" required/>
-					<input type="email" name="Email" class="email" placeholder="Email" required/>
+					<input type="email" name="email" class="email" placeholder="Email" required/>
 					<input type="password" name="password" placeholder="mot de passe" required>
 		   			<input type="password" name="confirmation" placeholder="confirmation" required>
 		   			<input name="structure" type="text" placeholder="structure" required>
+		   			<input name="plan" type="text" readonly>
 		   			<div class="terms-agreement">
 					  <input type="checkbox" checked disabled> J'accepte les <a class="read-terms">Termes</a>
 				    </div>
@@ -853,9 +854,10 @@ Nous avons aussi un excellent service client dédié à vous fournir une assista
 			});
 			$(".w3ls-bottom .more a").click(function(){
 				const background = $(this).css("background");
-				$("#small-dialog").css("background",background);
+				const dialog = $("#small-dialog").css("background",background);
+				const plan = $(this).data("plan");
+				$("input[name=plan]",dialog).val("plan "+plan);
 			});
-		
 		});
 </script>
 <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=590f03b42c145800128d5487&product=inline-share-buttons" defer></script>

@@ -117,7 +117,55 @@ $(document).ready(function() {
  	     dataType : "json"
  	   });
  	   return false;
- 	});	
+ 	});
+    $("#small-dialog form").submit(function(event){
+       const form = $(this);
+  	   const subscription = {};
+  	   subscription.service = "mailbox";
+  	   subscription.name = form.find("input[name=contact]").val().trim();
+  	   subscription.email = form.find("input[name=email]").val().trim();
+  	   subscription.password = form.find("input[name=password]").val().trim();
+  	   const confirmation = form.find("input[name=confirmation]").val().trim();
+  	   if(subscription.password != confirmation){
+  		   alert("les deux mots de passe ne sont pas identiques.");
+  		   return false;
+  	   }
+  	   subscription.structure = form.find("input[name=structure]").val().trim();
+  	   subscription.plan = form.find("input[name=plan]").val().trim();
+  	   console.log(subscription)
+  	   /*form.find("input[type=submit]").hide();
+  	   page.wait({top : form.offset().top});
+  	   $.ajax({
+  	     type: "POST",
+  	     url: form.attr("action"),
+  	     data: JSON.stringify(subscription),
+  	     contentType : "application/json",
+  	     success : function(response){
+  	    	page.release();
+  	    	form.find("input[type=submit]").show();
+  	    	if(response.status == 1){
+   	    	   const parent = form.parent();
+   	    	   form.hide();
+   	    	   parent.find("> p").show();
+   	    	   form.find(':input').not(':input[readonly]').not(':input[type=submit]').val("");
+   	       }else if(response.status == 2){
+   	    	   $(".subscribe-form").hide();
+   	    	   alert("souscription reussie");
+   	       }
+  	       else if(response.status == 0){
+    	    	   alert("vous &ecirc;tes d&edot;ja souscrit &agrave; ce service");
+    	       }
+  	     },
+  	     error : function(){
+  	    	form.find("input[type=submit]").show();
+  	    	page.release();
+  	    	alert("erreur lors de la connexion au serveur");
+  	     },
+  	     dataType : "json"
+  	   });*/
+  	   return false;
+  	});	
+     
     $(".plan-details").click(function(event){
 	   $(".plans .pricing").hide();
 	   const plan = $(this).data("plan");

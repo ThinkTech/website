@@ -9,6 +9,9 @@ body{
 a:focus, a:hover {
     color: #36cff9;
 }
+input[readonly] {
+	background : #eee;
+}
 .close:focus, .close:hover {
     filter: alpha(opacity=90);
     opacity: 0.9;
@@ -1249,10 +1252,6 @@ a.w3ls_banner_more:hover{
 .subscribe-form select{
     text-indent: 2px;
     padding-left: 0;
-}
-
-.subscribe-form input[readonly] {
-	background : #eee;
 }
 
 .subscribe-form input[type=submit] {
