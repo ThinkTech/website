@@ -3448,16 +3448,16 @@ button::-moz-focus-inner {
     color: #555;
     outline: none;
     font-size: 1em;
-    padding: .6em 1em;
+    padding: .3em 1em;
     border: none;
     -webkit-appearance: none;
     margin-bottom: 1em;
-	line-height: 1.8em; 
-	width: 100%;
+    width: 100%;
 }
 .book-form input[type=submit] {
     color: #FFFFFF;
     padding: .5em 1em;
+    margin-top: 0.5em;
     font-size: 1em;
     cursor: pointer;
     border: 2px solid #fff;
