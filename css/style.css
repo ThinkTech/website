@@ -3571,6 +3571,7 @@ button::-moz-focus-inner {
 .w3l_banner_bottom_left .pricing-grid h3 {
     font-size: 1.4em;
     text-shadow: none;
+    text-align: left;
 }
 }
 @media(max-width:991px){ 
@@ -5952,7 +5953,7 @@ ul.contact_info li a:hover{
 	}
 	.w3l_banner_bottom_left h3{
 		font-size: 1.8em;
-		white-space: nowrap;
+        text-align: center;
 	}
 	.agile_head, .wthree_stat_left h3 {
 		font-size:1.7em;
