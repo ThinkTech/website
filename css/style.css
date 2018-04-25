@@ -4136,6 +4136,7 @@ span.line {
 	.content-process.user img, .thumbs{
 	   width : 128px;
 	   height : 128px;
+	   margin-top: 10px;
     }
 	.agileits_w3layouts_contact_gridr .thumbs {
     	  width: 64px;
