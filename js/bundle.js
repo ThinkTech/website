@@ -132,8 +132,7 @@ $(document).ready(function() {
   	   }
   	   subscription.structure = form.find("input[name=structure]").val().trim();
   	   subscription.plan = form.find("input[name=plan]").val().trim();
-  	   console.log(subscription)
-  	   /*form.find("input[type=submit]").hide();
+  	   form.find("input[type=submit]").hide();
   	   page.wait({top : form.offset().top});
   	   $.ajax({
   	     type: "POST",
@@ -142,19 +141,17 @@ $(document).ready(function() {
   	     contentType : "application/json",
   	     success : function(response){
   	    	page.release();
-  	    	form.find("input[type=submit]").show();
   	    	if(response.status == 1){
-   	    	   const parent = form.parent();
-   	    	   form.hide();
-   	    	   parent.find("> p").show();
-   	    	   form.find(':input').not(':input[readonly]').not(':input[type=submit]').val("");
+  	    		$(".mfp-close").click();
+  	    		alert("souscription reussie");
    	       }else if(response.status == 2){
-   	    	   $(".subscribe-form").hide();
+   	    	   $(".mfp-close").click();
    	    	   alert("souscription reussie");
    	       }
   	       else if(response.status == 0){
-    	    	   alert("vous &ecirc;tes d&edot;ja souscrit &agrave; ce service");
-    	       }
+    	      alert("vous &ecirc;tes d&edot;ja souscrit &agrave; ce service");
+    	   }
+  	       form.find("input[type=submit]").show();
   	     },
   	     error : function(){
   	    	form.find("input[type=submit]").show();
@@ -162,7 +159,7 @@ $(document).ready(function() {
   	    	alert("erreur lors de la connexion au serveur");
   	     },
   	     dataType : "json"
-  	   });*/
+  	   });
   	   return false;
   	});	
      
