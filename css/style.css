@@ -1000,9 +1000,10 @@ h3 .fa-briefcase {
     text-align: justify;
 }
 
-.terms h1 {
+.content .terms h1 {
     color: #000000;
     margin-top: 10px;
+    font-weight: bold;
 }
 
 .wthree_banner_grids{
@@ -4347,6 +4348,9 @@ p.footer {
 	.content h1 {
 		font-size: 2em;
 	}
+	.content .terms h1 {
+     font-size: 1.6em;
+    }
 	.flipster-carousel .flip-future {
 		-webkit-transform: translateX(20%) translateZ(0) rotateY(-54deg) scale(0.65);
 		-moz-transform: translateX(20%) translateZ(0) rotateY(-54deg) scale(0.65);
@@ -5540,9 +5544,10 @@ ul.contact_info li a:hover{
        width: 92%;
        margin-top: 40px;
      }
-     .terms h1 {
+     .content .terms h1 {
       	text-align : center;
       	text-shadow: none;
+      	font-size: 1.8em;
      } 
      .terms h2 {
         font-size : 17px;
