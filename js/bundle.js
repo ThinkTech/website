@@ -36,7 +36,7 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
 
 $(document).ready(function() {
 	$(".banner h2,.banner p").addClass("animated pulse delay-1");
-	$(".banner a").fadeIn(1000).addClass("animated pulse delay-3");
+	$(".banner a,.btn-pluss-wrapper").fadeIn(1000).addClass("animated pulse delay-3");
 	$(".subscribe").click(function(event){
 	   $(".plans .pricing").hide();
 	   const form = $(".subscribe-form");
