@@ -43,7 +43,7 @@ $(document).ready(function() {
 	   form.find("form").show();
 	   form.find("> p").hide();
 	   const plan = $(this).data("plan");
-	   $("input[name=plan]",form).val("plan "+plan);
+	   $("input[name=plan]",form).val(plan);
 	   if(plan == "personal"){
 	      $("input[name=structure]",form).removeAttr("required").hide().prev().hide();
 	   }else{
@@ -75,7 +75,7 @@ $(document).ready(function() {
  	   const form = $(this);
  	   const subscription = {};
  	   subscription.service = "web dev";
- 	   subscription.name = form.find("input[name=contact]").val().trim();
+ 	   subscription.name = form.find("input[name=name]").val().trim();
  	   subscription.email = form.find("input[name=email]").val().trim();
  	   subscription.password = form.find("input[name=password]").val().trim();
  	   const confirmation = form.find("input[name=confirmation]").val().trim();
@@ -121,8 +121,8 @@ $(document).ready(function() {
     $("#small-dialog form").submit(function(event){
        const form = $(this);
   	   const subscription = {};
-  	   subscription.service = "mailbox";
-  	   subscription.name = form.find("input[name=contact]").val().trim();
+  	   subscription.service = "mailhosting";
+  	   subscription.name = form.find("input[name=name]").val().trim();
   	   subscription.email = form.find("input[name=email]").val().trim();
   	   subscription.password = form.find("input[name=password]").val().trim();
   	   const confirmation = form.find("input[name=confirmation]").val().trim();

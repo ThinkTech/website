@@ -354,7 +354,7 @@
 		   <h1><i class="fa fa-envelope" aria-hidden="true"></i>Souscription</h1>
 		   <form action="https://thinktech-platform.herokuapp.com/services/subscribe">
 		   <label>Prénom et Nom</label>
-		   <input type="text" name="contact" placeholder="prénom et nom" required>
+		   <input type="text" name="name" placeholder="prénom et nom" required>
 		   <label>Email</label>
 		   <input type="email" name="email" placeholder="email" required>
 		   <label>Mot de Passe</label>
@@ -513,7 +513,7 @@
 			<div id="small-dialog" class="mfp-hide book-form">
 				<h2><i class="fa fa-envelope" aria-hidden="true"></i> Souscription </h2>
 				<form action="https://thinktech-platform.herokuapp.com/services/subscribe" method="post">
-					<input type="text" name="contact" placeholder="Prénom et Nom" required/>
+					<input type="text" name="name" placeholder="Prénom et Nom" required/>
 					<input type="email" name="email" class="email" placeholder="Email" required/>
 					<input type="password" name="password" placeholder="mot de passe" required>
 		   			<input type="password" name="confirmation" placeholder="confirmation" required>
@@ -731,7 +731,7 @@
 			const background = $(this).css("background");
 			const dialog = $("#small-dialog").css("background",background);
 			const plan = $(this).data("plan");
-			$("input[name=plan]",dialog).val("plan "+plan);
+			$("input[name=plan]",dialog).val(plan);
 		});
 	});
 </script>

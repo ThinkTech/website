@@ -6021,7 +6021,7 @@ ul.contact_info li a:hover{
 	}
 	.w3layouts_newsletter_left h3 {
 		font-size: 1.6em;
-		text-align: left;
+  	    text-align: center;
         margin-left: 0;
 	}
 	.w3layouts_newsletter_right {
@@ -6171,9 +6171,6 @@ ul.contact_info li a:hover{
 	.nbs-flexisel-nav-left {
 		left: 80%;
 	}
-	.w3layouts_newsletter_left h3 {
-		font-size: 1.5em;
-	}
 	.w3layouts_newsletter_right input[type="email"] {
 		width: 73%;
 	}
@@ -6241,9 +6238,6 @@ ul.contact_info li a:hover{
 	}
 	.agileits_more ul li a.hvr-icon-hang {
 		padding: 0.5em 2.5em 0.5em 1.5em;
-	}
-	.w3layouts_newsletter_left h3 {
-		font-size: 1.4em;
 	}
 	.w3layouts_newsletter_right input[type="submit"] {
 		width: 28%;
