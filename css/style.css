@@ -5545,6 +5545,7 @@ ul.contact_info li a:hover{
       	text-align : center;
       	text-shadow: none;
       	font-size: 1.8em;
+      	margin-bottom: 0;
      } 
      .terms h2 {
         font-size : 17px;
