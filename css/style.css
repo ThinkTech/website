@@ -4208,10 +4208,13 @@ span.line {
 		margin-left: 10px;
 	}
      .content-process {
-    height: 930px;
-    margin-bottom: 10px;
-    margin-top: -10px;
-}
+ 	   height: 930px;
+       margin-bottom: 10px;
+       margin-top: -10px;
+    }
+    .content-process.user {
+ 	   margin-bottom: -5px;
+	}
     .content-process p {
       width: 65%;
       margin: auto;
