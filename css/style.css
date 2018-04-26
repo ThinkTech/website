@@ -3357,9 +3357,10 @@ button::-moz-focus-inner {
     background: #fff;
     color: #000;
     border: 1px solid #c4d1d8;
-    padding: 3px;
+    padding: 4px;
     margin-bottom: 10px;
     margin-top: 3px;
+    border-radius: 5px;
 }
 .pricing-grid {
     float: left;
