@@ -1000,7 +1000,7 @@ h3 .fa-briefcase {
     text-align: justify;
 }
 
-.content .terms h1 {
+.terms h1,.content .terms h1 {
     color: #000000;
     margin-top: 10px;
     font-weight: bold;
@@ -4348,7 +4348,7 @@ p.footer {
 	.content h1 {
 		font-size: 2em;
 	}
-	.content .terms h1 {
+	.terms h1, .content .terms h1 {
      font-size: 1.6em;
     }
 	.flipster-carousel .flip-future {
