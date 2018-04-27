@@ -1169,7 +1169,12 @@ a.w3ls_banner_more:hover{
 	margin-left: 5px;
 	margin-bottom: 10px;
 }
-
+.w3l_banner_bottom_left.faq li {
+    background: #fafafa;
+    padding-left: 0;
+    padding: 10px;
+    border: 1px solid #c7c6c6;
+}
 
 .subscribe-form {
 	padding: 20px;
