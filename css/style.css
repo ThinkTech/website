@@ -1176,6 +1176,12 @@ a.w3ls_banner_more:hover{
     border: 1px solid #c7c6c6;
 }
 
+.w3l_banner_bottom_left.guide li {
+	padding : 0;
+	background : transparent;
+	border : none;
+}
+
 .subscribe-form {
 	padding: 20px;
 	width: 58%;
