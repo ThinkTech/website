@@ -3391,7 +3391,7 @@ button::-moz-focus-inner {
     content: "";
     position: absolute;
     left: 0;
-    bottom: -30px;
+    bottom: -20px;
     width: 0;
     height: 0;
     border-top: 30px solid #ca2233;
@@ -3574,7 +3574,6 @@ button::-moz-focus-inner {
 .w3ls-top:after {
     border-left-width: 106px;
     border-right-width: 106px;
-    bottom: -25px;
     border-top-width: 25px;
 }
 .pricing-grid h4 {
