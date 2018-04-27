@@ -1169,7 +1169,7 @@ a.w3ls_banner_more:hover{
 	margin-left: 5px;
 	margin-bottom: 10px;
 }
-.w3l_banner_bottom_left.faq li {
+.w3l_banner_bottom_left.faq li,.w3l_banner_bottom_left.offer li {
     background: #fafafa;
     padding-left: 0;
     padding: 10px;
