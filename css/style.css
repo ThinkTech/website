@@ -3341,14 +3341,14 @@ button::-moz-focus-inner {
     margin: 0 1em 0 0;
 }
 .pricing-grid h3 {
-   font-size: 1.4em;
+   font-size: 1.1em;
     color: #fbf7f7;
     text-shadow: none;
     text-transform: capitalize;
     font-family: Exo;
 }
 .pricing-grid  h4{
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-weight: bold;
     color: #fff; 
 	position: relative;
@@ -3555,9 +3555,6 @@ button::-moz-focus-inner {
     border-left-width: 111px;
     border-right-width: 111px;
 }
-.pricing-grid h4 {
-    font-size: 2em; 
-}
 }
 @media(max-width:1024px){
 	
@@ -3577,7 +3574,7 @@ button::-moz-focus-inner {
     border-top-width: 25px;
 }
 .pricing-grid h4 {
-    font-size: 1.3em; 
+    font-size: 1.2em; 
 }
 .w3ls-bottom {
     padding: 2.5em 1em 0;
@@ -3587,9 +3584,10 @@ button::-moz-focus-inner {
     font-size: 1.2em;
 }
 .w3l_banner_bottom_left .pricing-grid h3 {
-    font-size: 1.4em;
+    font-size: 1.2em;
     text-shadow: none;
     text-align: left;
+    top: 10px;
 }
 }
 @media(max-width:991px){ 
