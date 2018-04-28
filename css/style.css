@@ -3378,8 +3378,10 @@ button::-moz-focus-inner {
     float: left;
     width: 24%;
     margin-left: 1px;
-    background: #fff;
+    background: #efecec;
+    border: 1px solid #08ccf7;
     padding: 0 0 1em;
+    padding-bottom: 20px;
 }
 .w3ls-top {
     position: relative;
@@ -3420,7 +3422,7 @@ button::-moz-focus-inner {
     background: #ca2233;
     font-family: 'Exo', serif;
     padding: .5em 4em;
-    margin-top: 2.2em;
+    margin-top: 1.2em;
     border-radius: 4px;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
     -webkit-transition: .5s all;
