@@ -3363,7 +3363,7 @@ button::-moz-focus-inner {
 	top: -23px;
 }
 .pricing-grid span.sup {
-    font-size: 1em;
+    font-size: 1.1em;
     font-weight: bold;
     text-transform: none;
     text-align: center;
