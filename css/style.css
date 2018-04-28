@@ -3585,8 +3585,8 @@ button::-moz-focus-inner {
     padding: 2.5em 1em 0;
 }
 .more a { 
-    padding: .5em 3em; 
-    font-size: 1.2em;
+    padding: .5em 3em;
+    font-size: 1.1em;
     margin-top: 20px;
 }
 .w3l_banner_bottom_left .pricing-grid h3 {
@@ -4158,6 +4158,7 @@ span.line {
 	.content-process.user img, .thumbs{
 	   width : 128px;
 	   height : 128px;
+	   margin-bottom: 10px;
     }
 	.agileits_w3layouts_contact_gridr .thumbs {
     	  width: 64px;
@@ -5915,6 +5916,10 @@ ul.contact_info li a:hover{
     	font-size: 12px;
     }
 	.faq.w3l_banner_bottom_left p {padding: 7px;border:none}
+	.guide.w3l_banner_bottom_left p {
+    	border: 1px solid #00dfff;
+    	margin-top: 0;
+	}
 	.buy-button a {
       font-size: 13px;
 	}
