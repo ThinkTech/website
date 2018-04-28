@@ -4160,7 +4160,7 @@ span.line {
     	 height: 64px;
 	}
 	.partners-list .thumbs {
-    margin-top: -20px;
+    margin-top: -30px;
     display: inline-block;
     }
 	.portal.w3l_banner_bottom_left p {
@@ -4698,7 +4698,6 @@ h2.typoh2{
 	.subscribe-form h1 {
 		font-size: 22px;
 		margin-bottom: 0px;
-		text-align : left;
 		text-shadow: none;
 	}
 	.subscribe-form label {
@@ -5977,11 +5976,12 @@ ul.contact_info li a:hover{
 	.w3l_banner_bottom_left h3{
 		font-size: 1.8em;
         text-align: center;
+        margin-bottom: 12px;
 	}
 	.agile_head, .wthree_stat_left h3 {
 		font-size:1.7em;
 		top: 15px;
-    		position: relative;
+    	position: relative;
 	}
 	.banner-bottom, .news, .footer, .services, .services-bottom, .features, .wthree_stat {
 		padding: 5px 0;
@@ -6132,7 +6132,7 @@ ul.contact_info li a:hover{
     white-space: nowrap;
     box-shadow: none;
     border: none;
-    margin-top: -10px;
+    margin-top: -40px;
     padding-bottom: 0;
     background: transparent;
     margin-left: -15px;
