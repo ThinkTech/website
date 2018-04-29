@@ -5621,6 +5621,7 @@ ul.contact_info li a:hover{
 	.navbar-nav {
 		margin: 0;
 		margin-top: 10px;
+		padding-left: 10px;
 	}
 	.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
            color: #a20b0b;
