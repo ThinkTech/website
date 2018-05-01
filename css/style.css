@@ -1366,6 +1366,7 @@ a.w3ls_banner_more:hover{
     border: none;
     margin-top: 0px;
 	padding : 0em;
+	box-shadow : none;
 }
 
 .guide.w3l_banner_bottom_left p {
