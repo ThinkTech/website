@@ -1308,14 +1308,14 @@ a.w3ls_banner_more:hover{
 }
 
 .terms .close {
-   background: transparent;
+   background: #000;
     border-radius: 50%;
     position: relative;
     padding: 5px;
     top: 4px;
-    color: #000;
+    color: #fff;
     right: 14px;
-    border: 1px solid #000000;
+    border: 1px solid #000;
 }
 
 .terms-agreement input{
@@ -1363,7 +1363,7 @@ a.w3ls_banner_more:hover{
 }
 
 .faq.w3l_banner_bottom_left p{
-    border: 1px solid #00dfff;
+    border: none;
     margin-bottom: 10px;
     margin-top: 5px;
 	padding : 1em;
@@ -1371,6 +1371,7 @@ a.w3ls_banner_more:hover{
 
 .guide.w3l_banner_bottom_left p {
     margin-top: 0px;
+    border: 1px solid #00dfff;
 }
 
 .faq.guide ol {
@@ -5620,6 +5621,7 @@ ul.contact_info li a:hover{
 	.navbar-nav {
 		margin: 0;
 		margin-top: 10px;
+		padding-left: 10px;
 	}
 	.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
            color: #a20b0b;
@@ -6052,8 +6054,9 @@ ul.contact_info li a:hover{
 	}
 	.w3layouts_newsletter_left h3 {
 		font-size: 1.6em;
-  	    text-align: center;
-        margin-left: 0;
+  	       text-align: center;
+               margin-left: 0;
+		line-height: 35px;
 	}
 	.w3layouts_newsletter_right {
 		width: 100%;
