@@ -994,8 +994,10 @@ h3 .fa-briefcase {
 }
 
 .terms h2 {
-	font-weight : bold;
-	line-height: 2em;
+	font-weight: bold;
+    line-height: 2em;
+    background: #08ccf7;
+    color: #fff;
 }
 
 .terms i {
