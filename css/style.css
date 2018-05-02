@@ -1025,6 +1025,19 @@ h3 .fa-briefcase {
     margin-bottom: 10px;
 }
 
+.terms h1 {
+	line-height: 2em;
+    background: #08ccf7;
+    color: #fff;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.about .terms h1 {
+	width : 100%;
+}
+
 .wthree_banner_grids{
 	padding:7em 0;
 }
@@ -4401,7 +4414,7 @@ p.footer {
 		font-size: 2em;
 	}
 	.terms h1, .content .terms h1 {
-     font-size: 1.5em;
+     font-size: 1.2em;
     }
 	.flipster-carousel .flip-future {
 		-webkit-transform: translateX(20%) translateZ(0) rotateY(-54deg) scale(0.65);
