@@ -998,7 +998,6 @@ h3 .fa-briefcase {
     line-height: 2em;
     background: #08ccf7;
     color: #fff;
-    border: 1px solid #2ea2d1;
 }
 
 .terms i {
@@ -1024,10 +1023,9 @@ h3 .fa-briefcase {
     margin-top: 10px;
     font-weight: bold;
     margin-bottom: 10px;
-    border: 1px solid #2ea2d1;
 }
 
-.terms h1 {
+.terms h1,.content .terms h1 {
 	line-height: 2em;
     background: #08ccf7;
     color: #fff;
