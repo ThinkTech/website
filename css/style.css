@@ -1338,14 +1338,13 @@ a.w3ls_banner_more:hover{
 }
 
 .terms .close {
-   background: #08ccf7;
+  background: #08ccf7;
     border-radius: 50%;
     position: relative;
-    padding: 5px;
+    padding: 7px;
     top: 4px;
     color: #fff;
     right: 14px;
-    border: 1px solid #dcd6d6;
 }
 
 .terms-agreement input{
