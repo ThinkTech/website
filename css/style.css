@@ -2974,6 +2974,7 @@ h3.agileits-icons-title {
 @media only screen and (max-width: 768px) {
  	 .cd-faq-group .cd-faq-title h2 {
        width: 94%; 
+       text-align: center;
 	}
 }
 
