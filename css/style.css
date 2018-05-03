@@ -2981,11 +2981,12 @@ h3.agileits-icons-title {
 @media only screen and (max-width: 480px) {
 	.cd-faq-content p {
 		text-align : center;
-		  font-size: 13px;
+		  font-size: 12px;
 	}
 	.cd-faq-trigger {
-      font-size: 17px;
+      font-size: 15px;
       margin-top: 10px;
+      text-align: center;
     }
     .cd-faq-categories a {
      font-size: 15px;
