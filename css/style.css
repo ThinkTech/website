@@ -4776,6 +4776,7 @@ h2.typoh2{
     padding-left: 10px;
     border: 1px solid #08ccf7;
     background: #fff;
+    vertical-align: middle;
 }
 
 @media (max-width:1280px){
