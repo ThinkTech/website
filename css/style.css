@@ -4727,6 +4727,55 @@ h2.typoh2{
     margin: 0 0 10px;
 }
 
+.tld-domain-search-wrapper {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+.tld-domain-search .input-container input {
+   display: inline-block;
+    height: 48px!important;
+    line-height: 48px;
+    border: 1px solid #08ccf7;
+    padding-left: 10px;
+}
+
+.tld-domain-search .input-container span {
+    border: 2px solid transparent;
+    display: inline-block;
+    height: 48px!important;
+    line-height: 48px;
+    font-weight : bold;
+}
+
+.tld-domain-search .tld-search-button {
+    background-color: #ca2233;
+    display: inline-block;
+    height: 48px;
+    margin-left: 10px;
+    width: 70px;
+    vertical-align: top;
+    font-size: 1.6em;
+    padding-top: 7px;
+    margin-top: 2px;
+    border: 1px solid #968f8f;
+    color: #f3ecec;
+    cursor : pointer;
+}
+
+.tld-domain-search > div {
+	display : inline-block;
+}
+
+.tld-domain-search select {
+    width: 140px;
+    height: 48px;
+    line-height: 48px;
+    padding-left: 10px;
+    border: 1px solid #08ccf7;
+}
+
 @media (max-width:1280px){
 	.subscribe-form label {
 		font-size : 18px;
@@ -4790,6 +4839,31 @@ h2.typoh2{
 	}
 }
 @media (max-width:640px){
+	.tld-domain-search-wrapper {
+	   padding: 0;
+       padding-bottom: 15px;
+       margin-top: -10px;
+	}
+	.tld-domain-search select {
+	    width: 65px;
+	    height: 36px;
+	    line-height: 36px;
+	    font-size: 12px;
+	}
+	.tld-domain-search .input-container input {
+	    height: 36px!important;
+	    line-height: 36px;
+	    width: 115px;
+	    font-size: 12px;
+	}
+	.tld-domain-search .tld-search-button {
+	    height: 36px;
+	    margin-left: 0px;
+	    width: 50px;
+	    font-size: 13px;
+	    padding-top: 7px;
+	    margin-top: 9px;
+	}
 	.header:after {height: 49%;}
 	.content-process.user p{font-size: 1.1em;text-shadow: none;}
 	.wthree_stat_right1 h4 {text-shadow: none;}
@@ -4882,6 +4956,11 @@ h2.typoh2{
 		margin-top: 0;
 	}
 }
+@media (max-width:360px){
+	.tld-domain-search-wrapper {
+	   margin-top: -20px;
+	}
+}
 @media (max-width: 320px){
 	.grid_4 {
 		margin-top: 18px;
@@ -4908,9 +4987,6 @@ h2.typoh2{
 	}
 	.nav > li > a {
 		font-size: 14px;
-	}
-	table.table.table-striped,.table-borde#ca2233,.bs-docs-example {
-		display: none;
 	}
 }
 /*-- //typography --*/
