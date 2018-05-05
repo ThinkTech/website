@@ -4853,6 +4853,7 @@ h2.typoh2{
         line-height: 36px;
         font-size: 11px;
         margin-left: -1px;
+        margin-top: 1px;
 	}
 	.tld-domain-search .input-container input {
 	    height: 36px!important;
