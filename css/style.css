@@ -4739,6 +4739,7 @@ h2.typoh2{
     line-height: 48px;
     border: 1px solid #08ccf7;
     padding-left: 10px;
+    width : 250px;
 }
 
 .tld-domain-search .input-container span {
@@ -4753,7 +4754,7 @@ h2.typoh2{
     background-color: #ca2233;
     display: inline-block;
     height: 48px;
-    margin-left: 10px;
+    margin-left: 0px;
     width: 70px;
     vertical-align: top;
     font-size: 1.6em;
