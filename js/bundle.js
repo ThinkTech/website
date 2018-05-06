@@ -174,7 +174,7 @@ $(document).ready(function() {
     		$.ajax({
     	  	     type: "GET",
     	  	     url: url,
-    	  	     dataType : "text",
+    	  	     dataType : "xml",
     	  	     success : function(response){
     	  	    	page.release();
     	  	    	console.log(response);
