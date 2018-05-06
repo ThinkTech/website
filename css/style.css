@@ -181,6 +181,8 @@ animation-delay: 1s;
 
 .w3l_banner_bottom_left {
     text-align : center;
+    padding-right: 0;
+    padding-left: 0;
 }
 
 /*-- nav --*/
@@ -4670,6 +4672,10 @@ section#tables  p {
 	padding: 16px;
 	background-color: #ffffff;
 }
+.table {
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
 .table td, .table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
 	padding: 15px!important;
 }
@@ -4678,6 +4684,7 @@ section#tables  p {
     color: #2f1a1a;
     border-top: none !important;
     text-align: center;
+    font-family : Exo;
 }
 .table > thead > tr > th {
 	font-size: 1.2em;

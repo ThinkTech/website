@@ -162,6 +162,35 @@ $(document).ready(function() {
   	   });
   	   return false;
   	});	
+    
+    $(".tld-domain-search-wrapper .tld-search-button").click(function(event){
+    	const div = $(".tld-domain-search-wrapper");
+    	const input = $("input",div);
+    	const value = input.val();
+    	if(value.trim()){
+    		var url = "https://api.duoservers.com/?auth_username=store203583&auth_password=apipassword&section=domains&command=check&name="+value
+    		url += "&tlds[0]=com&tlds[1]=net&tlds[2]=org&tlds[3]=biz&tlds[4]=info&tlds[5]=tv&tlds[6]=press&tlds[7]=news&tlds[8]=tech";
+    		page.wait({top : div.offset().top}+100);
+    		$.ajax({
+    	  	     type: "GET",
+    	  	     url: url,
+    	  	     success : function(response){
+    	  	    	page.release();
+    	  	    	console.log(response);
+    	  	     },
+    	  	     error : function(){
+    	  	    	page.release();
+    	  	    	alert("erreur lors de la connexion au serveur");
+    	  	     },
+    	  	     dataType : "xml"
+    	  	});
+    	}else {
+    		alert("vous devez choisir votre domaine web",function(){
+    			input.val("").focus();
+    		});
+    	}
+    	return false;
+    });
      
     $(".plan-details").click(function(event){
 	   $(".plans .pricing").hide();
