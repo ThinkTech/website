@@ -181,8 +181,7 @@ $(document).ready(function() {
     	  	     error : function(){
     	  	    	page.release();
     	  	    	alert("erreur lors de la connexion au serveur");
-    	  	     },
-    	  	     dataType : "xml"
+    	  	     }
     	  	});
     	}else {
     		alert("vous devez choisir votre domaine web",function(){
