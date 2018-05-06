@@ -5166,6 +5166,11 @@ h2.typoh2{
     text-shadow: 1px -2px #000000;
 }
 
+.agileits_w3layouts_contact_gridr .agileits_leave:first-of-type label {
+	margin-top: 0px;
+}
+
+
 .agileits_w3layouts_contact_gridr label i {
 	color : #08ccf7;
 }
