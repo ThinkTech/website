@@ -176,9 +176,13 @@ $(document).ready(function() {
     	  	     url: url,
     	  	     dataType : "xml",
     	  	     crossDomain : true,
-    	  	     complete : function(response){
+    	  	     success : function(response){
     	  	    	page.release();
     	  	    	console.log(response);
+    	  	     },
+    	  	     error : function(){
+    	  	    	page.release();
+    	  	    	alert("erreur lors de la connexion au serveur");
     	  	     }
     	  	});
     	}else {
