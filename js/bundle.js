@@ -175,13 +175,10 @@ $(document).ready(function() {
     	  	     type: "GET",
     	  	     url: url,
     	  	     dataType : "xml",
-    	  	     success : function(response){
+    	  	     crossDomain : true,
+    	  	     complete : function(response){
     	  	    	page.release();
     	  	    	console.log(response);
-    	  	     },
-    	  	     error : function(){
-    	  	    	page.release();
-    	  	    	alert("erreur lors de la connexion au serveur");
     	  	     }
     	  	});
     	}else {
