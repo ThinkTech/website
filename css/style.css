@@ -4727,6 +4727,10 @@ h2.typoh2{
     margin: 0 0 10px;
 }
 
+.table-striped>tbody>tr:nth-of-type(odd) {
+    background-color: #efecec;
+}
+
 .tld-domain-search-wrapper {
     width: 100%;
     text-align: center;
