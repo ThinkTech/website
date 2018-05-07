@@ -4778,7 +4778,7 @@ h2.typoh2{
 
 .tld-domain-search .input-container input {
    display: inline-block;
-    height: 48px!important;
+    height: 48px;
     line-height: 48px;
     border: 1px solid #08ccf7;
     padding-left: 10px;
@@ -4788,7 +4788,7 @@ h2.typoh2{
 .tld-domain-search .input-container span {
     border: 2px solid transparent;
     display: inline-block;
-    height: 48px!important;
+    height: 48px;
     line-height: 48px;
     font-weight : bold;
 }
@@ -4906,7 +4906,7 @@ h2.typoh2{
         margin-left: -1px;
 	}
 	.tld-domain-search .input-container input {
-	    height: 36px!important;
+	    height: 36px;
         line-height: 36px;
         width: 135px;
         font-size: 11px;
