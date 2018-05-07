@@ -12,6 +12,18 @@ a:focus, a:hover {
 input[readonly] {
 	background : #eee;
 }
+::placeholder {
+	color : #502626;
+	opacity : 1;
+}
+:-ms-input-placeholder {
+	color : #502626;
+	opacity : 1;
+}
+::-ms-input-placeholder {
+	color : #502626;
+	opacity : 1;
+}
 .close:focus, .close:hover {
     filter: alpha(opacity=90);
     opacity: 0.9;
@@ -5130,10 +5142,6 @@ h2.typoh2{
 }
 .agileits_w3layouts_contact_gridr:nth-child(3){
 	margin:0 1em;
-}
-.agileits_w3layouts_contact_gridr textarea::-webkit-input-placeholder{
-	color:#000000;
-	font-weight:600;
 }
 .agileits_w3layouts_contact_gridr input[type="submit"]{
 	outline: none;
