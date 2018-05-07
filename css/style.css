@@ -220,6 +220,9 @@ animation-delay: 1s;
     border-right: none;
     border-top: none;
 }
+.navbar-default .navbar-nav > .active > a:after {
+	display : none;
+}
 .navbar-default .navbar-nav > li > a {
     color: #000000;
     font-weight: bold;
@@ -228,6 +231,23 @@ animation-delay: 1s;
     border-bottom: none;
     margin-right: -1px;
 }
+
+.navbar-default .navbar-nav>li>a:after {
+    display: inline-block;
+    content: "";
+    border: .3rem solid #3abfdd;
+    width: 4rem;
+    margin: 0 1rem;
+    transform: translateY(-1rem);
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 91%;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 20px;
+}
+
 .navbar-nav > li > a {
     margin: 0;
     padding: 2em;
@@ -4807,6 +4827,12 @@ h2.typoh2{
 	}
 }
 
+@media (max-width:1024px){
+	.navbar-default .navbar-nav>li>a:after{
+	   bottom : 10px;
+	}
+}
+
 @media (max-width:768px){
 	.banner1 h3,.w3l_banner_bottom_left h3, .agile_head, .wthree_stat_left h3{
 	  text-shadow : none;
@@ -4864,6 +4890,9 @@ h2.typoh2{
 	}
 }
 @media (max-width:640px){
+	.navbar-default .navbar-nav>li>a:after{
+		display : none;
+	}
 	.tld-domain-search-wrapper {
 	   padding: 0;
        padding-bottom: 15px;
