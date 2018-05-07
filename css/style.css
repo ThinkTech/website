@@ -2303,6 +2303,21 @@ button.close {
     margin-top: 1.1em;
     text-transform: capitalize;
 }
+.agileits_w3layouts_features_gridr  h4:after {
+    display: inline-block;
+    content: "";
+    border: .3rem solid #3abfdd;
+    width: 4rem;
+    margin: 0 1rem;
+    transform: translateY(-1rem);
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: -20px;
+}
 .agileits_w3layouts_features_gridr p{
 	color:#999;
 	line-height:1.7em;
