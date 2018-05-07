@@ -4517,6 +4517,7 @@ p.footer {
 	  letter-spacing: 0px;
       top: 7px;
       position: relative;
+      left: 10px;
     }
     .partners table td {
      font-size: 13px;
@@ -4907,8 +4908,6 @@ h2.typoh2{
         line-height: 36px;
         font-size: 11px;
         margin-left: -1px;
-        position: relative;
-  	    top: 1px;
 	}
 	.tld-domain-search .input-container input {
 	    height: 36px;
