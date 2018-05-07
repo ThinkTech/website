@@ -242,7 +242,7 @@ animation-delay: 1s;
     position: absolute;
     left: 0;
     right: 0;
-    width: 91%;
+    width: 85%;
     margin-left: auto;
     margin-right: auto;
     bottom: 15px;
@@ -2610,7 +2610,7 @@ h3.agileits-icons-title {
 
 .faq p span.full {
     display: block;
-    width: 85%;
+    width: 91%;
     padding: 0.5em;
     vertical-align: top;
     margin: auto;
