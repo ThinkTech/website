@@ -5876,7 +5876,7 @@ ul.contact_info li a:hover{
 }
 @media (max-width: 667px){
 	.agileits_w3layouts_contact_gridr input[type="text"], .agileits_w3layouts_contact_gridr input[type="email"], .agileits_w3layouts_contact_gridr textarea {
-    	font-size: 14px;
+    	font-size: 13px;
     }
 	.banner h2 {
 		font-size: 2em;
