@@ -86,6 +86,7 @@ $(document).ready(function() {
  	   subscription.structure = form.find("input[name=structure]").val().trim();
  	   subscription.project = form.find("select[name=project]").val().trim();
  	   subscription.plan = form.find("input[name=plan]").val().trim();
+ 	   subscription.per = "month";
  	   form.find("input[type=submit]").hide();
  	   page.wait({top : form.offset().top});
  	   $.ajax({
@@ -132,6 +133,7 @@ $(document).ready(function() {
   	   }
   	   subscription.structure = form.find("input[name=structure]").val().trim();
   	   subscription.plan = form.find("input[name=plan]").val().trim();
+  	   subscription.per = "year";
   	   form.find("input[type=submit]").hide();
   	   page.wait({top : form.offset().top});
   	   $.ajax({
