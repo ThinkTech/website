@@ -4834,6 +4834,12 @@ h2.typoh2{
 }
 
 @media (max-width:768px){
+	.agileits_w3layouts_contact_gridr input[type="text"], .agileits_w3layouts_contact_gridr input[type="email"], .agileits_w3layouts_contact_gridr textarea {
+    	font-size: 14px;
+    	color: #000000;
+   	    width: 100%;
+        padding: 10px;
+    }
 	.banner1 h3,.w3l_banner_bottom_left h3, .agile_head, .wthree_stat_left h3{
 	  text-shadow : none;
 	}
@@ -5159,7 +5165,7 @@ h2.typoh2{
 	outline:none;
 	background:#f7f9fc;
 	border:1px solid #8ee2f5;
-	font-size:14px;
+	font-size:16px;
 	color:#000000;
 	width:100%;
 	padding:10px;
