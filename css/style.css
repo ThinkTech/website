@@ -4924,13 +4924,17 @@ h2.typoh2{
         font-size: 11px;
         margin-left: -5px;
 	}
+	.tld-domain-search .input-container span {
+      height: 36px;
+      line-height: 36px;
+      font-size: 11px;
+    }
 	.tld-domain-search .tld-search-button {
 	    height: 36px;
 	    margin-left: -2px;
 	    width: 50px;
 	    font-size: 13px;
 	    padding-top: 7px;
-	    margin-top: 9px;
 	}
 	.header:after {height: 49%;}
 	.content-process.user p{font-size: 1.1em;text-shadow: none;}
