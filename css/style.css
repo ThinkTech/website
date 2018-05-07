@@ -3052,7 +3052,7 @@ h3.agileits-icons-title {
 
 /* Styles for dialog window */
 #small-dialog,#small-dialog2{
-	background: #73316C;
+	background-color: #73316C;
 	text-align: left;
 	max-width: 500px;
 	margin: 20px auto;
@@ -3498,7 +3498,7 @@ button::-moz-focus-inner {
     display: inline-block;
     font-size: 1.3em;
     color: #fff;
-    background: #ca2233;
+    background-color: #ca2233;
     font-family: 'Exo', serif;
     padding: .5em 4em;
     margin-top: 1.2em;
@@ -3518,7 +3518,7 @@ button::-moz-focus-inner {
     border-top-color: #058d51;
 }
 .pricing-grid.grid-two .more a{
-	background:#058d51;
+	background-color:#058d51;
 }
 .pricing-grid.grid-three .w3ls-top {
     background: #009ae9;
@@ -3527,7 +3527,7 @@ button::-moz-focus-inner {
     border-top-color: #009ae9;
 }
 .pricing-grid.grid-three .more a{
-	background:#009ae9;
+	background-color:#009ae9;
 }
 .pricing-grid.grid-four .w3ls-top {
     background: #F1C40F;
@@ -3536,7 +3536,7 @@ button::-moz-focus-inner {
     border-top-color: #F1C40F;
 }
 .pricing-grid.grid-four .more a{
-	background:#F1C40F;
+	background-color:#F1C40F;
 }
 /*--pop-up--*/
 .book-form {

@@ -979,8 +979,8 @@ Nous avons aussi un excellent service client dédié à vous fournir une assista
 				mainClass: 'my-mfp-zoom-in'
 			});
 			$(".w3ls-bottom .more a").click(function(){
-				const background = $(this).css("background");
-				const dialog = $("#small-dialog").css("background",background);
+				const background = $(this).css("background-color");
+				const dialog = $("#small-dialog").css("background-color",background);
 				const plan = $(this).data("plan");
 				$("input[name=plan]",dialog).val(plan);
 			});
