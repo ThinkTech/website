@@ -371,7 +371,7 @@ Nous avons aussi un excellent service client dédié à vous fournir une assista
 							<li>24/7 Assistance</li>
 						</ul>
 						<div class="more">
-							<a data-plan="free" class="book popup-with-zoom-anim button-isi zoomIn animated" data-wow-delay=".5s" href="#small-dialog">Souscrire</a>				
+							<a data-grid="grid-one" data-plan="free" class="book popup-with-zoom-anim button-isi zoomIn animated" data-wow-delay=".5s" href="#small-dialog">Souscrire</a>				
 						</div>
 					</div>
 				</div>
@@ -392,7 +392,7 @@ Nous avons aussi un excellent service client dédié à vous fournir une assista
 							<li>24/7 Assistance</li>
 						</ul>
 						<div class="more">
-							<a data-plan="standard" class="book popup-with-zoom-anim button-isi zoomIn animated" data-wow-delay=".5s" href="#small-dialog">Souscrire</a>				
+							<a data-grid="grid-two" data-plan="standard" class="book popup-with-zoom-anim button-isi zoomIn animated" data-wow-delay=".5s" href="#small-dialog">Souscrire</a>				
 						</div>
 					</div>
 				</div>
@@ -413,7 +413,7 @@ Nous avons aussi un excellent service client dédié à vous fournir une assista
 							<li>24/7 Assistance</li>
 						</ul>
 						<div class="more">
-							<a data-plan="pro" class="book popup-with-zoom-anim button-isi zoomIn animated" data-wow-delay=".5s" href="#small-dialog">Souscrire</a>				
+							<a data-grid="grid-three" data-plan="pro" class="book popup-with-zoom-anim button-isi zoomIn animated" data-wow-delay=".5s" href="#small-dialog">Souscrire</a>				
 						</div>
 					</div>
 				</div>
@@ -434,7 +434,7 @@ Nous avons aussi un excellent service client dédié à vous fournir une assista
 							<li>24/7 Assistance</li>
 						</ul>
 						<div class="more">
-							<a data-plan="enterprise" class="book popup-with-zoom-anim button-isi zoomIn animated" data-wow-delay=".5s" href="#small-dialog">Souscrire</a>				
+							<a data-grid="grid-four" data-plan="enterprise" class="book popup-with-zoom-anim button-isi zoomIn animated" data-wow-delay=".5s" href="#small-dialog">Souscrire</a>				
 						</div>
 					</div>
 				</div>	
@@ -979,8 +979,8 @@ Nous avons aussi un excellent service client dédié à vous fournir une assista
 				mainClass: 'my-mfp-zoom-in'
 			});
 			$(".w3ls-bottom .more a").click(function(){
-				const background = $(this).css("background-color");
-				const dialog = $("#small-dialog").css("background-color",background);
+				const grid = $(this).data("grid");
+				const dialog = $("#small-dialog").addClass(grid+"-color");
 				const plan = $(this).data("plan");
 				$("input[name=plan]",dialog).val(plan);
 			});

@@ -3052,7 +3052,6 @@ h3.agileits-icons-title {
 
 /* Styles for dialog window */
 #small-dialog,#small-dialog2{
-	background-color: #73316C;
 	text-align: left;
 	max-width: 500px;
 	margin: 20px auto;
@@ -3510,8 +3509,17 @@ button::-moz-focus-inner {
 }  
 .more a:hover {
     opacity: .7;
-}        
-.pricing-grid.grid-two .w3ls-top {
+} 
+
+.pricing-grid.grid-one .w3ls-top,.grid-one-color {
+    background: #ca2233;
+}
+ 
+.pricing-grid.grid-one .more a {
+    background: #ca2233;
+}
+       
+.pricing-grid.grid-two .w3ls-top,.grid-two-color {
     background: #058d51;
 }
 .pricing-grid.grid-two .w3ls-top:after {
@@ -3520,7 +3528,7 @@ button::-moz-focus-inner {
 .pricing-grid.grid-two .more a{
 	background-color:#058d51;
 }
-.pricing-grid.grid-three .w3ls-top {
+.pricing-grid.grid-three .w3ls-top,.grid-three-color {
     background: #009ae9;
 }
 .pricing-grid.grid-three .w3ls-top:after {
@@ -3529,7 +3537,7 @@ button::-moz-focus-inner {
 .pricing-grid.grid-three .more a{
 	background-color:#009ae9;
 }
-.pricing-grid.grid-four .w3ls-top {
+.pricing-grid.grid-four .w3ls-top,.grid-four-color {
     background: #F1C40F;
 }
 .pricing-grid.grid-four .w3ls-top:after {
