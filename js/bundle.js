@@ -170,16 +170,21 @@ $(document).ready(function() {
     	const input = $("input",div);
     	const value = input.val();
     	if(value.trim()){
-    		const url = "https://thinktech-platform.herokuapp.com/domains/verify?name="+value
+    		const url = "https://thinktech-platform.herokuapp.com/domains/verify?domain="+value
     		page.wait({top : div.offset().top}+100);
     		$.ajax({
     	  	     type: "GET",
     	  	     url: url,
     	  	     dataType : "json",
-    	  	     crossDomain : true,
     	  	     success : function(response){
     	  	    	page.release();
-    	  	    	console.log(response);
+    	  	    	const result = response["1"].result;
+    	  	    	const extension = $("select",div).val();
+    	  	    	if(result[extension]){
+    	  	    		alert("le nom de domaine web "+value+"."+extension+" est indisponible");
+    	  	    	}else{
+    	  	    		alert("le nom de domaine web "+value+"."+extension+" est disponible");	
+    	  	    	}
     	  	     },
     	  	     error : function(){
     	  	    	page.release();
