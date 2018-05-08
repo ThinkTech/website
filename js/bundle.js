@@ -181,9 +181,9 @@ $(document).ready(function() {
     	  	    	const result = response["1"].result;
     	  	    	const extension = $("select",div).val();
     	  	    	if(result[extension]){
-    	  	    		alert("le nom de domaine web "+value+"."+extension+" est indisponible");
+    	  	    		alert("le nom de domaine "+value+"."+extension+" est indisponible");
     	  	    	}else{
-    	  	    		alert("le nom de domaine web "+value+"."+extension+" est disponible");	
+    	  	    		alert("le nom de domaine "+value+"."+extension+" est disponible");	
     	  	    	}
     	  	     },
     	  	     error : function(){
