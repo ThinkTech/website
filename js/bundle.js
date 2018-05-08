@@ -170,13 +170,12 @@ $(document).ready(function() {
     	const input = $("input",div);
     	const value = input.val();
     	if(value.trim()){
-    		var url = "https://api.duoservers.com/?auth_username=store203583&auth_password=apipassword&section=domains&command=check&name="+value
-    		url += "&tlds[0]=com&tlds[1]=net&tlds[2]=org&tlds[3]=biz&tlds[4]=info&tlds[5]=tv&tlds[6]=press&tlds[7]=news&tlds[8]=tech";
+    		const url = "https://thinktech-platform.herokuapp.com/domains/verify?name="+value
     		page.wait({top : div.offset().top}+100);
     		$.ajax({
     	  	     type: "GET",
     	  	     url: url,
-    	  	     dataType : "xml",
+    	  	     dataType : "json",
     	  	     crossDomain : true,
     	  	     success : function(response){
     	  	    	page.release();
