@@ -4773,6 +4773,7 @@ section#tables  p {
     border-top: none !important;
     text-align: center;
     font-family : Exo;
+    vertical-align: middle;
 }
 .table > thead > tr > th {
 	font-size: 1.2em;
@@ -4939,7 +4940,7 @@ h2.typoh2{
     font-size: 13px;
     font-weight: bold;
     cursor : pointer;
-    border: 1px solid #713535;
+    border: 1px solid #d8d2d2;
 }
 
 .search-results .table-striped>tbody>tr:nth-of-type(odd) {
