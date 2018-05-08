@@ -68,7 +68,7 @@ $(document).ready(function() {
 	$(".subscribe-form > .close").click(function(event){
 		   $(this).parent().hide();
 	});
-    $(".terms > .close").click(function(event){
+    $(".terms > .close, .confirmation > .close").click(function(event){
     	 $(this).parent().hide();
 	});	
     $(".subscribe-form form").submit(function(event){
@@ -98,17 +98,15 @@ $(document).ready(function() {
  	    	page.release();
  	    	form.find("input[type=submit]").show();
  	    	if(response.status == 1){
-  	    	   const parent = form.parent();
-  	    	   form.hide();
-  	    	   parent.find("> p").show();
-  	    	   form.find(':input').not(':input[readonly]').not(':input[type=submit]').val("");
-  	       }else if(response.status == 2){
+ 	    		$(".subscribe-form").hide();
+ 	    		$(".confirmation").css("top", form.offset().top+100).show();
+  	        }else if(response.status == 2){
   	    	   $(".subscribe-form").hide();
   	    	   alert("souscription reussie");
-  	       }
- 	       else if(response.status == 0){
+  	        }
+ 	        else if(response.status == 0){
    	    	   alert("vous &ecirc;tes d&edot;ja souscrit &agrave; ce service");
-   	       }
+   	        }
  	     },
  	     error : function(){
  	    	form.find("input[type=submit]").show();
@@ -145,7 +143,7 @@ $(document).ready(function() {
   	    	page.release();
   	    	if(response.status == 1){
   	    		$(".mfp-close").click();
-  	    		alert("souscription reussie");
+  	    		$(".confirmation").css("top", form.offset().top+20).show();
    	       }else if(response.status == 2){
    	    	   $(".mfp-close").click();
    	    	   alert("souscription reussie");

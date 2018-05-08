@@ -1250,7 +1250,7 @@ a.w3ls_banner_more:hover{
 	border : none;
 }
 
-.subscribe-form {
+.subscribe-form, .confirmation {
 	padding: 20px;
 	width: 58%;
 	left: 0;
@@ -1265,6 +1265,11 @@ a.w3ls_banner_more:hover{
 	text-align: center;
 }
 
+ .confirmation {
+   background: #424242;
+    color: #fff;
+    width: 450px;
+ }
 
 .faq.w3l_banner_bottom_left .subscribe-form p {
     display: none;
@@ -1289,6 +1294,26 @@ a.w3ls_banner_more:hover{
     background-color: #fff;
     font-size: 15px;
     box-shadow: none;
+}
+
+.confirmation span.close {
+    float: right;
+    position: relative;
+    right: -11px;
+    top: -11px;
+    display: block;
+    padding: 8px;
+    width: 32px;
+    text-align: center;
+    border: 1px solid #dad7d7;
+    border-radius: 50%;
+    background-color: #fff;
+    font-size: 15px;
+    box-shadow: none;
+}
+
+.confirmation p {
+   font-size : 17px;	
 }
 
 .subscribe-form h1{
@@ -5915,6 +5940,12 @@ ul.contact_info li a:hover{
 	}
 }
 @media (max-width: 640px){
+	.confirmation {
+      width: 290px;
+ 	}
+ 	.confirmation p {
+ 	  font-size : 13px;
+ 	}
     .agile_header_grid:after {
    	   top: 17px;
        left: 30.7%;
