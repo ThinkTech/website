@@ -171,7 +171,7 @@ $(document).ready(function() {
     	const value = input.val();
     	if(value.trim()){
     		const url = "https://thinktech-platform.herokuapp.com/domains/verify?domain="+value
-    		page.wait({top : div.offset().top}+100);
+    		page.wait({top : $(this).offset().top-20});
     		$.ajax({
     	  	     type: "GET",
     	  	     url: url,
