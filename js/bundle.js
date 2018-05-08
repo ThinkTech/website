@@ -68,7 +68,7 @@ $(document).ready(function() {
 	$(".subscribe-form > .close").click(function(event){
 		   $(this).parent().hide();
 	});
-    $(".terms > .close, .confirmation > .close").click(function(event){
+    $(".terms > .close, .confirmation > .close, .search-results .close").click(function(event){
     	 $(this).parent().hide();
 	});	
     $(".subscribe-form form").submit(function(event){
@@ -164,11 +164,23 @@ $(document).ready(function() {
   	});	
     
     $(".tld-domain-search-wrapper .tld-search-button").click(function(event){
+    	const pricing = {};
+    	pricing.com = "6 000";
+    	pricing.net = "7 000";
+    	pricing.org = "7 000";
+    	pricing.biz = "7 000";
+    	pricing.info = "8 000";
+    	pricing.tv = "20 000";
+    	pricing.press = "15 000";
+    	pricing.news = "15 000";
+    	pricing.tech = "10 000";
     	const div = $(".tld-domain-search-wrapper");
     	const input = $("input",div);
-    	const value = input.val();
-    	if(value.trim()){
-    		const url = "https://thinktech-platform.herokuapp.com/domains/verify?domain="+value
+    	var domain = input.val();
+    	if(domain.trim()){
+    		const index = domain.indexOf(".");
+    		if(domain.indexOf(".")!=-1) domain = domain.substring(0,index);
+    		const url = "https://thinktech-platform.herokuapp.com/domains/verify?domain="+domain;
     		page.wait({top : $(this).offset().top-20});
     		$.ajax({
     	  	     type: "GET",
@@ -176,12 +188,29 @@ $(document).ready(function() {
     	  	     dataType : "json",
     	  	     success : function(response){
     	  	    	page.release();
+    	  	    	const search = $(".search-results").css("top",div.offset().top).show();
+    	  	    	$('html,body').animate({scrollTop:search.offset().top-20},300);
+    	  	    	const tbody = $("table",search).empty();
     	  	    	const result = response["1"].result;
+    	  	    	var tr;
+    	  	    	for (var property in result) {
+    	  	    	    if(result.hasOwnProperty(property)) {
+    	  	    	    	if(!result[property]){
+    	  	    	          tr = $("<tr/>").append("<td>"+domain+"."+property+"<td/>");
+    	  	    	          tr.append("<td>"+pricing[property] +" CFA <a class='buy'>Choisir</a></td>");
+    	  	    	          $("a",tr).click(function(){
+    	  	    	        	 search.hide(); 
+    	  	    	          });
+    	  	    	          tbody.append(tr);
+    	  	    	    	}
+    	  	    	    }
+    	  	    	}
     	  	    	const extension = $("select",div).val();
+    	  	    	$(".domain-name",search).html(domain+"."+extension);
     	  	    	if(result[extension]){
-    	  	    		alert("le nom de domaine "+value+"."+extension+" est indisponible");
+    	  	    		$(".domain-availability",search).html("indisponible").addClass("red");   	  	    		
     	  	    	}else{
-    	  	    		alert("le nom de domaine "+value+"."+extension+" est disponible");	
+    	  	    		$(".domain-availability",search).html("disponible").addClass("green");	
     	  	    	}
     	  	     },
     	  	     error : function(){
