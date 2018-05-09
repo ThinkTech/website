@@ -4783,7 +4783,7 @@ section#tables  p {
 .table > tbody > tr > td:first-of-type {
 	font-weight : bold;
 	font-size: 1.2em;
-	word-break: break-all;
+	word-break: break-word;
 }
 .tab-content > .active {
 	display: block;
@@ -4909,7 +4909,7 @@ h2.typoh2{
 	margin-bottom : 15px;
 	line-height: 1.5em;
 	font-weight: 600;
-	word-break: break-all;
+	word-break: break-word;
 }
 
 .search-results .fa-globe {

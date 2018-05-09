@@ -176,8 +176,9 @@ $(document).ready(function() {
     	pricing.tech = "10 000";
     	const div = $(".tld-domain-search-wrapper");
     	const input = $("input",div);
-    	var domain = input.val();
-    	if(domain.trim()){
+    	var domain = input.val().trim().toLowerCase();
+    	if(domain){
+    		input.val(domain);
     		const index = domain.indexOf(".");
     		if(domain.indexOf(".")!=-1) domain = domain.substring(0,index);
     		const url = "https://thinktech-platform.herokuapp.com/domains/verify?domain="+domain;
