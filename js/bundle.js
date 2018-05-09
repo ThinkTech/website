@@ -196,14 +196,14 @@ $(document).ready(function() {
     	  	    	for (var property in result) {
     	  	    	    if(result.hasOwnProperty(property)) {
     	  	    	    	if(!result[property]){
-    	  	    	          tr = $("<tr/>").append("<td>"+domain+"."+property+"<td/>");
+    	  	    	          tr = $("<tr/>").append("<td>"+domain+"."+property+"</td>");
     	  	    	          tr.append("<td>"+pricing[property] +" CFA <a class='buy'>Choisir</a></td>");
     	  	    	          $("a",tr).click(function(){
     	  	    	        	 search.hide(); 
     	  	    	          });
     	  	    	          tbody.append(tr);
     	  	    	    	}else {
-    	  	    	    	  tr = $("<tr/>").append("<td>"+domain+"."+property+"<td/>");
+    	  	    	    	  tr = $("<tr/>").append("<td>"+domain+"."+property+"</td>");
     	  	    	    	  tr.append("<td>&nbsp;</td>");
        	  	    	          tr.addClass("unavailable");
        	  	    	          tbody.append(tr);
