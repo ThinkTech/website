@@ -164,7 +164,7 @@ $(document).ready(function() {
   	});	
     
     $(".tld-domain-search-wrapper .tld-search-button").click(function(event){
-    	const buttton = $(this);
+    	const button = $(this);
     	const top = button.offset().top;
     	const pricing = {};
     	pricing.com = 6000;
