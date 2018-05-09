@@ -4971,11 +4971,11 @@ h2.typoh2{
 }
 
 .search-results .table-striped>tbody>tr:nth-of-type(odd).unavailable{
-   background-color : #e21e1e;
+   background-color : #d13b2f;
 }
 
 .search-results .table-striped>tbody>tr:nth-of-type(even).unavailable{
-   background-color : #e21e1e;
+   background-color : #d13b2f;
 }
 
 .search-results .table {
