@@ -257,7 +257,6 @@ $(document).ready(function() {
     $(".plans .pricing .close").click(function(event){
 	   $(".plans .pricing").hide();
 	});	
-    
     const y = $(".tld-domain-search .input-container input").offset().top;
     $(".tld-domain-search .input-container select").offset({top : y});
     $(window).scroll(function(){
