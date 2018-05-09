@@ -1462,6 +1462,7 @@ a.w3ls_banner_more:hover{
     margin-top: 0px;
 	padding : 0em;
 	box-shadow : none;
+	background : none;
 }
 
 .guide.w3l_banner_bottom_left p {
@@ -3504,7 +3505,6 @@ button::-moz-focus-inner {
     float: left;
     width: 24%;
     margin-left: 1px;
-    background: #efecec;
     border: 1px solid #08ccf7;
     padding: 0 0 1em;
     padding-bottom: 20px;
