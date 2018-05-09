@@ -165,18 +165,18 @@ $(document).ready(function() {
     
     $(".tld-domain-search-wrapper .tld-search-button").click(function(event){
     	const pricing = {};
-    	pricing.com = "6 000";
-    	pricing.net = "7 000";
-    	pricing.org = "7 000";
-    	pricing.biz = "7 000";
-    	pricing.info = "8 000";
-    	pricing.tv = "20 000";
-    	pricing.press = "15 000";
-    	pricing.news = "15 000";
-    	pricing.tech = "10 000";
+    	pricing.com = 6000;
+    	pricing.net = 7000;
+    	pricing.org = 7000;
+    	pricing.biz = 7000;
+    	pricing.info = 8000;
+    	pricing.tv = 20000;
+    	pricing.press = 15000;
+    	pricing.news = 15000;
+    	pricing.tech = 10000;
     	const div = $(".tld-domain-search-wrapper");
     	const input = $("input",div);
-    	var domain = input.val().trim().toLowerCase();
+    	var domain = input.val().replace(/\s+/g, '').toLowerCase();
     	if(domain){
     		const index = domain.indexOf(".");
     		if(domain.indexOf(".")!=-1) domain = domain.substring(0,index);
@@ -198,7 +198,20 @@ $(document).ready(function() {
     	  	    	    if(result.hasOwnProperty(property)) {
     	  	    	    	if(!result[property]){
     	  	    	          tr = $("<tr/>").append("<td>"+domain+"."+property+"</td>");
-    	  	    	          tr.append("<td>"+pricing[property] +" CFA <a class='buy'>Choisir</a></td>");
+    	  	    	          var td = $("<td><span>"+pricing[property].toLocaleString("fr-FR") +" CFA</span></td>");
+    	  	    	          var select = $("<select></select>");
+    	  	    	          select.append("<option value='1'>1</option>");
+    	  	    	          select.append("<option value='2'>2</option>");
+    	  	    	          select.append("<option value='3'>3</option>");
+    	  	    	          select.append("<option value='4'>4</option>");
+    	  	    	          select.append("<option value='5'>5</option>");
+    	  	    	          select.on("change",{td : td, price : pricing[property]},function(event){
+    	  	    	        	  const price = event.data.price * parseInt($(this).val()); 
+    	  	    	        	  event.data.td.find("span").html(price.toLocaleString("fr-FR")+" CFA");
+    	  	    	          });
+    	  	    	          td.append(select);
+    	  	    	          td.append("<a class='buy'>Choisir</a>");
+    	  	    	          tr.append(td);
     	  	    	          $("a",tr).click(function(){
     	  	    	        	 search.hide(); 
     	  	    	          });

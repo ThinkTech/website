@@ -4947,6 +4947,20 @@ h2.typoh2{
     border: 1px solid #d8d2d2;
 }
 
+.search-results select {
+	padding: 5px;
+    display: inline-block;
+    margin-left: 30px;
+    font-size: 13px;
+    font-weight: bold;
+    border: 1px solid #d8d2d2;
+}
+
+.search-results td span {
+   display : inline-block;
+   width : 80px;
+}
+
 .search-results .table-striped>tbody>tr {
     background-color: #97dc96;
     border: 1px solid #ded5d5;
