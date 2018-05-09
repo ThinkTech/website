@@ -163,6 +163,13 @@ $(document).ready(function() {
   	   return false;
   	});	
     
+    $(".tld-domain-search-wrapper input").keyup(function(event){
+    	if (event.keyCode === 13) {
+    		$(".tld-domain-search-wrapper .tld-search-button").trigger("click");
+    	}
+    	return false;
+    });
+    
     $(".tld-domain-search-wrapper .tld-search-button").click(function(event){
     	const button = $(this);
     	const top = button.offset().top;
