@@ -4852,6 +4852,7 @@ h2.typoh2{
 
 .tld-domain-search .tld-search-button {
     background-color: #ca2233;
+    z-index : 10;
     display: inline-block;
     height: 47px;
     margin-left: 0px;

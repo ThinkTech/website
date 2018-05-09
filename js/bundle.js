@@ -202,6 +202,10 @@ $(document).ready(function() {
     	  	    	        	 search.hide(); 
     	  	    	          });
     	  	    	          tbody.append(tr);
+    	  	    	    	}else {
+    	  	    	    	  tr = $("<tr/>").append("<td>"+domain+"."+property+"<td/>");
+       	  	    	          tr.append("<td>"+pricing[property] +" CFA</td>");
+       	  	    	          tbody.append(tr);
     	  	    	    	}
     	  	    	    }
     	  	    	}
