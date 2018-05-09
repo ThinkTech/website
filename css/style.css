@@ -4950,6 +4950,10 @@ h2.typoh2{
     border: 1px solid #ded5d5;
 }
 
+.search-results .table-striped>tbody>tr td:nth-child(2) {
+   width : 40%;
+}
+
 .search-results .table-striped>tbody>tr:nth-of-type(odd).unavailable{
    background-color : #e21e1e;
 }
