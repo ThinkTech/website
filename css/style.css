@@ -4950,7 +4950,11 @@ h2.typoh2{
 }
 
 .search-results .table-striped>tbody>tr:nth-of-type(odd).unavailable{
-   background-color : #ef5555;
+   background-color : #e21e1e;
+}
+
+.search-results .table-striped>tbody>tr:nth-of-type(even).unavailable{
+   background-color : #e21e1e;
 }
 
 .search-results .table {
