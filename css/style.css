@@ -4783,6 +4783,7 @@ section#tables  p {
 .table > tbody > tr > td:first-of-type {
 	font-weight : bold;
 	font-size: 1.2em;
+	word-break: break-all;
 }
 .tab-content > .active {
 	display: block;
@@ -4908,6 +4909,7 @@ h2.typoh2{
 	margin-bottom : 15px;
 	line-height: 1.5em;
 	font-weight: 600;
+	word-break: break-all;
 }
 
 .search-results .fa-globe {
@@ -4964,6 +4966,8 @@ h2.typoh2{
 
 .search-results .table {
 	margin-bottom : 0px;
+	margin-left: auto;
+    margin-right: auto;
 }
 
 @media (max-width:1280px){
@@ -5039,6 +5043,25 @@ h2.typoh2{
 	}
 }
 @media (max-width:640px){
+	.search-results {
+	  padding : 10px;
+	}
+	.table > tbody > tr > td:first-of-type {
+   	 	font-size: 13px;
+    }
+	.table > tbody > tr > td, .table > tfoot > tr > td {
+    	font-size: 12px;
+	}
+	.search-results .table > tbody > tr > td, .table > tfoot > tr > td {
+    	display: inline-block;
+	}
+	.search-results .table > tbody > tr > td:first-of-type {
+   	 	font-size: 13px;
+    	text-align: left;
+	}
+	.search-results .table-striped>tbody>tr td:nth-child(2) {
+    	width: 100%;
+	}
 	.search-results h3 {
       margin-bottom: 10px;
       font-size: 13px;
