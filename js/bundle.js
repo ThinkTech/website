@@ -164,6 +164,7 @@ $(document).ready(function() {
   	});	
     
     $(".tld-domain-search-wrapper .tld-search-button").click(function(event){
+    	const buttton = $(this).hide();
     	const pricing = {};
     	pricing.com = 6000;
     	pricing.net = 7000;
@@ -188,6 +189,7 @@ $(document).ready(function() {
     	  	     url: url,
     	  	     dataType : "json",
     	  	     success : function(response){
+    	  	    	button.show();
     	  	    	page.release();
     	  	    	const search = $(".search-results").css("top",div.offset().top).show();
     	  	    	$('html,body').animate({scrollTop:search.offset().top-20},300);
@@ -233,6 +235,7 @@ $(document).ready(function() {
     	  	    	}
     	  	     },
     	  	     error : function(){
+    	  	    	button.show();
     	  	    	page.release();
     	  	    	alert("erreur lors de la connexion au serveur");
     	  	     }
