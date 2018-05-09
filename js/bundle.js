@@ -257,8 +257,6 @@ $(document).ready(function() {
     $(".plans .pricing .close").click(function(event){
 	   $(".plans .pricing").hide();
 	});	
-    const y = $(".tld-domain-search .input-container input").offset().top;
-    $(".tld-domain-search .input-container select").offset({top : y});
     $(window).scroll(function(){
 		  const top = $(this).scrollTop();
 		  $.each($(".w3l_banner_bottom_left h3,.wthree_stat_left h3,.wthree_stat_left p"),function(index,element){
