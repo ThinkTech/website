@@ -210,7 +210,7 @@ $(document).ready(function() {
     	  	    	        	  event.data.td.find("span").html(price.toLocaleString("fr-FR")+" CFA");
     	  	    	          });
     	  	    	          td.append(select);
-    	  	    	          td.append("<a class='buy'>Choisir</a>");
+    	  	    	          td.append("<a class='buy'>Acheter</a>");
     	  	    	          tr.append(td);
     	  	    	          $("a",tr).click(function(){
     	  	    	        	 search.hide(); 
