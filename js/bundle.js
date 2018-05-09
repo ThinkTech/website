@@ -200,11 +200,11 @@ $(document).ready(function() {
     	  	    	          tr = $("<tr/>").append("<td>"+domain+"."+property+"</td>");
     	  	    	          var td = $("<td><span>"+pricing[property].toLocaleString("fr-FR") +" CFA</span></td>");
     	  	    	          var select = $("<select></select>");
-    	  	    	          select.append("<option value='1'>1</option>");
-    	  	    	          select.append("<option value='2'>2</option>");
-    	  	    	          select.append("<option value='3'>3</option>");
-    	  	    	          select.append("<option value='4'>4</option>");
-    	  	    	          select.append("<option value='5'>5</option>");
+    	  	    	          select.append("<option value='1'>1 an</option>");
+    	  	    	          select.append("<option value='2'>2 an</option>");
+    	  	    	          select.append("<option value='3'>3 an</option>");
+    	  	    	          select.append("<option value='4'>4 an</option>");
+    	  	    	          select.append("<option value='5'>5 an</option>");
     	  	    	          select.on("change",{td : td, price : pricing[property]},function(event){
     	  	    	        	  const price = event.data.price * parseInt($(this).val()); 
     	  	    	        	  event.data.td.find("span").html(price.toLocaleString("fr-FR")+" CFA");

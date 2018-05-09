@@ -4939,7 +4939,7 @@ h2.typoh2{
     padding: 5px;
     width: 84px;
     display: inline-block;
-    margin-left: 30px;
+    margin-left: 20px;
     color: #fff;
     font-size: 13px;
     font-weight: bold;
@@ -4950,7 +4950,7 @@ h2.typoh2{
 .search-results select {
 	padding: 5px;
     display: inline-block;
-    margin-left: 30px;
+    margin-left: 20px;
     font-size: 13px;
     font-weight: bold;
     border: 1px solid #d8d2d2;
@@ -5075,6 +5075,7 @@ h2.typoh2{
 	}
 	.search-results .table-striped>tbody>tr td:nth-child(2) {
     	width: 100%;
+    	text-align: left;
 	}
 	.search-results h3 {
       margin-bottom: 10px;
