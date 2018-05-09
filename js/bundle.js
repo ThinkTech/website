@@ -204,7 +204,7 @@ $(document).ready(function() {
     	  	    	          tbody.append(tr);
     	  	    	    	}else {
     	  	    	    	  tr = $("<tr/>").append("<td>"+domain+"."+property+"<td/>");
-       	  	    	          tr.append("<td>indisponible</td>");
+    	  	    	    	  tr.append("<td>"+pricing[property] +" CFA</td>");
        	  	    	          tr.addClass("unavailable");
        	  	    	          tbody.append(tr);
     	  	    	    	}

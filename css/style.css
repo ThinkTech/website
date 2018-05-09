@@ -4944,7 +4944,7 @@ h2.typoh2{
     border: 1px solid #d8d2d2;
 }
 
-.search-results .table-striped>tbody>tr:nth-of-type(odd) {
+.search-results .table-striped>tbody>tr {
     background-color: #97dc96;
     border: 1px solid #ded5d5;
 }
