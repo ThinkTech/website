@@ -5062,6 +5062,12 @@ h2.typoh2{
 	.search-results {
 	  padding : 10px;
 	}
+	.search-results select {
+    	margin-left: -5px;
+	}
+	.search-results a {
+        margin-left: 15px;
+	}
 	.table > tbody > tr > td:first-of-type {
    	 	font-size: 13px;
     }
