@@ -173,6 +173,7 @@ $(document).ready(function() {
     $(".tld-domain-search-wrapper .tld-search-button").click(function(event){
     	const button = $(this);
     	const top = button.offset().top;
+    	button.hide();
     	const pricing = {};
     	pricing.com = 6000;
     	pricing.net = 7000;

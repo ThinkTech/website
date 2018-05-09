@@ -4946,6 +4946,7 @@ h2.typoh2{
     font-weight: bold;
     cursor : pointer;
     border: 1px solid #d8d2d2;
+    text-align: center;
 }
 
 .search-results select {
