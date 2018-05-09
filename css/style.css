@@ -4825,7 +4825,7 @@ h2.typoh2{
 }
 
 .table-striped>tbody>tr:nth-of-type(odd) {
-    background-color: #efecec;
+    background-color: #fff;
 }
 
 .tld-domain-search-wrapper {
