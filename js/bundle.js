@@ -164,7 +164,8 @@ $(document).ready(function() {
   	});	
     
     $(".tld-domain-search-wrapper .tld-search-button").click(function(event){
-    	const buttton = $(this).hide();
+    	const buttton = $(this);
+    	const top = button.offset().top;
     	const pricing = {};
     	pricing.com = 6000;
     	pricing.net = 7000;
@@ -183,7 +184,7 @@ $(document).ready(function() {
     		if(domain.indexOf(".")!=-1) domain = domain.substring(0,index);
     		input.val(domain);
     		const url = "https://thinktech-platform.herokuapp.com/domains/verify?domain="+domain;
-    		page.wait({top : $(this).offset().top-20});
+    		page.wait({top : top-20});
     		$.ajax({
     	  	     type: "GET",
     	  	     url: url,
