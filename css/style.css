@@ -4951,7 +4951,7 @@ h2.typoh2{
 }
 
 .search-results .table-striped>tbody>tr td:nth-child(2) {
-   width : 40%;
+   width : 50%;
 }
 
 .search-results .table-striped>tbody>tr:nth-of-type(odd).unavailable{
