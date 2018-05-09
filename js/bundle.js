@@ -178,9 +178,9 @@ $(document).ready(function() {
     	const input = $("input",div);
     	var domain = input.val().trim().toLowerCase();
     	if(domain){
-    		input.val(domain);
     		const index = domain.indexOf(".");
     		if(domain.indexOf(".")!=-1) domain = domain.substring(0,index);
+    		input.val(domain);
     		const url = "https://thinktech-platform.herokuapp.com/domains/verify?domain="+domain;
     		page.wait({top : $(this).offset().top-20});
     		$.ajax({
