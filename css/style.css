@@ -3474,6 +3474,7 @@ button::-moz-focus-inner {
     text-shadow: none;
     text-transform: capitalize;
     font-family: Exo;
+    top: -4px;
 }
 .pricing-grid  h4{
     font-size: 1.1em;
