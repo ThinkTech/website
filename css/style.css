@@ -5236,6 +5236,7 @@ h2.typoh2{
 @media (max-width:360px){
 	.tld-domain-search-wrapper {
 	   margin-top: -20px;
+	   padding-bottom : 0;
 	}
 }
 @media (max-width: 320px){
