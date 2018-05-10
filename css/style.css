@@ -5062,6 +5062,7 @@ h2.typoh2{
 
 .search-results .table-striped>tbody>tr td:nth-child(2) {
    width : 55%;
+   white-space: nowrap;
 }
 
 .search-results .table-striped>tbody>tr:nth-of-type(odd).unavailable{
