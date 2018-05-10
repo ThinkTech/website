@@ -68,9 +68,25 @@ $(document).ready(function() {
 	$(".subscribe-form > .close").click(function(event){
 		   $(this).parent().hide();
 	});
-    $(".terms > .close, .confirmation > .close, .search-results .close").click(function(event){
+    $(".terms > .close, .confirmation > .close, .search .close").click(function(event){
     	 $(this).parent().hide();
 	});	
+    $(".buttons .cancel").click(function(event){
+   	    $(this).parent().parent().hide();
+	});
+    $(".search label").click(function(event){
+   	    $(this).prev().prop("checked", true);
+	});
+    $(".search-wizard .finish").click(function(event){
+    	$(this).parent().parent().hide();
+    	const val = $(".search-wizard input:checked").val();
+    	const div = $("."+val);
+  	    $('html,body').animate({scrollTop:div.offset().top-20},300);
+	});
+    $(".search-wizard .domain-edit a").click(function(event){
+    	$(".search-wizard").hide();
+    	$(".search-results").show();
+	});
     $(".subscribe-form form").submit(function(event){
  	   const form = $(this);
  	   const subscription = {};
@@ -202,6 +218,8 @@ $(document).ready(function() {
     	  	    	page.release();
     	  	    	const result = response["1"].result;
     	  	    	if(result){
+    	  	    		const selection = {};
+    	  	    		selection.year = 1;
     	  	    		const search = $(".search-results").css("top",div.offset().top).show();
         	  	    	$('html,body').animate({scrollTop:search.offset().top-20},300);
         	  	    	const tbody = $("table",search).empty();
@@ -219,7 +237,9 @@ $(document).ready(function() {
 	    	  	    	          select.append("<option value='4'>4 an</option>");
 	    	  	    	          select.append("<option value='5'>5 an</option>");
 	    	  	    	          select.on("change",{td : td, price : pricing[extension]},function(event){
-	    	  	    	        	  const price = event.data.price * parseInt($(this).val()); 
+	    	  	    	        	  const year = parseInt($(this).val());
+	    	  	    	        	  const price = event.data.price * year;
+	    	  	    	        	  selection.year = year;
 	    	  	    	        	  event.data.td.find("span").html(price.toLocaleString("fr-FR")+" CFA");
 	    	  	    	          });
 	    	  	    	          td.append(select);
@@ -228,6 +248,11 @@ $(document).ready(function() {
 	    	  	    	          $("a",tr).on("click",{extension : extension},function(event){
 	    	  	    	        	$("select",div).val(event.data.extension)
 	    	  	    	        	 search.hide(); 
+	    	  	    	        	 const wizard = $(".search-wizard").css("top",div.offset().top).show();
+	    	         	  	    	 $('html,body').animate({scrollTop:wizard.offset().top-20},300);
+	    	  	    	        	 selection.domain = domain+"."+event.data.extension;
+	    	  	    	        	 $(".domain-name",wizard).html(selection.domain);
+	    	  	    	        	 $(".domain-year",wizard).html(selection.year);
 	    	  	    	          });
 	    	  	    	          tbody.append(tr);
 	    	  	    	    	}else {
@@ -241,9 +266,11 @@ $(document).ready(function() {
 	    	  	    	extension = $("select",div).val();
 	    	  	    	$(".domain-name",search).html(domain+"."+extension);
 	    	  	    	if(result[extension]){
-	    	  	    		$(".domain-availability",search).html("indisponible").addClass("red");   	  	    		
+	    	  	    		$(".domain-availability",search).removeClass("green").html("indisponible").addClass("red");
+	    	  	    		$(".fa-check-circle-o",search).removeClass("green").addClass("red");
 	    	  	    	}else{
-	    	  	    		$(".domain-availability",search).html("disponible").addClass("green");	
+	    	  	    		$(".domain-availability",search).removeClass("red").html("disponible").addClass("green");
+	    	  	    		$(".fa-check-circle-o",search).removeClass("red").addClass("green");
 	    	  	    	}
     	  	    	}else {
     	  	    		alert("le nom fourni est invalide");
