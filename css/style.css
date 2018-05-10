@@ -3412,9 +3412,6 @@ button::-moz-focus-inner {
 	.mfp-close {
 		left: 0;
 	}
-	#small-dialog, #small-dialog2 {
-		max-width: 320px;
-	}
 	
 }
 @media all and (max-width:320px){
@@ -3426,7 +3423,7 @@ button::-moz-focus-inner {
 		padding-bottom:3px;
 	}
 	#small-dialog{
-		padding:15px;
+		padding:8px;
 	}
 	.comments-area input[type="text"], .comments-area textarea{
 		width:92%;
@@ -3611,7 +3608,7 @@ button::-moz-focus-inner {
     outline: none;
     font-size: 1em;
     padding: .3em 1em;
-    border: none;
+    border: 1px solid #dcb7b7;
     -webkit-appearance: none;
     margin-bottom: 1em;
     width: 100%;
@@ -5316,6 +5313,10 @@ h2.typoh2{
 	}
 }
 @media (max-width:480px){
+	.book-form {
+     padding: 0.6em;
+     padding-top: 1em;
+    }
 	.search-results .table > tbody > tr > td:first-of-type a{
 	   display : inline-block;
 	}
@@ -5328,7 +5329,7 @@ h2.typoh2{
 	}
 	.subscribe-form {
 	   width: 100%;
-	   padding: 7px;
+	   padding: 8px;
 	   padding-bottom: 12px;
 	   top: 30%;
 	   box-shadow: none;
