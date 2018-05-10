@@ -6599,7 +6599,7 @@ ul.contact_info li a:hover{
 	}
 	.w3l_banner_bottom_left,.agileinfo_about_grid_left,.agileits_w3layouts_contact_gridl {
 		padding: 10px;
-		margin-bottom: -10px;
+		margin-bottom: 0;
 	}
 	.agileinfo_about_grid_left {
 		padding: 10px;
