@@ -5316,9 +5316,6 @@ h2.typoh2{
 	}
 }
 @media (max-width:480px){
-	.search-results {
-      width: 93%;
-	}
 	.search-results .table > tbody > tr > td:first-of-type a{
 	   display : inline-block;
 	}
