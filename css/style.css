@@ -3829,7 +3829,7 @@ button::-moz-focus-inner {
 .book-form input[type="text"], .book-form input[type="email"], .book-form input[type="password"] {
     font-size: 0.9em;
     line-height: 1.5em;
-	margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 .book-form input[type=submit] { 
     padding: .3em 1em;
