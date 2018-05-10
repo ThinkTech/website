@@ -5363,6 +5363,9 @@ h2.typoh2{
 	   margin-top: -20px;
 	   padding-bottom : 0;
 	}
+	.domains.table {
+      margin-top: 0;
+   }
 }
 @media (max-width: 320px){
 	.grid_4 {
