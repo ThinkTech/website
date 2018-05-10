@@ -5186,8 +5186,9 @@ h2.typoh2{
      margin-right: 2px;
 	}
 	.search.search-wizard p {
-     font-size: 13px;
-     padding: 5px;
+     font-size: 12px;
+     text-align: center;
+     padding: 4px;
     }
 	.search-results {
 	  padding : 10px;
