@@ -5152,6 +5152,9 @@ h2.typoh2{
 	}
 }
 @media (max-width:640px){
+	.search-wizard .domain-edit {
+      font-size: 11px;
+    }
 	.search-wizard div {
       padding: 0px;
       width: 100%;
