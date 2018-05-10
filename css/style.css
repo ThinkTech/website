@@ -3729,7 +3729,7 @@ button::-moz-focus-inner {
     font-size: 1.2em;
     text-shadow: none;
     text-align: left;
-    top: 10px;
+    top: 0px;
 }
 }
 @media(max-width:991px){ 
@@ -3783,6 +3783,14 @@ button::-moz-focus-inner {
 .w3ls-bottom ul li { 
     margin-top: 0.8em; 
     padding-top: 0.8em;
+    font-size: 13px;
+}
+.w3l_banner_bottom_left .pricing-grid h3 {
+    font-size: 1.1em;
+    top: 4px;
+}
+.pricing-grid h4 {
+    font-size: 1.1em;
 }
 }
 @media(max-width:600px){
