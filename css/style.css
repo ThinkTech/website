@@ -5064,6 +5064,7 @@ h2.typoh2{
 .search-results td span {
    display : inline-block;
    width : 80px;
+   font-weight: bold;
 }
 
 .search-results .table-striped>tbody>tr {
