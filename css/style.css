@@ -5218,6 +5218,7 @@ h2.typoh2{
 	.search.search-wizard div > p {
      font-size: 13px;
      padding: 4px;
+     width: 97%;
     }
 	.search-results {
 	  padding : 10px;
