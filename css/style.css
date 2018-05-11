@@ -4981,6 +4981,10 @@ h2.typoh2{
    font-size: 16px;
     margin-bottom: 0px;
     padding: 15px;
+    width: 91%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
 }
 
 .search.search-wizard h4 {
@@ -5212,8 +5216,7 @@ h2.typoh2{
      margin-right: 2px;
 	}
 	.search.search-wizard div > p {
-     font-size: 12px;
-     text-align: center;
+     font-size: 13px;
      padding: 4px;
     }
 	.search-results {
