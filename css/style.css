@@ -4912,6 +4912,10 @@ h2.typoh2{
     border: 1px solid #08ccf7;
 }
 
+.search div:first-of-type {
+	background: #feffc7;
+}
+
 .search-wizard .domain-edit {
 	text-align: center;
     display: block;
