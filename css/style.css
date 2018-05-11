@@ -5062,9 +5062,12 @@ h2.typoh2{
 }
 
 .search-results td span {
-   display : inline-block;
-   width : 80px;
-   font-weight: bold;
+   display: inline-block;
+    width: 100px;
+    font-weight: bold;
+    background: #fff;
+    padding: 5px;
+    border: 1px solid #d8d2d2;
 }
 
 .search-results .table-striped>tbody>tr {
@@ -5210,9 +5213,6 @@ h2.typoh2{
     }
 	.search-results {
 	  padding : 10px;
-	}
-	.search-results select {
-    	margin-left: -5px;
 	}
 	.search-results a {
         margin-left: 15px;
