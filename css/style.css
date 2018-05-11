@@ -6464,6 +6464,7 @@ ul.contact_info li a:hover{
    	   margin-left: auto;
        margin-right: auto;
        width: 100%;
+       margin-bottom: 3px;
 	}
 	.guide li {
         margin-left: 0px;
