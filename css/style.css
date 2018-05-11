@@ -4924,10 +4924,13 @@ h2.typoh2{
     width: 100%;
     margin-bottom: 18px;
     font-size: 20px;
-    font-weight: bold;
+    font-weight: 700;
     line-height: 1.7em;
-    border-bottom: 1px solid #08ccf7;
+    border-bottom: none;
     font-family: Exo;
+    background: #08ccf7;
+    color: #fff;
+    padding: 5px;
 }
 
 .search-wizard .buttons {
@@ -4945,7 +4948,7 @@ h2.typoh2{
     border: 1px solid #f7f7f7;
     font-weight: bold;
     font-family: Exo;
-    margin-right: 5px;
+    margin-right: 9px;
     cursor: pointer;
     background: #000;
     color: #fff;
