@@ -1352,7 +1352,7 @@ a.w3ls_banner_more:hover{
     margin-right: 1px;
     color: #000000;
     font-family: Tahoma;
-    background: #ffe;
+    background: #feffc7;
 }
 
 .subscribe-form input,.subscribe-form select {
@@ -1523,7 +1523,7 @@ a.w3ls_banner_more:hover{
 }
 
 .guide  a.plan-details{
-	color : #ffe;
+	color : #feffc7;
 }
 .plan-details {
 	position: absolute;
@@ -2647,7 +2647,7 @@ h3.agileits-icons-title {
     font-family: Exo;
     vertical-align: top;
 	line-height: 3em;
-	color: #ffe;
+	color: #feffc7;
 }
 
 .faq p span span a:hover {
@@ -3932,12 +3932,12 @@ button::-moz-focus-inner {
 }
 
 .pricing-top h3{
-	color: #ffe;
+	color: #feffc7;
 	font-size:1.8em;
 	margin:0;
 }
 .pricing-top p{
-	color: #ffe;
+	color: #feffc7;
 	font-size: 100%;
 	margin:1em 0 0 0;
 	font-weight: bold;
