@@ -4973,6 +4973,7 @@ h2.typoh2{
     font-size: 21px;
     font-family: Exo;
     font-weight: bold;
+    padding-left: 5px;
 }
 
 .search.search-wizard input[type=radio] {
