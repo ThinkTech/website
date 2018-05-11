@@ -4954,6 +4954,10 @@ h2.typoh2{
     color: #fff;
 }
 
+.search-wizard .buttons a:first-of-type { 
+	margin-right: 3px;
+}
+
 .search.search-wizard label {
 	position: relative;
     top: 0px;
