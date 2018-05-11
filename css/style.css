@@ -4960,7 +4960,7 @@ h2.typoh2{
 
 .search.search-wizard label {
 	position: relative;
-    top: 0px;
+    top: -1px;
     margin-bottom: 20px;
     font-size: 17px;
     font-family: Exo;
