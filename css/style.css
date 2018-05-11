@@ -4970,7 +4970,6 @@ h2.typoh2{
     top: -1px;
     margin-bottom: 20px;
     font-size: 17px;
-    font-family: Exo;
     cursor : pointer;
 }
 
@@ -4982,7 +4981,6 @@ h2.typoh2{
 
 .search.search-wizard h4 {
     font-size: 21px;
-    font-family: Exo;
     font-weight: bold;
     padding-left: 5px;
     text-align: right;
