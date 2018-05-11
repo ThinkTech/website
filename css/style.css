@@ -4908,6 +4908,10 @@ h2.typoh2{
     display : none;
 }
 
+.search-wizard {
+    width: 65%;
+}
+
 .search-wizard div {
 	padding: 5px;
     width: 92%;
