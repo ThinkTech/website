@@ -5041,6 +5041,11 @@ h2.typoh2{
 	position: relative;
     top: 1px;
 }
+
+.search td .fa-check-circle-o {
+    color: #fff;
+}
+
 .search span.close { 
 	z-index : 10;
 	float: right;
