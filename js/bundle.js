@@ -250,8 +250,9 @@ $(document).ready(function() {
 	    	  	    	          td.append(select);
 	    	  	    	          td.append("<a class='buy'>Acheter</a>");
 	    	  	    	          tr.append(td);
-	    	  	    	          $("a",tr).on("click",{extension : extension},function(event){
-	    	  	    	        	$("select",div).val(event.data.extension);
+	    	  	    	          $("a",tr).on("click",{td : td,extension : extension},function(event){
+	    	  	    	        	 $("select",div).val(event.data.extension);
+	    	  	    	        	 selection.year = parseInt(event.data.td.find("select").val());
 	    	  	    	        	 selection.price = selection.year * pricing[event.data.extension];
 	    	  	    	        	 search.hide(); 
 	    	  	    	        	 const wizard = $(".search-wizard").css("top",div.offset().top).show();
