@@ -222,7 +222,7 @@ $(document).ready(function() {
     	  	    		selection.extension = $("select",div).val();
     	  	    		selection.year = 1;
     	  	    		const search = $(".search-results").css("top",div.offset().top).show();
-        	  	    	$('html,body').animate({scrollTop:search.offset().top-20},300);
+        	  	    	$('html,body').animate({scrollTop:search.offset().top-30},300);
         	  	    	const tbody = $("table",search).empty();
 	    	  	    	var tr;
 	    	  	    	var extension;
@@ -255,7 +255,7 @@ $(document).ready(function() {
 	    	  	    	        	 selection.price = selection.year * pricing[event.data.extension];
 	    	  	    	        	 search.hide(); 
 	    	  	    	        	 const wizard = $(".search-wizard").css("top",div.offset().top).show();
-	    	         	  	    	 $('html,body').animate({scrollTop:wizard.offset().top-20},300);
+	    	         	  	    	 $('html,body').animate({scrollTop:wizard.offset().top-30},300);
 	    	  	    	        	 selection.domain = domain+"."+event.data.extension;
 	    	  	    	        	 $(".domain-name",wizard).html(selection.domain);
 	    	  	    	        	 $(".domain-year",wizard).html(selection.year);
