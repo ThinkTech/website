@@ -4922,12 +4922,15 @@ h2.typoh2{
 
 .search div:first-of-type {
 	background: #feffc7;
+	text-align: center;
 }
 
 .search-wizard .domain-edit {
-	text-align: center;
+	text-align: right;
     display: block;
     margin-bottom: 10px;
+    margin-top: 10px;
+    margin-right : 25px;
 }
 
 .search-wizard .domain-edit a {
@@ -4997,6 +5000,11 @@ h2.typoh2{
     padding-left: 5px;
     text-align: right;
     margin-right: 35px;
+    display : inline-block;
+}
+
+.search.search-wizard h4.price {
+	text-align : left;
 }
 
 .search.search-wizard input[type=radio] {

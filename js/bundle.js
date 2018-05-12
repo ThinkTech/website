@@ -219,6 +219,7 @@ $(document).ready(function() {
     	  	    	const result = response["1"].result;
     	  	    	if(result){
     	  	    		const selection = {};
+    	  	    		selection.extension = $("select",div).val();
     	  	    		selection.year = 1;
     	  	    		const search = $(".search-results").css("top",div.offset().top).show();
         	  	    	$('html,body').animate({scrollTop:search.offset().top-20},300);
@@ -228,7 +229,12 @@ $(document).ready(function() {
 	    	  	    	for (extension in result) {
 	    	  	    	    if(result.hasOwnProperty(extension)) {
 	    	  	    	    	if(!result[extension]){
-	    	  	    	          tr = $("<tr/>").append("<td>"+domain+"."+extension+"</td>");
+	    	  	    	          tr = $("<tr/>");
+	    	  	    	          if(selection.extension == extension){
+	    	  	    	        	tr.append("<td><i class='fa fa-check-circle-o' aria-hidden='true'></i> "+domain+"."+extension+"</td>");
+	    	  	    	          }else{
+	    	  	    	        	tr.append("<td>"+domain+"."+extension+"</td>");
+	    	  	    	          }
 	    	  	    	          var td = $("<td><span>"+pricing[extension].toLocaleString("fr-FR") +" CFA</span></td>");
 	    	  	    	          var select = $("<select></select>");
 	    	  	    	          select.append("<option value='1'>1 an</option>");
@@ -237,35 +243,40 @@ $(document).ready(function() {
 	    	  	    	          select.append("<option value='4'>4 an</option>");
 	    	  	    	          select.append("<option value='5'>5 an</option>");
 	    	  	    	          select.on("change",{td : td, price : pricing[extension]},function(event){
-	    	  	    	        	  const year = parseInt($(this).val());
-	    	  	    	        	  const price = event.data.price * year;
-	    	  	    	        	  selection.year = year;
-	    	  	    	        	  event.data.td.find("span").html(price.toLocaleString("fr-FR")+" CFA");
+	    	  	    	        	  selection.year = parseInt($(this).val());
+	    	  	    	        	  selection.price = event.data.price * selection.year;
+	    	  	    	        	  event.data.td.find("span").html(selection.price.toLocaleString("fr-FR")+" CFA");
 	    	  	    	          });
 	    	  	    	          td.append(select);
 	    	  	    	          td.append("<a class='buy'>Acheter</a>");
 	    	  	    	          tr.append(td);
 	    	  	    	          $("a",tr).on("click",{extension : extension},function(event){
-	    	  	    	        	$("select",div).val(event.data.extension)
+	    	  	    	        	$("select",div).val(event.data.extension);
+	    	  	    	        	 selection.price = selection.year * pricing[event.data.extension];
 	    	  	    	        	 search.hide(); 
 	    	  	    	        	 const wizard = $(".search-wizard").css("top",div.offset().top).show();
 	    	         	  	    	 $('html,body').animate({scrollTop:wizard.offset().top-20},300);
 	    	  	    	        	 selection.domain = domain+"."+event.data.extension;
 	    	  	    	        	 $(".domain-name",wizard).html(selection.domain);
 	    	  	    	        	 $(".domain-year",wizard).html(selection.year);
+	    	  	    	        	 $(".domain-price",wizard).html(selection.price.toLocaleString("fr-FR"));
 	    	  	    	          });
 	    	  	    	          tbody.append(tr);
 	    	  	    	    	}else {
-	    	  	    	    	  tr = $("<tr/>").append("<td>"+domain+"."+extension+"</td>");
+	    	  	    	    	 tr = $("<tr/>");
+		    	  	    	     if(selection.extension == extension){
+		    	  	    	        tr.append("<td><i class='fa fa-check-circle-o' aria-hidden='true'></i> "+domain+"."+extension+"</td>");
+		    	  	    	     }else{
+		    	  	    	        tr.append("<td>"+domain+"."+extension+"</td>");
+		    	  	    	      }
 	    	  	    	    	  tr.append("<td>&nbsp;</td>");
 	       	  	    	          tr.addClass("unavailable");
 	       	  	    	          tbody.append(tr);
 	    	  	    	    	}
 	    	  	    	    }
 	    	  	    	}
-	    	  	    	extension = $("select",div).val();
-	    	  	    	$(".domain-name",search).html(domain+"."+extension);
-	    	  	    	if(result[extension]){
+	    	  	    	$(".domain-name",search).html(domain+"."+selection.extension);
+	    	  	    	if(result[selection.extension]){
 	    	  	    		$(".domain-availability",search).removeClass("green").html("indisponible").addClass("red");
 	    	  	    		$(".fa-check-circle-o",search).removeClass("green").addClass("red");
 	    	  	    	}else{
