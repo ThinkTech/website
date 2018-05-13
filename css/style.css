@@ -4928,6 +4928,10 @@ h2.typoh2{
 	text-align: center;
 }
 
+.search div.wizard-message {
+    background: #fbfbfb;
+}
+
 .search-wizard .domain-edit {
 	text-align: right;
     display: block;
