@@ -5234,12 +5234,15 @@ h2.typoh2{
     .search.search-wizard input[type=radio] {
      margin-left: 5px;
     }
+    .search-wizard .buttons {
+    	width: 100%;
+    }
     .search-wizard .buttons a {
      padding: 7px;
      font-size: 12px;
      padding-left: 10px;
      padding-right: 10px;
-     margin-right: 2px;
+     margin-right: 0px;
 	}
 	.search.search-wizard div > p {
      font-size: 12px;
