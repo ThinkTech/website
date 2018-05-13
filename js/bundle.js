@@ -280,10 +280,11 @@ $(document).ready(function() {
 	    	  	    	        	 search.hide();
 	    	  	    	        	 const wizard = $(".search-wizard");
 	    	  	    	        	 if(button.data("wizard")!="hide"){
-	    	  	    	        		wizard.css("top",top).show();
-		    	         	  	    	$('html,body').animate({scrollTop:top-30},300); 
+	    	  	    	        		wizard.css("top",top).show(); 
+	    	  	    	        		$('html,body').animate({scrollTop:top-30},300);
 	    	  	    	        	 }else{
 	    	  	    	        		search.parent().hide();
+	    	  	    	        		$('html,body').animate({scrollTop:top-150},300);
 	    	  	    	        	 }
 	    	  	    	        	 purchase.domain = domain+"."+event.data.extension;
 	    	         	  	    	 localStorage.setItem("purchase",JSON.stringify(purchase));
