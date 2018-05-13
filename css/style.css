@@ -85,6 +85,10 @@ input[readonly] {
     margin-left : 5px;
     margin-right : 5px;
 }
+
+.buttons .submit, .buttons .prev {
+	display : none;
+}
 .delay-1 {
 animation-delay: .15s;
 }
@@ -573,7 +577,6 @@ h3 .fa-briefcase {
 
 @media(max-width:767px ){
 	#confirm-dialog-container, #alert-dialog-container {padding-top:32%}
-	.buttons {position:relative;margin-top:-10px;right:0px;top:0px}
 	.scrollToTop {right:45%}
 	.banner a {
 	    margin-left: -7.1%;
@@ -581,7 +584,6 @@ h3 .fa-briefcase {
 }
 @media(max-width:640px){
 	#confirm-dialog-container, #alert-dialog-container {padding-top:40%}
-	.buttons a {margin-bottom : 5px}
 	table th:nth-child(5) {display:none}
 	table td:nth-child(5) {display:none}
 	.banner a {
@@ -1273,7 +1275,7 @@ a.w3ls_banner_more:hover{
 	top: 40%;
 	display: none;
 	box-shadow: 0 0px 6px #daaf82;
-	z-index: 9999;
+	z-index: 9;
 	text-align: center;
 }
 
@@ -1373,25 +1375,36 @@ a.w3ls_banner_more:hover{
     padding-left: 0;
 }
 
-.subscribe-form input[type=submit] {
+.domain-info {
+	display : none;
+}
+
+.domain-info h4 {
+	color : #fff;
+}
+
+.subscribe-form input[type=submit],.subscribe-form input[type=button] {
 	width: auto;
     padding: 8px;
-    outline: none;
+    padding-left : 15px;
+    padding-right : 15px;
     background: transparent;
     color: #fff;
-    display: block;
-    border: 1px solid #fdf6f6;
-    margin-left: 74.5%;
     font-size: 18px;
     font-family: Exo;
     margin-top: 6px;
     height: auto;
     font-weight: bold;
+    float : right;
 }
 
-.subscribe-form input[type=submit]:hover {
+.subscribe-form input[type=submit],.subscribe-form input[type=button] {
     color: #353030;
     background: #fff;
+}
+
+.subscribe-form input[type=button] {
+	margin-right : 5px;
 }
 
 .subscribe-form .close {
@@ -5047,10 +5060,6 @@ h2.typoh2{
     top: 1px;
 }
 
-.search td .fa-check-circle-o {
-    color: #fff;
-}
-
 .search span.close { 
 	z-index : 10;
 	float: right;
@@ -5103,7 +5112,6 @@ h2.typoh2{
 }
 
 .search-results .table-striped>tbody>tr {
-    background-color: #97dc96;
     border: 1px solid #fff;
 }
 
@@ -5139,6 +5147,15 @@ h2.typoh2{
 }
 
 @media (max-width:768px){
+	.subscribe-form .tld-domain-search-wrapper {
+	   margin-top: 0px;
+	   margin-bottom : 5px;
+	   padding : 0px;
+	}
+	.domain-info h4 {
+     margin-top: 5px;
+     margin-bottom: 5px;
+    }
 	.search h1 {
     	font-size: 2em;
     	text-shadow: none;
@@ -5176,15 +5193,21 @@ h2.typoh2{
 		height : 0;
 	}
 	.subscribe-form input,.subscribe-form select{
-		width: 100%;
+	   width: 100%;
        margin-bottom: -3px;
        height: 27px;
        margin-top: -9px;
        font-size: 13px;
        border: 1px solid #dcb7b7;
 	}
-	.subscribe-form select{
-		margin-bottom : 1px;
+	.subscribe-form .domain-info .input-container input{
+	   width : initial;
+	   margin : 0;
+	   height: 38px;
+	}
+	.subscribe-form .domain-info select{
+	   height: 38px;
+	   width: auto;
 	}
 	.subscribe-form input[readonly] {
         position: relative;
@@ -5197,7 +5220,7 @@ h2.typoh2{
       position: relative;
       top: 7px;
     }
-	.subscribe-form input[type=submit]{
+	.subscribe-form input[type=submit],.subscribe-form input[type=button]{
 		height: 26px;margin-top : 10px;margin-bottom : 0px;float: right;padding-top: 4px;font-size: 13px;
 	}
 }

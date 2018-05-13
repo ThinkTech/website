@@ -183,9 +183,27 @@ $(document).ready(function() {
     
     $(".tld-domain-search-wrapper input").keyup(function(event){
     	if (event.keyCode === 13) {
-    		$(".tld-domain-search-wrapper .tld-search-button").trigger("click");
+    		$(this).parent().next().trigger("click");
+    	}else{
+    		$(".tld-domain-search-wrapper input").val($(this).val());
     	}
     	return false;
+    });
+    
+    $(".subscribe-form .buttons .next").click(function(event){
+    	const parent = $(this).parent();
+    	$(this).hide();
+    	$(".prev,.submit",parent).show();
+    	$(".subscribe-form .domain-info").show();
+    	$(".subscribe-form .user-info").hide();
+    });
+    
+    $(".subscribe-form .buttons .prev").click(function(event){
+    	const parent = $(this).parent();
+    	$(".prev,.submit",parent).hide();
+    	$(".subscribe-form .domain-info").hide();
+    	$(".next",parent).show();
+    	$(".subscribe-form .user-info").show();
     });
     
     $(".tld-domain-search-wrapper .tld-search-button").click(function(event){
@@ -205,7 +223,7 @@ $(document).ready(function() {
     	const div = $(".tld-domain-search-wrapper");
     	const input = $("input",div);
     	const purchase = {};
-  		purchase.extension = $("select",div).val();
+  		purchase.extension = button.prev().find("select").val();
   		purchase.year = 1;
   		purchase.search = input.val().toLowerCase();
     	var domain = purchase.search.replace(/\s+/g, '');
@@ -225,9 +243,9 @@ $(document).ready(function() {
     	  	    	page.release();
     	  	    	const result = response["1"].result;
     	  	    	if(result){
-    	  	    		const search = $(".search-results").css("top",div.offset().top).show();
+    	  	    		const search = $(".search-results").css("top",top).show();
     	  	    		search.parent().css("height",$('body').height()+"px").show();
-        	  	    	$('html,body').animate({scrollTop:search.offset().top-30},300);
+        	  	    	$('html,body').animate({scrollTop:top-30},300);
         	  	    	const tbody = $("table",search).empty();
 	    	  	    	var tr;
 	    	  	    	var extension;
@@ -259,14 +277,19 @@ $(document).ready(function() {
 	    	  	    	        	 $("select",div).val(event.data.extension);
 	    	  	    	        	 purchase.year = parseInt(event.data.td.find("select").val());
 	    	  	    	        	 purchase.price = purchase.year * pricing[event.data.extension];
-	    	  	    	        	 search.hide(); 
-	    	  	    	        	 const wizard = $(".search-wizard").css("top",div.offset().top).show();
-	    	         	  	    	 $('html,body').animate({scrollTop:wizard.offset().top-30},300);
-	    	         	  	    	 purchase.domain = domain+"."+event.data.extension;
+	    	  	    	        	 search.hide();
+	    	  	    	        	 const wizard = $(".search-wizard");
+	    	  	    	        	 if(button.data("wizard")!="hide"){
+	    	  	    	        		wizard.css("top",top).show();
+		    	         	  	    	$('html,body').animate({scrollTop:top-30},300); 
+	    	  	    	        	 }else{
+	    	  	    	        		search.parent().hide();
+	    	  	    	        	 }
+	    	  	    	        	 purchase.domain = domain+"."+event.data.extension;
 	    	         	  	    	 localStorage.setItem("purchase",JSON.stringify(purchase));
 	    	  	    	        	 $(".domain-name",wizard).html(purchase.domain);
-	    	  	    	        	 $(".domain-year",wizard).html(purchase.year);
-	    	  	    	        	 $(".domain-price",wizard).html(purchase.price.toLocaleString("fr-FR"));
+	    	  	    	        	 $(".domain-year").html(purchase.year).val(purchase.year);
+	    	  	    	        	 $(".domain-price").html(purchase.price.toLocaleString("fr-FR")).val(purchase.price.toLocaleString("fr-FR"));
 	    	  	    	          });
 	    	  	    	          tbody.append(tr);
 	    	  	    	    	}else {
@@ -302,7 +325,7 @@ $(document).ready(function() {
     	  	});
     	}else {
     		alert("vous devez choisir votre domaine web",function(){
-    			input.val("").focus();
+    			button.prev().find("input").val("").focus();
     		});
     	}
     	return false;

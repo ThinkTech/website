@@ -634,29 +634,64 @@
 		   <span class="close">X</span>
 		   <h1><i class="fa fa-envelope" aria-hidden="true"></i>Souscription</h1>
 		   <form action="https://thinktech-platform.herokuapp.com/services/subscribe">
-		   <label>Prénom et Nom</label>
-		   <input type="text" name="name" placeholder="prénom et nom" required>
-		   <label>Email</label>
-		   <input type="email" name="email" placeholder="adresse email" required>
-		   <label>Mot de Passe</label>
-		   <input type="password" name="password" placeholder="mot de passe" required>
-		   <label>Confirmation</label>
-		   <input type="password" name="confirmation" placeholder="confirmation" required>
-		   <label>Structure</label>
-		   <input name="structure" type="text" placeholder="structure" required>
-		   <label>Projet</label>
-		   <select name="project">
-		     <option value="création site web">création site web</option>
-		     <option value="refonte site web">refonte site web</option>
-		     <option value="création application web">création application web</option>
-		     <option value="refonte application web">refonte application web</option>
-		   </select>
-		   <label>Plan</label>
-		   <input name="plan" type="text" readonly>
+		   <div class="user-info">
+			   <label>Prénom et Nom</label>
+			   <input type="text" name="name" placeholder="prénom et nom" required>
+			   <label>Email</label>
+			   <input type="email" name="email" placeholder="adresse email" required>
+			   <label>Mot de Passe</label>
+			   <input type="password" name="password" placeholder="mot de passe" required>
+			   <label>Confirmation</label>
+			   <input type="password" name="confirmation" placeholder="confirmation" required>
+			   <label>Structure</label>
+			   <input name="structure" type="text" placeholder="structure" required>
+			   <label>Projet</label>
+			   <select name="project">
+			     <option value="création site web">création site web</option>
+			     <option value="refonte site web">refonte site web</option>
+			     <option value="création application web">création application web</option>
+			     <option value="refonte application web">refonte application web</option>
+			   </select>
+			   <label>Plan</label>
+			   <input name="plan" type="text" readonly>
+		   </div>
+		   <div class="domain-info">
+		       <h4>Votre Domaine Web</h4>
+		       <div class="tld-domain-search-wrapper">
+			<div class="tld-domain-search">
+			<div class="input-container">
+				<span>www.</span>
+				<input placeholder="votre domaine web" type="text" maxlength="200">
+				<select id="domain_id" class="domain_id">
+					<option value="com">.com</option>
+					<option value="net">.net</option>
+					<option value="org">.org</option>
+					<option value="biz">.biz</option>
+					<option value="info">.info</option>
+					<option value="tv">.tv</option>
+					<option value="press">.press</option>
+					<option value="news">.news</option>
+					<option value="tech">.tech</option>
+				</select>
+			</div>
+			<a data-wizard="hide" rel="nofollow" class="tld-search-button">
+			  <i class="fa fa-search" aria-hidden="true"></i>
+			</a>
+		 </div>
+		</div>
+		   <label>Durée (AN)</label>
+		    <input class="domain-year" type="number" min="1" max="5" value = "1" readonly>
+		    <label>Montant (CFA)</label>
+			<input class="domain-price" type="text" readonly value="0">
+		   </div>
 		   <div class="terms-agreement">
 			<input type="checkbox" checked disabled> J'accepte les <a class="read-terms">Termes</a>
 		   </div>
-		   <input type="submit" value="Envoyer">
+		   <div class="buttons">
+		    <input class="submit" type="submit" value="Envoyer">
+		    <input class="next"   type="button" value="Suivant">
+		    <input class="prev"   type="button" value="Précédent">
+		   </div>
 		   </form>
 		</div>
 		</div>
