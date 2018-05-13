@@ -6822,7 +6822,7 @@ ul.contact_info li a:hover{
 	.agile_head, .wthree_stat_left h3 {
 		font-size: 1.8em;
     	text-align: center;
-    	padding-bottom: 5px;
+    	padding-bottom: 10px;
 	}
 	.agile_head:after {
 		width: 42%;
