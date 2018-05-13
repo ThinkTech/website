@@ -81,8 +81,8 @@ $(document).ready(function() {
     	$(".modal").hide();
     	const val = $(".search-wizard input:checked").val();
     	const div = $("."+val);
-    	const selection = JSON.parse(localStorage.getItem('selection'));
-    	$("input[name=structure]").val(selection.search);
+    	const purchase = JSON.parse(localStorage.getItem('purchase'));
+    	$("input[name=structure]").val(purchase.search);
   	    $('html,body').animate({scrollTop:div.offset().top-20},300);
 	});
     $(".search-wizard .domain-edit a").click(function(event){
@@ -204,11 +204,11 @@ $(document).ready(function() {
     	pricing.tech = 10000;
     	const div = $(".tld-domain-search-wrapper");
     	const input = $("input",div);
-    	const selection = {};
-  		selection.extension = $("select",div).val();
-  		selection.year = 1;
-  		selection.search = input.val();
-    	var domain = selection.search.replace(/\s+/g, '').toLowerCase();
+    	const purchase = {};
+  		purchase.extension = $("select",div).val();
+  		purchase.year = 1;
+  		purchase.search = input.val().toLowerCase();
+    	var domain = purchase.search.replace(/\s+/g, '');
     	if(domain){
     		button.hide();
     		const index = domain.indexOf(".");
@@ -235,7 +235,7 @@ $(document).ready(function() {
 	    	  	    	    if(result.hasOwnProperty(extension)) {
 	    	  	    	    	if(!result[extension]){
 	    	  	    	          tr = $("<tr/>");
-	    	  	    	          if(selection.extension == extension){
+	    	  	    	          if(purchase.extension == extension){
 	    	  	    	        	tr.append("<td><i class='fa fa-check-circle-o' aria-hidden='true'></i> "+domain+"."+extension+"</td>");
 	    	  	    	          }else{
 	    	  	    	        	tr.append("<td>"+domain+"."+extension+"</td>");
@@ -248,30 +248,30 @@ $(document).ready(function() {
 	    	  	    	          select.append("<option value='4'>4 an</option>");
 	    	  	    	          select.append("<option value='5'>5 an</option>");
 	    	  	    	          select.on("change",{td : td, price : pricing[extension]},function(event){
-	    	  	    	        	  selection.year = parseInt($(this).val());
-	    	  	    	        	  selection.price = event.data.price * selection.year;
-	    	  	    	        	  event.data.td.find("span").html(selection.price.toLocaleString("fr-FR")+" CFA");
+	    	  	    	        	  purchase.year = parseInt($(this).val());
+	    	  	    	        	  purchase.price = event.data.price * purchase.year;
+	    	  	    	        	  event.data.td.find("span").html(purchase.price.toLocaleString("fr-FR")+" CFA");
 	    	  	    	          });
 	    	  	    	          td.append(select);
 	    	  	    	          td.append("<a class='buy'>Acheter</a>");
 	    	  	    	          tr.append(td);
 	    	  	    	          $("a",tr).on("click",{td : td,extension : extension},function(event){
 	    	  	    	        	 $("select",div).val(event.data.extension);
-	    	  	    	        	 selection.year = parseInt(event.data.td.find("select").val());
-	    	  	    	        	 selection.price = selection.year * pricing[event.data.extension];
+	    	  	    	        	 purchase.year = parseInt(event.data.td.find("select").val());
+	    	  	    	        	 purchase.price = purchase.year * pricing[event.data.extension];
 	    	  	    	        	 search.hide(); 
 	    	  	    	        	 const wizard = $(".search-wizard").css("top",div.offset().top).show();
 	    	         	  	    	 $('html,body').animate({scrollTop:wizard.offset().top-30},300);
-	    	         	  	    	 selection.domain = domain+"."+event.data.extension;
-	    	         	  	    	 localStorage.setItem("selection",JSON.stringify(selection));
-	    	  	    	        	 $(".domain-name",wizard).html(selection.domain);
-	    	  	    	        	 $(".domain-year",wizard).html(selection.year);
-	    	  	    	        	 $(".domain-price",wizard).html(selection.price.toLocaleString("fr-FR"));
+	    	         	  	    	 purchase.domain = domain+"."+event.data.extension;
+	    	         	  	    	 localStorage.setItem("purchase",JSON.stringify(purchase));
+	    	  	    	        	 $(".domain-name",wizard).html(purchase.domain);
+	    	  	    	        	 $(".domain-year",wizard).html(purchase.year);
+	    	  	    	        	 $(".domain-price",wizard).html(purchase.price.toLocaleString("fr-FR"));
 	    	  	    	          });
 	    	  	    	          tbody.append(tr);
 	    	  	    	    	}else {
 	    	  	    	    	 tr = $("<tr/>");
-		    	  	    	     if(selection.extension == extension){
+		    	  	    	     if(purchase.extension == extension){
 		    	  	    	        tr.append("<td><i class='fa fa-check-circle-o' aria-hidden='true'></i> "+domain+"."+extension+"</td>");
 		    	  	    	     }else{
 		    	  	    	        tr.append("<td>"+domain+"."+extension+"</td>");
@@ -282,8 +282,8 @@ $(document).ready(function() {
 	    	  	    	    	}
 	    	  	    	    }
 	    	  	    	}
-	    	  	    	$(".domain-name",search).html(domain+"."+selection.extension);
-	    	  	    	if(result[selection.extension]){
+	    	  	    	$(".domain-name",search).html(domain+"."+purchase.extension);
+	    	  	    	if(result[purchase.extension]){
 	    	  	    		$(".domain-availability",search).removeClass("green").html("indisponible").addClass("red");
 	    	  	    		$(".fa-check-circle-o",search).removeClass("green").addClass("red");
 	    	  	    	}else{
