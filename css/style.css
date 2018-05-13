@@ -3853,9 +3853,6 @@ button::-moz-focus-inner {
 .pricing-grid h3 {
     font-size: 1.2em;
 }
-.pricing-grid h4 {
-    font-size: 1.5em;
-}
 .w3ls-top {
     padding: 0.6em 1em 0;
 }
@@ -6823,8 +6820,9 @@ ul.contact_info li a:hover{
 		padding-bottom: 15px;
 	}
 	.agile_head, .wthree_stat_left h3 {
-		font-size: 1.5em;
-		text-align: center;
+		font-size: 1.8em;
+    	text-align: center;
+    	padding-bottom: 5px;
 	}
 	.agile_head:after {
 		width: 42%;
@@ -6942,9 +6940,9 @@ ul.contact_info li a:hover{
 	.guide li > a {
       width: 70%;
       margin: auto;
-      text-align: left;
+      text-align: center;
       position: relative;
-      font-size: 15px;
+      font-size: 1.1em;
 	}
 	.w3_agile_logo h1 a {
 		font-size: .79em;
