@@ -68,17 +68,17 @@ $(document).ready(function() {
 	$(".subscribe-form > .close").click(function(event){
 		   $(this).parent().hide();
 	});
-    $(".terms > .close, .confirmation > .close, .search .close").click(function(event){
+    $(".terms > .close, .confirmation > .close").click(function(event){
     	 $(this).parent().hide();
-	});	
-    $(".buttons .cancel").click(function(event){
-   	    $(this).parent().parent().hide();
+	});
+    $(".search .close,.buttons .cancel").click(function(event){
+   	   $(".modal").hide();
 	});
     $(".search label").click(function(event){
    	    $(this).prev().prop("checked", true);
 	});
     $(".search-wizard .finish").click(function(event){
-    	$(this).parent().parent().hide();
+    	$(".modal").hide();
     	const val = $(".search-wizard input:checked").val();
     	const div = $("."+val);
   	    $('html,body').animate({scrollTop:div.offset().top-20},300);
@@ -187,6 +187,7 @@ $(document).ready(function() {
     });
     
     $(".tld-domain-search-wrapper .tld-search-button").click(function(event){
+    	$(".search").hide();
     	const button = $(this);
     	const top = button.offset().top;
     	const pricing = {};
@@ -222,6 +223,7 @@ $(document).ready(function() {
     	  	    		selection.extension = $("select",div).val();
     	  	    		selection.year = 1;
     	  	    		const search = $(".search-results").css("top",div.offset().top).show();
+    	  	    		search.parent().css("height",$('body').height()+"px").show();
         	  	    	$('html,body').animate({scrollTop:search.offset().top-30},300);
         	  	    	const tbody = $("table",search).empty();
 	    	  	    	var tr;
