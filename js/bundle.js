@@ -81,6 +81,8 @@ $(document).ready(function() {
     	$(".modal").hide();
     	const val = $(".search-wizard input:checked").val();
     	const div = $("."+val);
+    	const selection = JSON.parse(localStorage.getItem('selection'));
+    	$("input[name=structure]").val(selection.search);
   	    $('html,body').animate({scrollTop:div.offset().top-20},300);
 	});
     $(".search-wizard .domain-edit a").click(function(event){
@@ -202,7 +204,11 @@ $(document).ready(function() {
     	pricing.tech = 10000;
     	const div = $(".tld-domain-search-wrapper");
     	const input = $("input",div);
-    	var domain = input.val().replace(/\s+/g, '').toLowerCase();
+    	const selection = {};
+  		selection.extension = $("select",div).val();
+  		selection.year = 1;
+  		selection.search = input.val();
+    	var domain = selection.search.replace(/\s+/g, '').toLowerCase();
     	if(domain){
     		button.hide();
     		const index = domain.indexOf(".");
@@ -219,9 +225,6 @@ $(document).ready(function() {
     	  	    	page.release();
     	  	    	const result = response["1"].result;
     	  	    	if(result){
-    	  	    		const selection = {};
-    	  	    		selection.extension = $("select",div).val();
-    	  	    		selection.year = 1;
     	  	    		const search = $(".search-results").css("top",div.offset().top).show();
     	  	    		search.parent().css("height",$('body').height()+"px").show();
         	  	    	$('html,body').animate({scrollTop:search.offset().top-30},300);
@@ -259,7 +262,8 @@ $(document).ready(function() {
 	    	  	    	        	 search.hide(); 
 	    	  	    	        	 const wizard = $(".search-wizard").css("top",div.offset().top).show();
 	    	         	  	    	 $('html,body').animate({scrollTop:wizard.offset().top-30},300);
-	    	  	    	        	 selection.domain = domain+"."+event.data.extension;
+	    	         	  	    	 selection.domain = domain+"."+event.data.extension;
+	    	         	  	    	 localStorage.setItem("selection",JSON.stringify(selection));
 	    	  	    	        	 $(".domain-name",wizard).html(selection.domain);
 	    	  	    	        	 $(".domain-year",wizard).html(selection.year);
 	    	  	    	        	 $(".domain-price",wizard).html(selection.price.toLocaleString("fr-FR"));
