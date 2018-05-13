@@ -288,7 +288,7 @@ $(document).ready(function() {
 	    	  	    	        	 }
 	    	  	    	        	 purchase.domain = domain+"."+event.data.extension;
 	    	         	  	    	 localStorage.setItem("purchase",JSON.stringify(purchase));
-	    	  	    	        	 $(".domain-name",wizard).html(purchase.domain);
+	    	  	    	        	 $(".domain-name").html(purchase.domain).val(purchase.domain);
 	    	  	    	        	 $(".domain-year").html(purchase.year).val(purchase.year);
 	    	  	    	        	 $(".domain-price").html(purchase.price.toLocaleString("fr-FR")).val(purchase.price.toLocaleString("fr-FR"));
 	    	  	    	          });
