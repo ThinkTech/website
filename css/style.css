@@ -4911,6 +4911,7 @@ h2.typoh2{
     margin-top: 2px;
     color: #fff;
     cursor : pointer;
+    text-align : center;
 }
 
 .domain-info .tld-domain-search .tld-search-button {
@@ -5171,10 +5172,15 @@ h2.typoh2{
 }
 
 @media (max-width:768px){
+	.domain-info .tld-domain-search .tld-search-button {
+      height: 38px;
+      margin-top: 7px;
+	}
 	.domain-info .tld-domain-search-wrapper {
 	   margin-top: 0px;
 	   margin-bottom : 5px;
 	   padding : 0px;
+	   text-align: left;
 	}
 	.domain-info h4 {
      margin-top: 5px;
@@ -5225,7 +5231,6 @@ h2.typoh2{
        border: 1px solid #dcb7b7;
 	}
 	.subscribe-form .domain-info .input-container input{
-	   width : initial;
 	   margin : 0;
 	   height: 38px;
 	}
@@ -5245,6 +5250,13 @@ h2.typoh2{
 	}
 }
 @media (max-width:640px){
+	.subscribe-form .domain-info .input-container input {
+      width: 50%;
+    }
+    .domain-info .tld-domain-search .tld-search-button {
+      margin-left: -15px;
+      margin-top: 0;
+    }
 	.search-wizard .domain-edit {
       font-size: 11px;
     }
@@ -5364,7 +5376,6 @@ h2.typoh2{
 	.w3l_banner_bottom_left .rslides_tabs li{width:23px;height:23px;padding:0px;margin-left:0px}
 	.wthree_stat_right1 p,.wthree_stat_right1 h4,.banner .wthree_stat_right1 h4,.banner .wthree_stat_right1 p {font-size: 18px;}
 	.subscribe-form {
-		width: 54%;
         padding: 8px;
         padding-bottom: 15px;
 	}
@@ -5465,6 +5476,15 @@ h2.typoh2{
    }
 }
 @media (max-width: 320px){
+	.subscribe-form .domain-info .input-container input {
+   	 width: 51%;
+	}
+	.domain-info .tld-domain-search .tld-search-button {
+    	 width: 38px;
+    	margin-left: -21px;
+    	margin-top: 1px;
+    	text-align: center;
+	}
 	.grid_4 {
 		margin-top: 18px;
 	}
