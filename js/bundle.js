@@ -249,7 +249,7 @@ $(document).ready(function() {
     	  	     success : function(response){
     	  	    	button.show();
     	  	    	page.release();
-    	  	    	const result = response["1"].result;
+    	  	    	var result = response["1"].result;
     	  	    	if(result){
     	  	    		const search = $(".search-results").css("top",top).show();
     	  	    		search.parent().css("height",$('body').height()+"px").show();
@@ -257,6 +257,16 @@ $(document).ready(function() {
         	  	    	const tbody = $("table",search).empty();
 	    	  	    	var tr;
 	    	  	    	var extension;
+	    	  	    	const clone = {};
+	    	  	    	clone[purchase.extension] = result[purchase.extension];
+	    	  	    	for (extension in result) {
+	    	  	    	    if(result.hasOwnProperty(extension)) {
+	    	  	    	    	if(extension!=purchase.extension){
+	    	  	    	    		clone[extension] = result[extension];
+	    	  	    	    	}
+	    	  	    	    }
+	    	  	    	}
+	    	  	    	result = clone;
 	    	  	    	for (extension in result) {
 	    	  	    	    if(result.hasOwnProperty(extension)) {
 	    	  	    	    	if(!result[extension]){
