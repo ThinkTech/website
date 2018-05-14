@@ -1276,7 +1276,6 @@ a.w3ls_banner_more:hover{
 	border: 1px solid #3abfdd;
 	position: absolute;
 	top: 40%;
-	display: none;
 	box-shadow: 0 0px 6px #daaf82;
 	z-index: 9;
 	text-align: center;
@@ -1286,6 +1285,7 @@ a.w3ls_banner_more:hover{
    background: #424242;
     color: #fff;
     width: 450px;
+    display: none;
  }
 
 .faq.w3l_banner_bottom_left .subscribe-form p {
@@ -1339,7 +1339,7 @@ a.w3ls_banner_more:hover{
     font-size: 3em;
     text-align: center;
     letter-spacing: 1px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     font-weight: bold;
     font-family: Exo;
 }

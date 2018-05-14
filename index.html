@@ -416,7 +416,7 @@ Nous avons aussi un excellent service client dédié à vous fournir une assista
 							<li>24/7 Assistance</li>
 						</ul>
 						<div class="more">
-							<a data-grid="grid-one" data-plan="free" class="book popup-with-zoom-anim button-isi zoomIn animated" data-wow-delay=".5s" href="#small-dialog">Souscrire</a>				
+							<a data-grid="grid-one" data-plan="free" >Souscrire</a>				
 						</div>
 					</div>
 				</div>
@@ -437,7 +437,7 @@ Nous avons aussi un excellent service client dédié à vous fournir une assista
 							<li>24/7 Assistance</li>
 						</ul>
 						<div class="more">
-							<a data-grid="grid-two" data-plan="standard" class="book popup-with-zoom-anim button-isi zoomIn animated" data-wow-delay=".5s" href="#small-dialog">Souscrire</a>				
+							<a data-grid="grid-two" data-plan="standard" >Souscrire</a>				
 						</div>
 					</div>
 				</div>
@@ -458,7 +458,7 @@ Nous avons aussi un excellent service client dédié à vous fournir une assista
 							<li>24/7 Assistance</li>
 						</ul>
 						<div class="more">
-							<a data-grid="grid-three" data-plan="pro" class="book popup-with-zoom-anim button-isi zoomIn animated" data-wow-delay=".5s" href="#small-dialog">Souscrire</a>				
+							<a data-grid="grid-three" data-plan="pro" >Souscrire</a>				
 						</div>
 					</div>
 				</div>
@@ -479,64 +479,12 @@ Nous avons aussi un excellent service client dédié à vous fournir une assista
 							<li>24/7 Assistance</li>
 						</ul>
 						<div class="more">
-							<a data-grid="grid-four" data-plan="enterprise" class="book popup-with-zoom-anim button-isi zoomIn animated" data-wow-delay=".5s" href="#small-dialog">Souscrire</a>				
+							<a data-grid="grid-four" data-plan="enterprise" >Souscrire</a>				
 						</div>
 					</div>
 				</div>	
 			</section>
-		</div>
-		<div class="pop-up"> 
-			<div id="small-dialog" class="mfp-hide book-form">
-				<h2><i class="fa fa-envelope" aria-hidden="true"></i> Souscription </h2>
-				<form action="https://thinktech-platform.herokuapp.com/services/subscribe" method="post">
-				   <div class="user-info">
-					<input type="text" name="name" placeholder="Prénom et Nom" required/>
-					<input type="email" name="email" class="email" placeholder="adresse email" required/>
-					<input type="password" name="password" placeholder="mot de passe" required>
-		   			<input type="password" name="confirmation" placeholder="confirmation" required>
-		   			<input name="structure" type="text" placeholder="structure" required>
-		   			<input name="plan" type="text" readonly style="display:none">
-		   			</div>
-		   			<div class="domain-info">
-				       <h4>Votre Domaine Web</h4>
-				       <div class="tld-domain-search-wrapper">
-					<div class="tld-domain-search">
-					<div class="input-container">
-						<span>www.</span>
-						<input placeholder="votre domaine web" type="text" maxlength="200">
-						<select id="domain_id" class="domain_id">
-							<option value="com">.com</option>
-							<option value="net">.net</option>
-							<option value="org">.org</option>
-							<option value="biz">.biz</option>
-							<option value="info">.info</option>
-							<option value="tv">.tv</option>
-							<option value="press">.press</option>
-							<option value="news">.news</option>
-							<option value="tech">.tech</option>
-						</select>
-					</div>
-					<a data-wizard="hide" rel="nofollow" class="tld-search-button">
-					  <i class="fa fa-search" aria-hidden="true"></i>
-					</a>
-				 </div>
-				</div>
-				    <input class="domain-name" type="text"  readonly>
-				    <input class="domain-year" type="text"  readonly>
-				   <input class="domain-price" type="text" readonly>
-				   </div>
-		   			<div class="terms-agreement">
-					  <input type="checkbox" checked disabled> J'accepte les <a class="read-terms">Termes</a>
-				    </div>
-				    <br>
-		   			<div class="buttons">
-					    <input class="submit" type="submit" value="Envoyer">
-					    <input class="next"   type="button" value="Suivant">
-					    <input class="prev"   type="button" value="Précédent">
-					</div>
-				</form>
-			</div>
-		</div>
+		</div> 
 	</div>
 	   </div>
 	   <br>
@@ -626,72 +574,6 @@ Nous avons aussi un excellent service client dédié à vous fournir une assista
 				  </p>
 				  </li>
 				</ol>
-		 <div class="subscribe-form">
-		   <span class="close">X</span>
-		   <h1><i class="fa fa-envelope" aria-hidden="true"></i>Souscription</h1>
-		   <form action="https://thinktech-platform.herokuapp.com/services/subscribe">
-		   <div class="user-info">
-			   <label>Prénom et Nom</label>
-			   <input type="text" name="name" placeholder="prénom et nom" required>
-			   <label>Email</label>
-			   <input type="email" name="email" placeholder="adresse email" required>
-			   <label>Mot de Passe</label>
-			   <input type="password" name="password" placeholder="mot de passe" required>
-			   <label>Confirmation</label>
-			   <input type="password" name="confirmation" placeholder="confirmation" required>
-			   <label>Structure</label>
-			   <input name="structure" type="text" placeholder="structure" required>
-			   <label>Projet</label>
-			   <select name="project">
-			     <option value="création site web">création site web</option>
-			     <option value="refonte site web">refonte site web</option>
-			     <option value="création application web">création application web</option>
-			     <option value="refonte application web">refonte application web</option>
-			   </select>
-			   <label>Plan</label>
-			   <input name="plan" type="text" readonly>
-		   </div>
-		   <div class="domain-info">
-		       <h4>Votre Domaine Web</h4>
-		       <div class="tld-domain-search-wrapper">
-			<div class="tld-domain-search">
-			<div class="input-container">
-				<span>www.</span>
-				<input placeholder="votre domaine web" type="text" maxlength="200">
-				<select id="domain_id" class="domain_id">
-					<option value="com">.com</option>
-					<option value="net">.net</option>
-					<option value="org">.org</option>
-					<option value="biz">.biz</option>
-					<option value="info">.info</option>
-					<option value="tv">.tv</option>
-					<option value="press">.press</option>
-					<option value="news">.news</option>
-					<option value="tech">.tech</option>
-				</select>
-			</div>
-			<a data-wizard="hide" rel="nofollow" class="tld-search-button">
-			  <i class="fa fa-search" aria-hidden="true"></i>
-			</a>
-		 </div>
-		</div>
-		   <label>Domaine Web</label>
-		    <input class="domain-name" type="text"  readonly>
-		   <label>Durée (AN)</label>
-		    <input class="domain-year" type="number" min="1" max="5"  readonly>
-		    <label>Montant (CFA)</label>
-			<input class="domain-price" type="text" readonly>
-		   </div>
-		   <div class="terms-agreement">
-			<input type="checkbox" checked disabled> J'accepte les <a class="read-terms">Termes</a>
-		   </div>
-		   <div class="buttons">
-		    <input class="submit" type="submit" value="Envoyer">
-		    <input class="next"   type="button" value="Suivant">
-		    <input class="prev"   type="button" value="Précédent">
-		   </div>
-		   </form>
-		</div>
 		</div>
 		<div class="clearfix"></div>
 		</div>
@@ -1014,8 +896,145 @@ Nous avons aussi un excellent service client dédié à vous fournir une assista
 			</div>
 		</div>
 	</div>
-<!-- //stats -->
-<!-- stats -->
+<!-- //dialogs -->
+
+ <div class="modal">
+			<div id="email-form" class="subscribe-form">
+				<span class="close">X</span>
+		        <h1><i class="fa fa-envelope" aria-hidden="true"></i>Souscription</h1>
+				<form action="https://thinktech-platform.herokuapp.com/services/subscribe" method="post">
+				   <div class="user-info">
+				    <label>Prénom et Nom</label>
+				    <input type="text" name="name" placeholder="prénom et nom" required>
+				    <label>Email</label>
+				    <input type="email" name="email" placeholder="adresse email" required>
+				    <label>Mot de Passe</label>
+				    <input type="password" name="password" placeholder="mot de passe" required>
+				    <label>Confirmation</label>
+				    <input type="password" name="confirmation" placeholder="confirmation" required>
+				    <label>Structure</label>
+				    <input name="structure" type="text" placeholder="structure" required>
+				    <label>Plan</label>
+		   			<input name="plan" type="text" readonly>
+		   			</div>
+		   			<div class="domain-info">
+				       <h4>Votre Domaine Web</h4>
+				       <div class="tld-domain-search-wrapper">
+					<div class="tld-domain-search">
+					<div class="input-container">
+						<span>www.</span>
+						<input placeholder="votre domaine web" type="text" maxlength="200">
+						<select id="domain_id" class="domain_id">
+							<option value="com">.com</option>
+							<option value="net">.net</option>
+							<option value="org">.org</option>
+							<option value="biz">.biz</option>
+							<option value="info">.info</option>
+							<option value="tv">.tv</option>
+							<option value="press">.press</option>
+							<option value="news">.news</option>
+							<option value="tech">.tech</option>
+						</select>
+					</div>
+					<a data-wizard="hide" rel="nofollow" class="tld-search-button">
+					  <i class="fa fa-search" aria-hidden="true"></i>
+					</a>
+				 </div>
+				</div>
+				     <label>Domaine Web</label>
+					    <input class="domain-name" type="text" placeholder="domaine web" readonly>
+					   <label>Durée (AN)</label>
+					    <input class="domain-year" type="text" placeholder="durée (AN)" readonly>
+					    <label>Montant (CFA)</label>
+						<input class="domain-price" type="text" placeholder="montant (CFA)" readonly>
+						<label>Business Email</label>
+						<input type="email" name="email" placeholder="votre business email" required>
+				   </div>
+		   			<div class="terms-agreement">
+					  <input type="checkbox" checked disabled> J'accepte les <a class="read-terms">Termes</a>
+				    </div>
+				    <br>
+		   			<div class="buttons">
+					    <input class="submit" type="submit" value="Envoyer">
+					    <input class="next"   type="button" value="Suivant">
+					    <input class="prev"   type="button" value="Précédent">
+					</div>
+				</form>
+			</div>
+			</div>
+			
+<div class="modal">
+ <div id="project-form" class="subscribe-form">
+		   <span class="close">X</span>
+		   <h1><i class="fa fa-envelope" aria-hidden="true"></i>Souscription</h1>
+		   <form action="https://thinktech-platform.herokuapp.com/services/subscribe">
+		   <div class="user-info">
+			   <label>Prénom et Nom</label>
+			   <input type="text" name="name" placeholder="prénom et nom" required>
+			   <label>Email</label>
+			   <input type="email" name="email" placeholder="adresse email" required>
+			   <label>Mot de Passe</label>
+			   <input type="password" name="password" placeholder="mot de passe" required>
+			   <label>Confirmation</label>
+			   <input type="password" name="confirmation" placeholder="confirmation" required>
+			   <label>Structure</label>
+			   <input name="structure" type="text" placeholder="structure" required>
+			   <label>Projet</label>
+			   <select name="project">
+			     <option value="création site web">création site web</option>
+			     <option value="refonte site web">refonte site web</option>
+			     <option value="création application web">création application web</option>
+			     <option value="refonte application web">refonte application web</option>
+			   </select>
+			   <label>Plan</label>
+			   <input name="plan" type="text" readonly>
+		   </div>
+		   <div class="domain-info">
+		       <h4>Votre Domaine Web</h4>
+		       <div class="tld-domain-search-wrapper">
+			<div class="tld-domain-search">
+			<div class="input-container">
+				<span>www.</span>
+				<input placeholder="votre domaine web" type="text" maxlength="200">
+				<select id="domain_id" class="domain_id">
+					<option value="com">.com</option>
+					<option value="net">.net</option>
+					<option value="org">.org</option>
+					<option value="biz">.biz</option>
+					<option value="info">.info</option>
+					<option value="tv">.tv</option>
+					<option value="press">.press</option>
+					<option value="news">.news</option>
+					<option value="tech">.tech</option>
+				</select>
+			</div>
+			<a data-wizard="hide" rel="nofollow" class="tld-search-button">
+			  <i class="fa fa-search" aria-hidden="true"></i>
+			</a>
+		 </div>
+		</div>
+		   <label>Domaine Web</label>
+		    <input class="domain-name" type="text" placeholder="domaine web" readonly>
+		   <label>Durée (AN)</label>
+		    <input class="domain-year" type="text" placeholder="durée (AN)" readonly>
+		    <label>Montant (CFA)</label>
+			<input class="domain-price" type="text" placeholder="montant (CFA)" readonly>
+			<label>Business Email</label>
+			<input type="email" name="email" placeholder="votre business email" required>
+		   </div>
+		   <div class="terms-agreement">
+			<input type="checkbox" checked disabled> J'accepte les <a class="read-terms">Termes</a>
+		   </div>
+		   <div class="buttons">
+		    <input class="submit" type="submit" value="Envoyer">
+		    <input class="next"   type="button" value="Suivant">
+		    <input class="prev"   type="button" value="Précédent">
+		   </div>
+		   </form>
+		</div>
+</div>
+
+<!-- dialogs -->
 <!-- footer -->
 	<div class="footer">
 		<div class="container">
@@ -1087,25 +1106,6 @@ Nous avons aussi un excellent service client dédié à vous fournir une assista
 			$(".scroll").click(function(event){		
 				event.preventDefault();
 				$('html,body').animate({scrollTop:$(this.hash).offset().top},300);
-			});
-			
-			$('.popup-with-zoom-anim').magnificPopup({
-				type: 'inline',
-				fixedContentPos: false,
-				fixedBgPos: true,
-				overflowY: 'auto',
-				closeBtnInside: true,
-				preloader: false,
-				closeOnBgClick : false,
-				midClick: true,
-				removalDelay: 300,
-				mainClass: 'my-mfp-zoom-in'
-			});
-			$(".w3ls-bottom .more a").click(function(){
-				const grid = $(this).data("grid");
-				const dialog = $("#small-dialog").addClass(grid+"-color");
-				const plan = $(this).data("plan");
-				$("input[name=plan]",dialog).val(plan);
 			});
 		});
 </script>
