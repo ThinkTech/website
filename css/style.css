@@ -5425,10 +5425,9 @@ h2.typoh2{
        position: relative;
 	}
 	.subscribe-form {
-	   width: 100%;
+	   width: 96%;
 	   padding: 8px;
 	   padding-bottom: 12px;
-	   top: 30%;
 	   box-shadow: none;
 	}
 	.grid_5 h3, .grid_5 h2, .grid_5 h1, .grid_5 h4, .grid_5 h5, h3.hdg, h3.bars {
