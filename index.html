@@ -489,16 +489,51 @@ Nous avons aussi un excellent service client dédié à vous fournir une assista
 			<div id="small-dialog" class="mfp-hide book-form">
 				<h2><i class="fa fa-envelope" aria-hidden="true"></i> Souscription </h2>
 				<form action="https://thinktech-platform.herokuapp.com/services/subscribe" method="post">
+				   <div class="user-info">
 					<input type="text" name="name" placeholder="Prénom et Nom" required/>
 					<input type="email" name="email" class="email" placeholder="adresse email" required/>
 					<input type="password" name="password" placeholder="mot de passe" required>
 		   			<input type="password" name="confirmation" placeholder="confirmation" required>
 		   			<input name="structure" type="text" placeholder="structure" required>
 		   			<input name="plan" type="text" readonly style="display:none">
+		   			</div>
+		   			<div class="domain-info">
+				       <h4>Votre Domaine Web</h4>
+				       <div class="tld-domain-search-wrapper">
+					<div class="tld-domain-search">
+					<div class="input-container">
+						<span>www.</span>
+						<input placeholder="votre domaine web" type="text" maxlength="200">
+						<select id="domain_id" class="domain_id">
+							<option value="com">.com</option>
+							<option value="net">.net</option>
+							<option value="org">.org</option>
+							<option value="biz">.biz</option>
+							<option value="info">.info</option>
+							<option value="tv">.tv</option>
+							<option value="press">.press</option>
+							<option value="news">.news</option>
+							<option value="tech">.tech</option>
+						</select>
+					</div>
+					<a data-wizard="hide" rel="nofollow" class="tld-search-button">
+					  <i class="fa fa-search" aria-hidden="true"></i>
+					</a>
+				 </div>
+				</div>
+				    <input class="domain-name" type="text"  readonly>
+				    <input class="domain-year" type="text"  readonly>
+				   <input class="domain-price" type="text" readonly>
+				   </div>
 		   			<div class="terms-agreement">
 					  <input type="checkbox" checked disabled> J'accepte les <a class="read-terms">Termes</a>
 				    </div>
-		   			<input type="submit" value="Souscrire">
+				    <br>
+		   			<div class="buttons">
+					    <input class="submit" type="submit" value="Envoyer">
+					    <input class="next"   type="button" value="Suivant">
+					    <input class="prev"   type="button" value="Précédent">
+					</div>
 				</form>
 			</div>
 		</div>

@@ -89,6 +89,9 @@ input[readonly] {
 .buttons .submit, .buttons .prev {
 	display : none;
 }
+.buttons .prev {
+	margin-right : 5px;
+}
 .delay-1 {
 animation-delay: .15s;
 }
@@ -1381,6 +1384,7 @@ a.w3ls_banner_more:hover{
 
 .domain-info h4 {
 	color : #fff;
+	text-align: center;
 }
 
 .subscribe-form input[type=submit],.subscribe-form input[type=button] {
@@ -3610,15 +3614,16 @@ button::-moz-focus-inner {
 }
 /*--pop-up--*/
 .book-form {
-   padding: 2em;
+   padding: 1em;
    padding-top: 1em;
+   padding-bottom: 2em;
 }
 .book-form h2 {
     font-size: 1.8em;
     text-align: center;
     font-family: 'Exo', serif;
     color: #fff;
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
 }
 .book-form input[type="text"],.book-form input[type="email"],.book-form input[type="password"]{
     color: #555;
@@ -3630,17 +3635,19 @@ button::-moz-focus-inner {
     margin-bottom: 1em;
     width: 100%;
 }
-.book-form input[type=submit] {
+.book-form input[type=submit],.book-form input[type=button] {
     color: #FFFFFF;
-    padding: .5em 1em;
-    margin-top: 0.5em;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: -15px;
     font-size: 1em;
     cursor: pointer;
     border: 2px solid #fff;
     outline: none;
     border-radius: 3px;
     background: none;
-    width: 100%;
+    float: right;
     font-family: 'Exo', serif;
     letter-spacing: 3px;
 	transition: 0.5s all;
@@ -3648,10 +3655,6 @@ button::-moz-focus-inner {
     -moz-transition: 0.5s all;
     -o-transition: 0.5s all;
     -ms-transition: 0.5s all;
-}
-.book-form input[type=submit]:hover {
-    background: #FFFFFF;
-    color: #73316C;
 }
 .check-box input[type="checkbox"]+label {
     position: relative;
@@ -3841,16 +3844,15 @@ button::-moz-focus-inner {
 }
 .book-form h2 {
     font-size: 1.4em;
-    margin-bottom: 0.8em;
+    margin-bottom: 8px;
 }
 .book-form input[type="text"], .book-form input[type="email"], .book-form input[type="password"] {
     font-size: 0.9em;
     line-height: 1.5em;
     margin-bottom: 10px;
 }
-.book-form input[type=submit] { 
-    padding: .3em 1em;
-    font-size: 0.9em; 
+.book-form input[type=submit],.book-form input[type=button] { 
+    font-size: 13px; 
 }
 }
 @media(max-width:320px){
@@ -4862,6 +4864,11 @@ h2.typoh2{
     padding: 20px;
 }
 
+.domain-info .tld-domain-search-wrapper {
+    padding-bottom : 10px;
+}
+
+
 .tld-domain-search .input-container input {
    display: inline-block;
     height: 48px;
@@ -4869,6 +4876,14 @@ h2.typoh2{
     border: 1px solid #08ccf7;
     padding-left: 10px;
     width : 300px;
+}
+
+.domain-info .tld-domain-search .input-container input {
+	width : 57%;
+}
+
+.domain-info .tld-domain-search .input-container select {
+	width : auto;
 }
 
 .tld-domain-search .input-container span {
@@ -4892,6 +4907,11 @@ h2.typoh2{
     margin-top: 2px;
     color: #fff;
     cursor : pointer;
+}
+
+.domain-info .tld-domain-search .tld-search-button {
+	width : 50px;
+	margin-left: -2px;
 }
 
 .tld-domain-search > div {
@@ -5147,14 +5167,14 @@ h2.typoh2{
 }
 
 @media (max-width:768px){
-	.subscribe-form .tld-domain-search-wrapper {
+	.domain-info .tld-domain-search-wrapper {
 	   margin-top: 0px;
 	   margin-bottom : 5px;
 	   padding : 0px;
 	}
 	.domain-info h4 {
      margin-top: 5px;
-     margin-bottom: 5px;
+     margin-bottom: 8px;
     }
 	.search h1 {
     	font-size: 2em;
@@ -5392,6 +5412,7 @@ h2.typoh2{
 	.book-form {
      padding: 0.6em;
      padding-top: 1em;
+     padding-bottom: 2em;
     }
 	.search-results .table > tbody > tr > td:first-of-type a{
 	   display : inline-block;

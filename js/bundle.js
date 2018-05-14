@@ -190,20 +190,20 @@ $(document).ready(function() {
     	return false;
     });
     
-    $(".subscribe-form .buttons .next").click(function(event){
-    	const parent = $(this).parent();
+    $(".buttons .next").click(function(event){
+    	const parent = $(this).parent().parent();
     	$(this).hide();
     	$(".prev,.submit",parent).show();
-    	$(".subscribe-form .domain-info").show();
-    	$(".subscribe-form .user-info").hide();
+    	$(".domain-info",parent).show();
+    	$(".user-info",parent).hide();
     });
     
-    $(".subscribe-form .buttons .prev").click(function(event){
-    	const parent = $(this).parent();
+    $(".buttons .prev").click(function(event){
+    	const parent = $(this).parent().parent();
     	$(".prev,.submit",parent).hide();
-    	$(".subscribe-form .domain-info").hide();
+    	$(".domain-info",parent).hide();
     	$(".next",parent).show();
-    	$(".subscribe-form .user-info").show();
+    	$(".user-info",parent).show();
     });
     
     $(".tld-domain-search-wrapper .tld-search-button").click(function(event){
