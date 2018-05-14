@@ -59,7 +59,7 @@ $(document).ready(function() {
 	});	
 	$(".w3ls-bottom .more a").click(function(){
 		const grid = $(this).data("grid");
-		const dialog = $("#email-form").addClass(grid+"-color").show();
+		const dialog = $("#email-form").removeClass().addClass("subscribe-form "+grid+"-color").show();
 		dialog.parent().css("height",$('body').height()+"px").show();
 		const plan = $(this).data("plan");
 		$("input[name=plan]",dialog).val(plan);
