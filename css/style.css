@@ -15,6 +15,10 @@ input[readonly] {
 .modal {
 	position : absolute;
 	background: rgba(0,0,0,0.5);
+	z-index : 999;
+}
+.modal-top {
+	z-index : 99999;
 }
 .green{
 	color : green;
@@ -4935,7 +4939,7 @@ h2.typoh2{
     right: 0;
     border: 1px solid #08ccf7;
     background: #fff;
-    z-index: 99999;
+    z-index: 999;
     padding: 20px;
     padding-bottom : 0px;
     display : none;

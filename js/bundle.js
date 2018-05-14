@@ -76,9 +76,12 @@ $(document).ready(function() {
     $(".terms > .close, .confirmation > .close").click(function(event){
     	 $(this).parent().hide();
 	});
-    $(".search .close,.buttons .cancel,.subscribe-form .close").click(function(event){
+    $(".buttons .cancel").click(function(event){
    	   $(".modal").hide();
 	});
+    $(".search .close,.subscribe-form .close").click(function(event){
+    	   $(this).parent().parent().hide();
+ 	});
     $(".search label").click(function(event){
    	    $(this).prev().prop("checked", true);
 	});
