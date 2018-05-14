@@ -5233,10 +5233,6 @@ h2.typoh2{
 	   height: 38px;
 	   width: auto;
 	}
-	.subscribe-form input[readonly] {
-        position: relative;
-        top: -3px;
-    }
     .subscribe-form input[type=checkbox] {
       width: 21px;
    	  height: 25px;
