@@ -236,7 +236,6 @@ $(document).ready(function() {
   		purchase.search = input.val().toLowerCase();
     	var domain = purchase.search.replace(/\s+/g, '');
     	if(domain){
-    		button.hide();
     		const index = domain.indexOf(".");
     		if(domain.indexOf(".")!=-1) domain = domain.substring(0,index);
     		input.val(domain);
@@ -247,7 +246,6 @@ $(document).ready(function() {
     	  	     url: url,
     	  	     dataType : "json",
     	  	     success : function(response){
-    	  	    	button.show();
     	  	    	page.release();
     	  	    	var result = response["1"].result;
     	  	    	if(result){
@@ -372,7 +370,6 @@ $(document).ready(function() {
     	  	    	}
     	  	     },
     	  	     error : function(){
-    	  	    	button.show();
     	  	    	page.release();
     	  	    	alert("erreur lors de la connexion au serveur");
     	  	     }
@@ -438,13 +435,12 @@ const page = {};
 
 page.wait = function(position) { 
 	const wait = $("#wait");
-	if(!position) {
-	  wait.css("height",$(document).height()).show();
-	}else {
-		if(position.top) wait.css("padding-top",position.top+"px");
-		if(position.left) wait.css("padding-left",position.left+"px");
-		wait.show();
+	wait.css("height",$('body').height()+"px");
+	if(position) {
+	   if(position.top) wait.css("padding-top",position.top+"px");
+	   if(position.left) wait.css("padding-left",position.left+"px");
 	}
+	wait.show();
 };
 
 page.release = function() { 
