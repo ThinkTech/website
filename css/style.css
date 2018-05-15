@@ -4096,7 +4096,7 @@ span.line {
 	text-align : center;
 	height: auto;
     padding-bottom: 15px;
-    background: transparent;
+    background: #fff;
 }
 .content-process.user img, .thumbs{
 	margin-top: 20px;
