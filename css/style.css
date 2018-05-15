@@ -4897,7 +4897,15 @@ h2.typoh2{
 	color : #fff;
 }
 
-.personal .tld-domain-search .tld-search-button {
+.grid-one-color .tld-domain-search .input-container span, .grid-three-color .tld-domain-search .input-container span  {
+	color : #fff;
+}
+
+.grid-two-color .tld-domain-search .input-container span {
+	color : #fff;
+}
+
+.personal .tld-domain-search .tld-search-button, .grid-one-color .tld-domain-search .tld-search-button {
     background-color: #fff;
     color : #000;
 }
