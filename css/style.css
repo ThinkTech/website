@@ -4976,7 +4976,7 @@ h2.typoh2{
 }
 
 .search div.wizard-message {
-   background: #f9f0f0;
+   background: #f3f3f3;
 }
 
 .search-wizard .domain-edit {
@@ -5125,7 +5125,7 @@ h2.typoh2{
     font-size: 13px;
     font-weight: bold;
     cursor : pointer;
-    border: 1px solid #d8d2d2;
+    border: 1px solid #4c4949;
     text-align: center;
 }
 
@@ -5135,7 +5135,7 @@ h2.typoh2{
     margin-left: 20px;
     font-size: 13px;
     font-weight: bold;
-    border: 1px solid #d8d2d2;
+    border: 1px solid #4c4949;
     background: #fff;
 }
 
@@ -5146,7 +5146,7 @@ h2.typoh2{
     background: #fff;
     color : green;
     padding: 5px;
-    border: 1px solid #d8d2d2;
+    border: 1px solid #4c4949;
 }
 
 .search-results .table-striped>tbody>tr {
