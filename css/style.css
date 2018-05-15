@@ -5195,7 +5195,7 @@ h2.typoh2{
 
 @media (max-width:768px){
 	.domain-info .tld-domain-search .tld-search-button {
-      height: 38px;
+      height: 36px;
       margin-top: 7px;
 	}
 	.domain-info .tld-domain-search-wrapper {
@@ -5254,10 +5254,10 @@ h2.typoh2{
 	}
 	.subscribe-form .domain-info .input-container input{
 	   margin : 0;
-	   height: 38px;
+	   height: 36px;
 	}
 	.subscribe-form .domain-info select{
-	   height: 38px;
+	   height: 36px;
 	   width: auto;
 	}
     .subscribe-form input[type=checkbox] {
@@ -5276,8 +5276,10 @@ h2.typoh2{
       width: 50%;
     }
     .domain-info .tld-domain-search .tld-search-button {
-      margin-left: -15px;
-      margin-top: 0;
+      margin-left: -25px;
+      margin-top: 1px;
+      font-size: 15px;
+      padding-top: 12px;
     }
 	.search-wizard .domain-edit {
       font-size: 11px;
