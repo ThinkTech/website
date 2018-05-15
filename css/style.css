@@ -4893,6 +4893,15 @@ h2.typoh2{
 	width : auto;
 }
 
+.personal .tld-domain-search .input-container span,.social .tld-domain-search .input-container span {
+	color : #fff;
+}
+
+.personal .tld-domain-search .tld-search-button {
+    background-color: #fff;
+    color : #000;
+}
+
 .tld-domain-search .input-container span {
     border: 2px solid transparent;
     display: inline-block;
