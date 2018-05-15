@@ -3531,6 +3531,7 @@ button::-moz-focus-inner {
     border: 1px solid #08ccf7;
     padding: 0 0 1em;
     padding-bottom: 20px;
+    background: #fff;
 }
 .w3ls-top {
     position: relative;
