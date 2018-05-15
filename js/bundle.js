@@ -318,7 +318,42 @@ $(document).ready(function() {
 		    	  	    	     }else{
 		    	  	    	        tr.append("<td>"+domain+"."+extension+"</td>");
 		    	  	    	      }
-	    	  	    	    	  tr.append("<td>&nbsp;</td>");
+		    	  	    	      var td = $("<td><span>"+pricing[extension].toLocaleString("fr-FR") +" CFA</span></td>");
+	    	  	    	          var select = $("<select></select>");
+	    	  	    	          select.append("<option value='1'>1 an</option>");
+	    	  	    	          select.append("<option value='2'>2 an</option>");
+	    	  	    	          select.append("<option value='3'>3 an</option>");
+	    	  	    	          select.append("<option value='4'>4 an</option>");
+	    	  	    	          select.append("<option value='5'>5 an</option>");
+	    	  	    	          select.on("change",{td : td, price : pricing[extension]},function(event){
+	    	  	    	        	  purchase.year = parseInt($(this).val());
+	    	  	    	        	  purchase.price = event.data.price * purchase.year;
+	    	  	    	        	  event.data.td.find("span").html(purchase.price.toLocaleString("fr-FR")+" CFA");
+	    	  	    	          });
+	    	  	    	          td.append(select);
+	    	  	    	          td.append("<a class='buy'>Transférer</a>");
+	    	  	    	          tr.append(td);
+	    	  	    	          $("a",tr).on("click",{td : td,extension : extension},function(event){
+	    	  	    	        	 $("select",div).val(event.data.extension);
+	    	  	    	        	 purchase.year = parseInt(event.data.td.find("select").val());
+	    	  	    	        	 purchase.price = purchase.year * pricing[event.data.extension];
+	    	  	    	        	 search.hide();
+	    	  	    	        	 const wizard = $(".search-wizard");
+	    	  	    	        	 if(button.data("wizard")!="hide"){
+	    	  	    	        		wizard.css("top",top).show(); 
+	    	  	    	        		$('html,body').animate({scrollTop:top-30},300);
+	    	  	    	        	 }else{
+	    	  	    	        		search.parent().hide();
+	    	  	    	        		$('html,body').animate({scrollTop:top-150},300);
+	    	  	    	        	 }
+	    	  	    	        	 purchase.action = "transfer";
+	    	  	    	        	 purchase.domain = domain+"."+event.data.extension;
+	    	         	  	    	 localStorage.setItem("purchase",JSON.stringify(purchase));
+	    	  	    	        	 $(".domain-name").html(purchase.domain).val(purchase.domain);
+	    	  	    	        	 $(".domain-year").html(purchase.year).val(purchase.year);
+	    	  	    	        	 $(".domain-price").html(purchase.price.toLocaleString("fr-FR")).val(purchase.price.toLocaleString("fr-FR"));
+	    	  	    	          });
+	    	  	    	          tbody.append(tr);
 	       	  	    	          tr.addClass("unavailable");
 	       	  	    	          tbody.append(tr);
 	    	  	    	    	}
