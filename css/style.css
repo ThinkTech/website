@@ -3567,10 +3567,11 @@ button::-moz-focus-inner {
 }
 .more a {
     display: inline-block;
-    font-size: 1.3em;
+    font-size: 1.2em;
     color: #fff;
     background-color: #ca2233;
-    font-family: 'Exo', serif;
+    font-family: Tahoma;
+    font-weight: bold;
     padding: .5em 4em;
     margin-top: 1.2em;
     border-radius: 4px;
