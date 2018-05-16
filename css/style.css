@@ -4336,6 +4336,7 @@ span.line {
       display: inline-block;
       margin-bottom: 30px;
       width: 23%;
+      height: 100%;
     }
 	.portal.w3l_banner_bottom_left p {
         width: 100%;
