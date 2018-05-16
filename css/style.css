@@ -5277,12 +5277,13 @@ h2.typoh2{
       margin-bottom: 5px;
 	}
 	.subscribe-form .domain-info .input-container input {
-      width: 52%;
+      width: 50%;
     }
     .domain-info .tld-domain-search .tld-search-button {
       margin-top: 2px;
       font-size: 15px;
       padding-top: 12px;
+      margin-left: -10px;
     }
 	.search-wizard .domain-edit {
       font-size: 11px;
