@@ -4487,12 +4487,12 @@ span.line {
 }
 
 @media (max-width: 320px){
-	 .content-process {
-    height: 950px;
-  }
+	.content-process {
+     height: 950px;
+    }
 	.content1 h2 {
-    font-size: 16px;
-}
+      font-size: 16px;
+    }
 	.content2-header1 span {
     font-size: 15px;
 }
@@ -5503,6 +5503,9 @@ h2.typoh2{
    }
 }
 @media (max-width: 320px){
+	.search-results td span {
+      width: auto;
+	}
 	.subscribe-form .domain-info .input-container input {
    	 width: 51%;
 	}
