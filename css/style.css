@@ -5027,7 +5027,7 @@ h2.typoh2{
     padding-left: 15px;
     padding-right: 15px;
     border: 1px solid #08ccf7;
-    font-size: 14px;
+    font-size: 15px;
     font-weight: bold;
     font-family: Exo;
     margin-right: 12px;
@@ -5939,6 +5939,9 @@ ul.contact_info li a:hover{
 	}
 }
 @media (max-width: 1024px){
+	.search-wizard .buttons a{
+	  font-size : 13px;
+	}
 	.search.search-wizard label,.search.search-wizard p {
       font-size: 14px;
 	}
