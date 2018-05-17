@@ -104,11 +104,6 @@ $(document).ready(function() {
  	   subscription.name = form.find("input[name=name]").val().trim();
  	   subscription.email = form.find("input[name=email]").val().trim();
  	   subscription.password = form.find("input[name=password]").val().trim();
- 	   const confirmation = form.find("input[name=confirmation]").val().trim();
- 	   if(subscription.password != confirmation){
- 		   alert("les deux mots de passe ne sont pas identiques.");
- 		   return false;
- 	   }
  	   subscription.structure = form.find("input[name=structure]").val().trim();
  	   subscription.project = form.find("select[name=project]").val().trim();
  	   subscription.plan = form.find("input[name=plan]").val().trim();
@@ -150,15 +145,9 @@ $(document).ready(function() {
   	   subscription.name = form.find("input[name=name]").val().trim();
   	   subscription.email = form.find("input[name=email]").val().trim();
   	   subscription.password = form.find("input[name=password]").val().trim();
-  	   const confirmation = form.find("input[name=confirmation]").val().trim();
-  	   if(subscription.password != confirmation){
-  		   alert("les deux mots de passe ne sont pas identiques.");
-  		   return false;
-  	   }
   	   subscription.structure = form.find("input[name=structure]").val().trim();
   	   subscription.plan = form.find("input[name=plan]").val().trim();
   	   subscription.per = "year";
-  	   form.find("input[type=submit]").hide();
   	   page.wait({top : form.offset().top});
   	   $.ajax({
   	     type: "POST",
@@ -168,19 +157,17 @@ $(document).ready(function() {
   	     success : function(response){
   	    	page.release();
   	    	if(response.status == 1){
-  	    		$(".mfp-close").click();
+  	    		$(".subscribe-form").hide();
   	    		$(".confirmation").css("top", form.offset().top+20).show();
    	       }else if(response.status == 2){
-   	    	   $(".mfp-close").click();
+   	    	   $(".subscribe-form").hide();
    	    	   alert("souscription reussie");
    	       }
   	       else if(response.status == 0){
     	      alert("vous &ecirc;tes d&edot;ja souscrit &agrave; ce service");
     	   }
-  	       form.find("input[type=submit]").show();
   	     },
   	     error : function(){
-  	    	form.find("input[type=submit]").show();
   	    	page.release();
   	    	alert("erreur lors de la connexion au serveur");
   	     },
@@ -200,10 +187,35 @@ $(document).ready(function() {
     
     $(".buttons .next").click(function(event){
     	const parent = $(this).parent().parent();
-    	$(this).hide();
+    	var valid = true;
+    	const info = $(".user-info",parent);
+        $('input[required]',info).each(function(index,element) {
+        	const val = $(element).val();
+			if(val.trim() == '') {
+				const message = "vous devez entrer votre "+$(element).attr("placeholder");
+				alert(message,function(){
+					$(element).focus();
+				});
+			    return valid = false;
+			}
+        });
+        if(!valid) return valid;
+        const password = info.find("input[name=password]").val().trim();
+        const confirmation = info.find("input[name=confirmation]").val().trim();
+  	    if(password != confirmation){
+  		   alert("les deux mots de passe ne sont pas identiques");
+  		   return false;
+  	    }
+        $(this).hide();
+        info.hide();
+    	const div = $(".domain-info",parent)
+    	const input = $('.domain-name',div);
+    	const domain = input.val();
+    	if(domain.trim() == '') {
+    		$('.tld-domain-search .input-container input').val($('input[name=structure]',info).val());
+    	}
+    	div.show();
     	$(".prev,.submit",parent).show();
-    	$(".domain-info",parent).show();
-    	$(".user-info",parent).hide();
     });
     
     $(".buttons .prev").click(function(event){
