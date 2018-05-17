@@ -1306,18 +1306,16 @@ a.w3ls_banner_more:hover{
 
 .subscribe-form p span.close { 
 	float: right;
-    font-size: 17px;
-    font-family: Tahoma;
-    font-weight: 700;
-    padding: 8px;
-    padding-bottom: 6px;
-    border-radius: 50%;
-    top: -4px;
-    position: relative;
-    background: 0 0;
-    border: 1px solid #fafafa;
-    color: #060606;
-    background: #fff;
+    margin-top: 60px;
+    display: block;
+    padding: 7px;
+    width: 48px;
+    text-align: center;
+    border: 1px solid #dad7d7;
+    border-radius: 0;
+    background-color: #fff;
+    font-size: 15px;
+    box-shadow: none;
 }
 
 .confirmation span.close {
@@ -1421,15 +1419,17 @@ a.w3ls_banner_more:hover{
 .subscribe-form .close {
 	float: right;
     font-size: 17px;
-    font-weight: bold;
+    font-family: Tahoma;
+    font-weight: 700;
     padding: 8px;
     padding-bottom: 6px;
     border-radius: 50%;
     top: -4px;
     position: relative;
-    background: transparent;
+    background: 0 0;
     border: 1px solid #fafafa;
-    color: #fff;
+    color: #060606;
+    background: #fff;
 }
 
 .terms .close {
