@@ -360,10 +360,10 @@ $(document).ready(function() {
 	    	  	    	$(".domain-name",search).html(domain+"."+purchase.extension);
 	    	  	    	if(result[purchase.extension]){
 	    	  	    		$(".domain-availability",search).removeClass("green").html("indisponible").addClass("red");
-	    	  	    		$(".fa-check-circle-o",search).removeClass("green").addClass("red");
+	    	  	    		$(".fa-check-circle-o",search).removeClass("green");
 	    	  	    	}else{
 	    	  	    		$(".domain-availability",search).removeClass("red").html("disponible").addClass("green");
-	    	  	    		$(".fa-check-circle-o",search).removeClass("red").addClass("green");
+	    	  	    		$(".fa-check-circle-o",search).addClass("green");
 	    	  	    	}
     	  	    	}else {
     	  	    		alert("le nom fourni est invalide");

@@ -5177,6 +5177,10 @@ h2.typoh2{
    background-color : #d13b2f;
 }
 
+.search-results .table>tbody>tr.unavailable>td:first-of-type {
+    color : #fff;
+}
+
 .search-results .table {
 	margin-bottom : 0px;
 	margin-left: auto;
