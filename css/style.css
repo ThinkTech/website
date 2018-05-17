@@ -3117,13 +3117,14 @@ h3.agileits-icons-title {
 	margin: 7px;
     position: absolute;
     right: 11px;
-	font-size: 17px;
+    font-size: 17px;
+    font-family: Tahoma;
     font-weight: bold;
     padding: 8px;
     border-radius: 50%;
-    background: transparent;
+    background: #fff;
     border: 1px solid #fafafa;
-    color: #fff;
+    color: #000;
 }
 
 /* Styles for dialog window */
