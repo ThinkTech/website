@@ -266,6 +266,7 @@ $(document).ready(function() {
         	  	    	$('html,body').animate({scrollTop:top-30},300);
         	  	    	const tbody = $("table",search).empty();
 	    	  	    	var tr;
+	    	  	    	var i;
 	    	  	    	var extension;
 	    	  	    	const clone = {};
 	    	  	    	clone[purchase.extension] = result[purchase.extension];
@@ -288,11 +289,9 @@ $(document).ready(function() {
 	    	  	    	          }
 	    	  	    	          var td = $("<td><span>"+pricing[extension].toLocaleString("fr-FR") +" CFA</span></td>");
 	    	  	    	          var select = $("<select></select>");
-	    	  	    	          select.append("<option value='1'>1 an</option>");
-	    	  	    	          select.append("<option value='2'>2 an</option>");
-	    	  	    	          select.append("<option value='3'>3 an</option>");
-	    	  	    	          select.append("<option value='4'>4 an</option>");
-	    	  	    	          select.append("<option value='5'>5 an</option>");
+	    	  	    	          for(i=0;i<10;i++){
+	    	  	    	        	select.append("<option value='"+(i+1)+"'"+">"+(i+1)+" an</option>");
+	    	  	    	          }
 	    	  	    	          select.on("change",{td : td, price : pricing[extension]},function(event){
 	    	  	    	        	  purchase.year = parseInt($(this).val());
 	    	  	    	        	  purchase.price = event.data.price * purchase.year;
@@ -330,11 +329,9 @@ $(document).ready(function() {
 		    	  	    	      }
 		    	  	    	      var td = $("<td><span>"+pricing[extension].toLocaleString("fr-FR") +" CFA</span></td>");
 	    	  	    	          var select = $("<select></select>");
-	    	  	    	          select.append("<option value='1'>1 an</option>");
-	    	  	    	          select.append("<option value='2'>2 an</option>");
-	    	  	    	          select.append("<option value='3'>3 an</option>");
-	    	  	    	          select.append("<option value='4'>4 an</option>");
-	    	  	    	          select.append("<option value='5'>5 an</option>");
+	    	  	    	          for(i=0;i<10;i++){
+	    	  	    	        	select.append("<option value='"+(i+1)+"'"+">"+(i+1)+" an</option>");
+	    	  	    	          }
 	    	  	    	          select.on("change",{td : td, price : pricing[extension]},function(event){
 	    	  	    	        	  purchase.year = parseInt($(this).val());
 	    	  	    	        	  purchase.price = event.data.price * purchase.year;
