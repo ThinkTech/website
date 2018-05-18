@@ -88,7 +88,13 @@ $(document).ready(function() {
     $(".search-wizard .finish").click(function(event){
     	$(".modal").hide();
     	const val = $(".search-wizard input:checked").val();
-    	const div = $("."+val);
+    	var div = $("."+val);
+    	if(div.hasClass("modal")){
+    		div.css("height",$('body').height()+"px").show();
+    		div.show();
+    		div = $(".subscribe-form",div);
+    		div.css("top",$(this).offset().top+200).show();
+    	}
     	const purchase = JSON.parse(localStorage.getItem('purchase'));
     	$("input[name=structure]").val(purchase.search);
   	    $('html,body').animate({scrollTop:div.offset().top-20},300);

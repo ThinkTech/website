@@ -1284,6 +1284,7 @@ a.w3ls_banner_more:hover{
 	box-shadow: 0 0px 6px #daaf82;
 	z-index: 9;
 	text-align: center;
+	background: #e2e2e2;
 }
 
  .confirmation {
@@ -5047,7 +5048,7 @@ h2.typoh2{
 .search.search-wizard label {
 	position: relative;
     top: -1px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font-size: 17px;
     cursor : pointer;
     font-family : Tahoma;
@@ -5056,7 +5057,7 @@ h2.typoh2{
 .search.search-wizard p {
    font-size: 16px;
     margin-bottom: 0px;
-    padding: 15px;
+    padding: 10px;
     width: 91%;
     margin-left: auto;
     margin-right: auto;
