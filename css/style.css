@@ -441,7 +441,7 @@ h3 .fa-briefcase {
 /*scroll to top*/
 
 .scrollToTop {
-  bottom: 8px;
+  bottom: 10px;
   display: none;
   font-size: 2em;
   font-weight: bold;
