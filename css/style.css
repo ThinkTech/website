@@ -751,7 +751,6 @@ h3 .fa-briefcase {
   font-size: 0.9rem;
 }
 .btn-pluss ul li {
-  background-color:#f7f7f7;
   margin-top: 5px;
   border-radius: 5px;
   width: 100%;
@@ -1019,7 +1018,7 @@ h3 .fa-briefcase {
     position: relative; 
     top : 0;
     background: #fff; 
-    z-index: 999999999999;
+    z-index: 1;
     height: auto;
     margin-left: auto;
     margin-right: auto;
