@@ -1284,7 +1284,7 @@ a.w3ls_banner_more:hover{
 	box-shadow: 0 0px 6px #daaf82;
 	z-index: 9;
 	text-align: center;
-	background: #e2e2e2;
+	background: #2f1a1a;
 }
 
  .confirmation {
@@ -4908,6 +4908,10 @@ h2.typoh2{
 	color : #fff;
 }
 
+.domainhosting .tld-domain-search .input-container span {
+    color: #fff;
+}
+
 .grid-two-color .tld-domain-search .input-container span {
 	color : #fff;
 }
@@ -5048,7 +5052,7 @@ h2.typoh2{
 .search.search-wizard label {
 	position: relative;
     top: -1px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     font-size: 17px;
     cursor : pointer;
     font-family : Tahoma;
@@ -5302,8 +5306,9 @@ h2.typoh2{
       margin-top: 7px;
 	}
 	.search-results, .search-wizard {
-     width: 97%;
-     padding: 10px;
+      width: 97%;
+      padding: 10px;
+      padding-bottom: 0px;
     }
     .search.search-wizard h4 {
      font-size: 14px;
@@ -5316,7 +5321,7 @@ h2.typoh2{
     }
     .search.search-wizard label {
      top: -2px;
-     margin-bottom: 5px;
+     margin-bottom: 0px;
      font-size: 13px;
     }
     .search.search-wizard input[type=radio] {
@@ -5333,9 +5338,9 @@ h2.typoh2{
      margin-right: 0px;
 	}
 	.search.search-wizard div > p {
-     font-size: 12px;
-     padding: 4px;
-     width: 95%;
+      font-size: 12px;
+      padding: 3px;
+      width: 98%;
     }
 	.search-results {
 	  padding : 10px;
@@ -5361,7 +5366,7 @@ h2.typoh2{
     	text-align: left;
 	}
 	.search h3 {
-      margin-bottom: 10px;
+      margin-bottom: 5px;
       font-size: 13px;
       line-height: 1.5em;
     }
