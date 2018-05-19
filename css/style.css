@@ -6294,8 +6294,9 @@ ul.contact_info li a:hover{
       	margin-bottom: 0;
      } 
      .terms h2 {
-        font-size : 17px;
-        line-height: 2em;
+        font-size: 17px;
+    	line-height: 1.3em;
+    	padding: 5px;
      }
 }
 @media (max-width: 767px){
