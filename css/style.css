@@ -1654,13 +1654,13 @@ a.w3ls_banner_more:hover{
     padding-top: 0.3em;
 }
 .w3_two_grid_right_grid1{
-    width: 65px;
-    height: 65px;
+    width: 55px;
+    height: 55px;
     border-radius: 50px;
     background:#fff;
     text-align: center;
     float : right;
-    border: 1px solid #de9e9e;
+    border: 1px solid #fafafa;
 }
 .w3_two_grid_right1:hover .w3_two_grid_right_grid1{
 	background:#fff;
@@ -1670,9 +1670,10 @@ a.w3ls_banner_more:hover{
 }
 .w3_two_grid_right_grid1 i{
 	font-size: 1.5em;
-    color: #000000;
+    color: #08ccf7;
     line-height: 3.1em;
     font-weight: bold;
+    line-height: 2.7em;
 }
 .w3_two_grid_right_gridr h4{
 	text-transform:capitalize;
@@ -5801,13 +5802,6 @@ ul.contact_info li a:hover{
 		font-size: 4.5em;
         margin-top: 10px;
 		white-space: nowrap;
-	}
-	.w3_two_grid_right_grid1 {
-		width: 55px;
-		height: 55px;
-	}
-	.w3_two_grid_right_grid1 i {
-		line-height: 2.6em;
 	}
 	.effect .mask {
 		border-width: 225px;
