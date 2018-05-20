@@ -12,6 +12,9 @@ a:focus, a:hover {
 input[readonly] {
 	background : #eee;
 }
+input, select {
+	border: 1px solid #27270c;
+}
 .modal {
 	position : absolute;
 	background: rgba(0,0,0,0.5);
