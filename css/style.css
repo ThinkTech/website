@@ -4961,7 +4961,7 @@ h2.typoh2{
 }
 
 .tld-domain-search select {
-    width: 140px;
+    width: auto;
     height: 48px;
     line-height: 48px;
     padding-left: 10px;
@@ -5390,8 +5390,7 @@ h2.typoh2{
        padding-bottom: 15px;
 	}
 	.tld-domain-search select {
-	    width: 60px;
-        height: 36px;
+	    height: 36px;
         line-height: 36px;
         font-size: 11px;
         margin-left: -1px;
