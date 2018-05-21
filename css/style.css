@@ -454,7 +454,7 @@ h3 .fa-briefcase {
   text-align: center;
   text-decoration: none;
   width: 50px;
-  z-index: 999999999;
+  z-index: 99;
   border-radius : 50%;
   line-height : 45px;
 }
@@ -3566,7 +3566,7 @@ button::-moz-focus-inner {
     font-weight: 300;
     margin-top: 0.5em;
     border : none;
-    border-top: 1px solid #dcdada;
+    border-top: 1px solid #08ccf7;
     padding-top: 1em;
     padding-bottom : 0;
     margin-bottom: 0;
