@@ -3571,6 +3571,9 @@ button::-moz-focus-inner {
     padding-bottom : 0;
     margin-bottom: 0;
 }
+.w3l_banner_bottom_left.offer .w3ls-bottom  ul li:last-of-type {
+    border-bottom: 1px solid #08ccf7;
+}
 .more a {
     display: inline-block;
     font-size: 1.3em;
