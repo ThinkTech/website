@@ -324,6 +324,7 @@ $(document).ready(function() {
 	    	  	    	        	 $(".domain-name").html(purchase.domain).val(purchase.domain);
 	    	  	    	        	 $(".domain-year").html(purchase.year).val(purchase.year);
 	    	  	    	        	 $(".domain-price").html(purchase.price.toLocaleString("fr-FR")).val(purchase.price.toLocaleString("fr-FR"));
+	    	  	    	        	 $(".epp-code").hide();
 	    	  	    	          });
 	    	  	    	          tbody.append(tr);
 	    	  	    	    	}else {
@@ -365,6 +366,7 @@ $(document).ready(function() {
 	    	  	    	        	 $(".domain-name").html(purchase.domain).val(purchase.domain);
 	    	  	    	        	 $(".domain-year").html(purchase.year).val(purchase.year);
 	    	  	    	        	 $(".domain-price").html(purchase.price.toLocaleString("fr-FR")).val(purchase.price.toLocaleString("fr-FR"));
+	    	  	    	        	 $(".epp-code").show();
 	    	  	    	          });
 	    	  	    	          tbody.append(tr);
 	       	  	    	          tr.addClass("unavailable");

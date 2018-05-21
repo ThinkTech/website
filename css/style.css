@@ -4969,6 +4969,10 @@ h2.typoh2{
     background: #fff;
 }
 
+.epp-code {
+	display : none;
+}
+
 .search-results,.search-wizard {
 	position: absolute;
     width: 75%;
