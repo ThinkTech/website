@@ -1937,17 +1937,14 @@ a.w3ls_banner_more:hover{
 	box-shadow : 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 .w3_footer_grid p{
-	color:#000000;
+	color:#500303;
 	line-height:2em;
 	font-size: 16px;
     font-weight: bold;
 }
 .w3_footer_grid p a{
-	color: #000000;
+	color: #500303;
     text-decoration: none;
-}
-.w3_footer_grid p a:hover{
-	color:#999;
 }
 .w3l_footer_grid {
 	width:50px;
