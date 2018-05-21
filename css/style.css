@@ -3573,6 +3573,7 @@ button::-moz-focus-inner {
 }
 .w3l_banner_bottom_left.offer .w3ls-bottom  ul li:last-of-type {
     border-bottom: 1px solid #08ccf7;
+    padding-bottom: 0.6em;
 }
 .more a {
     display: inline-block;
