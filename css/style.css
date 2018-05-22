@@ -1997,9 +1997,6 @@ a.w3ls_banner_more:hover{
 	color:#fafafa;
 	text-decoration:none;
 }
-.w3ls_copyright_left ul li a:hover,.w3ls_copyright_left ul li.active a{
-	color: #000000;
-}
 .w3ls_copyright_left p{
 	margin-top:.5em;
 	color:#000000;
