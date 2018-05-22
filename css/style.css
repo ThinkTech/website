@@ -5373,6 +5373,7 @@ h2.typoh2{
    	 	font-size: 13px;
     	text-align: left;
     	padding: 0px !important;
+    	padding-left: 5px !important;
         margin-bottom: -10px;
 	}
 	.search-results .table-striped>tbody>tr td:nth-child(2) {
