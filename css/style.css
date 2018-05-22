@@ -480,7 +480,7 @@ h3 .fa-briefcase {
 
 #loader {
     border: 16px solid #fff; 
-    border-top: 16px solid #08ccf7;
+    border-top: 16px solid #000;
     border-radius: 50%;
     width: 90px;
     height: 90px;
