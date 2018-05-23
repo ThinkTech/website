@@ -3589,9 +3589,6 @@ button::-moz-focus-inner {
     -moz-transition: .5s all;
     transition: .5s all;
 }  
-.more a:hover {
-    opacity: .7;
-} 
 
 .pricing-grid.grid-one .w3ls-top,.grid-one-color {
     background: #ca2233;
