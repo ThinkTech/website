@@ -232,6 +232,23 @@ $(document).ready(function() {
     	$(".user-info",parent).show();
     });
     
+    $(".buttons .submit").click(function(event){
+    	const parent = $(this).parent().parent();
+    	var valid = true;
+    	const info = $(".domain-info",parent);
+        $('input[required]',info).each(function(index,element) {
+        	const val = $(element).val();
+			if(val.trim() == '') {
+				const message = "vous devez entrer votre "+$(element).attr("placeholder");
+				alert(message,function(){
+					$(element).focus();
+				});
+			    return valid = false;
+			}
+        });
+        if(!valid) return valid;
+    });
+    
     $(".tld-domain-search-wrapper .tld-search-button").click(function(event){
     	$(".search").hide();
     	const button = $(this);
