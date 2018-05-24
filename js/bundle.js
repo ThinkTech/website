@@ -234,8 +234,16 @@ $(document).ready(function() {
     
     $(".buttons .submit").click(function(event){
     	const parent = $(this).parent().parent();
-    	var valid = true;
     	const info = $(".domain-info",parent);
+    	const purchase = localStorage.getItem('purchase');
+    	var valid = true;
+    	if(!purchase){
+    		alert("vous devez choisir votre domaine web",function(){
+    			$(".input-container input",info).focus();
+    		});
+    		valid = false;
+    	}
+    	if(!valid) return valid;
         $('input[required]',info).each(function(index,element) {
         	const val = $(element).val();
 			if(val.trim() == '') {
@@ -428,6 +436,7 @@ $(document).ready(function() {
     $(".plans .pricing .close").click(function(event){
 	   $(".plans .pricing").hide();
 	});	
+    localStorage.removeItem('purchase');
     $(window).scroll(function(){
 		  const top = $(this).scrollTop();
 		  $.each($(".w3l_banner_bottom_left h3,.wthree_stat_left h3,.wthree_stat_left p"),function(index,element){
