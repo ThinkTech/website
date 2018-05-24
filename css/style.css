@@ -1906,7 +1906,7 @@ a.w3ls_banner_more:hover{
     border: 1px solid #867e7e;
     padding: 10px 0;
     background: #ffffff;
-    color: #08ccf7;
+    color: #2ea2d1;
     font-size: 14px;
     width: 25%;
     text-transform: uppercase;
@@ -1954,9 +1954,6 @@ a.w3ls_banner_more:hover{
 	border-radius:30px;
 	background:#2ea2d1;
 	text-align:center;
-}
-.w3_footer_grid:hover .w3l_footer_grid {
-	background:#08ccf7;
 }
 .w3l_footer_grid i{
 	font-size:1.5em;
