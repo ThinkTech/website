@@ -33,6 +33,7 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
 
 
 $(document).ready(function() {
+	const serviceURL = "https://thinktech-platform.herokuapp.com/services/subscribe";
 	$(".banner h2,.banner p").addClass("animated pulse delay-1");
 	$(".banner a,.btn-pluss-wrapper").fadeIn(1000).addClass("animated pulse delay-3");
 	$(".subscribe").click(function(event){
@@ -118,7 +119,7 @@ $(document).ready(function() {
  	   page.wait({top : form.offset().top});
  	   $.ajax({
  	     type: "POST",
- 	     url: form.attr("action"),
+ 	     url: serviceURL,
  	     data: JSON.stringify(subscription),
  	     contentType : "application/json",
  	     success : function(response){
@@ -157,7 +158,7 @@ $(document).ready(function() {
   	   page.wait({top : form.offset().top});
   	   $.ajax({
   	     type: "POST",
-  	     url: form.attr("action"),
+  	     url: serviceURL,
   	     data: JSON.stringify(subscription),
   	     contentType : "application/json",
   	     success : function(response){
