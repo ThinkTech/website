@@ -3562,11 +3562,13 @@ button::-moz-focus-inner {
     font-weight: 300;
     margin-top: 0.5em;
     border : none;
+    border-top: 1px solid #eee;
     padding-top: 0.6em;
     padding-bottom : 0;
     margin-bottom: 0;
 }
 .w3l_banner_bottom_left.offer .w3ls-bottom  ul li:last-of-type {
+    border-bottom: 1px solid #eee;
     padding-bottom: 0.6em;
 }
 .more a {
