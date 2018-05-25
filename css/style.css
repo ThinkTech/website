@@ -4544,8 +4544,12 @@ p.footer {
 		font-size: 2em;
 	}
 	.terms h1, .content .terms h1 {
-     font-size: 1.2em;
+     font-size: 1.1em;
     }
+    .terms .close {
+      padding: 5px;
+      right: 4px;
+	}
 	.flipster-carousel .flip-future {
 		-webkit-transform: translateX(20%) translateZ(0) rotateY(-54deg) scale(0.65);
 		-moz-transform: translateX(20%) translateZ(0) rotateY(-54deg) scale(0.65);
