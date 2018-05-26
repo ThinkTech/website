@@ -363,120 +363,28 @@ page.initDomainSearch = function(){
 };
 
 page.initForms = function(){
-	const serviceURL = "https://thinktech-platform.herokuapp.com/services/subscribe";
 	$("#domain-form form").submit(function(event){
 	       const form = $(this);
-	  	   const subscription = {};
-	  	   subscription.service = "mailhosting";
-	  	   subscription.name = form.find("input[name=name]").val().trim();
-	  	   subscription.email = form.find("input[name=email]").val().trim();
-	  	   subscription.password = form.find("input[name=password]").val().trim();
-	  	   subscription.structure = form.find("input[name=structure]").val().trim();
-	  	   subscription.plan = form.find("input[name=plan]").val().trim();
+	       const subscription = page.createSubscription(form);
+	  	   subscription.service = "domainhosting";
 	  	   subscription.per = "year";
-	  	   page.wait({top : form.offset().top});
-	  	   $.ajax({
-	  	     type: "POST",
-	  	     url: serviceURL,
-	  	     data: JSON.stringify(subscription),
-	  	     contentType : "application/json",
-	  	     success : function(response){
-	  	    	page.release();
-	  	    	if(response.status == 1){
-	  	    		$(".subscribe-form").hide();
-	  	    		$(".confirmation").css("top", form.offset().top+20).show();
-	   	       }else if(response.status == 2){
-	   	    	   $(".subscribe-form").hide();
-	   	    	   alert("souscription reussie");
-	   	       }
-	  	       else if(response.status == 0){
-	    	      alert("vous &ecirc;tes d&edot;ja souscrit &agrave; ce service");
-	    	   }
-	  	     },
-	  	     error : function(){
-	  	    	page.release();
-	  	    	alert("erreur lors de la connexion au serveur");
-	  	     },
-	  	     dataType : "json"
-	  	   });
+	  	   page.submitSubscription(form,subscription);
 	  	   return false;
 	  	});
 	$("#project-form form").submit(function(event){
 	 	   const form = $(this);
-	 	   const subscription = {};
+	 	   const subscription = page.createSubscription(form);
 	 	   subscription.service = "webdev";
-	 	   subscription.name = form.find("input[name=name]").val().trim();
-	 	   subscription.email = form.find("input[name=email]").val().trim();
-	 	   subscription.password = form.find("input[name=password]").val().trim();
-	 	   subscription.structure = form.find("input[name=structure]").val().trim();
-	 	   subscription.project = form.find("select[name=project]").val().trim();
-	 	   subscription.plan = form.find("input[name=plan]").val().trim();
 	 	   subscription.per = "month";
-	 	   form.find("input[type=submit]").hide();
-	 	   page.wait({top : form.offset().top});
-	 	   $.ajax({
-	 	     type: "POST",
-	 	     url: serviceURL,
-	 	     data: JSON.stringify(subscription),
-	 	     contentType : "application/json",
-	 	     success : function(response){
-	 	    	page.release();
-	 	    	form.find("input[type=submit]").show();
-	 	    	if(response.status == 1){
-	 	    		$(".subscribe-form").hide();
-	 	    		$(".confirmation").css("top", form.offset().top+100).show();
-	  	        }else if(response.status == 2){
-	  	    	   $(".subscribe-form").hide();
-	  	    	   alert("souscription reussie");
-	  	        }
-	 	        else if(response.status == 0){
-	   	    	   alert("vous &ecirc;tes d&edot;ja souscrit &agrave; ce service");
-	   	        }
-	 	     },
-	 	     error : function(){
-	 	    	form.find("input[type=submit]").show();
-	 	    	page.release();
-	 	    	alert("erreur lors de la connexion au serveur");
-	 	     },
-	 	     dataType : "json"
-	 	   });
+	 	   page.submitSubscription(form,subscription);
 	 	   return false;
 	 	});
 	    $("#email-form form").submit(function(event){
 	       const form = $(this);
-	  	   const subscription = {};
+	  	   const subscription = page.createSubscription(form);
 	  	   subscription.service = "mailhosting";
-	  	   subscription.name = form.find("input[name=name]").val().trim();
-	  	   subscription.email = form.find("input[name=email]").val().trim();
-	  	   subscription.password = form.find("input[name=password]").val().trim();
-	  	   subscription.structure = form.find("input[name=structure]").val().trim();
-	  	   subscription.plan = form.find("input[name=plan]").val().trim();
 	  	   subscription.per = "year";
-	  	   page.wait({top : form.offset().top});
-	  	   $.ajax({
-	  	     type: "POST",
-	  	     url: serviceURL,
-	  	     data: JSON.stringify(subscription),
-	  	     contentType : "application/json",
-	  	     success : function(response){
-	  	    	page.release();
-	  	    	if(response.status == 1){
-	  	    		$(".subscribe-form").hide();
-	  	    		$(".confirmation").css("top", form.offset().top+20).show();
-	   	       }else if(response.status == 2){
-	   	    	   $(".subscribe-form").hide();
-	   	    	   alert("souscription reussie");
-	   	       }
-	  	       else if(response.status == 0){
-	    	      alert("vous &ecirc;tes d&edot;ja souscrit &agrave; ce service");
-	    	   }
-	  	     },
-	  	     error : function(){
-	  	    	page.release();
-	  	    	alert("erreur lors de la connexion au serveur");
-	  	     },
-	  	     dataType : "json"
-	  	   });
+	  	   page.submitSubscription(form,subscription);
 	  	   return false;
 	  	});
 	    $(".buttons .next").click(function(event){
@@ -510,8 +418,7 @@ page.initForms = function(){
 	    	}
 	    	div.show();
 	    	$(".prev,.submit",parent).show();
-	    });
-	    
+	    });    
 	    $(".buttons .prev").click(function(event){
 	    	const parent = $(this).parent().parent();
 	    	$(".prev,.submit",parent).hide();
@@ -519,7 +426,6 @@ page.initForms = function(){
 	    	$(".next",parent).show();
 	    	$(".user-info",parent).show();
 	    });
-	    
 	    $(".buttons .submit").click(function(event){
 	    	const parent = $(this).parent().parent();
 	    	const info = $(".domain-info",parent);
@@ -582,6 +488,44 @@ page.initForms = function(){
 	 		   $('html,body').animate({scrollTop:div.offset().top-20},300);
 	 		   return false;
 	 	});
+};
+
+page.createSubscription = function(form){
+	const subscription = {};
+	subscription.name = form.find("input[name=name]").val().trim();
+	subscription.email = form.find("input[name=email]").val().trim();
+	subscription.password = form.find("input[name=password]").val().trim();
+	subscription.structure = form.find("input[name=structure]").val().trim();
+	subscription.plan = form.find("input[name=plan]").val().trim();
+	return subscription;
+};
+
+page.submitSubscription = function(form,subscription){
+	page.wait({top : form.offset().top});
+	   $.ajax({
+	     type: "POST",
+	     url: "https://thinktech-platform.herokuapp.com/services/subscribe",
+	     data: JSON.stringify(subscription),
+	     contentType : "application/json",
+	     success : function(response){
+	    	page.release();
+	    	if(response.status == 1){
+	    		$(".subscribe-form").hide();
+	    		$(".confirmation").css("top", form.offset().top+20).show();
+	       }else if(response.status == 2){
+	    	   $(".subscribe-form").hide();
+	    	   alert("souscription reussie");
+	       }
+	       else if(response.status == 0){
+ 	      alert("vous &ecirc;tes d&edot;ja souscrit &agrave; ce service");
+ 	   }
+	     },
+	     error : function(){
+	    	page.release();
+	    	alert("erreur lors de la connexion au serveur");
+	     },
+	     dataType : "json"
+	   });
 };
 
 page.initScroll = function(){
