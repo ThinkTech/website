@@ -31,49 +31,122 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
 
 !function(a){a.fn.createSimpleImgGallery=function(){for(var t=a(this).find("a"),i=t.length,n=0;i>n;n++){var e=a(t[n]);e.attr("data-id",n),e.find("img").css({"float":"none",width:"100%",height:"100%",margin:"0"})}var p=a('<div id="codengineering_overlay"></div>'),r=a('<div class="wrapper"></div>'),s=a('<div class="img_inner_wrapper" data-rotation="0"></div>'),d=a('<div class="img_wrapper"></div>'),o=a('<div class="nav-btn nav-btn-left pointer"><span class="fa fa-caret-left"></span></div>'),c=a('<div class="nav-btn nav-btn-right pointer"><span class="fa fa-caret-right"></span></div>'),h=a('<div class="settings_wrapper"></div>'),f=a('<div class="settings"></div>'),l=a('<a><i class="fa fa-rotate-left pointer"></i></a>'),g=a('<a><i class="fa fa-rotate-right pointer"></i></a>'),v=a('<div class="loading_wrapper"></div>'),m=a('<div class="loading_text"><i class="fa fa-refresh fa-spin fa-3x fa-fw margin-bottom"></i></div>'),u=a("<img>"),w=a("<p></p>");p.append(r),s.append(u),d.append(s),h.append(f),f.append("&nbsp;").append(l).append("&nbsp;").append(g).append("&nbsp;"),v.append(m),r.append(d).append(h).append(o).append(c).append(v).append(w),a("body").append(p);var b=null,x=null,y=function(){var a=r.height(),t=r.width(),i=parseInt(s.attr("data-rotation"));i%180!==0&&(a=r.width(),t=r.height()),u.width("auto"),u.height(a),u.width()>t&&(u.width(t),u.height("auto"));var n=u.height(),e=u.width();s.css("margin-top",-n/2+"px"),s.css("margin-left",-e/2+"px"),o.css("line-height",o.height()+"px"),c.css("line-height",c.height()+"px"),v.css("line-height",r.height()+"px")},k=function(n){n=parseInt(n);var e=n===i-1,s=0===n,d=a(t[n]);u.attr("src",d.attr("href"));var h=d.children("img").attr("alt");w.text(h),m.animate({opacity:1},100),s&&o.hide(),s||(b=t[n-1],o.show()),e&&c.hide(),e||(x=t[1+n],c.show()),p.show(),r.animate({opacity:1},300)},_=function(a){a=parseInt(a);var t=parseInt(s.attr("data-rotation")),i=t+a;I(i),y()},I=function(a){s.attr("data-rotation",a),s.css({"-webkit-transform":"rotate("+a+"deg)","-moz-transform":"rotate("+a+"deg)","-ms-transform":"rotate("+a+"deg)",transform:"rotate("+a+"deg)"})};p.click(function(){p.hide(),r.css("opacity",0)}),o.click(function(t){t.stopPropagation(),k(a(b).attr("data-id"))}),c.click(function(t){t.stopPropagation(),k(a(x).attr("data-id"))}),t.click(function(t){t.preventDefault(),k(a(this).attr("data-id"))}),l.click(function(a){a.stopPropagation(),_(-90)}),g.click(function(a){a.stopPropagation(),_(90)}),u.on("load",function(){m.animate({opacity:0},100),I(0),y()}),a(window).on("resize",y)}}(jQuery);
 
+const app = {};
 
-$(document).ready(function() {
-	const serviceURL = "https://thinktech-platform.herokuapp.com/services/subscribe";
+app.ready = function(callback) { 
+  document.addEventListener("DOMContentLoaded", function(event) {
+	  if(callback) callback();
+  }); 
+};
+
+const page = {};
+
+page.wait = function(position) { 
+	const wait = $("#wait");
+	wait.css("height",$('body').height()+"px");
+	if(position) {
+	   if(position.top) wait.css("padding-top",position.top+"px");
+	   if(position.left) wait.css("padding-left",position.left+"px");
+	}
+	wait.show();
+};
+
+page.release = function() { 
+	const wait = $("#wait").hide();
+	wait.css("padding-top","15%");
+	wait.css("padding-left","0px");
+};
+
+
+page.init = function() {
+	$("body").append('<div id="wait"><div id="loader"/></div>');
+	$("body").append('<div id="alert-dialog-container" style="display:none">'+
+			'<div><span data-translation="information">Information</span><span></span>'+
+			'<a tabindex="3" id="alert-dialog-ok" data-translation="ok">OK</a></div></div>');
+	$("#alert-dialog-container").on('keydown', function(event) {     
+       switch (event.keyCode) {
+            case 27:
+            	$(document.activeElement).click();
+                break;
+            case 13:
+            	$(document.activeElement).click();
+                break;
+       }
+       return false;
+	}); 
+	$("body").append('<div id="confirm-dialog-container" style="display:none">'+
+			'<div><span data-translation="confirmation">Confirmation</span>'+
+			'<span class="confirmation-dialog-title"></span>'+
+			'<a id="confirm-dialog-ok" tabindex="1" data-translation="ok">OK</a>'+
+			'<a id="confirm-dialog-cancel" tabindex="2" data-translation="cancel">Cancel</a></div></div>');
+	
+	$("#confirm-dialog-cancel").click(function() { 
+		$("#confirm-dialog-container").hide();
+	});
+	
+	$("#confirm-dialog-container").on('keydown', function(event) {     
+	        switch (event.keyCode) {
+	            case 27:
+	            	$(this).hide();
+	                break;
+	            case 9:
+	            	document.activeElement == $("#confirm-dialog-ok")[0] ? $("#confirm-dialog-cancel").focus() : $("#confirm-dialog-ok").focus(); 
+	            	break;
+	            case 13:
+	            	$(document.activeElement).click();
+	                break;
+	        }
+	       return false;
+	}); 
+	
+	$(window).scroll(function(){
+	    if ($(this).scrollTop() > 300) {
+	      $('.scrollToTop').fadeIn();
+	    } else {
+	      $('.scrollToTop').fadeOut();
+	    }
+	});
+	$('.scrollToTop').click(function(){
+	    $('html, body').animate({scrollTop : 0},300);
+	    return false;
+	});
+	
+	 $.each($("img"),function(index,element){
+		const src = $(element).data("src");
+		const delay = $(element).data("delay");
+		if(!delay && src) $(element).attr("src",src);
+	});
+	
+};
+
+
+const alert = function(message,callback) {
+	const container = $("#alert-dialog-container");
+	$("span:nth-child(2)",container).html(message);
+	container.show(0,function(){
+		$("#alert-dialog-ok").one("click",function() {
+			container.hide();
+			if(callback)callback();
+		}).focus();
+	});
+	return false;
+};
+
+const confirm = function(message,callback){
+	$("body").trigger("click");
+	const container = $("#confirm-dialog-container");
+	$("span.confirmation-dialog-title",container).html(message);
+	container.show(0,function(){
+		$("#confirm-dialog-ok").unbind("click").click(function(){
+			container.hide();
+			callback();
+		}).focus();
+	});
+};
+
+page.initButtons = function(){
 	$(".banner h2,.banner p").addClass("animated pulse delay-1");
 	$(".banner a,.btn-pluss-wrapper").fadeIn(1000).addClass("animated pulse delay-3");
-	$(".subscribe").click(function(event){
-	   $(".plans .pricing").hide();
-	   const form = $("#project-form");
-	   const plan = $(this).data("plan");
-	   $("input[name=plan]",form).val(plan);
-	   if(plan == "personal"){
-	      $("input[name=structure]",form).removeAttr("required").hide().prev().hide();
-	   }else{
-	      $("input[name=structure]",form).attr("required","true").show().prev().show();
-	   }
-	   const select = $("select[name=project]",form);
-	   $("option:first",select).prop('selected', true);
-	   if(plan == "custom"){
-		  $("option:last",select).show().removeAttr('disabled').prev().show().removeAttr('disabled');
-	   }else{
-		   $("option:last",select).hide().attr('disabled','disabled').prev().hide().attr('disabled','disabled');
-	   }
-	   form.removeClass().addClass("subscribe-form "+plan);
-	   form.parent().css("height",$('body').height()+"px").show();
-	   form.css("top",$(this).offset().top-100);
-	   $('html,body').animate({scrollTop:form.offset().top-20},300);
-	});	
-	$(".w3ls-bottom .more a").click(function(){
-		const grid = $(this).data("grid");
-		const dialog = $("#email-form").removeClass().addClass("subscribe-form "+grid+"-color").show();
-		dialog.parent().css("height",$('body').height()+"px").show();
-		const plan = $(this).data("plan");
-		$("input[name=plan]",dialog).val(plan);
-		const form = $("#email-form");
-		form.css("top",$(this).offset().top-form.height()-50);
-		$('html,body').animate({scrollTop:form.offset().top-20},300);
-	});
-	$(".terms-agreement a").click(function(event){
-		   const div = $(".terms").show();
-		   div.css("top",event.pageY-400);
-		   $('html,body').animate({scrollTop:div.offset().top-20},300);
-		   return false;
-	});
     $(".terms > .close, .confirmation > .close").click(function(event){
     	 $(this).parent().hide();
 	});
@@ -83,7 +156,22 @@ $(document).ready(function() {
     $(".search .close,.subscribe-form .close").click(function(event){
     	   $(this).parent().parent().hide();
  	});
-    $(".search label").click(function(event){
+    $(".plan-details").click(function(event){
+	   $(".plans .pricing").hide();
+	   const plan = $(this).data("plan");
+	   const top = event.pageY;
+	   $(".plans").css("top",top-250);
+	   const div = $(".plans ."+plan).show();
+	   $('html,body').animate({scrollTop:div.offset().top-20},300);
+	   return false;
+	});	
+    $(".plans .pricing .close").click(function(event){
+	   $(".plans .pricing").hide();
+	});	
+};
+
+page.initDomainSearch = function(){
+	$(".search label").click(function(event){
    	    $(this).prev().prop("checked", true);
 	});
     $(".search-wizard .finish").click(function(event){
@@ -104,85 +192,6 @@ $(document).ready(function() {
     	$(".search-wizard").hide();
     	$(".search-results").show();
 	});
-    $("#project-form form").submit(function(event){
- 	   const form = $(this);
- 	   const subscription = {};
- 	   subscription.service = "webdev";
- 	   subscription.name = form.find("input[name=name]").val().trim();
- 	   subscription.email = form.find("input[name=email]").val().trim();
- 	   subscription.password = form.find("input[name=password]").val().trim();
- 	   subscription.structure = form.find("input[name=structure]").val().trim();
- 	   subscription.project = form.find("select[name=project]").val().trim();
- 	   subscription.plan = form.find("input[name=plan]").val().trim();
- 	   subscription.per = "month";
- 	   form.find("input[type=submit]").hide();
- 	   page.wait({top : form.offset().top});
- 	   $.ajax({
- 	     type: "POST",
- 	     url: serviceURL,
- 	     data: JSON.stringify(subscription),
- 	     contentType : "application/json",
- 	     success : function(response){
- 	    	page.release();
- 	    	form.find("input[type=submit]").show();
- 	    	if(response.status == 1){
- 	    		$(".subscribe-form").hide();
- 	    		$(".confirmation").css("top", form.offset().top+100).show();
-  	        }else if(response.status == 2){
-  	    	   $(".subscribe-form").hide();
-  	    	   alert("souscription reussie");
-  	        }
- 	        else if(response.status == 0){
-   	    	   alert("vous &ecirc;tes d&edot;ja souscrit &agrave; ce service");
-   	        }
- 	     },
- 	     error : function(){
- 	    	form.find("input[type=submit]").show();
- 	    	page.release();
- 	    	alert("erreur lors de la connexion au serveur");
- 	     },
- 	     dataType : "json"
- 	   });
- 	   return false;
- 	});
-    $("#email-form form").submit(function(event){
-       const form = $(this);
-  	   const subscription = {};
-  	   subscription.service = "mailhosting";
-  	   subscription.name = form.find("input[name=name]").val().trim();
-  	   subscription.email = form.find("input[name=email]").val().trim();
-  	   subscription.password = form.find("input[name=password]").val().trim();
-  	   subscription.structure = form.find("input[name=structure]").val().trim();
-  	   subscription.plan = form.find("input[name=plan]").val().trim();
-  	   subscription.per = "year";
-  	   page.wait({top : form.offset().top});
-  	   $.ajax({
-  	     type: "POST",
-  	     url: serviceURL,
-  	     data: JSON.stringify(subscription),
-  	     contentType : "application/json",
-  	     success : function(response){
-  	    	page.release();
-  	    	if(response.status == 1){
-  	    		$(".subscribe-form").hide();
-  	    		$(".confirmation").css("top", form.offset().top+20).show();
-   	       }else if(response.status == 2){
-   	    	   $(".subscribe-form").hide();
-   	    	   alert("souscription reussie");
-   	       }
-  	       else if(response.status == 0){
-    	      alert("vous &ecirc;tes d&edot;ja souscrit &agrave; ce service");
-    	   }
-  	     },
-  	     error : function(){
-  	    	page.release();
-  	    	alert("erreur lors de la connexion au serveur");
-  	     },
-  	     dataType : "json"
-  	   });
-  	   return false;
-  	});	
-    
     $(".tld-domain-search-wrapper input").keyup(function(event){
     	if (event.keyCode === 13) {
     		$(this).parent().next().trigger("click");
@@ -191,73 +200,6 @@ $(document).ready(function() {
     	}
     	return false;
     });
-    
-    $(".buttons .next").click(function(event){
-    	const parent = $(this).parent().parent();
-    	var valid = true;
-    	const info = $(".user-info",parent);
-        $('input[required]',info).each(function(index,element) {
-        	const val = $(element).val();
-			if(val.trim() == '') {
-				const message = "vous devez entrer votre "+$(element).attr("placeholder");
-				alert(message,function(){
-					$(element).focus();
-				});
-			    return valid = false;
-			}
-        });
-        if(!valid) return valid;
-        const password = info.find("input[name=password]").val().trim();
-        const confirmation = info.find("input[name=confirmation]").val().trim();
-  	    if(password != confirmation){
-  		   alert("les deux mots de passe ne sont pas identiques");
-  		   return false;
-  	    }
-        $(this).hide();
-        info.hide();
-    	const div = $(".domain-info",parent)
-    	const input = $('.domain-name',div);
-    	const domain = input.val();
-    	if(domain.trim() == '') {
-    		$('.tld-domain-search .input-container input').val($('input[name=structure]',info).val());
-    	}
-    	div.show();
-    	$(".prev,.submit",parent).show();
-    });
-    
-    $(".buttons .prev").click(function(event){
-    	const parent = $(this).parent().parent();
-    	$(".prev,.submit",parent).hide();
-    	$(".domain-info",parent).hide();
-    	$(".next",parent).show();
-    	$(".user-info",parent).show();
-    });
-    
-    $(".buttons .submit").click(function(event){
-    	const parent = $(this).parent().parent();
-    	const info = $(".domain-info",parent);
-    	const purchase = localStorage.getItem('purchase');
-    	var valid = true;
-    	if(!purchase){
-    		alert("vous devez choisir votre domaine web",function(){
-    			$(".input-container input",info).focus();
-    		});
-    		valid = false;
-    	}
-    	if(!valid) return valid;
-        $('input[required]',info).each(function(index,element) {
-        	const val = $(element).val();
-			if(val.trim() == '') {
-				const message = "vous devez entrer votre "+$(element).attr("placeholder");
-				alert(message,function(){
-					$(element).focus();
-				});
-			    return valid = false;
-			}
-        });
-        if(!valid) return valid;
-    });
-    
     $(".tld-domain-search-wrapper .tld-search-button").click(function(event){
     	$(".search").hide();
     	const button = $(this);
@@ -424,21 +366,232 @@ $(document).ready(function() {
     	}
     	return false;
     });
-     
-    $(".plan-details").click(function(event){
-	   $(".plans .pricing").hide();
-	   const plan = $(this).data("plan");
-	   const top = event.pageY;
-	   $(".plans").css("top",top-250);
-	   const div = $(".plans ."+plan).show();
-	   $('html,body').animate({scrollTop:div.offset().top-20},300);
-	   return false;
-	});	
-    $(".plans .pricing .close").click(function(event){
-	   $(".plans .pricing").hide();
-	});	
-    localStorage.removeItem('purchase');
-    $(window).scroll(function(){
+};
+
+page.initForms = function(){
+	const serviceURL = "https://thinktech-platform.herokuapp.com/services/subscribe";
+	$("#domain-form form").submit(function(event){
+	       const form = $(this);
+	  	   const subscription = {};
+	  	   subscription.service = "mailhosting";
+	  	   subscription.name = form.find("input[name=name]").val().trim();
+	  	   subscription.email = form.find("input[name=email]").val().trim();
+	  	   subscription.password = form.find("input[name=password]").val().trim();
+	  	   subscription.structure = form.find("input[name=structure]").val().trim();
+	  	   subscription.plan = form.find("input[name=plan]").val().trim();
+	  	   subscription.per = "year";
+	  	   page.wait({top : form.offset().top});
+	  	   $.ajax({
+	  	     type: "POST",
+	  	     url: serviceURL,
+	  	     data: JSON.stringify(subscription),
+	  	     contentType : "application/json",
+	  	     success : function(response){
+	  	    	page.release();
+	  	    	if(response.status == 1){
+	  	    		$(".subscribe-form").hide();
+	  	    		$(".confirmation").css("top", form.offset().top+20).show();
+	   	       }else if(response.status == 2){
+	   	    	   $(".subscribe-form").hide();
+	   	    	   alert("souscription reussie");
+	   	       }
+	  	       else if(response.status == 0){
+	    	      alert("vous &ecirc;tes d&edot;ja souscrit &agrave; ce service");
+	    	   }
+	  	     },
+	  	     error : function(){
+	  	    	page.release();
+	  	    	alert("erreur lors de la connexion au serveur");
+	  	     },
+	  	     dataType : "json"
+	  	   });
+	  	   return false;
+	  	});
+	$("#project-form form").submit(function(event){
+	 	   const form = $(this);
+	 	   const subscription = {};
+	 	   subscription.service = "webdev";
+	 	   subscription.name = form.find("input[name=name]").val().trim();
+	 	   subscription.email = form.find("input[name=email]").val().trim();
+	 	   subscription.password = form.find("input[name=password]").val().trim();
+	 	   subscription.structure = form.find("input[name=structure]").val().trim();
+	 	   subscription.project = form.find("select[name=project]").val().trim();
+	 	   subscription.plan = form.find("input[name=plan]").val().trim();
+	 	   subscription.per = "month";
+	 	   form.find("input[type=submit]").hide();
+	 	   page.wait({top : form.offset().top});
+	 	   $.ajax({
+	 	     type: "POST",
+	 	     url: serviceURL,
+	 	     data: JSON.stringify(subscription),
+	 	     contentType : "application/json",
+	 	     success : function(response){
+	 	    	page.release();
+	 	    	form.find("input[type=submit]").show();
+	 	    	if(response.status == 1){
+	 	    		$(".subscribe-form").hide();
+	 	    		$(".confirmation").css("top", form.offset().top+100).show();
+	  	        }else if(response.status == 2){
+	  	    	   $(".subscribe-form").hide();
+	  	    	   alert("souscription reussie");
+	  	        }
+	 	        else if(response.status == 0){
+	   	    	   alert("vous &ecirc;tes d&edot;ja souscrit &agrave; ce service");
+	   	        }
+	 	     },
+	 	     error : function(){
+	 	    	form.find("input[type=submit]").show();
+	 	    	page.release();
+	 	    	alert("erreur lors de la connexion au serveur");
+	 	     },
+	 	     dataType : "json"
+	 	   });
+	 	   return false;
+	 	});
+	    $("#email-form form").submit(function(event){
+	       const form = $(this);
+	  	   const subscription = {};
+	  	   subscription.service = "mailhosting";
+	  	   subscription.name = form.find("input[name=name]").val().trim();
+	  	   subscription.email = form.find("input[name=email]").val().trim();
+	  	   subscription.password = form.find("input[name=password]").val().trim();
+	  	   subscription.structure = form.find("input[name=structure]").val().trim();
+	  	   subscription.plan = form.find("input[name=plan]").val().trim();
+	  	   subscription.per = "year";
+	  	   page.wait({top : form.offset().top});
+	  	   $.ajax({
+	  	     type: "POST",
+	  	     url: serviceURL,
+	  	     data: JSON.stringify(subscription),
+	  	     contentType : "application/json",
+	  	     success : function(response){
+	  	    	page.release();
+	  	    	if(response.status == 1){
+	  	    		$(".subscribe-form").hide();
+	  	    		$(".confirmation").css("top", form.offset().top+20).show();
+	   	       }else if(response.status == 2){
+	   	    	   $(".subscribe-form").hide();
+	   	    	   alert("souscription reussie");
+	   	       }
+	  	       else if(response.status == 0){
+	    	      alert("vous &ecirc;tes d&edot;ja souscrit &agrave; ce service");
+	    	   }
+	  	     },
+	  	     error : function(){
+	  	    	page.release();
+	  	    	alert("erreur lors de la connexion au serveur");
+	  	     },
+	  	     dataType : "json"
+	  	   });
+	  	   return false;
+	  	});
+	    $(".buttons .next").click(function(event){
+	    	const parent = $(this).parent().parent();
+	    	var valid = true;
+	    	const info = $(".user-info",parent);
+	        $('input[required]',info).each(function(index,element) {
+	        	const val = $(element).val();
+				if(val.trim() == '') {
+					const message = "vous devez entrer votre "+$(element).attr("placeholder");
+					alert(message,function(){
+						$(element).focus();
+					});
+				    return valid = false;
+				}
+	        });
+	        if(!valid) return valid;
+	        const password = info.find("input[name=password]").val().trim();
+	        const confirmation = info.find("input[name=confirmation]").val().trim();
+	  	    if(password != confirmation){
+	  		   alert("les deux mots de passe ne sont pas identiques");
+	  		   return false;
+	  	    }
+	        $(this).hide();
+	        info.hide();
+	    	const div = $(".domain-info",parent)
+	    	const input = $('.domain-name',div);
+	    	const domain = input.val();
+	    	if(domain.trim() == '') {
+	    		$('.tld-domain-search .input-container input').val($('input[name=structure]',info).val());
+	    	}
+	    	div.show();
+	    	$(".prev,.submit",parent).show();
+	    });
+	    
+	    $(".buttons .prev").click(function(event){
+	    	const parent = $(this).parent().parent();
+	    	$(".prev,.submit",parent).hide();
+	    	$(".domain-info",parent).hide();
+	    	$(".next",parent).show();
+	    	$(".user-info",parent).show();
+	    });
+	    
+	    $(".buttons .submit").click(function(event){
+	    	const parent = $(this).parent().parent();
+	    	const info = $(".domain-info",parent);
+	    	const purchase = localStorage.getItem('purchase');
+	    	var valid = true;
+	    	if(!purchase){
+	    		alert("vous devez choisir votre domaine web",function(){
+	    			$(".input-container input",info).focus();
+	    		});
+	    		valid = false;
+	    	}
+	    	if(!valid) return valid;
+	        $('input[required]',info).each(function(index,element) {
+	        	const val = $(element).val();
+				if(val.trim() == '') {
+					const message = "vous devez entrer votre "+$(element).attr("placeholder");
+					alert(message,function(){
+						$(element).focus();
+					});
+				    return valid = false;
+				}
+	        });
+	        if(!valid) return valid;
+	    });
+	    $(".subscribe").click(function(event){
+	 	   $(".plans .pricing").hide();
+	 	   const form = $("#project-form");
+	 	   const plan = $(this).data("plan");
+	 	   $("input[name=plan]",form).val(plan);
+	 	   if(plan == "personal"){
+	 	      $("input[name=structure]",form).removeAttr("required").hide().prev().hide();
+	 	   }else{
+	 	      $("input[name=structure]",form).attr("required","true").show().prev().show();
+	 	   }
+	 	   const select = $("select[name=project]",form);
+	 	   $("option:first",select).prop('selected', true);
+	 	   if(plan == "custom"){
+	 		  $("option:last",select).show().removeAttr('disabled').prev().show().removeAttr('disabled');
+	 	   }else{
+	 		   $("option:last",select).hide().attr('disabled','disabled').prev().hide().attr('disabled','disabled');
+	 	   }
+	 	   form.removeClass().addClass("subscribe-form "+plan);
+	 	   form.parent().css("height",$('body').height()+"px").show();
+	 	   form.css("top",$(this).offset().top-100);
+	 	   $('html,body').animate({scrollTop:form.offset().top-20},300);
+	 	});	
+	 	$(".w3ls-bottom .more a").click(function(){
+	 		const grid = $(this).data("grid");
+	 		const dialog = $("#email-form").removeClass().addClass("subscribe-form "+grid+"-color").show();
+	 		dialog.parent().css("height",$('body').height()+"px").show();
+	 		const plan = $(this).data("plan");
+	 		$("input[name=plan]",dialog).val(plan);
+	 		const form = $("#email-form");
+	 		form.css("top",$(this).offset().top-form.height()-50);
+	 		$('html,body').animate({scrollTop:form.offset().top-20},300);
+	 	});
+	 	$(".terms-agreement a").click(function(event){
+	 		   const div = $(".terms").show();
+	 		   div.css("top",event.pageY-400);
+	 		   $('html,body').animate({scrollTop:div.offset().top-20},300);
+	 		   return false;
+	 	});
+};
+
+page.initScroll = function(){
+	$(window).scroll(function(){
 		  const top = $(this).scrollTop();
 		  $.each($(".w3l_banner_bottom_left h3,.wthree_stat_left h3,.wthree_stat_left p"),function(index,element){
 				const h3 = $(element);
@@ -464,122 +617,16 @@ $(document).ready(function() {
 				 }
 				}
 	    });
-    });
-});
-
-const app = {};
-
-app.ready = function(callback) { 
-  document.addEventListener("DOMContentLoaded", function(event) {
-	  if(callback) callback();
-  }); 
-};
-
-const page = {};
-
-page.wait = function(position) { 
-	const wait = $("#wait");
-	wait.css("height",$('body').height()+"px");
-	if(position) {
-	   if(position.top) wait.css("padding-top",position.top+"px");
-	   if(position.left) wait.css("padding-left",position.left+"px");
-	}
-	wait.show();
-};
-
-page.release = function() { 
-	const wait = $("#wait").hide();
-	wait.css("padding-top","15%");
-	wait.css("padding-left","0px");
-};
-
-
-page.init = function() {
-	$("body").append('<div id="wait"><div id="loader"/></div>');
-	$("body").append('<div id="alert-dialog-container" style="display:none">'+
-			'<div><span data-translation="information">Information</span><span></span>'+
-			'<a tabindex="3" id="alert-dialog-ok" data-translation="ok">OK</a></div></div>');
-	$("#alert-dialog-container").on('keydown', function(event) {     
-       switch (event.keyCode) {
-            case 27:
-            	$(document.activeElement).click();
-                break;
-            case 13:
-            	$(document.activeElement).click();
-                break;
-       }
-       return false;
-	}); 
-	$("body").append('<div id="confirm-dialog-container" style="display:none">'+
-			'<div><span data-translation="confirmation">Confirmation</span>'+
-			'<span class="confirmation-dialog-title"></span>'+
-			'<a id="confirm-dialog-ok" tabindex="1" data-translation="ok">OK</a>'+
-			'<a id="confirm-dialog-cancel" tabindex="2" data-translation="cancel">Cancel</a></div></div>');
-	
-	$("#confirm-dialog-cancel").click(function() { 
-		$("#confirm-dialog-container").hide();
-	});
-	
-	$("#confirm-dialog-container").on('keydown', function(event) {     
-	        switch (event.keyCode) {
-	            case 27:
-	            	$(this).hide();
-	                break;
-	            case 9:
-	            	document.activeElement == $("#confirm-dialog-ok")[0] ? $("#confirm-dialog-cancel").focus() : $("#confirm-dialog-ok").focus(); 
-	            	break;
-	            case 13:
-	            	$(document.activeElement).click();
-	                break;
-	        }
-	       return false;
-	}); 
-	
-	$(window).scroll(function(){
-	    if ($(this).scrollTop() > 300) {
-	      $('.scrollToTop').fadeIn();
-	    } else {
-	      $('.scrollToTop').fadeOut();
-	    }
-	});
-	$('.scrollToTop').click(function(){
-	    $('html, body').animate({scrollTop : 0},300);
-	    return false;
-	});
-	
-	 $.each($("img"),function(index,element){
-		const src = $(element).data("src");
-		const delay = $(element).data("delay");
-		if(!delay && src) $(element).attr("src",src);
-	});
-	
-};
-
-
-const alert = function(message,callback) {
-	const container = $("#alert-dialog-container");
-	$("span:nth-child(2)",container).html(message);
-	container.show(0,function(){
-		$("#alert-dialog-ok").one("click",function() {
-			container.hide();
-			if(callback)callback();
-		}).focus();
-	});
-	return false;
-};
-
-const confirm = function(message,callback){
-	$("body").trigger("click");
-	const container = $("#confirm-dialog-container");
-	$("span.confirmation-dialog-title",container).html(message);
-	container.show(0,function(){
-		$("#confirm-dialog-ok").unbind("click").click(function(){
-			container.hide();
-			callback();
-		}).focus();
-	});
+  });
 };
 
 app.ready(function() {
 	page.init();
+	if($(".modal form").length){
+		page.initButtons();
+		page.initForms();
+		page.initDomainSearch();
+		page.initScroll();
+	}
+	localStorage.removeItem('purchase');
 });
