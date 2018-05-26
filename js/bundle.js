@@ -111,12 +111,6 @@ page.init = function() {
 	    return false;
 	});
 	
-	 $.each($("img"),function(index,element){
-		const src = $(element).data("src");
-		const delay = $(element).data("delay");
-		if(!delay && src) $(element).attr("src",src);
-	});
-	
 };
 
 
