@@ -5324,6 +5324,7 @@ h2.typoh2{
     .search-wizard legend {
      font-size: 15px;
      padding-left: 2px;
+     margin-bottom: 3px;
     }
     .search.search-wizard label {
      top: -2px;
@@ -5378,6 +5379,7 @@ h2.typoh2{
       margin-bottom: 5px;
       font-size: 13px;
       line-height: 1.5em;
+      margin-top: 0px;
     }
     .search h1 {
       font-size: 18px;
