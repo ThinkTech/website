@@ -365,20 +365,21 @@ page.initDomainSearch = function(){
 };
 
 page.initForms = function(){
-	$("#domain-form form").submit(function(event){
+		$("#domain-form form").submit(function(event){
 		   const form = $(this);
 	       const subscription = page.createSubscription(form);
 	  	   subscription.service = "domainhosting";
 	  	   subscription.per = "year";
 	  	   page.submitSubscription(form,subscription);
 	  	   return false;
-	});
-	$("#project-form form").submit(function(event){
+		});
+		$("#project-form form").submit(function(event){
 	 	   const form = $(this);
 	 	   const subscription = page.createSubscription(form);
 	 	   subscription.service = "webdev";
 	 	   subscription.per = "month";
 	 	   subscription.plan = form.find("input[name=plan]").val().trim();
+	 	   subscription.hosting.email =  form.find("input[name=businessEmail]").val().trim();
 	 	   page.submitSubscription(form,subscription);
 	 	   return false;
 	 	});
@@ -388,6 +389,7 @@ page.initForms = function(){
 	  	   subscription.service = "mailhosting";
 	  	   subscription.per = "year";
 	  	   subscription.plan = form.find("input[name=plan]").val().trim();
+	  	   subscription.hosting.email =  form.find("input[name=businessEmail]").val().trim();
 	  	   page.submitSubscription(form,subscription);
 	  	   return false;
 	  	});
