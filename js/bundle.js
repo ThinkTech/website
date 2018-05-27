@@ -272,6 +272,7 @@ page.initDomainSearch = function(){
 	    	  	    	        	 $("select",div).val(event.data.extension);
 	    	  	    	        	 purchase.year = parseInt(event.data.td.find("select").val());
 	    	  	    	        	 purchase.price = purchase.year * pricing[event.data.extension];
+	    	  	    	        	 purchase.extension = event.data.extension;
 	    	  	    	        	 search.hide();
 	    	  	    	        	 const wizard = $(".search-wizard");
 	    	  	    	        	 if(button.data("wizard")!="hide"){
@@ -313,6 +314,7 @@ page.initDomainSearch = function(){
 	    	  	    	        	 $("select",div).val(event.data.extension);
 	    	  	    	        	 purchase.year = parseInt(event.data.td.find("select").val());
 	    	  	    	        	 purchase.price = purchase.year * pricing[event.data.extension];
+	    	  	    	        	 purchase.extension = event.data.extension;
 	    	  	    	        	 search.hide();
 	    	  	    	        	 const wizard = $(".search-wizard");
 	    	  	    	        	 if(button.data("wizard")!="hide"){
@@ -364,18 +366,19 @@ page.initDomainSearch = function(){
 
 page.initForms = function(){
 	$("#domain-form form").submit(function(event){
-	       const form = $(this);
+		   const form = $(this);
 	       const subscription = page.createSubscription(form);
 	  	   subscription.service = "domainhosting";
 	  	   subscription.per = "year";
 	  	   page.submitSubscription(form,subscription);
 	  	   return false;
-	  	});
+	});
 	$("#project-form form").submit(function(event){
 	 	   const form = $(this);
 	 	   const subscription = page.createSubscription(form);
 	 	   subscription.service = "webdev";
 	 	   subscription.per = "month";
+	 	   subscription.plan = form.find("input[name=plan]").val().trim();
 	 	   page.submitSubscription(form,subscription);
 	 	   return false;
 	 	});
@@ -384,6 +387,7 @@ page.initForms = function(){
 	  	   const subscription = page.createSubscription(form);
 	  	   subscription.service = "mailhosting";
 	  	   subscription.per = "year";
+	  	   subscription.plan = form.find("input[name=plan]").val().trim();
 	  	   page.submitSubscription(form,subscription);
 	  	   return false;
 	  	});
@@ -496,7 +500,8 @@ page.createSubscription = function(form){
 	subscription.email = form.find("input[name=email]").val().trim();
 	subscription.password = form.find("input[name=password]").val().trim();
 	subscription.structure = form.find("input[name=structure]").val().trim();
-	subscription.plan = form.find("input[name=plan]").val().trim();
+	subscription.hosting = JSON.parse(localStorage.getItem('purchase'));
+	subscription.hosting.eppCode =  form.find("input[name=eppcode]").val().trim();
 	return subscription;
 };
 
