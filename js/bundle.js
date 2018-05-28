@@ -78,7 +78,7 @@ page.init = function() {
 			'<div><span data-translation="confirmation">Confirmation</span>'+
 			'<span class="confirmation-dialog-title"></span>'+
 			'<a id="confirm-dialog-ok" tabindex="1" data-translation="ok">OK</a>'+
-			'<a id="confirm-dialog-cancel" tabindex="2" data-translation="cancel">Cancel</a></div></div>');
+			'<a id="confirm-dialog-cancel" tabindex="2" data-translation="cancel">Annuler</a></div></div>');
 	
 	$("#confirm-dialog-cancel").click(function() { 
 		$("#confirm-dialog-container").hide();
@@ -370,7 +370,9 @@ page.initForms = function(){
 	       const subscription = page.createSubscription(form);
 	  	   subscription.service = "domainhosting";
 	  	   subscription.per = "year";
-	  	   page.submitSubscription(form,subscription);
+	  	   confirm("&ecirc;tes vous s&ucirc;r de vouloir souscrire &agrave; ce service?",function(){
+	  		 page.submitSubscription(form,subscription); 
+	  	   });
 	  	   return false;
 		});
 		$("#project-form form").submit(function(event){
@@ -380,7 +382,9 @@ page.initForms = function(){
 	 	   subscription.per = "month";
 	 	   subscription.plan = form.find("input[name=plan]").val().trim();
 	 	   subscription.hosting.email =  form.find("input[name=businessEmail]").val().trim();
-	 	   page.submitSubscription(form,subscription);
+	 	   confirm("&ecirc;tes vous s&ucirc;r de vouloir souscrire &agrave; ce service?",function(){
+		  	 page.submitSubscription(form,subscription); 
+		   });
 	 	   return false;
 	 	});
 	    $("#email-form form").submit(function(event){
@@ -390,7 +394,9 @@ page.initForms = function(){
 	  	   subscription.per = "year";
 	  	   subscription.plan = form.find("input[name=plan]").val().trim();
 	  	   subscription.hosting.email =  form.find("input[name=businessEmail]").val().trim();
-	  	   page.submitSubscription(form,subscription);
+	  	   confirm("&ecirc;tes vous s&ucirc;r de vouloir souscrire &agrave; ce service?",function(){
+	  		 page.submitSubscription(form,subscription); 
+	  	   });
 	  	   return false;
 	  	});
 	    $(".buttons .next").click(function(event){
