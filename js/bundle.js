@@ -511,7 +511,7 @@ page.submitSubscription = function(form,subscription){
 	page.wait({top : form.offset().top});
 	   $.ajax({
 	     type: "POST",
-	     url: "https://thinktech-platform.herokuapp.com/services/subscribe",
+	     url: "http://localhost:8080/platform/services/subscribe",
 	     data: JSON.stringify(subscription),
 	     contentType : "application/json",
 	     success : function(response){
