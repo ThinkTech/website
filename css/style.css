@@ -504,6 +504,7 @@ h3 .fa-briefcase {
 	z-index: 9999999999999999999999999;
 	padding-top: 16%;
 	display: none;
+	user-select : none;
 }
 
 #confirm-dialog-container i, #alert-dialog-container i {
