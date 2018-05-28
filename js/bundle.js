@@ -517,10 +517,10 @@ page.submitSubscription = function(form,subscription){
 	     success : function(response){
 	    	page.release();
 	    	if(response.status == 1){
-	    		$(".subscribe-form").hide();
+	    		$(".modal").hide();
 	    		$(".confirmation").css("top", form.offset().top+20).show();
 	       }else if(response.status == 2){
-	    	   $(".subscribe-form").hide();
+	    	   $(".modal").hide();
 	    	   alert("souscription reussie");
 	       }
 	       else if(response.status == 0){
