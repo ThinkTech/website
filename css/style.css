@@ -5148,7 +5148,7 @@ h2.typoh2{
     font-size: 13px;
     font-weight: bold;
     cursor : pointer;
-    border: 1px solid green;
+    border: 1px solid #08ccf7;
     text-align: center;
 }
 
@@ -5158,7 +5158,7 @@ h2.typoh2{
     margin-left: 20px;
     font-size: 13px;
     font-weight: bold;
-    border: 1px solid #4c4949;
+    border: 1px solid #08ccf7;
     background: #fff;
 }
 
@@ -5169,7 +5169,7 @@ h2.typoh2{
     background: #fff;
     color : green;
     padding: 5px;
-    border: 1px solid #4c4949;
+    border: 1px solid #08ccf7;
 }
 
 .search-results .table-striped>tbody>tr {
