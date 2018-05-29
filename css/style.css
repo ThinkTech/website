@@ -4812,13 +4812,14 @@ section#tables  p {
     color: #500303;
     border-top: none !important;
     text-align: center;
-    font-family : Exo;
+    font-family: "Open Sans";
     vertical-align: middle;
 }
 .table > thead > tr > th {
 	font-size: 1.2em;
     background: #2f1a1a;
     color: #fff;
+    font-family : Exo;
 }
 .table > tbody > tr > td:first-of-type {
 	font-weight : bold;
