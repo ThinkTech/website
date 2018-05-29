@@ -286,7 +286,8 @@ page.initDomainSearch = function(){
 	    	         	  	    	 localStorage.setItem("purchase",JSON.stringify(purchase));
 	    	  	    	        	 $(".domain-name").html(purchase.domain).val(purchase.domain);
 	    	  	    	        	 $(".domain-year").html(purchase.year).val(purchase.year);
-	    	  	    	        	 $(".domain-price").html(purchase.price.toLocaleString("fr-FR")).val(purchase.price.toLocaleString("fr-FR"));
+	    	  	    	        	 $(".domain-price").html(pricing[event.data.extension]).val(pricing[event.data.extension]);
+	    	  	    	        	 $(".domain-amount").html(purchase.price.toLocaleString("fr-FR")).val(purchase.price.toLocaleString("fr-FR"));
 	    	  	    	        	 $(".epp-code").removeAttr("required").hide();
 	    	  	    	          });
 	    	  	    	          tbody.append(tr);
@@ -329,7 +330,8 @@ page.initDomainSearch = function(){
 	    	         	  	    	 localStorage.setItem("purchase",JSON.stringify(purchase));
 	    	  	    	        	 $(".domain-name").html(purchase.domain).val(purchase.domain);
 	    	  	    	        	 $(".domain-year").html(purchase.year).val(purchase.year);
-	    	  	    	        	 $(".domain-price").html(purchase.price.toLocaleString("fr-FR")).val(purchase.price.toLocaleString("fr-FR"));
+	    	  	    	        	 $(".domain-price").html(pricing[event.data.extension].toLocaleString("fr-FR")).val(pricing[event.data.extension].toLocaleString("fr-FR"));
+	    	  	    	        	 $(".domain-amount").html(purchase.price.toLocaleString("fr-FR")).val(purchase.price.toLocaleString("fr-FR"));
 	    	  	    	        	 $(".epp-code").attr("required","true").show();
 	    	  	    	          });
 	    	  	    	          tbody.append(tr);
@@ -507,6 +509,7 @@ page.createSubscription = function(form){
 	subscription.name = form.find("input[name=name]").val().trim();
 	subscription.email = form.find("input[name=email]").val().trim();
 	subscription.password = form.find("input[name=password]").val().trim();
+	subscription.telephone = form.find("input[name=telephone]").val().trim();
 	subscription.structure = form.find("input[name=structure]").val().trim();
 	subscription.hosting = JSON.parse(localStorage.getItem('purchase'));
 	subscription.hosting.eppCode =  form.find("input[name=eppcode]").val().trim();
