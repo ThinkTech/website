@@ -2,6 +2,7 @@ html, body{
 	background:#f7f7f7;
 	margin: 0;
 	overflow-x : hidden;
+	color : #180101;
 }
 body{
 	overflow: hidden;
@@ -54,7 +55,7 @@ input, select {
 }
 .w3_agile_logo h1 a,.w3_agile_logo h1 a:visited{
 	font-size:1.85em;
-	color:#000000;
+	color : #180101;
 	text-decoration:none;
 	text-shadow: 0px -3px #000000;
 	text-transform: uppercase;
@@ -197,7 +198,7 @@ animation-delay: 1s;
 }
 .agileits_w3layouts_sign_in ul li{
 	display:inline-block;
-	color:#000000;
+	color : #180101;
 	margin-left:2em;
 }
 .agileits_w3layouts_sign_in ul li a {
@@ -302,7 +303,7 @@ nav.navbar.navbar-default {
 }
 .agile_short_dropdown li a{
 	text-transform:uppercase;
-	color:#000000;
+	color : #180101;
 	font-size:13px;
 	font-weight:600;
 	padding: .8em 0;
@@ -1237,7 +1238,7 @@ a.w3ls_banner_more:hover{
 }
 .w3l_banner_bottom_left h3,.agile_head,.wthree_stat_left h3{
 	font-size:5em;
-	color:#000000;
+	color : #180101;
 	text-transform:capitalize;
 	padding-bottom:.2em;
 	position:relative;
@@ -1464,7 +1465,7 @@ a.w3ls_banner_more:hover{
 	display : inline-block;
 	margin : 0;
 	position : relative;
-	color : #000000;
+	color : #180101;
 }
 
 .guide .subscribe-form a i{
@@ -1998,7 +1999,7 @@ a.w3ls_banner_more:hover{
 }
 .w3ls_copyright_left p{
 	margin-top:.5em;
-	color:#000000;
+	color : #180101;
 	line-height:2em;
 	font-weight: bold;
     font-size: 16.9px;
@@ -2090,7 +2091,7 @@ a.agile_twitter:hover{
 .modal-body p i {
     display: block;
     margin: 2em 0 0;
-	color:#000000;
+	color : #180101;
 }
 .modal-body {
     padding:2em;
@@ -2122,7 +2123,7 @@ button.close {
     display: block;
 }
 .agileits_signin_form input[type="text"]::-webkit-input-placeholder,.agileits_signin_form input[type="email"]::-webkit-input-placeholder,.agileits_signin_form input[type="password"]::-webkit-input-placeholder{
-	color:#000000; !important;
+	color : #180101; !important;
 }
 .agileits_signin_form input[type="submit"] {
     padding: 10px 0;
@@ -2149,7 +2150,7 @@ button.close {
 	text-decoration:underline;
 }
 .agileits_signin_form p a:hover{
-	color:#000000;
+	color : #180101;
 }
 .agileinfo_sign{
 	font-size:2em;
@@ -2165,7 +2166,7 @@ button.close {
 }
 .wthree_follow{
 	font-size:1.2em;
-	color:#000000;
+	color : #180101;
 }
 .agile_remember_left {
     float: left;
@@ -2261,7 +2262,7 @@ button.close {
 /*-- about --*/
 .wthree_about_grid h3{
 	font-size:2em;
-	color:#000000;
+	color : #180101;
 	text-transform: uppercase;
 }
 .wthree_about_grid h3 span{
@@ -2305,7 +2306,7 @@ button.close {
 .wthree_about_grid ul li{
 	list-style-type:none;
 	margin-bottom:1em;
-	color:#000000;
+	color : #180101;
 }
 .wthree_about_grid ul li i{
 	padding-right:2em;
@@ -2397,7 +2398,7 @@ button.close {
 }
 .w3_team_grid h4{
 	font-size:1em;
-	color:#000000;
+	color : #180101;
 }
 .w3_team_grid h5{
 	font-size:1.3em;
@@ -4025,7 +4026,7 @@ p.text {
     margin-top: 10px;
 }
 .content1 {
-	background-color:#000000;
+	background-color : #180101;
 	text-align:center;
 	padding:2em;
 }
@@ -4757,7 +4758,7 @@ li.list-group-item1 {
 }
 .grid_5 h3, .grid_5 h2, .grid_5 h1, .grid_5 h4, .grid_5 h5, h3.hdg, h3.bars {
 	margin-bottom: 1em;
-    color:#000000;
+    color : #180101;
 }
 .table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
 	border-top: none !important;
@@ -4919,7 +4920,7 @@ h2.typoh2{
 
 .personal .tld-domain-search .tld-search-button, .grid-one-color .tld-domain-search .tld-search-button {
     background-color: #fff;
-    color : #000;
+    color : #180101;
 }
 
 .tld-domain-search .input-container span {
@@ -5597,7 +5598,7 @@ h2.typoh2{
 .view h4{
    padding:.3em .5em;
    background:#fff;
-   color:#000000;
+   color : #180101;
    text-align:center;
    display:inline-block;
 }
@@ -5686,7 +5687,7 @@ h2.typoh2{
 	background:#fff;
 	border:1px solid #8ee2f5;
 	font-size:16px;
-	color:#000000;
+	color : #180101;
 	width:100%;
 	padding:10px;
 }
