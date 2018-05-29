@@ -89,7 +89,7 @@ input, select {
     top: 1.5px;
     text-transform: uppercase;
     font-weight: bold;
-    color: #000;
+    color : #180101;
     margin-left : 5px;
     margin-right : 5px;
 }
@@ -464,7 +464,7 @@ h3 .fa-briefcase {
 .scrollToTop:hover, .scrollToTop:focus{
   text-decoration: none;
   outline: none;
-  background-color: #000;
+  background-color : #180101;
 }
 
 #wait {
@@ -719,7 +719,7 @@ h3 .fa-briefcase {
     font-family: Exo,monospace;
     position: relative;
     font-weight: bold;
-    color: #000;
+    color : #180101;
     text-decoration: none;
     overflow: hidden;
 }
@@ -1051,7 +1051,7 @@ h3 .fa-briefcase {
     font-size: 98%;
     font-family: Exo;
     font-size: 16px;
-    color: #000;
+    color : #180101;
 }
 
 .terms h2 {
@@ -1443,7 +1443,7 @@ a.w3ls_banner_more:hover{
     position: relative;
     padding: 7px;
     top: 4px;
-    color: #000;
+    color : #180101;
     right: 14px;
     border: 1px solid #555;
     font-family: Tahoma;
@@ -2518,7 +2518,7 @@ h3.icon-subheading {
 h3.agileits-icons-title {
     text-align: center;
     font-size: 30px;
-    color: #000;
+    color : #180101;
 }
 .icons a {
     color: #999;
@@ -2613,7 +2613,7 @@ h3.agileits-icons-title {
     text-align: right;
     padding: 0;
     font-size: 18px;
-    color: #000;
+    color : #180101;
 	position: relative;
     margin-top: -7px;
 	display : inline-block;
@@ -2629,7 +2629,7 @@ h3.agileits-icons-title {
     text-align: left;
     padding: 0;
     font-size: 20px;
-    color: #000;
+    color : #180101;
 	position: relative;
     margin-top: -7px;
 	display : inline-block;
@@ -2721,7 +2721,7 @@ h3.agileits-icons-title {
   height: 50px;
   line-height: 50px;
   padding: 0 28px 0 16px;
-  background-color: #000;
+  background-color : #180101;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #ffffff;
@@ -3123,7 +3123,7 @@ h3.agileits-icons-title {
     border-radius: 50%;
     background: #fff;
     border: 1px solid #555;
-    color: #000;
+    color : #180101;
 }
 
 /* Styles for dialog window */
@@ -4006,7 +4006,7 @@ p.text {
 .buy-button a{
     padding: .5em 2em;
     border: solid 1px #333;
-    color: #000;
+    color : #180101;
     border-radius: 5px;
     white-space: nowrap;
     cursor: pointer;
@@ -4624,7 +4624,7 @@ p.footer {
     }
     .banner a:hover {
      background: #fff;
-     color: #000;
+     color : #180101;
     }
 	.subscribe-form {
 		width: 90%;
@@ -5134,7 +5134,7 @@ h2.typoh2{
     text-align: center;
     border: 1px solid #2f1a1a;
     border-radius: 50%;
-    color: #000;
+    color : #180101;
     font-family: Tahoma;
     font-size: 15px;
     box-shadow: none;
@@ -5760,7 +5760,7 @@ h2.typoh2{
 ul.contact_info li {
     list-style-type: none;
     margin-bottom: 1em;
-    color: #000;
+    color : #180101;
     font-size: 14px;
     font-weight: bold;
 }
@@ -5773,7 +5773,7 @@ ul.contact_info li i {
     margin-right: 1em;
 }
 ul.contact_info li a {
-    color: #000;
+    color : #180101;
     text-decoration: none;
 }
 ul.contact_info li a:hover{
