@@ -6039,6 +6039,7 @@ ul.contact_info li a:hover{
 	}
 	.search h3 {
 	   font-size: 15px;
+	   margin-bottom: 0;
 	}
 	.search-wizard legend,.search.search-wizard h4 {
 	  font-size: 14px;
