@@ -6427,6 +6427,9 @@ ul.contact_info li a:hover{
     .search.search-wizard h4 {
     	font-size: 13px;
 	}
+	.search.search-wizard label {
+    	font-size: 12px;
+	}
 	.confirmation {
       width: 290px;
  	}
