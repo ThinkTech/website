@@ -5353,7 +5353,8 @@ h2.typoh2{
 	.search.search-wizard div > p {
       font-size: 12px;
       padding: 3px;
-      width: 98%;
+      width: 99%;
+      line-height: 15px;
     }
 	.search-results {
 	  padding : 10px;
@@ -6426,6 +6427,7 @@ ul.contact_info li a:hover{
     }
     .search.search-wizard h4 {
     	font-size: 12px;
+    	line-height: 0px;
 	}
 	.search.search-wizard label {
     	font-size: 12px;
