@@ -2319,7 +2319,7 @@ button.close {
 /*-- //about --*/
 /*-- features --*/
 .features{
-    background: #000;
+    background: #180101;
     margin-top: 0px;
     padding-top: 30px;
 }
@@ -2438,7 +2438,7 @@ button.close {
 }
 /*-- icons --*/
 ul.bs-glyphicons-list li:hover {
-    background: #000;
+    background: #180101;
     transition: 0.5s all;
     -webkit-transition: 0.5s all;
     -o-transition: 0.5s all;
@@ -2467,7 +2467,7 @@ ul.bs-glyphicons-list li:hover span {
     cursor: pointer;
 } 
 .icon-box:hover {
-    background: #000;
+    background: #180101;
 }
 .icon-box:hover i.fa {
 	color:#fff !important;
@@ -5034,7 +5034,7 @@ h2.typoh2{
     font-family: Exo;
     margin-right: 12px;
     cursor: pointer;
-    background: #000;
+    background: #180101;
     color: #fff;
 }
 
