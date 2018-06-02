@@ -232,7 +232,7 @@ page.initDomainSearch = function(){
     	  	    		const search = $(".search-results").css("top",top).show();
     	  	    		search.parent().css("height",$('body').height()+"px").show();
         	  	    	$('html,body').animate({scrollTop:top-30},300);
-        	  	    	const tbody = $("table",search).empty();
+        	  	    	const tbody = $("table tbody",search).empty();
 	    	  	    	var tr;
 	    	  	    	var i;
 	    	  	    	var extension;
