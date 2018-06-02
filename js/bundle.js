@@ -286,7 +286,7 @@ page.initDomainSearch = function(){
 	    	         	  	    	 localStorage.setItem("purchase",JSON.stringify(purchase));
 	    	  	    	        	 $(".domain-name").html(purchase.domain).val(purchase.domain);
 	    	  	    	        	 $(".domain-year").html(purchase.year).val(purchase.year);
-	    	  	    	        	 $(".domain-price").html(pricing[event.data.extension]).val(pricing[event.data.extension]);
+	    	  	    	        	 $(".domain-price").html(pricing[event.data.extension].toLocaleString("fr-FR")).val(pricing[event.data.extension].toLocaleString("fr-FR"));
 	    	  	    	        	 $(".domain-amount").html(purchase.price.toLocaleString("fr-FR")).val(purchase.price.toLocaleString("fr-FR"));
 	    	  	    	        	 $(".epp-code").removeAttr("required").hide();
 	    	  	    	          });
