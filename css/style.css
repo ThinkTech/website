@@ -5371,6 +5371,8 @@ h2.typoh2{
 	.search-results .table-striped>tbody>tr td:nth-child(2) {
     	width: 100%;
     	text-align: left;
+    	padding: 10px!important;
+    	padding-left: 5px!important;
 	}
     .search h1 {
       font-size: 18px;
