@@ -260,10 +260,12 @@ page.initDomainSearch = function(){
 	    	  	    	          for(i=0;i<10;i++){
 	    	  	    	        	select.append("<option value='"+(i+1)+"'"+">"+(i+1)+" an</option>");
 	    	  	    	          }
-	    	  	    	          select.on("change",{td : td, price : pricing[extension]},function(event){
+	    	  	    	          select.on("change",{tr : tr,td : td, price : pricing[extension]},function(event){
 	    	  	    	        	  purchase.year = parseInt($(this).val());
 	    	  	    	        	  purchase.price = event.data.price * purchase.year;
 	    	  	    	        	  event.data.td.find("span").html(purchase.price.toLocaleString("fr-FR")+" CFA");
+	    	  	    	        	  $("tr",search).removeClass("selected");
+	    	  	    	        	  event.data.tr.addClass("selected");
 	    	  	    	          });
 	    	  	    	          td.append(select);
 	    	  	    	          td.append("<a class='buy'>Acheter</a>");
@@ -303,10 +305,12 @@ page.initDomainSearch = function(){
 	    	  	    	          for(i=0;i<10;i++){
 	    	  	    	        	select.append("<option value='"+(i+1)+"'"+">"+(i+1)+" an</option>");
 	    	  	    	          }
-	    	  	    	          select.on("change",{td : td, price : pricing[extension]},function(event){
+	    	  	    	          select.on("change",{tr : tr,td : td, price : pricing[extension]},function(event){
 	    	  	    	        	  purchase.year = parseInt($(this).val());
 	    	  	    	        	  purchase.price = event.data.price * purchase.year;
 	    	  	    	        	  event.data.td.find("span").html(purchase.price.toLocaleString("fr-FR")+" CFA");
+	    	  	    	        	  $("tr",search).removeClass("selected");
+	    	  	    	        	  event.data.tr.addClass("selected");
 	    	  	    	          });
 	    	  	    	          td.append(select);
 	    	  	    	          td.append("<a class='buy'>Transférer</a>");

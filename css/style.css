@@ -5174,6 +5174,10 @@ h2.typoh2{
    background-color : #d13b2f;
 }
 
+.search-results .table-striped>tbody>tr.selected{
+  background-color: #d5fdd8;
+}
+
 .search-results .table-striped>tbody>tr:nth-of-type(even).unavailable{
    background-color : #d13b2f;
 }
