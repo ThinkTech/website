@@ -5359,11 +5359,14 @@ h2.typoh2{
     	display: inline-block;
 	}
 	.search-results .table > tbody > tr > td:first-of-type {
-   	 	font-size: 13px;
+   	 	font-size: 12px;
     	text-align: left;
     	padding: 0px !important;
     	padding-left: 5px !important;
         margin-bottom: -10px;
+	}
+	.search-results select,.search-results a,.search-results td span {
+	   font-size: 12px;
 	}
 	.search-results .table-striped>tbody>tr td:nth-child(2) {
     	width: 100%;
