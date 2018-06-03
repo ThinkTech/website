@@ -270,8 +270,10 @@ page.initDomainSearch = function(){
 	    	  	    	          td.append(select);
 	    	  	    	          td.append("<a class='buy'>Acheter</a>");
 	    	  	    	          tr.append(td);
-	    	  	    	          $("a",tr).on("click",{td : td,extension : extension},function(event){
+	    	  	    	          $("a",tr).on("click",{tr : tr,td : td,extension : extension},function(event){
 	    	  	    	        	 $("select",div).val(event.data.extension);
+	    	  	    	        	 $("tr",search).removeClass("selected");
+	    	  	    	        	 event.data.tr.addClass("selected");
 	    	  	    	        	 purchase.year = parseInt(event.data.td.find("select").val());
 	    	  	    	        	 purchase.price = purchase.year * pricing[event.data.extension];
 	    	  	    	        	 purchase.extension = event.data.extension;
@@ -315,8 +317,10 @@ page.initDomainSearch = function(){
 	    	  	    	          td.append(select);
 	    	  	    	          td.append("<a class='buy'>Transférer</a>");
 	    	  	    	          tr.append(td);
-	    	  	    	          $("a",tr).on("click",{td : td,extension : extension},function(event){
+	    	  	    	          $("a",tr).on("click",{tr : tr,td : td,extension : extension},function(event){
 	    	  	    	        	 $("select",div).val(event.data.extension);
+	    	  	    	        	 $("tr",search).removeClass("selected");
+	    	  	    	        	 event.data.tr.addClass("selected");
 	    	  	    	        	 purchase.year = parseInt(event.data.td.find("select").val());
 	    	  	    	        	 purchase.price = purchase.year * pricing[event.data.extension];
 	    	  	    	        	 purchase.extension = event.data.extension;
