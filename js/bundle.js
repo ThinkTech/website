@@ -390,7 +390,7 @@ page.initForms = function(){
 	 	   const subscription = page.createSubscription(form);
 	 	   subscription.service = "webdev";
 	 	   subscription.per = "month";
-	 	   subscription.plan = form.find("input[name=plan]").val().trim();
+	 	   subscription.hosting.plan = form.find("input[name=plan]").val().trim();
 	 	   subscription.hosting.email =  form.find("input[name=businessEmail]").val().trim();
 	 	   confirm("&ecirc;tes vous s&ucirc;r de vouloir souscrire &agrave; ce service?",function(){
 		  	 page.submitSubscription(form,subscription); 
@@ -402,7 +402,7 @@ page.initForms = function(){
 	  	   const subscription = page.createSubscription(form);
 	  	   subscription.service = "mailhosting";
 	  	   subscription.per = "year";
-	  	   subscription.plan = form.find("input[name=plan]").val().trim();
+	  	   subscription.hosting.plan = form.find("input[name=plan]").val().trim();
 	  	   subscription.hosting.email =  form.find("input[name=businessEmail]").val().trim();
 	  	   confirm("&ecirc;tes vous s&ucirc;r de vouloir souscrire &agrave; ce service?",function(){
 	  		 page.submitSubscription(form,subscription); 
