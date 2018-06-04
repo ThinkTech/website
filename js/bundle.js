@@ -251,7 +251,7 @@ page.initDomainSearch = function(){
 	    	  	    	    	if(!result[extension]){
 	    	  	    	          tr = $("<tr/>");
 	    	  	    	          if(purchase.extension == extension){
-	    	  	    	        	tr.append("<td><i class='fa fa-check-circle-o' aria-hidden='true'></i> "+domain+"."+extension+"</td>");
+	    	  	    	        	tr.addClass("active").append("<td><i class='fa fa-check-circle-o' aria-hidden='true'></i> "+domain+"."+extension+"</td>");
 	    	  	    	          }else{
 	    	  	    	        	tr.append("<td>"+domain+"."+extension+"</td>");
 	    	  	    	          }
@@ -298,7 +298,7 @@ page.initDomainSearch = function(){
 	    	  	    	    	}else {
 	    	  	    	    	 tr = $("<tr/>");
 		    	  	    	     if(purchase.extension == extension){
-		    	  	    	        tr.append("<td><i class='fa fa-check-circle-o' aria-hidden='true'></i> "+domain+"."+extension+"</td>");
+		    	  	    	        tr.addClass("active").append("<td><i class='fa fa-check-circle-o' aria-hidden='true'></i> "+domain+"."+extension+"</td>");
 		    	  	    	     }else{
 		    	  	    	        tr.append("<td>"+domain+"."+extension+"</td>");
 		    	  	    	      }
