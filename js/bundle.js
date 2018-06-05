@@ -107,10 +107,13 @@ page.init = function() {
 	    }
 	});
 	$('.scrollToTop').click(function(){
-	    $('html, body').animate({scrollTop : 0},300);
+	    $('html, body').animate({scrollTop : 0},1);
 	    return false;
 	});
-	
+	$(".scroll").click(function(event){		
+		event.preventDefault();
+		$('html,body').animate({scrollTop:$(this.hash).offset().top},300);
+	});
 };
 
 
@@ -156,7 +159,7 @@ page.initButtons = function(){
 	   const top = event.pageY;
 	   $(".plans").css("top",top-250);
 	   const div = $(".plans ."+plan).show();
-	   $('html,body').animate({scrollTop:div.offset().top-20},300);
+	   $('html,body').animate({scrollTop:div.offset().top-20},1);
 	   return false;
 	});	
     $(".plans .pricing .close").click(function(event){
@@ -180,7 +183,7 @@ page.initDomainSearch = function(){
     	}
     	const purchase = JSON.parse(localStorage.getItem('purchase'));
     	$("input[name=structure]").val(purchase.search);
-  	    $('html,body').animate({scrollTop:div.offset().top-20},300);
+  	    $('html,body').animate({scrollTop:div.offset().top-20},1);
 	});
     $(".search-wizard .domain-edit a").click(function(event){
     	$(".search-wizard").hide();
@@ -231,7 +234,7 @@ page.initDomainSearch = function(){
     	  	    	if(result){
     	  	    		const search = $(".search-results").css("top",top).show();
     	  	    		search.parent().css("height",$('body').height()+"px").show();
-        	  	    	$('html,body').animate({scrollTop:top-30},300);
+        	  	    	$('html,body').animate({scrollTop:top-30},1);
         	  	    	const tbody = $("table tbody",search).empty();
 	    	  	    	var tr;
 	    	  	    	var i;
@@ -281,10 +284,10 @@ page.initDomainSearch = function(){
 	    	  	    	        	 const wizard = $(".search-wizard");
 	    	  	    	        	 if(button.data("wizard")!="hide"){
 	    	  	    	        		wizard.css("top",top).show(); 
-	    	  	    	        		$('html,body').animate({scrollTop:top-30},300);
+	    	  	    	        		$('html,body').animate({scrollTop:top-30},1);
 	    	  	    	        	 }else{
 	    	  	    	        		search.parent().hide();
-	    	  	    	        		$('html,body').animate({scrollTop:top-150},300);
+	    	  	    	        		$('html,body').animate({scrollTop:top-150},1);
 	    	  	    	        	 }
 	    	  	    	        	 purchase.domain = domain+"."+event.data.extension;
 	    	         	  	    	 localStorage.setItem("purchase",JSON.stringify(purchase));
@@ -328,10 +331,10 @@ page.initDomainSearch = function(){
 	    	  	    	        	 const wizard = $(".search-wizard");
 	    	  	    	        	 if(button.data("wizard")!="hide"){
 	    	  	    	        		wizard.css("top",top).show(); 
-	    	  	    	        		$('html,body').animate({scrollTop:top-30},300);
+	    	  	    	        		$('html,body').animate({scrollTop:top-30},1);
 	    	  	    	        	 }else{
 	    	  	    	        		search.parent().hide();
-	    	  	    	        		$('html,body').animate({scrollTop:top-150},300);
+	    	  	    	        		$('html,body').animate({scrollTop:top-150},1);
 	    	  	    	        	 }
 	    	  	    	        	 purchase.action = "transfer";
 	    	  	    	        	 purchase.domain = domain+"."+event.data.extension;
@@ -493,7 +496,7 @@ page.initForms = function(){
 	 	   form.removeClass().addClass("subscribe-form "+plan);
 	 	   form.parent().css("height",$('body').height()+"px").show();
 	 	   form.css("top",$(this).offset().top-100);
-	 	   $('html,body').animate({scrollTop:form.offset().top-20},300);
+	 	   $('html,body').animate({scrollTop:form.offset().top-20},1);
 	 	});	
 	 	$(".w3ls-bottom .more a").click(function(){
 	 		const grid = $(this).data("grid");
@@ -503,12 +506,12 @@ page.initForms = function(){
 	 		$("input[name=plan]",dialog).val(plan);
 	 		const form = $("#email-form");
 	 		form.css("top",$(this).offset().top-form.height()-50);
-	 		$('html,body').animate({scrollTop:form.offset().top-20},300);
+	 		$('html,body').animate({scrollTop:form.offset().top-20},1);
 	 	});
 	 	$(".terms-agreement a").click(function(event){
 	 		   const div = $(".terms").show();
 	 		   div.css("top",event.pageY-400);
-	 		   $('html,body').animate({scrollTop:div.offset().top-20},300);
+	 		   $('html,body').animate({scrollTop:div.offset().top-20},1);
 	 		   return false;
 	 	});
 };
