@@ -786,7 +786,7 @@
 		</div>
 	   <div class="clearfix"></div>	   
 	   <div class="container">
-		<div class="col-md-12 w3l_banner_bottom_left faq">
+		<div class="col-md-12 w3l_banner_bottom_left faq questions">
 				<h3>Questions Fréquentes</h3>
 				<ol>
 				  <li>
@@ -1180,9 +1180,8 @@
 </script>
 <script type="text/javascript">
 	jQuery(document).ready(function($) {
-		$(".faq p").hide();
-		$(".guide p").show();
-		$(".faq li a").click(function(event){
+		$(".faq.questions p").hide();
+		$(".faq.questions li a").click(function(event){
 		   $(this).next().toggle();
 		});
 	});
