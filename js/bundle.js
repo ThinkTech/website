@@ -379,7 +379,7 @@ page.initForms = function(){
 		   const form = $(this);
 	       const subscription = page.createSubscription(form);
 	  	   subscription.service = "domainhosting";
-	  	   subscription.per = "year";
+	  	   subscription.services = ["mailhosting","webdev"];
 	  	   confirm("&ecirc;tes vous s&ucirc;r de vouloir souscrire &agrave; ce service?",function(){
 	  		 page.submitSubscription(form,subscription); 
 	  	   });
@@ -389,8 +389,9 @@ page.initForms = function(){
 	 	   const form = $(this);
 	 	   const subscription = page.createSubscription(form);
 	 	   subscription.service = "webdev";
-	 	   subscription.per = "month";
+	 	   subscription.services = ["mailhosting","domainhosting"];
 	 	   subscription.hosting.plan = form.find("input[name=plan]").val().trim();
+	 	   subscription.hosting.subject = form.find("select[name=project]").val().trim();
 	 	   subscription.hosting.email =  form.find("input[name=businessEmail]").val().trim();
 	 	   confirm("&ecirc;tes vous s&ucirc;r de vouloir souscrire &agrave; ce service?",function(){
 		  	 page.submitSubscription(form,subscription); 
@@ -401,7 +402,7 @@ page.initForms = function(){
 	       const form = $(this);
 	  	   const subscription = page.createSubscription(form);
 	  	   subscription.service = "mailhosting";
-	  	   subscription.per = "year";
+	  	   subscription.services = ["domainhosting","webdev"];
 	  	   subscription.hosting.plan = form.find("input[name=plan]").val().trim();
 	  	   subscription.hosting.email =  form.find("input[name=businessEmail]").val().trim();
 	  	   confirm("&ecirc;tes vous s&ucirc;r de vouloir souscrire &agrave; ce service?",function(){
