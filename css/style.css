@@ -13,8 +13,9 @@ a:focus, a:hover {
 input[readonly] {
 	background : #eee;
 }
-input, select {
+input[type=text], select {
 	border: 1px solid #27270c;
+	background: #feffc7;
 }
 .modal {
 	position : absolute;
@@ -4951,7 +4952,6 @@ h2.typoh2{
     line-height: 48px;
     padding-left: 10px;
     border: 1px solid #08ccf7;
-    background: #fff;
 }
 
 .epp-code {
