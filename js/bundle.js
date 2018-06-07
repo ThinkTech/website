@@ -414,6 +414,13 @@ page.initForms = function(){
 	  	   subscription.services = ["domainhosting","webdev"];
 	  	   subscription.hosting.plan = form.find("input[name=plan]").val().trim();
 	  	   subscription.hosting.email =  form.find("input[name=businessEmail]").val().trim();
+	  	   subscription.hosting.email =  form.find("input[name=businessEmail]").val().toLowerCase().replace(/\s+/g, '');
+	 	   if(subscription.hosting.email.indexOf("@")!=-1){
+				 alert("vous devez supprimer le caract&eacute;re @",function(){
+					 form.find("input[name=businessEmail]").focus();
+				 });
+				 return false
+		   }
 	  	   confirm("&ecirc;tes vous s&ucirc;r de vouloir souscrire &agrave; ce service?",function(){
 	  		 page.submitSubscription(form,subscription); 
 	  	   });
