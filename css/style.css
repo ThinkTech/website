@@ -3824,6 +3824,7 @@ button::-moz-focus-inner {
 .w3ls-top:after {
     border-left-width: 151px;
     border-right-width: 151px;
+    display : none;
 }
 }
 @media(max-width:480px){
