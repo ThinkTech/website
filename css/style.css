@@ -13,7 +13,7 @@ a:focus, a:hover {
 input[readonly] {
 	background : #eee;
 }
-input[type=text], select {
+input[type=text], select, input[type=email], input[type=password] {
 	border: 1px solid #27270c;
 	background: #feffc7;
 }
