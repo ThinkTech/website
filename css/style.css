@@ -1383,6 +1383,7 @@ a.w3ls_banner_more:hover{
 	position: relative;
     top: 0px;
     height: 34px;
+    background: #feffc7;
 }
 
 .subscribe-form select{
