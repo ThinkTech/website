@@ -4858,7 +4858,7 @@ h2.typoh2{
 }
 
 .table-striped>tbody>tr:nth-of-type(odd) {
-    background-color: #fff;
+    background-color: #efebeb;
 }
 
 .table-striped>tbody>tr:nth-of-type(even) {
