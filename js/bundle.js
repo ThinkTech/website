@@ -181,8 +181,8 @@ page.initDomainSearch = function(){
     		div = $(".subscribe-form",div);
     		div.css("top",$(this).offset().top+200).show();
     	}
-    	const purchase = JSON.parse(localStorage.getItem('purchase'));
-    	$("input[name=structure]").val(purchase.search);
+    	const order = JSON.parse(localStorage.getItem('order'));
+    	$("input[name=structure]").val(order.search);
   	    $('html,body').animate({scrollTop:div.offset().top-20},1);
 	});
     $(".search-wizard .domain-edit a").click(function(event){
@@ -213,11 +213,11 @@ page.initDomainSearch = function(){
     	pricing.tech = 10000;
     	const div = $(".tld-domain-search-wrapper");
     	const input = $("input",div);
-    	const purchase = {};
-  		purchase.extension = button.prev().find("select").val();
-  		purchase.year = 1;
-  		purchase.search = input.val().toLowerCase();
-    	var domain = purchase.search.replace(/\s+/g, '');
+    	const order = {};
+  		order.extension = button.prev().find("select").val();
+  		order.year = 1;
+  		order.search = input.val().toLowerCase();
+    	var domain = order.search.replace(/\s+/g, '');
     	if(domain){
     		const index = domain.indexOf(".");
     		if(domain.indexOf(".")!=-1) domain = domain.substring(0,index);
@@ -240,10 +240,10 @@ page.initDomainSearch = function(){
 	    	  	    	var i;
 	    	  	    	var extension;
 	    	  	    	const clone = {};
-	    	  	    	clone[purchase.extension] = result[purchase.extension];
+	    	  	    	clone[order.extension] = result[order.extension];
 	    	  	    	for (extension in result) {
 	    	  	    	    if(result.hasOwnProperty(extension)) {
-	    	  	    	    	if(extension!=purchase.extension){
+	    	  	    	    	if(extension!=order.extension){
 	    	  	    	    		clone[extension] = result[extension];
 	    	  	    	    	}
 	    	  	    	    }
@@ -253,7 +253,7 @@ page.initDomainSearch = function(){
 	    	  	    	    if(result.hasOwnProperty(extension)) {
 	    	  	    	    	if(!result[extension]){
 	    	  	    	          tr = $("<tr/>");
-	    	  	    	          if(purchase.extension == extension){
+	    	  	    	          if(order.extension == extension){
 	    	  	    	        	tr.addClass("selected").append("<td><i class='fa fa-check-circle-o' aria-hidden='true'></i> "+domain+"."+extension+"</td>");
 	    	  	    	          }else{
 	    	  	    	        	tr.append("<td>"+domain+"."+extension+"</td>");
@@ -264,9 +264,9 @@ page.initDomainSearch = function(){
 	    	  	    	        	select.append("<option value='"+(i+1)+"'"+">"+(i+1)+" an</option>");
 	    	  	    	          }
 	    	  	    	          select.on("change",{tr : tr,td : td, price : pricing[extension]},function(event){
-	    	  	    	        	  purchase.year = parseInt($(this).val());
-	    	  	    	        	  purchase.price = event.data.price * purchase.year;
-	    	  	    	        	  event.data.td.find("span").html(purchase.price.toLocaleString("fr-FR")+" CFA");
+	    	  	    	        	  order.year = parseInt($(this).val());
+	    	  	    	        	  order.price = event.data.price * order.year;
+	    	  	    	        	  event.data.td.find("span").html(order.price.toLocaleString("fr-FR")+" CFA");
 	    	  	    	        	  $("tr",search).removeClass("selected");
 	    	  	    	        	  event.data.tr.addClass("selected");
 	    	  	    	          });
@@ -277,9 +277,9 @@ page.initDomainSearch = function(){
 	    	  	    	        	 $("select",div).val(event.data.extension);
 	    	  	    	        	 $("tr",search).removeClass("selected");
 	    	  	    	        	 event.data.tr.addClass("selected");
-	    	  	    	        	 purchase.year = parseInt(event.data.td.find("select").val());
-	    	  	    	        	 purchase.price = purchase.year * pricing[event.data.extension];
-	    	  	    	        	 purchase.extension = event.data.extension;
+	    	  	    	        	 order.year = parseInt(event.data.td.find("select").val());
+	    	  	    	        	 order.price = order.year * pricing[event.data.extension];
+	    	  	    	        	 order.extension = event.data.extension;
 	    	  	    	        	 search.hide();
 	    	  	    	        	 const wizard = $(".search-wizard");
 	    	  	    	        	 if(button.data("wizard")!="hide"){
@@ -289,18 +289,18 @@ page.initDomainSearch = function(){
 	    	  	    	        		search.parent().hide();
 	    	  	    	        		$('html,body').animate({scrollTop:top-150},1);
 	    	  	    	        	 }
-	    	  	    	        	 purchase.domain = domain+"."+event.data.extension;
-	    	         	  	    	 localStorage.setItem("purchase",JSON.stringify(purchase));
-	    	  	    	        	 $(".domain-name").html(purchase.domain).val(purchase.domain);
-	    	  	    	        	 $(".domain-year").html(purchase.year).val(purchase.year);
+	    	  	    	        	 order.domain = domain+"."+event.data.extension;
+	    	         	  	    	 localStorage.setItem("order",JSON.stringify(order));
+	    	  	    	        	 $(".domain-name").html(order.domain).val(order.domain);
+	    	  	    	        	 $(".domain-year").html(order.year).val(order.year);
 	    	  	    	        	 $(".domain-price").html(pricing[event.data.extension].toLocaleString("fr-FR")).val(pricing[event.data.extension].toLocaleString("fr-FR"));
-	    	  	    	        	 $(".domain-amount").html(purchase.price.toLocaleString("fr-FR")).val(purchase.price.toLocaleString("fr-FR"));
+	    	  	    	        	 $(".domain-amount").html(order.price.toLocaleString("fr-FR")).val(order.price.toLocaleString("fr-FR"));
 	    	  	    	        	 $(".epp-code").removeAttr("required").hide();
 	    	  	    	          });
 	    	  	    	          tbody.append(tr);
 	    	  	    	    	}else {
 	    	  	    	    	 tr = $("<tr/>");
-		    	  	    	     if(purchase.extension == extension){
+		    	  	    	     if(order.extension == extension){
 		    	  	    	        tr.addClass("selected").append("<td><i class='fa fa-check-circle-o' aria-hidden='true'></i> "+domain+"."+extension+"</td>");
 		    	  	    	     }else{
 		    	  	    	        tr.append("<td>"+domain+"."+extension+"</td>");
@@ -311,9 +311,9 @@ page.initDomainSearch = function(){
 	    	  	    	        	select.append("<option value='"+(i+1)+"'"+">"+(i+1)+" an</option>");
 	    	  	    	          }
 	    	  	    	          select.on("change",{tr : tr,td : td, price : pricing[extension]},function(event){
-	    	  	    	        	  purchase.year = parseInt($(this).val());
-	    	  	    	        	  purchase.price = event.data.price * purchase.year;
-	    	  	    	        	  event.data.td.find("span").html(purchase.price.toLocaleString("fr-FR")+" CFA");
+	    	  	    	        	  order.year = parseInt($(this).val());
+	    	  	    	        	  order.price = event.data.price * order.year;
+	    	  	    	        	  event.data.td.find("span").html(order.price.toLocaleString("fr-FR")+" CFA");
 	    	  	    	        	  $("tr",search).removeClass("selected");
 	    	  	    	        	  event.data.tr.addClass("selected");
 	    	  	    	          });
@@ -324,9 +324,9 @@ page.initDomainSearch = function(){
 	    	  	    	        	 $("select",div).val(event.data.extension);
 	    	  	    	        	 $("tr",search).removeClass("selected");
 	    	  	    	        	 event.data.tr.addClass("selected");
-	    	  	    	        	 purchase.year = parseInt(event.data.td.find("select").val());
-	    	  	    	        	 purchase.price = purchase.year * pricing[event.data.extension];
-	    	  	    	        	 purchase.extension = event.data.extension;
+	    	  	    	        	 order.year = parseInt(event.data.td.find("select").val());
+	    	  	    	        	 order.price = order.year * pricing[event.data.extension];
+	    	  	    	        	 order.extension = event.data.extension;
 	    	  	    	        	 search.hide();
 	    	  	    	        	 const wizard = $(".search-wizard");
 	    	  	    	        	 if(button.data("wizard")!="hide"){
@@ -336,13 +336,13 @@ page.initDomainSearch = function(){
 	    	  	    	        		search.parent().hide();
 	    	  	    	        		$('html,body').animate({scrollTop:top-150},1);
 	    	  	    	        	 }
-	    	  	    	        	 purchase.action = "transfer";
-	    	  	    	        	 purchase.domain = domain+"."+event.data.extension;
-	    	         	  	    	 localStorage.setItem("purchase",JSON.stringify(purchase));
-	    	  	    	        	 $(".domain-name").html(purchase.domain).val(purchase.domain);
-	    	  	    	        	 $(".domain-year").html(purchase.year).val(purchase.year);
+	    	  	    	        	 order.action = "transfer";
+	    	  	    	        	 order.domain = domain+"."+event.data.extension;
+	    	         	  	    	 localStorage.setItem("order",JSON.stringify(order));
+	    	  	    	        	 $(".domain-name").html(order.domain).val(order.domain);
+	    	  	    	        	 $(".domain-year").html(order.year).val(order.year);
 	    	  	    	        	 $(".domain-price").html(pricing[event.data.extension].toLocaleString("fr-FR")).val(pricing[event.data.extension].toLocaleString("fr-FR"));
-	    	  	    	        	 $(".domain-amount").html(purchase.price.toLocaleString("fr-FR")).val(purchase.price.toLocaleString("fr-FR"));
+	    	  	    	        	 $(".domain-amount").html(order.price.toLocaleString("fr-FR")).val(order.price.toLocaleString("fr-FR"));
 	    	  	    	        	 $(".epp-code").attr("required","true").show();
 	    	  	    	          });
 	    	  	    	          tbody.append(tr);
@@ -351,8 +351,8 @@ page.initDomainSearch = function(){
 	    	  	    	    	}
 	    	  	    	    }
 	    	  	    	}
-	    	  	    	$(".domain-name",search).html(domain+"."+purchase.extension);
-	    	  	    	if(result[purchase.extension]){
+	    	  	    	$(".domain-name",search).html(domain+"."+order.extension);
+	    	  	    	if(result[order.extension]){
 	    	  	    		$(".domain-availability",search).removeClass("green").html("indisponible").addClass("red");
 	    	  	    		$(".fa-check-circle-o",search).removeClass("green");
 	    	  	    	}else{
@@ -393,10 +393,10 @@ page.initForms = function(){
 	 	   const subscription = page.createSubscription(form);
 	 	   subscription.service = "webdev";
 	 	   subscription.services = ["mailhosting","domainhosting"];
-	 	   subscription.hosting.plan = form.find("input[name=plan]").val().trim();
-	 	   subscription.hosting.subject = form.find("select[name=project]").val().trim();
-	 	   subscription.hosting.email =  form.find("input[name=businessEmail]").val().toLowerCase().replace(/\s+/g, '');
-	 	   if(subscription.hosting.email.indexOf("@")!=-1){
+	 	   subscription.order.plan = form.find("input[name=plan]").val().trim();
+	 	   subscription.order.subject = form.find("select[name=project]").val().trim();
+	 	   subscription.order.email =  form.find("input[name=businessEmail]").val().toLowerCase().replace(/\s+/g, '');
+	 	   if(subscription.order.email.indexOf("@")!=-1){
 				 alert("vous devez supprimer le caract&eacute;re @",function(){
 					 form.find("input[name=businessEmail]").focus();
 				 });
@@ -412,10 +412,10 @@ page.initForms = function(){
 	  	   const subscription = page.createSubscription(form);
 	  	   subscription.service = "mailhosting";
 	  	   subscription.services = ["domainhosting","webdev"];
-	  	   subscription.hosting.plan = form.find("input[name=plan]").val().trim();
-	  	   subscription.hosting.email =  form.find("input[name=businessEmail]").val().trim();
-	  	   subscription.hosting.email =  form.find("input[name=businessEmail]").val().toLowerCase().replace(/\s+/g, '');
-	 	   if(subscription.hosting.email.indexOf("@")!=-1){
+	  	   subscription.order.plan = form.find("input[name=plan]").val().trim();
+	  	   subscription.order.email =  form.find("input[name=businessEmail]").val().trim();
+	  	   subscription.order.email =  form.find("input[name=businessEmail]").val().toLowerCase().replace(/\s+/g, '');
+	 	   if(subscription.order.email.indexOf("@")!=-1){
 				 alert("vous devez supprimer le caract&eacute;re @",function(){
 					 form.find("input[name=businessEmail]").focus();
 				 });
@@ -468,9 +468,9 @@ page.initForms = function(){
 	    $(".buttons .submit").click(function(event){
 	    	const parent = $(this).parent().parent();
 	    	const info = $(".domain-info",parent);
-	    	const purchase = localStorage.getItem('purchase');
+	    	const order = localStorage.getItem('order');
 	    	var valid = true;
-	    	if(!purchase){
+	    	if(!order){
 	    		alert("vous devez choisir votre domaine web",function(){
 	    			$(".input-container input",info).focus();
 	    		});
@@ -536,8 +536,8 @@ page.createSubscription = function(form){
 	subscription.password = form.find("input[name=password]").val().trim();
 	subscription.telephone = form.find("input[name=telephone]").val().trim();
 	subscription.structure = form.find("input[name=structure]").val().trim();
-	subscription.hosting = JSON.parse(localStorage.getItem('purchase'));
-	subscription.hosting.eppCode =  form.find("input[name=eppcode]").val().trim();
+	subscription.order = JSON.parse(localStorage.getItem('order'));
+	subscription.order.eppCode =  form.find("input[name=eppcode]").val().trim();
 	return subscription;
 };
 
@@ -608,5 +608,5 @@ app.ready(function() {
 		page.initScroll();
 	}
 	$(".btn-pluss-wrapper").fadeIn(1000).addClass("animated pulse delay-3");
-	localStorage.removeItem('purchase');
+	localStorage.removeItem('order');
 });

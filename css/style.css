@@ -4793,8 +4793,7 @@ section#tables  p {
 	background-color: #ffffff;
 }
 .domains.table {
-    margin-bottom: 25px;
-    margin-top: 25px;
+    margin-bottom: 10px;
 }
 .table td, .table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
 	padding: 15px!important;
@@ -5521,7 +5520,8 @@ h2.typoh2{
 	   padding-bottom : 0;
 	}
 	.domains.table {
-     margin-top: 0;
+     margin-top: 15px;
+     margin-bottom: 0px;
      width: 95%;
      margin-left: auto;
      margin-right: auto;
