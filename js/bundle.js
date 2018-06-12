@@ -395,13 +395,6 @@ page.initForms = function(){
 	 	   subscription.services = ["mailhosting","domainhosting"];
 	 	   subscription.order.plan = form.find("input[name=plan]").val().trim();
 	 	   subscription.order.subject = form.find("select[name=project]").val().trim();
-	 	   subscription.order.email =  form.find("input[name=businessEmail]").val().toLowerCase().replace(/\s+/g, '');
-	 	   if(subscription.order.email.indexOf("@")!=-1){
-				 alert("vous devez supprimer le caract&eacute;re @",function(){
-					 form.find("input[name=businessEmail]").focus();
-				 });
-				 return false
-		   }
 	 	   confirm("&ecirc;tes vous s&ucirc;r de vouloir souscrire &agrave; ce service?",function(){
 		  	 page.submitSubscription(form,subscription); 
 		   });
@@ -545,7 +538,7 @@ page.submitSubscription = function(form,subscription){
 	page.wait({top : form.offset().top});
 	   $.ajax({
 	     type: "POST",
-	     url: "https://thinktech-platform.herokuapp.com/services/subscribe",
+	     url: "http://thinktech-platform.herokuapp.com/services/subscribe",
 	     data: JSON.stringify(subscription),
 	     contentType : "application/json",
 	     success : function(response){
