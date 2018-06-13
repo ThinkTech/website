@@ -5158,9 +5158,7 @@ p.footer {
     font-weight: bold;
     letter-spacing: 2px;
     margin-top: 2em;
-}
-.agileits_w3layouts_contact_gridr input[type="submit"]:hover{
-	background: #08ccf7;
+    border: 1px solid #c17051;
 }
 .agileits_w3layouts_contact_gridr label {
     font-size: 1.5em;
