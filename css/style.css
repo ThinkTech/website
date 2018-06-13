@@ -14,7 +14,7 @@ input[readonly] {
 	background : #eee;
 }
 input[type=text], select, input[type=email], input[type=password], input[type=number] {
-	border: 1px solid #27270c;
+	border: 1px solid #c17051;
 	background: #feffc7;
 }
 .modal {
@@ -999,7 +999,7 @@ h3 .fa-briefcase {
     width : 200px;
     font-family : "Work Sans";
     margin-left : 4.3%;
-    border: 1px solid #27270c;
+    border: 1px solid #c17051;
 }
 
 
@@ -1368,7 +1368,7 @@ a.w3ls_banner_more:hover{
     padding-top: 3px;
     padding-right: 6px;
     top: 1px;
-    height: 34px;
+    height: 33px;
     position: relative;
     text-align: right;
     margin-right: 1px;
