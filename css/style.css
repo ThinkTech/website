@@ -6575,6 +6575,12 @@ ul.contact_info li a:hover{
 	}
 }
 @media (max-width: 320px){
+	.w3_two_grid_right_grid {
+     width: 22%;
+	}
+	.w3_two_grid_right_gridr h4 {
+		margin-left: -10px;
+	}
 	.w3l_banner_bottom_left p {
     	text-align: center;
 	}
