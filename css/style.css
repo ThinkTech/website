@@ -2345,15 +2345,9 @@ button.close {
     height: 80px;
     background: #08ccf7;
     text-align: center;
-    border: 4px solid #180101;
+    border: 4px solid #c17051;
 }
-.w3_agileits_features_grid:hover .agile_feature_grid{
-	background: #f62b2b;
-    border:4px solid #b61616;
-}
-.w3_agileits_features_grid:hover .agileits_w3layouts_features_gridr h4{
-    color: #08ccf7;
-}
+
 .agile_feature_grid i{
 	font-size: 1.5em;
     color: #fff;
