@@ -1414,7 +1414,7 @@ a.w3ls_banner_more:hover{
     height: auto;
     font-weight: bold;
     float : right;
-    border: 1px solid;
+    border: 1px solid #c17051;
 }
 
 .subscribe-form input[type=submit],.subscribe-form input[type=button] {
