@@ -6571,6 +6571,9 @@ ul.contact_info li a:hover{
 	}
 }
 @media (max-width: 320px){
+	.w3l_banner_bottom_left p {
+    	text-align: center;
+	}
 	.wthree_banner_grid h4 {
     	font-size: 11px;
 	}
