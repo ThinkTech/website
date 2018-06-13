@@ -1437,7 +1437,7 @@ a.w3ls_banner_more:hover{
     top: -4px;
     position: relative;
     background: 0 0;
-    border: 1px solid #555;
+    border: 1px solid #c17051;
     color: #060606;
     background: #fff;
 }
@@ -1449,7 +1449,7 @@ a.w3ls_banner_more:hover{
     top: 4px;
     color : #180101;
     right: 14px;
-    border: 1px solid #555;
+    border: 1px solid #c17051;
     font-family: Tahoma;
 }
 
@@ -2727,7 +2727,7 @@ h3.agileits-icons-title {
   -moz-osx-font-smoothing: grayscale;
   color: #ffffff;
   white-space: nowrap;
-  border-bottom: 1px solid #555b61;
+  border-bottom: 1px solid #c17051b61;
   text-overflow: ellipsis;
 }
 .cd-faq-categories a::before, .cd-faq-categories a::after {
@@ -2895,7 +2895,7 @@ h3.agileits-icons-title {
     border-radius: 50%;
     z-index: 2;
     color: #180101;
-    border: 1px solid #555;
+    border: 1px solid #c17051;
     font-family: Tahoma;
 }
 .cd-close-panel::before, .cd-close-panel::after {
@@ -3113,7 +3113,7 @@ h3.agileits-icons-title {
     padding: 8px;
     border-radius: 50%;
     background: #fff;
-    border: 1px solid #555;
+    border: 1px solid #c17051;
     color : #180101;
 }
 
