@@ -4308,7 +4308,7 @@ p.footer {
 }
 
 .table-striped>tbody>tr:nth-of-type(odd) {
-    background-color: #efebeb;
+    background-color: #dad8d8;
 }
 
 .table-striped>tbody>tr:nth-of-type(even) {
