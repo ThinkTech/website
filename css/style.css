@@ -1367,7 +1367,7 @@ a.w3ls_banner_more:hover{
     padding: 1px;
     padding-top: 3px;
     padding-right: 6px;
-    top: 1px;
+    top: -1px;
     height: 33px;
     position: relative;
     text-align: right;
