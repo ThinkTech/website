@@ -1001,7 +1001,7 @@ h3 .fa-briefcase {
     width : 200px;
     font-family : "Work Sans";
     margin-left : 4.3%;
-    border: 1px solid #c17051;
+    border: 1px solid #ffd600;
 }
 
 
@@ -1416,7 +1416,7 @@ a.w3ls_banner_more:hover{
     height: auto;
     font-weight: bold;
     float : right;
-    border: 1px solid #c17051;
+    border: 1px solid #ffd600;
 }
 
 .subscribe-form input[type=submit],.subscribe-form input[type=button] {
