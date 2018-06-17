@@ -2670,11 +2670,7 @@ h3.agileits-icons-title {
     font-family: Exo;
     vertical-align: top;
 	line-height: 3em;
-	color: #feffc7;
-}
-
-.faq p span span a:hover {
-	color : #fff;
+	color: #ffd600;
 }
 
 .faq p span span a i {
