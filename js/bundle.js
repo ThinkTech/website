@@ -443,10 +443,17 @@ page.initForms = function(){
 	        $(this).hide();
 	        info.hide();
 	    	const div = $(".domain-info",parent)
-	    	const input = $('.domain-name',div);
+	    	var input = $('.domain-name',div);
 	    	const domain = input.val();
-	    	if(domain.trim() == '') {
+	    	if(!domain.trim()) {
 	    		$('.tld-domain-search .input-container input').val($('input[name=structure]',info).val());
+	    	}
+	    	input = $('input[name=businessEmail]',div);
+	    	const email = input.val();
+	    	if(!email.trim()) {
+	    		var val = $('input[name=email]',info).val();
+	    		val = val.substring(0,val.indexOf("@"));
+	    		input.val(val);
 	    	}
 	    	div.show();
 	    	$(".prev,.submit",parent).show();
