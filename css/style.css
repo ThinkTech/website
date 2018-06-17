@@ -544,6 +544,8 @@ h3 .fa-briefcase {
 	display: block;
 	font-size: 75%;
 	padding: 15px;
+	padding-left : 0px;
+	padding-right : 0px;
 }
 
 #confirm-dialog-container a, #alert-dialog-container a {
@@ -3600,7 +3602,7 @@ p.text {
 
 .content-process{
 	height: 420px;
-    background-color: #feffc7;
+    background-color: #ffd600;
     margin-bottom: 10px;
     margin-top: 10px;
 }
@@ -4312,7 +4314,7 @@ p.footer {
 }
 
 .table-striped>tbody>tr:nth-of-type(even) {
-    background-color: #feffc7;
+    background-color: #ffd600;
 }
 
 .tld-domain-search-wrapper {
