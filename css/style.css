@@ -4426,6 +4426,10 @@ p.footer {
     display : none;
 }
 
+.search-results .table-striped>tbody>tr:nth-of-type(even) {
+    background-color: #fff;
+}
+
 .search-wizard {
     width: 65%;
 }
