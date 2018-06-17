@@ -15,7 +15,7 @@ input[readonly] {
 }
 input[type=text], select, input[type=email], input[type=password], input[type=number] {
 	border: 1px solid #c17051;
-	background: #feffc7;
+	background: #fff;
 }
 .modal {
 	position : absolute;
