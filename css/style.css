@@ -3285,14 +3285,17 @@ a.play-icon.popup-with-zoom-anim img:hover {
 .pricing-grid.grid-three .more a{
 	background-color:#009ae9;
 }
-.pricing-grid.grid-four .w3ls-top,.grid-four-color {
+.grid-four-color {
     background: #F1C40F;
 }
+.pricing-grid.grid-four .w3ls-top {
+    background: #ffd600;
+}
 .pricing-grid.grid-four .w3ls-top:after {
-    border-top-color: #F1C40F;
+    border-top-color: #ffd600;
 }
 .pricing-grid.grid-four .more a{
-	background-color:#F1C40F;
+	background-color:#ffd600;
 }
 /*---- responsive-design -----*/
 @media(max-width:1440px){
