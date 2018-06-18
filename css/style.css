@@ -966,7 +966,7 @@ h3 .fa-briefcase {
 
 .banner .wthree_stat_right ul li {
     padding: 0em 0em;
-	border: 1px solid #af9682;
+	border: 1px solid #ffd600;
 	font-size: 14px;
 }
 
@@ -1125,7 +1125,7 @@ h3 .fa-briefcase {
     padding: 1em;
     font-weight: bold;
 	box-shadow : 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-	border: 1px solid #b2b8bc;
+	border: 1px solid #ffd600;
 }
 .agileits_more ul li{
 	display:inline-block;
