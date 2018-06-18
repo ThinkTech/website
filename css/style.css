@@ -246,6 +246,7 @@ animation-delay: 1s;
     border-bottom: 1px solid #08ccf7;
     border-right: none;
     border-top: none;
+    box-shadow: 0 2px 1px 0 #388696, 0 2px 1px 0 rgba(0,0,0,.12);
 }
 .navbar-default .navbar-nav > .active > a:after {
 	display : none;
@@ -5800,11 +5801,12 @@ ul.contact_info li a:hover{
 		padding-left: 10px;
 	}
 	.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-           color: #a20b0b;
-          background: transparent;
-          border: none;
-         border-bottom: none;
-        }
+        color: #a20b0b;
+        background: transparent;
+        border: none;
+        border-bottom: none;
+        box-shadow: none;
+     }
 	.navbar-nav > li > a {
 		padding: 1.2em 0;
 		font-size: 13px;
