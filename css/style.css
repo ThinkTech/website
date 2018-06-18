@@ -995,13 +995,13 @@ h3 .fa-briefcase {
 .terms-agreement {
     display: block;
     margin-top: 10px;
-    background : #fff;
+    background : #ffd600;
     padding : 5px;
     padding-left : 5px;
     width : 200px;
     font-family : "Work Sans";
     margin-left : 4.3%;
-    border: 1px solid #ffd600;
+    border: 1px solid #c17051;
 }
 
 
@@ -1416,7 +1416,11 @@ a.w3ls_banner_more:hover{
     height: auto;
     font-weight: bold;
     float : right;
-    border: 1px solid #ffd600;
+    border: 1px solid #c17051;
+}
+
+.subscribe-form .buttons {
+	width: 95%;
 }
 
 .subscribe-form input[type=submit],.subscribe-form input[type=button] {
@@ -1426,6 +1430,10 @@ a.w3ls_banner_more:hover{
 
 .subscribe-form input[type=button] {
 	margin-right : 5px;
+}
+
+.subscribe-form input[type=button].next {
+    margin-right: 1px;
 }
 
 .subscribe-form .close {
@@ -4665,6 +4673,9 @@ p.footer {
 }
 
 @media (max-width:768px){
+	.subscribe-form .buttons {
+    	width: 100%;
+	}
 	.domain-info .tld-domain-search .tld-search-button {
       height: 36px;
       margin-top: 7px;
