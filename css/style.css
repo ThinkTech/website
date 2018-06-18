@@ -1255,15 +1255,15 @@ a.w3ls_banner_more:hover{
 
 .w3l_banner_bottom_left a {
    cursor : pointer;
-   font-family: 'Work Sans';   
+   font-family: 'Open Sans';   
 }
 
 .w3l_banner_bottom_left li {
-	font-size: 27px;
+	font-size: 25px;
     line-height: 2em;
     width: 96%;
 	margin-left: 5px;
-	margin-bottom: 10px;
+	margin-bottom: 12px;
 }
 .w3l_banner_bottom_left.faq li,.w3l_banner_bottom_left.offer li {
     background: #fff;
