@@ -3573,7 +3573,7 @@ a.play-icon.popup-with-zoom-anim img:hover {
 }
 .pricing-bottom-bottom{
 	padding: 1em 0;
-    border-top: solid 1px #EFECEC;
+    border-top: 1px solid #ffd600;
 }
 .pricing-bottom-bottom p{
 	color: #502626;
