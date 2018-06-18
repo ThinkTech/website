@@ -3593,20 +3593,13 @@ p.text {
 }
 .buy-button a{
     padding: .5em 2em;
-    border: solid 1px #333;
+    border: 1px solid #ffd600;
     color : #180101;
     border-radius: 5px;
     white-space: nowrap;
     cursor: pointer;
     font-weight: bold;
 }
-.buy-button a:hover{
-	background: none;
-	border: solid 1px #333;
-	color:#333;
-	text-decoration: none;
-}
-
 .content-process{
 	height: 420px;
     background-color: #ffd600;
