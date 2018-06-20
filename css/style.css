@@ -4301,7 +4301,7 @@ p.footer {
     vertical-align: middle;
 }
 .table > thead > tr > th {
-	font-size: 1.2em;
+	font-size: 1.3em;
     background: #2f1a1a;
     color: #fff;
     font-family : Exo;
@@ -5413,6 +5413,9 @@ ul.contact_info li a:hover{
 	}
 }
 @media (max-width: 1024px){
+	.table > thead > tr > th {
+		font-size: 1.2em;
+	}
 	.search-wizard .buttons a{
 	  font-size : 13px;
 	}
@@ -5495,6 +5498,9 @@ ul.contact_info li a:hover{
 	}
 }
 @media (max-width: 991px){
+	.table > thead > tr > th {
+		font-size: 1em;
+	}
 	.search.search-wizard label,.search.search-wizard p {
       font-size: 13px;
 	}
