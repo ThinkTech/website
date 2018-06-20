@@ -2955,9 +2955,8 @@ h3.agileits-icons-title {
   box-shadow: none;
 }
 .cd-faq-group .cd-faq-title h2 {
- text-transform: uppercase;
-    font-size: 12px;
-    font-size: 1.35em;
+    text-transform: uppercase;
+    font-size: 1.2em;
     font-weight: 700;
     color: #fff;
     margin-top: -10px;
@@ -3005,6 +3004,7 @@ h3.agileits-icons-title {
     font-weight: 300;
     margin: 0;
     padding: 24px 72px 24px 24px;
+    padding-bottom: 10px;
   }
   .cd-faq-trigger::before, .cd-faq-trigger::after {
     /* arrow icon on the right */
@@ -3055,8 +3055,7 @@ h3.agileits-icons-title {
 }
 
 .cd-faq-content p {
-  font-size: 14px;
-  font-size: 0.875em;
+  font-size: 15px;
   line-height: 1.4;
   color: #180101;
   text-align: justify;
