@@ -446,7 +446,9 @@ page.initForms = function(){
 	    	var input = $('.domain-name',div);
 	    	const domain = input.val();
 	    	if(!domain.trim()) {
-	    		$('.tld-domain-search .input-container input').val($('input[name=structure]',info).val());
+	    		var name = $('input[name=structure]',info).val().toLowerCase();
+	        	name = name.replace(/\s+/g, '');
+	    		$('.tld-domain-search .input-container input').val(name);
 	    	}
 	    	input = $('input[name=businessEmail]',div);
 	    	if(input.length){
