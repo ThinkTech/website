@@ -3183,6 +3183,7 @@ a.play-icon.popup-with-zoom-anim img:hover {
     text-shadow: none;
     text-transform: capitalize;
     top: -4px;
+    font-family: Lato;
 }
 .pricing-grid  h4{
     font-size: 1.1em;
@@ -3191,6 +3192,7 @@ a.play-icon.popup-with-zoom-anim img:hover {
 	position: relative;
 	text-align: right;
 	top: -23px;
+	font-family: Lato;
 }
 .pricing-grid span.sup {
     font-size: 1.1em;
@@ -3200,7 +3202,7 @@ a.play-icon.popup-with-zoom-anim img:hover {
     display: block;
     position: relative;
     top: -10px;
-    font-family: Exo;
+    font-family: Lato;
     color: #fafafa;
     border: 1px solid #fff;
     padding: 4px;
@@ -3260,7 +3262,7 @@ a.play-icon.popup-with-zoom-anim img:hover {
     font-size: 1.3em;
     color: #fff;
     background-color: #ca2233;
-    font-family: Tahoma;
+    font-family: Lato;
     font-weight: bold;
     padding: .5em 4em;
     margin-top: 1.2em;
