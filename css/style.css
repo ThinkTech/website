@@ -4593,7 +4593,7 @@ p.footer {
 }
 
 .search-results a{
-	background: #180101;
+	background: #2ea2d1;
     padding: 5px;
     width: 90px;
     display: inline-block;
@@ -4604,6 +4604,7 @@ p.footer {
     cursor : pointer;
     border: 1px solid #08ccf7;
     text-align: center;
+    font-family: Lato;
 }
 
 .search-results select {
