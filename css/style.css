@@ -3681,7 +3681,7 @@ span.line {
 	text-align : center;
 	height: auto;
     padding-bottom: 15px;
-    background: #fff;
+    background: linear-gradient(to right, #2ea2d1 0%, #009ae9 40%, #42327a 100%);
 }
 .content-process.user img, .thumbs{
 	margin-top: 20px;
@@ -3709,6 +3709,7 @@ span.line {
     text-transform: uppercase;
     text-shadow: 1px -2px #af9682;
     margin: auto;
+    color: #fff;
 }
 .imgcircle {
 	height:75px;
