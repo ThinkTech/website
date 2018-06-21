@@ -4567,6 +4567,7 @@ p.footer {
 	line-height: 1.5em;
 	font-weight: 600;
 	word-break: break-word;
+	font-size : 23px;
 }
 
 .search .fa-check-circle-o {
