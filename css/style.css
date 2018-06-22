@@ -3684,7 +3684,7 @@ span.line {
 	text-align : center;
 	height: auto;
     padding-bottom: 15px;
-    background: linear-gradient(to right, #2ea2d1 0%, #009ae9 40%, #6091a5 100%);
+    background: linear-gradient(to right, #2ea2d1 0%, #009ae9 40%, #e46b90 100%);
 }
 .content-process.user img, .thumbs{
 	margin-top: 20px;
