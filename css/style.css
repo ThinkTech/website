@@ -4316,7 +4316,7 @@ p.footer {
 }
 
 .table-striped>tbody>tr:nth-of-type(odd) {
-    background-color: #dad8d8;
+    background-color: #fff;
 }
 
 .table-striped>tbody>tr:nth-of-type(even) {
@@ -4430,6 +4430,10 @@ p.footer {
     padding: 20px;
     padding-bottom : 0px;
     display : none;
+}
+
+.search-results .table-striped>tbody>tr:nth-of-type(odd) {
+    background-color: #dad8d8;
 }
 
 .search-results .table-striped>tbody>tr:nth-of-type(even) {
