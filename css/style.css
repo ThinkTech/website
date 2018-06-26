@@ -979,6 +979,7 @@ h3 .fa-briefcase {
     text-transform: capitalize;
     font-size: 83px;
     padding: 8px;
+    background: #2f9cc8;
     font-weight: bold;
     font-family: Exo;
     letter-spacing: 2px;
@@ -990,6 +991,7 @@ h3 .fa-briefcase {
 }
 .banner p{
     color: #ffffff;
+    background: #5cadce;
     line-height: 2em;
     font-size: 2.2em;
     font-weight: bold;
@@ -1877,6 +1879,7 @@ a.w3ls_banner_more:hover{
 	color:#fff;
 	font-weight:bold;
 	margin-top: -14px;
+	background : none;
 }
 .w3layouts_newsletter{
 	padding:3em 0;
