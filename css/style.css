@@ -965,6 +965,7 @@ h3 .fa-briefcase {
     font-size: 2.5em;
     margin-top: 0;
     font-family : Tahoma;
+    border: none;
 }
 
 .banner .wthree_stat_right ul li {
@@ -982,7 +983,7 @@ h3 .fa-briefcase {
     font-family: Exo;
     letter-spacing: 2px;
     text-shadow: 3px 1px #fff;
-    margin-left: -10px;
+    border: 1px dashed #c6f0ff;
 }
 .banner h2 span{
 	color:#fff;
@@ -992,7 +993,9 @@ h3 .fa-briefcase {
     line-height: 2em;
     font-size: 2.2em;
     font-weight: bold;
-    text-shadow: 0px 1px #ffd;	
+    text-shadow: 0px 1px #ffd;
+    border: 1px dashed #c6f0ff;
+    margin-top : 15px;	
 }
 
 .terms-agreement {
@@ -1106,7 +1109,7 @@ h3 .fa-briefcase {
 }
 
 .wthree_banner_grids{
-	padding:7em 0;
+	padding:6.5em 0;
 }
 .wthree_banner_grid{
 	text-align:center;
@@ -6178,7 +6181,7 @@ ul.contact_info li a:hover{
     	letter-spacing: 0px;
 	}
 	.faq p span span.pricing {text-align : right}
-	.banner p {font-size: 17px;text-shadow: none;margin-top: -10px;}
+	.banner p {font-size: 17px;text-shadow: none;margin-top: -10px;border: none;}
 	.agileits_w3layouts_sign_in ul li {
 		display: block;
 		text-align: right;
@@ -6195,6 +6198,7 @@ ul.contact_info li a:hover{
 	.banner h2 {
 		font-size: 2.4em;
 		text-shadow: none;
+		border: none;
 	}
 	.w3l_banner_bottom_left h3{
 		font-size: 1.8em;
