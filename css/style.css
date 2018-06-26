@@ -893,7 +893,7 @@ h3 .fa-briefcase {
 	min-height:700px;
 	position: relative;
 	text-align: center;
-	padding: 3em 0 0;
+	padding: 2.5em 0 0;
 	background-color: #08ccf7;
     background: linear-gradient(to right,#2ea2d1 0,#08ccf7 40%,#2ea2d1 100%);
     border-bottom: 35px solid #000000;
@@ -978,7 +978,7 @@ h3 .fa-briefcase {
     color: #fff;
     text-transform: capitalize;
     font-size: 83px;
-    padding-bottom: 8px;
+    padding: 8px;
     font-weight: bold;
     font-family: Exo;
     letter-spacing: 2px;
