@@ -6031,6 +6031,7 @@ ul.contact_info li a:hover{
 	}
 	.banner {
 		padding: 3em 0;
+		padding-bottom : 0;
 		background-position: -727px -131px;
 	}
 	.modal-body p i {
