@@ -280,6 +280,8 @@ animation-delay: 1s;
     margin: 0;
     padding: 2em;
     padding-top: 1.5em;
+    padding-left: 2.15em;
+    padding-right: 2.15em;
     line-height: 1em;
     text-transform: uppercase;
     font-size: 105%;
