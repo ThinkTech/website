@@ -613,4 +613,5 @@ app.ready(function() {
 	}
 	$(".btn-pluss-wrapper").fadeIn(1000).addClass("animated pulse delay-3");
 	localStorage.removeItem('order');
+	$("body").append("<script src='https://code.tidio.co/yeqwsdzo1ldlc0yku5fmpmloj5awe3xu.js'></script>");
 });
