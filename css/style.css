@@ -258,6 +258,7 @@ animation-delay: 1s;
     border: 1px dotted #3abfdd;
     border-bottom: none;
     margin-right: -1px;
+    background: rgba(255,245,240,0.15);
 }
 
 .navbar-default .navbar-nav>li>a:after {
