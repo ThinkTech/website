@@ -614,4 +614,5 @@ app.ready(function() {
 	$(".btn-pluss-wrapper").fadeIn(1000).addClass("animated pulse delay-3");
 	localStorage.removeItem('order');
 	$("body").append("<script src='https://code.tidio.co/yeqwsdzo1ldlc0yku5fmpmloj5awe3xu.js'></script>");
+	$("body").append("<script src='https://platform-api.sharethis.com/js/sharethis.js#property=590f03b42c145800128d5487&product=inline-share-buttons'></script>");
 });
