@@ -4350,7 +4350,7 @@ p.footer {
     line-height: 48px;
     border: 1px solid #08ccf7;
     padding-left: 10px;
-    width : 300px;
+    width : 350px;
 }
 
 .domain-info .tld-domain-search .input-container input {
@@ -4884,7 +4884,7 @@ p.footer {
 	.tld-domain-search .input-container input {
 	    height: 36px;
         line-height: 36px;
-        width: 135px;
+        width: 150px;
         font-size: 11px;
         margin-left: -5px;
 	}
