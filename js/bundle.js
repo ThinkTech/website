@@ -221,6 +221,7 @@ page.initDomainSearch = function(){
     	if(domain){
     		const index = domain.indexOf(".");
     		if(domain.indexOf(".")!=-1) domain = domain.substring(0,index);
+    		order.search = domain;
     		input.val(domain);
     		const url = "https://thinktech-platform.herokuapp.com/domains/search?domain="+domain;
     		page.wait({top : top-20});
