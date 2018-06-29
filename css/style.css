@@ -5002,6 +5002,9 @@ p.footer {
 	.tld-domain-search-wrapper {
 	   padding-bottom : 0;
 	}
+	.tld-domain-search .input-container input {
+	    width: 188px;
+	}
 	.domains.table {
      margin-top: 15px;
      margin-bottom: 0px;
@@ -5016,6 +5019,9 @@ p.footer {
 	}
 	.subscribe-form .domain-info .input-container input {
    	 width: 51%;
+	}
+	.tld-domain-search .input-container input {
+	    width: 150px;
 	}
 	.domain-info .tld-domain-search .tld-search-button {
     	width: 38px;
