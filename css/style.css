@@ -4237,7 +4237,7 @@ p.footer {
 	}
 	.w3l_banner_bottom_left p {
       font-size: 12.8px;
-      letter-spacing: -1px;
+      letter-spacing: 0px;
     }
 	h3.agileits-icons-title {
 		font-size: 28px;
@@ -5576,10 +5576,6 @@ ul.contact_info li a:hover{
 	}
 	.agileinfo_search input[type="text"] {
 		width: 86%;
-	}
-	.agileinfo_search input[type="submit"] {
-		width: 12%;
-		background: url(../images/search.png) no-repeat 5px 2px;
 	}
 	.faq p span {
 		width : 73%;
