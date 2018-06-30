@@ -4685,6 +4685,13 @@ p.footer {
 	}
 }
 
+@media (max-width:991px){
+	.faq p span span.text {
+	   letter-spacing: 0px;
+    	font-weight: normal;
+	}
+}
+
 @media (max-width:768px){
 	.subscribe-form .buttons {
     	width: 100%;
