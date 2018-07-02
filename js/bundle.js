@@ -165,6 +165,14 @@ page.initButtons = function(){
     $(".plans .pricing .close").click(function(event){
 	   $(".plans .pricing").hide();
 	});	
+    $(".subscribe-form input[type=number]").keyup(function(event){
+    	const val = $(this).val();
+    	if(val.length>20) {
+    		$(this).val(val.substring(0,20));
+    		return false;
+    	}
+    	return false;
+    });
 };
 
 page.initDomainSearch = function(){

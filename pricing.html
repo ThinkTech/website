@@ -960,17 +960,17 @@
 				<form>
 				   <div class="user-info">
 				    <label>Administrateur</label>
-				    <input type="text" name="name" placeholder="prénom et nom" required>
+				    <input type="text" name="name" placeholder="prénom et nom"  maxlength="200" required>
 				    <label>Email</label>
-				    <input type="email" name="email" placeholder="adresse email" required>
+				    <input type="email" name="email" placeholder="adresse email" maxlength="200" required>
 				    <label>Mot de Passe</label>
-				    <input type="password" name="password" placeholder="mot de passe" required>
+				    <input type="password" name="password" placeholder="mot de passe" maxlength="80" required>
 				    <label>Confirmation</label>
-				    <input type="password" name="confirmation" placeholder="confirmation" required>
+				    <input type="password" name="confirmation" placeholder="confirmation" maxlength="80" required>
 				    <label>Téléphone</label>
-				    <input name="telephone" type="number" placeholder="mobile" required>
+				    <input name="telephone" type="number" placeholder="mobile"  required>
 				    <label>Structure</label>
-				    <input name="structure" type="text" placeholder="structure" required>
+				    <input name="structure" type="text" placeholder="structure" maxlength="200" required>
 		   			</div>
 		   			<div class="domain-info">
 				       <h4>Choisissez votre domaine web</h4>
@@ -1005,7 +1005,7 @@
 					    <label>Montant (CFA)</label>
 						<input class="domain-amount" type="text" placeholder="montant (CFA)" readonly>
 						<label class="epp-code">EPP Code</label>
-						<input class="epp-code" type="text" placeholder="EPP Code" name="eppcode">
+						<input class="epp-code" type="text" placeholder="EPP Code" name="eppcode" maxlength="250">
 				   </div>
 		   			<div class="terms-agreement">
 					  <input type="checkbox" checked disabled> J'accepte les <a class="read-terms">Termes</a>
@@ -1027,17 +1027,17 @@
 				<form>
 				   <div class="user-info">
 				    <label>Administrateur</label>
-				    <input type="text" name="name" placeholder="prénom et nom" required>
+				    <input type="text" name="name" placeholder="prénom et nom"  maxlength="200" required>
 				    <label>Email</label>
-				    <input type="email" name="email" placeholder="adresse email" required>
+				    <input type="email" name="email" placeholder="adresse email" maxlength="200" required>
 				    <label>Mot de Passe</label>
-				    <input type="password" name="password" placeholder="mot de passe" required>
+				    <input type="password" name="password" placeholder="mot de passe" maxlength="80" required>
 				    <label>Confirmation</label>
-				    <input type="password" name="confirmation" placeholder="confirmation" required>
+				    <input type="password" name="confirmation" placeholder="confirmation" maxlength="80" required>
 				    <label>Téléphone</label>
 				    <input name="telephone" type="number" placeholder="mobile" required>
 				    <label>Structure</label>
-				    <input name="structure" type="text" placeholder="structure" required>
+				    <input name="structure" type="text" placeholder="structure" maxlength="200" required>
 				    <label>Plan</label>
 		   			<input name="plan" type="text" readonly>
 		   			</div>
@@ -1065,7 +1065,7 @@
 					</a>
 				 </div>
 				</div>
-				   <label>Domaine Web</label>
+				     <label>Domaine Web</label>
 		    <input class="domain-name" type="text" placeholder="domaine web" readonly>
 		     <label>Prix (CFA)</label>
 		    <input class="domain-price" type="text" placeholder="prix (CFA)" readonly>		  
@@ -1074,9 +1074,9 @@
 		    <label>Montant (CFA)</label>
 			<input class="domain-amount" type="text" placeholder="montant (CFA)" readonly>
 			<label class="epp-code">EPP Code</label>
-			<input class="epp-code" type="text" placeholder="EPP Code" name="eppcode">
+			<input class="epp-code" type="text" placeholder="EPP Code" name="eppcode" maxlength="250">
 			<label>Business Email</label>
-			<input type="text" name="businessEmail" placeholder="business email" required>
+			<input type="text" name="businessEmail" placeholder="business email" maxlength="100" required>
 				   </div>
 		   			<div class="terms-agreement">
 					  <input type="checkbox" checked disabled> J'accepte les <a class="read-terms">Termes</a>
@@ -1097,24 +1097,24 @@
 		   <h1><i class="fa fa-envelope" aria-hidden="true"></i>Souscription</h1>
 		   <form>
 		   <div class="user-info">
-			   <label>Administrateur</label>
-			   <input type="text" name="name" placeholder="prénom et nom" required>
-			   <label>Email</label>
-			   <input type="email" name="email" placeholder="adresse email" required>
-			   <label>Mot de Passe</label>
-			   <input type="password" name="password" placeholder="mot de passe" required>
-			   <label>Confirmation</label>
-			   <input type="password" name="confirmation" placeholder="confirmation" required>
-			   <label>Téléphone</label>
-			   <input name="telephone" type="number" placeholder="mobile" required>
-			   <label>Structure</label>
-			   <input name="structure" type="text" placeholder="structure" required>
+			    <label>Administrateur</label>
+			    <input type="text" name="name" placeholder="prénom et nom"  maxlength="200" required>
+			    <label>Email</label>
+			    <input type="email" name="email" placeholder="adresse email" maxlength="200" required>
+			    <label>Mot de Passe</label>
+			    <input type="password" name="password" placeholder="mot de passe" maxlength="80" required>
+			    <label>Confirmation</label>
+			    <input type="password" name="confirmation" placeholder="confirmation" maxlength="80" required>
+			    <label>Téléphone</label>
+			    <input name="telephone" type="number" placeholder="mobile" required>
+			    <label>Structure</label>
+			    <input name="structure" type="text" placeholder="structure" maxlength="200" required>
 			   <label>Projet</label>
 			   <select name="project">
-			      <option value="cr&eacute;ation site web">création site web</option>
-		  		  <option value="refonte site web">refonte site web</option>
-		  		  <option value="cr&eacute;ation application web">création application web</option>
-		  		  <option value="refonte application web">refonte application web</option>
+			     <option value="cr&eacute;ation site web">création site web</option>
+		 	     <option value="refonte site web">refonte site web</option>
+		         <option value="cr&eacute;ation application web">création application web</option>
+		          <option value="refonte application web">refonte application web</option>
 			   </select>
 			   <label>Plan</label>
 			   <input name="plan" type="text" readonly>
@@ -1152,7 +1152,7 @@
 		    <label>Montant (CFA)</label>
 			<input class="domain-amount" type="text" placeholder="montant (CFA)" readonly>
 			<label class="epp-code">EPP Code</label>
-			<input class="epp-code" type="text" placeholder="EPP Code" name="eppcode">
+			<input class="epp-code" type="text" placeholder="EPP Code" name="eppcode" maxlength="250">
 		   </div>
 		   <div class="terms-agreement">
 			<input type="checkbox" checked disabled> J'accepte les <a class="read-terms">Termes</a>
@@ -1167,7 +1167,6 @@
 </div>
 
 <!-- dialogs -->
-
 <!-- //footer -->
 <!-- start-smoth-scrolling -->
 <script type="text/javascript" src="js/bundle.js"></script> 
