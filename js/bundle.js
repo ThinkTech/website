@@ -143,7 +143,7 @@ const confirm = function(message,callback){
 
 page.initButtons = function(){
 	$(".banner h2,.banner p").addClass("animated fadeIn");
-	$(".banner a").fadeIn(1000).addClass("animated fadeIn");
+	$(".banner a").fadeIn(1000).addClass("animated pulse");
     $(".terms > .close, .confirmation > .close").click(function(event){
     	 $(this).parent().hide();
 	});
