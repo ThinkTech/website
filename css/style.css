@@ -989,6 +989,7 @@ h3 .fa-briefcase {
     text-shadow: 3px 1px #fff;
     border: 1px dashed #c6f0ff;
     margin-right : 5px;
+    position: relative;
 }
 .banner h2 span{
 	color:#fff;
@@ -1004,6 +1005,7 @@ h3 .fa-briefcase {
     margin-top : 15px;
     margin-right : 5px;
     padding: 8px;	
+    position: relative;
 }
 
 .terms-agreement {
