@@ -5330,7 +5330,6 @@ ul.contact_info li a:hover{
 }
 @media (max-width: 1080px){
 	.navbar-nav > li > a {
-		padding: 2em 1.5em;
 		font-size: 17px;
 	}
 	.wthree_banner_grid h4 {font-size: 15px;}
