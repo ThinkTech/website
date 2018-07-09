@@ -5332,6 +5332,9 @@ ul.contact_info li a:hover{
 	.navbar-nav > li > a {
 		font-size: 17px;
 	}
+	.w3ls_copyright_right {
+   	 margin-right: 110px;
+	}
 	.wthree_banner_grid h4 {font-size: 15px;}
 	.faq p span {width: 73%;}
 	.agileinfo_search {
@@ -5519,6 +5522,9 @@ ul.contact_info li a:hover{
 	}
 }
 @media (max-width: 991px){
+	.w3ls_copyright_right {
+   	 margin-right: 0px;
+	}
 	.table > thead > tr > th {
 		font-size: 1em;
 	}
