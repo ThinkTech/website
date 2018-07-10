@@ -5021,6 +5021,7 @@ p.footer {
    }
 }
 @media (max-width: 320px){
+	.w3_agile_logo h1 a, .w3_agile_logo h1 a:visited {left: 11px;}
 	.search-results td span {
       width: auto;
 	}
