@@ -54,6 +54,11 @@ input[type=text], select, input[type=email], input[type=password], input[type=nu
 	margin-bottom: 10px;
     margin-top: 10px;
 }
+
+.w3_agile_logo h1 {
+	font-size : 35px;
+}
+
 .w3_agile_logo h1 a,.w3_agile_logo h1 a:visited{
 	font-size:1.85em;
 	color : #4d515a;
