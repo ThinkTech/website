@@ -48,6 +48,34 @@ input[type=text], select, input[type=email], input[type=password], input[type=nu
     filter: alpha(opacity=90);
     opacity: 0.9;
 }
+
+.header{
+     overflow : hidden;
+     margin-top: -2px;
+}
+
+.header .container{
+   position: relative;
+    z-index : 2;
+}
+
+.header:after{
+  content: "";
+    position: absolute;
+    z-index : 1;
+    top: 0;
+    bottom : 0;
+    opacity: 0.2;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height : 62%;
+   background-image: url(../images/pexels-photo-830891.jpeg);
+    background-repeat : no-repeat;
+}
+
 /*-- --*/
 .w3_agile_logo{
 	float:left;
@@ -658,51 +686,9 @@ h3 .fa-briefcase {
     border-bottom: 1px solid #999;
     margin-top: .6em;
 }
-.agileinfo_search input[type="text"]{
-    outline: none;
-    width: 87%;
-    background: #fff;
-    color: #303030;
-    padding: 10px;
-    font-size: 14px;
-    border: none;
-}
-.agileinfo_search input[type="submit"]{
-    outline: none;
-    width: 10%;
-    background: url(../images/search.png) no-repeat 7px 2px;
-    border: none;
-    padding: 0;
-}
-/*-- //header --*/
+
 /*-- banner --*/
 
-.header{
-     overflow : hidden;
-     margin-top: -2px;
-}
-
-.header .container{
-   position: relative;
-    z-index : 2;
-}
-
-.header:after{
-  content: "";
-    position: absolute;
-    z-index : 1;
-    top: 0;
-    bottom : 0;
-    opacity: 0.2;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    height : 62%;
-   background-image: url(../images/pexels-photo-830891.jpeg);
-    background-repeat : no-repeat;
-}
 
 .btn-pluss-wrapper {
     position: absolute;
