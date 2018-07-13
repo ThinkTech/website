@@ -6085,8 +6085,9 @@ ul.contact_info li a:hover{
        padding-bottom: 5px;
 	}
 	 .w3ls_copyright_right ul li a, .w3agile_social_icons ul li a, .title li a, .wthree_mail_social li a {
-    	width: 30px;
-    	height: 30px;
+    	width: 25px;
+    	height: 25px;
+    	padding-top: 0.3em;
      }
 	 .faq.guide ol {
        padding-top: 20px;
