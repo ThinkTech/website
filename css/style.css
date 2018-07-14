@@ -4501,14 +4501,15 @@ p.footer {
 	padding: 10px;
     padding-left: 15px;
     padding-right: 15px;
-    border: 1px solid #08ccf7;
-    font-size: 15px;
+    border: 1px solid #2ea2d1;
+    font-size: 14px;
     font-weight: bold;
-    font-family: Lato;
+    font-family: Tahoma;
     margin-right: 12px;
     cursor: pointer;
-    background: #2ea2d1;
+    background: #08ccf7;
     color: #fff;
+    border-radius: 5px;
 }
 
 .search-wizard .buttons a:first-of-type { 
