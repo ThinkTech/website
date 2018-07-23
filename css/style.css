@@ -6377,7 +6377,8 @@ ul.contact_info li a:hover{
 }
 @media (max-width: 414px){
 	.banner .wthree_stat_right {
-     	   margin-top: 30px;
+     	margin-top: -20px;
+        margin-bottom: 30px;
      }
      .w3_two_grid_right p.w3layouts_dummy_para {
      	width: 97%;
