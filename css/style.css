@@ -4131,7 +4131,7 @@ p.footer {
 		font-size: 2em;
 	}
 	.terms h1, .content .terms h1 {
-     font-size: 1.1em;
+     font-size: 13!important;
     }
     .terms .close {
       padding: 5px;
