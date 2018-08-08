@@ -406,7 +406,7 @@ page.initForms = function(){
 	 	   subscription.services = ["mailhosting","domainhosting"];
 	 	   subscription.order.plan = form.find("input[name=plan]").val().trim();
 	 	   if(subscription.order.plan == "personal"){
-	 		  subscription.order.structure = subscription.name; 
+	 		  subscription.structure = subscription.name; 
 	 	   }
 	 	   subscription.order.subject = form.find("select[name=project]").val().trim();
 	 	   confirm("&ecirc;tes vous s&ucirc;r de vouloir souscrire &agrave; ce service?",function(){
