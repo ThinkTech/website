@@ -2050,6 +2050,7 @@ a.w3ls_banner_more:hover{
 	display:inline-block;
 	border: 1px solid #c17051;
 	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.2);
+	background: #2ea2d1;
 }
 
 .w3ls_copyright_right ul li a,.w3agile_social_icons ul li a,.title li a,.wthree_mail_social li a{
