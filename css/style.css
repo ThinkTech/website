@@ -419,7 +419,7 @@ nav.navbar.navbar-default {
 
 p,ul li,ol li{
 	margin:0;
-	font-size:20px;
+	font-size:19px;
 }
 p {
 	font-family: 'Open Sans', sans-serif;
@@ -2000,6 +2000,7 @@ a.w3ls_banner_more:hover{
 .copyright{
 	padding:2em 0;
 	background:#2ea2d1;
+	margin-bottom: -20px;
 }
 .w3ls_copyright_left{
 	float:left;
