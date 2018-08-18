@@ -217,7 +217,7 @@ animation-delay: 1s;
     content: "";
     position: absolute;
     z-index: -1;
-    top: 0;
+    top: -10px;
     bottom: 0;
     opacity: 0.8;
     left: 62%;
