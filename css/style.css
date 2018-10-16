@@ -887,7 +887,7 @@ h3 .fa-briefcase {
 	text-align: center;
 	padding: 1.1em 0 0;
 	background-color: #08ccf7;
-    background: linear-gradient(to right,#a498c1 25%,#08ccf7 40%,#2ea2d1 100%);
+    background: linear-gradient(to right,#a498c1 25%,#08ccf7 40%,#a498c1 100%);
     border-bottom: 35px solid #303030;
     overflow: hidden;
 }
