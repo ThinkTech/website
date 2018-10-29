@@ -587,6 +587,44 @@ page.submitSubscription = function(form,subscription){
 	   });
 };
 
+
+page.loadImages = function(div,callback) {
+	$.each($("img.error",div),function(index,element){
+    	if(!$(element).is(":hidden")){
+    		$(element).addClass("loading");
+			const src = $(element).data("src");
+			if(src) {
+				$(element).attr("src",src);
+				$(element).on("load",function(){
+					$(this).removeAttr("data-src").removeClass("error loading");
+				}).on("error",function(){
+					$(this).removeClass("loading");
+				}).each(function() {
+					  if(this.complete) $(this).trigger("load");
+				});
+			}
+    	}
+    });
+	if(!div.data("loaded")) {
+		div.data("loaded","true");
+		$.each($("img[data-src]",div),function(index,element){
+				$(element).addClass("loading");
+				const src = $(element).data("src");
+				if(src) {
+					$(element).attr("src",src);
+					$(element).on("load",function(){
+						$(this).removeAttr("data-src").removeClass("loading");
+					}).on("error",function(){
+						$(this).addClass("error").removeClass("loading");
+					}).each(function() {
+						  if(this.complete) $(this).trigger("load");
+					});
+				}
+	    });
+	    if(callback) callback();
+	}
+};
+
 page.initScroll = function(){
 	$(window).scroll(function(){
 		  const top = $(this).scrollTop();
@@ -598,6 +636,14 @@ page.initScroll = function(){
 				 }
 				}
 		  });
+		  $.each($(".lazy"),function(index,element){
+				const div = $(element);
+				if(div.length){
+				 if(top >= div.position().top-650) {
+					page.loadImages(div);
+				 }
+				}
+		 });
 		  $.each($(".guide li img,.portal img"),function(index,element){
 				const img = $(element);
 				if(img.length){
@@ -619,6 +665,7 @@ page.initScroll = function(){
 
 app.ready(function() {
 	page.init();
+	$(".btn-pluss-wrapper").fadeIn(1000);
 	if($(".modal form").length){
 		page.initButtons();
 		page.initForms();
