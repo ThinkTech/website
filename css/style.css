@@ -279,7 +279,7 @@ animation-delay: 1s;
     border-bottom: 1px solid #08ccf7;
     border-right: none;
     border-top: none;
-    box-shadow: 0 2px 1px 0 #388696, 0 2px 1px 0 rgba(0,0,0,.12);
+    box-shadow: 0 2px 1px 0 #131415, 0 2px 1px 0 rgba(0,0,0,.12);
 }
 .navbar-default .navbar-nav > .active > a:after {
 	border: .3rem solid #fff;
