@@ -65,7 +65,7 @@ input[type=text], select, input[type=email], input[type=password], input[type=nu
     z-index : 1;
     top: 0;
     bottom : 0;
-    opacity: 0.2;
+    opacity: 0.25;
     left: 0;
     right: 0;
     margin-left: auto;
