@@ -644,15 +644,7 @@ page.initScroll = function(){
 				 }
 				}
 		 });
-		  $.each($(".guide li img,.portal img"),function(index,element){
-				const img = $(element);
-				if(img.length){
-				 if(top >= img.offset().top-650) {
-					img.addClass("animated fadeIn");
-				 }
-				}
-		  });
-		  $.each($(".content1 h2,.content-process.user p"),function(index,element){
+		 $.each($(".content1 h2,.content-process.user p"),function(index,element){
 				const h2 = $(element);
 				if(h2.length){
 				 if(top >= h2.offset().top-700) {
