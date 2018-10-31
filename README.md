@@ -1,2 +1,1 @@
-# website
-ThinkTech official website
+# ThinkTech Official Website
