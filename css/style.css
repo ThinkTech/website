@@ -6078,9 +6078,9 @@ ul.contact_info li a:hover{
 }
    .banner:before {
      top: -170px;
-     left: 0;
-     right: 0;
-     width: 107%;
+    left: -60px;
+    right: 0;
+    width: 109%;
     }
 	#social-plan > p span span:last-of-type, #personal-plan > p span span:last-of-type, #corporate-plan > p span span:last-of-type, #business-plan > p span span:last-of-type {
    	   background: transparent;
