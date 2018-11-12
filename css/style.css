@@ -4958,7 +4958,7 @@ p.footer {
 	.search-results .table > tbody > tr > td:first-of-type a{
 	   display : inline-block;
 	}
-	.header:after {height: 18%;}
+	.header:after {height: 18%;background-image: none;}
 	.guide li > a {
        width: 60%;
        margin: auto;
