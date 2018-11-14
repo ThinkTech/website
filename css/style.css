@@ -191,7 +191,7 @@ animation-delay: 1s;
 .wave.-two {
      animation: drift 95s infinite linear;
     opacity: .2;
-    background: #4d515a;
+    background: #51689a;
 }
 
 .guide .wave.-two {
