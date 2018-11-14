@@ -631,7 +631,7 @@ h3 .fa-briefcase {
 
 @media(max-width:767px ){
 	#confirm-dialog-container, #alert-dialog-container {padding-top:32%}
-	.scrollToTop {right:45%}
+	.scrollToTop {right:1%}
 	.banner a {
 	    margin-left: -7.1%;
 	}
