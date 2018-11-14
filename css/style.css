@@ -4128,6 +4128,9 @@ p.footer {
 	}
 }
 @media (max-width: 480px){
+	.box:before,.col-md-6.w3_two_grid_right:before {
+     background-image: none;
+    }
 	.content h1 {
 		font-size: 2em;
 	}
@@ -6081,6 +6084,7 @@ ul.contact_info li a:hover{
     left: -60px;
     right: 0;
     width: 109%;
+    background: none;
     }
 	#social-plan > p span span:last-of-type, #personal-plan > p span span:last-of-type, #corporate-plan > p span span:last-of-type, #business-plan > p span span:last-of-type {
    	   background: transparent;
