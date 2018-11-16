@@ -4764,7 +4764,7 @@ p.footer {
       top: 7px;
     }
 	.subscribe-form input[type=submit],.subscribe-form input[type=button]{
-		height: 26px;margin-top : 0px;margin-bottom : 0px;float: right;padding-top: 4px;font-size: 13px;
+		height: 26px;margin-top : 5px;margin-bottom : 0px;float: right;padding-top: 4px;font-size: 13px;
 	}
 }
 @media (max-width:640px){
