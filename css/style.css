@@ -3485,9 +3485,6 @@ a.play-icon.popup-with-zoom-anim img:hover {
     padding-top: 0.7em;
     font-size: 0.9em;
 }
-.more a { 
-    font-size: 0.9em; 
-}
 
 }
 
@@ -3951,7 +3948,7 @@ span.line {
 	box-shadow: none;
    }
    .faq p span span.text {
-    font-size: 12px;
+    font-size: 13px;
 	text-align: center;
 	white-space : normal;
 	font-family: 'Open Sans', sans-serif;
