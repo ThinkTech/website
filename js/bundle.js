@@ -198,7 +198,6 @@ page.initDomainSearch = function(){
     		div.css("top",$(this).offset().top+200).show();
     	}
     	const order = JSON.parse(localStorage.getItem('order'));
-    	$("input[name=structure]").val(order.search);
   	    $('html,body').animate({scrollTop:div.offset().top-20},1);
 	});
     $(".search-wizard .domain-edit a").click(function(event){
