@@ -850,9 +850,6 @@ h3 .fa-briefcase {
   height: 25px;
   transition: height 1s ease;
 }
-.btn-pluss-wrapper:hover .btn-pluss li:hover {
-  border-bottom: 1px solid #d2c9c9;
-}
 
 @-webkit-keyframes jump {
   0% {
