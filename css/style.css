@@ -718,7 +718,7 @@ h3 .fa-briefcase {
 .btn-pluss a {
  display: block;
     font-size: 15px;
-    font-family: Exo,monospace;
+    font-family: Arial,Exo,monospace;
     position: relative;
     font-weight: bold;
     color : #303030;
@@ -773,7 +773,7 @@ h3 .fa-briefcase {
   text-align: center;
   font-size: 0.9em;
   font-weight: bold;
-  font-family: Exo,monospace;
+  font-family: Arial,Exo,monospace;
   margin: 0 auto;
   margin-bottom: 15px;
   -webkit-animation-duration: 3s;
