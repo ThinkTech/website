@@ -1675,8 +1675,9 @@ a.w3ls_banner_more:hover{
     padding: 15px;
     line-height: 2em;
     text-align: justify;
-    font-size: 16px;
+    font-size: 17px;
     font-weight: 600;
+    font-family : Arial;
 }
 .w3_two_grid_right1{
     padding-top: 0.3em;
@@ -1705,10 +1706,11 @@ a.w3ls_banner_more:hover{
 }
 .w3_two_grid_right_gridr h4{
 	text-transform:capitalize;
-	font-size:1.4em;
+	font-size:1.3em;
 	color:#fff;
 	margin:1em 0 0;
 	white-space: nowrap;
+	font-family : Arial;
 }
 .w3_two_grid_right_gridr p{
 	color:#003743;
