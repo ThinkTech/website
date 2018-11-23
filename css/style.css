@@ -1560,6 +1560,7 @@ a.w3ls_banner_more:hover{
     display: inline-block;
     width: 60px;
     text-align: center;
+    border: 1px solid #ffd600;
 }
 
 .faq.guide .number {
