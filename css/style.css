@@ -404,6 +404,7 @@ nav.navbar.navbar-default {
     width: 60px;
     height : 60px;
     text-align: center;
+    border: 1px solid #2992bc;
 }
 
 .w3l_banner_bottom_left .rslides_tabs li.rslides_here {
