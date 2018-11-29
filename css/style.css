@@ -6058,6 +6058,7 @@ ul.contact_info li a:hover{
   	    text-align: center;
    	    width: 96%;
         margin-right: 0;
+        margin-top: 9px;
 	}
 	ul.contact_info li {font-size: 12px;}
 }
