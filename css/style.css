@@ -981,6 +981,7 @@ h3 .fa-briefcase {
     border: 1px dashed #c6f0ff;
     margin-right : 5px;
     position: relative;
+    margin-top: -5px;
 }
 .banner h2 span{
 	color:#fff;
