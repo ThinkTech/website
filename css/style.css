@@ -4197,8 +4197,8 @@ p.footer {
 
 @media (max-width:991px){
 	.w3_agile_logo h1 a span {
-    	padding: 0 0.2em;
-    	border: 7px solid;
+    	padding: 0 0.1em;
+        border: 5px solid;
 	}
 	.btn-pluss-wrapper {
     	top: 57px;
