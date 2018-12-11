@@ -1579,7 +1579,7 @@ a.w3ls_banner_more:hover{
 }
 
 .guide  a.plan-details{
-	color : #feffc7;
+	color : #ffffff;
 }
 .plan-details {
 	position: absolute;
@@ -3549,12 +3549,12 @@ a.play-icon.popup-with-zoom-anim img:hover {
 }
 
 .pricing-top h3{
-	color: #feffc7;
+	color: #ffffff;
 	font-size:1.8em;
 	margin:0;
 }
 .pricing-top p{
-	color: #feffc7;
+	color: #ffffff;
 	font-size: 100%;
 	margin:1em 0 0 0;
 	font-weight: bold;
@@ -4463,7 +4463,7 @@ p.footer {
 }
 
 .search div:first-of-type {
-	background: #feffc7;
+	background: #ffffff;
 	text-align: center;
 }
 
