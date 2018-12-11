@@ -4136,6 +4136,8 @@ p.footer {
     }
     .terms .close {
       padding: 5px;
+      padding-right: 8px;
+      padding-left: 8px;
       right: 4px;
 	}
 	.flipster-carousel .flip-future {
