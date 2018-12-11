@@ -3905,7 +3905,7 @@ span.line {
 
 @media (max-width: 480px){
 	.banner:before {opacity: .15;}
-	.w3ls-bottom {padding: 1.5em 1em 0;}
+	.w3ls-bottom {padding: 0em 1em 0;}
 	.w3_agile_logo h1 a span,.w3_footer_grid h2 a span {border: 7px solid;margin-right: 1px;}
 	.terms-agreement {margin-left : 0%;font-size: 12px;}
     .w3l_banner_bottom_left p {
