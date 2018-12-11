@@ -4139,6 +4139,7 @@ p.footer {
       padding-right: 8px;
       padding-left: 8px;
       right: 4px;
+      top: 5px;
 	}
 	.flipster-carousel .flip-future {
 		-webkit-transform: translateX(20%) translateZ(0) rotateY(-54deg) scale(0.65);
