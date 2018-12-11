@@ -297,7 +297,7 @@ animation-delay: 1s;
 .navbar-default .navbar-nav>li>a:after {
     display: inline-block;
     content: "";
-    border: .3rem solid #2ea2d1;
+    border: .3rem solid #0290c8;
     width: 4rem;
     margin: 0 1rem;
     transform: translateY(-1rem);
@@ -391,7 +391,7 @@ nav.navbar.navbar-default {
 }
 
 .w3l_banner_bottom_left .rslides_tabs li {
-	background: #2ea2d1;
+	background: #0290c8;
     color: #fff;
     padding: 13px;
     padding-top: 3px;
@@ -521,7 +521,7 @@ h3 .fa-briefcase {
 
 #loader {
     border: 16px solid #fff; 
-    border-top: 16px solid #2ea2d1;
+    border-top: 16px solid #0290c8;
     border-radius: 50%;
     width: 90px;
     height: 90px;
@@ -783,7 +783,7 @@ h3 .fa-briefcase {
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
   background-color: #fff;
-  color: #2ea2d1;
+  color: #0290c8;
   transition: all 1s ease;
   pointer-events: none;
   opacity : 1;
@@ -925,7 +925,7 @@ h3 .fa-briefcase {
 .banner1{
 	min-height:200px;
 	text-align: center;
-	background-color : #2ea2d1;
+	background-color : #0290c8;
 	border-bottom: 35px solid #303030;
 }
 
@@ -1644,7 +1644,7 @@ a.w3ls_banner_more:hover{
 /*-- //banner-bottom --*/
 /*-- two-grids --*/
 .two-grids{
-	background:#2ea2d1;
+	background:#0290c8;
 }
 .w3_two_grid_left{
 	padding:0;
@@ -1864,7 +1864,7 @@ a.w3ls_banner_more:hover{
     color: #fff;
     width: 50px;
     height: 50px;
-    background: #2ea2d1;
+    background: #0290c8;
     border: 1px solid #2992bc;
     border-radius: 50px;
     line-height: 2em;
@@ -1886,7 +1886,7 @@ a.w3ls_banner_more:hover{
 }
 .w3layouts_newsletter{
 	padding:3em 0;
-	background:#2ea2d1;
+	background:#0290c8;
 }
 .w3layouts_newsletter_left{
 	float:left;
@@ -1934,7 +1934,7 @@ a.w3ls_banner_more:hover{
     border: 1px solid #867e7e;
     padding: 10px 0;
     background: #ffffff;
-    color: #2ea2d1;
+    color: #0290c8;
     font-size: 14px;
     width: 25%;
     text-transform: uppercase;
@@ -1977,7 +1977,7 @@ a.w3ls_banner_more:hover{
 	width:50px;
 	height:50px;
 	border-radius:30px;
-	background:#2ea2d1;
+	background:#0290c8;
 	text-align:center;
 }
 .w3l_footer_grid i{
@@ -2000,7 +2000,7 @@ a.w3ls_banner_more:hover{
 }
 .copyright{
 	padding:2em 0;
-	background:#2ea2d1;
+	background:#0290c8;
 }
 .w3ls_copyright_left{
 	float:left;
@@ -2051,7 +2051,7 @@ a.w3ls_banner_more:hover{
 	display:inline-block;
 	border: 1px solid #4d515a;
 	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.2);
-	background: #2ea2d1;
+	background: #0290c8;
 }
 
 .w3ls_copyright_right ul li a,.w3agile_social_icons ul li a,.title li a,.wthree_mail_social li a{
@@ -2062,7 +2062,7 @@ a.w3ls_banner_more:hover{
     display: inline-block;
     padding-top: .6em;
     font-size: 13px;
-    background: #2ea2d1;
+    background: #0290c8;
 }
 #toTop {
 	display: none;
@@ -2269,7 +2269,7 @@ button.close {
 /*-- //services --*/
 /*-- services-bottom --*/
 .services-bottom{
-	background: #2ea2d1;
+	background: #0290c8;
     text-align: center;
 }
 .services-bottom h3{
@@ -2382,7 +2382,7 @@ button.close {
 .agileits_w3layouts_features_gridr  h4:after {
     display: inline-block;
     content: "";
-    border: .3rem solid #2ea2d1;
+    border: .3rem solid #0290c8;
     width: 4rem;
     margin: 0 1rem;
     transform: translateY(-1rem);
@@ -3687,7 +3687,7 @@ span.line {
 	text-align : center;
 	height: auto;
     padding-bottom: 15px;
-    background: linear-gradient(to right, #2ea2d1 0%, #009ae9 40%, #e46b90 100%);
+    background: linear-gradient(to right, #0290c8 0%, #009ae9 40%, #e46b90 100%);
 }
 .content-process.user img, .thumbs{
 	margin-top: 20px;
@@ -4509,7 +4509,7 @@ p.footer {
 	padding: 10px;
     padding-left: 15px;
     padding-right: 15px;
-    border: 1px solid #2ea2d1;
+    border: 1px solid #0290c8;
     font-size: 14px;
     font-weight: bold;
     font-family: Tahoma;
@@ -4609,7 +4609,7 @@ p.footer {
 }
 
 .search-results a{
-	background: #2ea2d1;
+	background: #0290c8;
     padding: 5px;
     width: 90px;
     display: inline-block;
@@ -5198,7 +5198,7 @@ p.footer {
     font-weight: bold;
     letter-spacing: 2px;
     margin-top: 2em;
-    border: 1px solid #2ea2d1;
+    border: 1px solid #0290c8;
 }
 .agileits_w3layouts_contact_gridr label {
     font-size: 1.5em;
