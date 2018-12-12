@@ -288,7 +288,7 @@ animation-delay: 1s;
     color: #303030;
     font-weight: bold;
     text-shadow: 1.1px 1.1px #303030;
-    border: 1px dotted #3abfdd;
+    border: 1px dotted #2ea2d1;
     border-bottom: none;
     margin-right: -2px;
     background: rgba(255,245,240,0.15);
@@ -1054,7 +1054,7 @@ h3 .fa-briefcase {
 }
 
 .partners table td {
-    border : 1px solid #3abfdd;
+    border : 1px solid #2ea2d1;
      text-align: center;
     padding: 20px;
     font-size: 98%;
@@ -1294,7 +1294,7 @@ a.w3ls_banner_more:hover{
 	left: 0;
 	right: 0;
 	margin: auto;
-	border: 1px solid #3abfdd;
+	border: 1px solid #2ea2d1;
 	position: absolute;
 	top: 40%;
 	box-shadow: 0 0px 6px #daaf82;
@@ -3537,7 +3537,7 @@ a.play-icon.popup-with-zoom-anim img:hover {
     border-top-right-radius: 5px;
 }
 .blue-top{
-	background:#3abfdd;
+	background:#2ea2d1;
 }
 
 .black-top {
