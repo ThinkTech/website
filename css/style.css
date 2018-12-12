@@ -6409,6 +6409,7 @@ ul.contact_info li a:hover{
 	}
 	.wthree_banner_grid h4 {
 		font-size: 12px;
+		background: linear-gradient(to right,#2988ac 0,#0290c8 40%,#2992bc 100%);
 	}
 	.wthree_banner_grids {
 		padding: 4em 0;
