@@ -1549,7 +1549,8 @@ a.w3ls_banner_more:hover{
 
 .faq .number {
 	background: #ffd600;
-    color: #fff;
+    color: #333;
+    font-weight: bold;
     padding: 13px;
     padding-top: 3px;
     padding-bottom: 3px;
