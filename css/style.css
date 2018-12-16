@@ -1565,6 +1565,7 @@ a.w3ls_banner_more:hover{
 
 .faq.guide .number {
 	background : #1f1e1e;
+	color : #fff;
 }
 
 #business-plan .number {
@@ -6615,6 +6616,9 @@ ul.contact_info li a:hover{
 	}
 }
 @media (max-width: 320px){
+	.content-process.user {
+       margin-bottom: 10px;
+    }
 	.w3l_banner_bottom_left {
        padding: 1px;
     }
