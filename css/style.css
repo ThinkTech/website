@@ -6078,10 +6078,10 @@ ul.contact_info li a:hover{
 		width: 100%;
     }
    .agile_header_grid:after {
-   top: -15.5px;
-    left: 15.6%;
-    width: 100%;
-}
+      top: -13px;
+      left: 15.5%;
+      width: 100%;
+   }
    .banner:before {
      top: -170px;
     left: -60px;
@@ -6636,8 +6636,8 @@ ul.contact_info li a:hover{
     	font-size: 11px;
 	}
 	.agile_header_grid:after {
-     top: -18px;
-     left: 11.6%;
+      top: -15px;
+      left: 11.6%;
     }
 	.banner:before {
      top: -170px;
