@@ -6740,4 +6740,7 @@ ul.contact_info li a:hover{
 		-ms-transform: translateY(65px);
 		transform: translateY(65px);
 	}
+	.banner:after {
+       left: -15px;
+    }
 }
