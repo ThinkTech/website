@@ -6389,6 +6389,9 @@ ul.contact_info li a:hover{
   }
 }
 @media (max-width: 414px){
+	.banner:after {
+       left: 40px;
+    }
 	.banner .wthree_stat_right {
      	margin-top: -20px;
         margin-bottom: 30px;
@@ -6552,6 +6555,10 @@ ul.contact_info li a:hover{
     right: 0;
     width: 130%;
    }
+   .banner:after {
+       background-image: url(../images/businessguys-min.jpg);
+       left: 0;
+    }
 	.guide li > a {
       width: 70%;
       margin: auto;
