@@ -3428,11 +3428,11 @@ a.play-icon.popup-with-zoom-anim img:hover {
     font-size: 13px;
 }
 .w3l_banner_bottom_left .pricing-grid h3 {
-    font-size: 1.1em;
+    font-size: 14px;
     top: 4px;
 }
-.pricing-grid h4 {
-    font-size: 1.1em;
+.pricing-grid h4,.pricing-grid span.sup {
+    font-size: 14px;
 }
 }
 @media(max-width:600px){
