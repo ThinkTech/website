@@ -6626,6 +6626,7 @@ ul.contact_info li a:hover{
 @media (max-width: 320px){
 	.content-process.user {
        margin-bottom: 10px;
+       margin-top: 10px;
     }
 	.w3l_banner_bottom_left {
        padding: 1px;
