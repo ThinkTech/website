@@ -6067,6 +6067,9 @@ ul.contact_info li a:hover{
 	ul.contact_info li {font-size: 12px;}
 }
 @media (max-width: 480px){
+	.w3_agile_logo h1 a, .w3_agile_logo h1 a:visited {
+      color: #303030;
+    }
 	.search.search-wizard h4 {
      text-align: right;
      margin-right: 20px;
