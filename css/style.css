@@ -945,7 +945,7 @@ h3 .fa-briefcase {
 }
 
 .banner .wthree_stat_right1 h4 {
-    color: #654b4b;
+    color: #303030;
     margin-bottom: 0px;
 	margin-top: 20px;
     font-size: 2.5em;
@@ -953,7 +953,7 @@ h3 .fa-briefcase {
 }
 
 .banner .wthree_stat_right1 p {
-    color: #654b4b;
+    color: #303030;
     font-size: 2.5em;
     margin-top: 0;
     font-family : Tahoma;
@@ -4318,7 +4318,7 @@ p.footer {
 }
 .table > thead > tr > th {
 	font-size: 1.3em;
-    background: #654b4b;
+    background: #303030;
     color: #fff;
     font-family: Tahoma;
 }
@@ -4394,7 +4394,7 @@ p.footer {
 }
 
 .tld-domain-search .tld-search-button {
-    background-color: #654b4b;
+    background-color: #303030;
     z-index : 10;
     display: inline-block;
     height: 47px;
