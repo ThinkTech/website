@@ -6065,6 +6065,9 @@ ul.contact_info li a:hover{
 	.banner a,.w3_agile_logo h1 a, .w3_agile_logo h1 a:visited, .banner .wthree_stat_right1 h4, .banner .wthree_stat_right1 p {
       color: #000000;
     }
+    .banner, .banner1 {
+      border-bottom: 35px solid #000000;
+    }
 	.search.search-wizard h4 {
      text-align: right;
      margin-right: 20px;
