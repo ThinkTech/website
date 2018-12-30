@@ -404,6 +404,7 @@ nav.navbar.navbar-default {
     width: 60px;
     height : 60px;
     text-align: center;
+    line-height : 55px;
 }
 
 .w3l_banner_bottom_left .rslides_tabs li.rslides_here {
@@ -4902,7 +4903,7 @@ p.footer {
 	.wthree_stat_right1 h4 {text-shadow: none;}
 	.faq .number {width: 35px;}
 	.rslides_tabs {margin-top: 20px;margin-bottom: -25px}
-	.w3l_banner_bottom_left .rslides_tabs li{width:23px;height:23px;padding:0px;margin-left:0px;font-size: 12px;}
+	.w3l_banner_bottom_left .rslides_tabs li{width:23px;height:23px;line-height : 23px;padding:0px;margin-left:0px;font-size: 12px;}
 	.wthree_stat_right1 p,.wthree_stat_right1 h4,.banner .wthree_stat_right1 h4,.banner .wthree_stat_right1 p {font-size: 18px;}
 	.subscribe-form {
         padding: 8px;
