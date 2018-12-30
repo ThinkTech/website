@@ -474,17 +474,11 @@ h3 .fa-briefcase {
 	vertical-align: bottom;
 }
 
-.scrollToTop{
-  background-color: #303030;
-  color: #fff;
-}
-.scrollToTop:hover,.scrollToTop:focus{  
-  color: #fff;
-}
-
 /*scroll to top*/
 
 .scrollToTop {
+  background-color: #000000;
+  color: #fff;
   bottom: 8px;
   display: none;
   font-size: 2em;
