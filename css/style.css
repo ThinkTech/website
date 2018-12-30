@@ -494,7 +494,7 @@ h3 .fa-briefcase {
   line-height : 45px;
 }
 
-.scrollToTop:hover, .scrollToTop:focus{
+.scrollToTop:hover {
   text-decoration: none;
   outline: none;
   background-color : #303030;
