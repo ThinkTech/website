@@ -285,7 +285,7 @@ animation-delay: 1s;
 	border: .3rem solid #fff;
 }
 .navbar-default .navbar-nav > li > a {
-    color: #303030;
+    color: #000000;
     font-weight: bold;
     text-shadow: 1.1px 1.1px #303030;
     border: 1px dotted #2ea2d1;
@@ -2045,7 +2045,7 @@ a.w3ls_banner_more:hover{
 
 .w3ls_copyright_right ul li,.title li,.wthree_mail_social li{
 	display:inline-block;
-	border: 1px solid #4d515a;
+	border: 1px solid #000000;
 	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.2);
 	background: #0290c8;
 }
