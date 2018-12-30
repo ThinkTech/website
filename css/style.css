@@ -1244,7 +1244,7 @@ a.w3ls_banner_more:hover{
 }
 .w3l_banner_bottom_left h3,.agile_head,.wthree_stat_left h3{
 	font-size:5em;
-	color : #303030;
+	color : #1d1c1c;
 	text-transform:capitalize;
 	padding-bottom:.2em;
 	position:relative;
@@ -1944,7 +1944,7 @@ a.w3ls_banner_more:hover{
 }
 .w3_footer_grid h2 a{
 	font-size: 1.9em;
-    color: #303030;
+    color: #000000;
     text-decoration: none;
 	text-shadow: 1px -2px #303030;
 	font-weight: bold;
