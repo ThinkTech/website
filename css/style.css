@@ -1378,7 +1378,7 @@ a.w3ls_banner_more:hover{
     margin-right: 1px;
     color: #303030;
     font-family: Tahoma;
-    background: #ffd600;
+    background: #ffffff;
 }
 
 .subscribe-form input,.subscribe-form select {
@@ -1389,7 +1389,7 @@ a.w3ls_banner_more:hover{
 	position: relative;
     top: 0px;
     height: 34px;
-    background: #ffd600;
+    background: #ffffff;
 }
 
 .subscribe-form select{
