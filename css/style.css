@@ -3344,7 +3344,7 @@ a.play-icon.popup-with-zoom-anim img:hover {
     margin-left : 20px;
 }
 .w3ls-top { 
-    padding: 1em 1em 0;
+    padding: 1em 0.5em 0;
 }
 .w3ls-top:after {
     border-left-width: 106px;
