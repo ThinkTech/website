@@ -4305,7 +4305,7 @@ p.footer {
 }
 .table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
 	font-size: 1.1em;
-    color: #500303;
+    color: #000000;
     border-top: none !important;
     text-align: center;
     font-family: Lato;
@@ -4328,7 +4328,7 @@ p.footer {
 }
 
 .table-striped>tbody>tr:nth-of-type(even) {
-    background-color: #ffd600;
+    background-color: #5d9cec;
 }
 
 .tld-domain-search-wrapper {
