@@ -5911,6 +5911,9 @@ ul.contact_info li a:hover{
       line-height: 0.5em;
       margin-top: 0px;
     }
+    .search div:first-of-type {
+     text-align: left;
+    }
     .search.search-wizard h4 {
     	font-size: 12px;
     	line-height: 0px;
