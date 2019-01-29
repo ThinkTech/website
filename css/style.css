@@ -4471,7 +4471,7 @@ p.footer {
 .search-wizard .domain-edit {
 	text-align: right;
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 7px;
     margin-top: 0px;
     margin-right : 25px;
 }
@@ -4488,7 +4488,7 @@ p.footer {
     line-height: 1.7em;
     border-bottom: none;
     font-family: Exo;
-    background: #08ccf7;
+    background: #2ea2d1;
     color: #fff;
     padding: 5px;
 }
@@ -4511,7 +4511,7 @@ p.footer {
     font-family: Tahoma;
     margin-right: 12px;
     cursor: pointer;
-    background: #08ccf7;
+    background: #2ea2d1;
     color: #fff;
 }
 
@@ -4596,7 +4596,7 @@ p.footer {
     padding: 8px;
     width: 32px;
     text-align: center;
-    border: 1px solid #2f1a1a;
+    border: 1px solid #7ad5e8;
     border-radius: 50%;
     color : #303030;
     font-family: Tahoma;
@@ -5908,7 +5908,7 @@ ul.contact_info li a:hover{
 	.search h3 {
       margin-bottom: 5px;
       font-size: 13px;
-      line-height: 1.5em;
+      line-height: 0.5em;
       margin-top: 0px;
     }
     .search.search-wizard h4 {
