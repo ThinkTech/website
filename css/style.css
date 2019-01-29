@@ -14,7 +14,7 @@ input[readonly] {
 	background : #eee;
 }
 input[type=text], select, input[type=email], input[type=password], input[type=number] {
-	border: 1px solid #c17051;
+	border: 1px solid #0290c8;
 	background: #fff;
 }
 .modal {
@@ -1002,7 +1002,7 @@ h3 .fa-briefcase {
     width : 200px;
     font-family : "Work Sans";
     margin-left : 4.3%;
-    border: 1px solid #c17051;
+    border: 1px solid #0290c8;
 }
 
 
@@ -1418,7 +1418,7 @@ a.w3ls_banner_more:hover{
     height: auto;
     font-weight: bold;
     float : right;
-    border: 1px solid #c17051;
+    border: 1px solid #0290c8;
 }
 
 .subscribe-form .buttons {
@@ -2734,7 +2734,7 @@ h3.agileits-icons-title {
   -moz-osx-font-smoothing: grayscale;
   color: #ffffff;
   white-space: nowrap;
-  border-bottom: 1px solid #c17051b61;
+  border-bottom: 1px solid #0290c8;
   text-overflow: ellipsis;
 }
 .cd-faq-categories a::before, .cd-faq-categories a::after {
