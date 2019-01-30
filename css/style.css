@@ -4787,7 +4787,8 @@ p.footer {
 	.search-wizard div {
       padding: 0px;
       width: 100%;
-      margin-top: 4px;
+      margin-top: 3px;
+      line-height: 15px;
 	}
 	.search-results, .search-wizard {
        width: 97%;
@@ -4812,6 +4813,8 @@ p.footer {
     }
     .search.search-wizard input[type=radio] {
      margin-left: 5px;
+     position: relative;
+     top: 1px;
     }
     .search-wizard .buttons {
     	width: 100%;
@@ -5913,6 +5916,7 @@ ul.contact_info li a:hover{
     }
     .search div:first-of-type {
      text-align: left;
+     line-height: 15px;
     }
     .search.search-wizard h4 {
     	font-size: 12px;
