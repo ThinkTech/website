@@ -566,7 +566,7 @@ h3 .fa-briefcase {
 	text-align: left;
     width: 100%;
     display: block;
-    background-color: #08ccf7;
+    background-color: #2ea2d1;
     background-repeat: no-repeat;
     color: #F8F8F8;
     padding: 3px 8px 7px 5px;
@@ -584,7 +584,7 @@ h3 .fa-briefcase {
 #confirm-dialog-container a, #alert-dialog-container a {
 	font-size: 75%;
     cursor: pointer;
-    background: #08ccf7;
+    background: #2ea2d1;
     color: white;
     padding: 6px;
     display: inline-block;
@@ -4723,7 +4723,7 @@ p.footer {
         padding-bottom: 17px;
 	}
 	.subscribe-form form {
-	  line-height: 15px;
+	  line-height: 14px;
 	}
 	.terms-agreement {font-size: 12px;margin-left: 0;margin-top:9px;padding: 2px;text-align: left;width: 100%;}
 	.terms-agreement input {top: 3px;}
