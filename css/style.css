@@ -4783,6 +4783,7 @@ p.footer {
     }
 	.search-wizard .domain-edit {
       font-size: 11px;
+      margin-bottom: 5px;
     }
 	.search-wizard div {
       padding: 0px;
@@ -5538,6 +5539,7 @@ ul.contact_info li a:hover{
 	}
 	.search-wizard legend,.search.search-wizard h4 {
 	  font-size: 14px;
+	  line-height: 15px;
 	}
 	.w3_footer_grid h4 {
 		width : 75%;
