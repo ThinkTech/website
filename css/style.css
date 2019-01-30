@@ -1295,7 +1295,7 @@ a.w3ls_banner_more:hover{
 	box-shadow: 0 0px 6px #daaf82;
 	z-index: 9;
 	text-align: center;
-	background: #2f1a1a;
+	background: #181818;
 }
 
  .confirmation {
@@ -4760,7 +4760,7 @@ p.footer {
       top: 7px;
     }
 	.subscribe-form input[type=submit],.subscribe-form input[type=button]{
-		height: 26px;margin-top : 5px;margin-bottom : 0px;float: right;padding-top: 4px;font-size: 13px;
+		height: 26px;margin-top : 5px;margin-bottom : 0px;float: right;padding-top: 5.5px;font-size: 13px;
 	}
 }
 @media (max-width:640px){
