@@ -20,7 +20,7 @@ input[type=text], select, input[type=email], input[type=password], input[type=nu
 .modal {
 	position : absolute;
 	background: rgba(0,0,0,0.5);
-	z-index : 9999999999999;
+	z-index : 999999999;
 }
 .modal-top {
 	z-index : 99999;
@@ -1009,7 +1009,7 @@ h3 .fa-briefcase {
 .terms {
 	position: absolute;
     background: #fff;
-    z-index: 999999999999;
+    z-index: 99999999999999;
     height: 500px;
     overflow-y: auto;
     top: 41px;
