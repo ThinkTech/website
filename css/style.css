@@ -3575,7 +3575,7 @@ a.play-icon.popup-with-zoom-anim img:hover {
 }
 .pricing-bottom-bottom{
 	padding: 1em 0;
-    border-top: 1px solid #ffd600;
+    border-top: 1px solid #08ccf7;
 }
 .pricing-bottom-bottom p{
 	color: #502626;
@@ -3596,7 +3596,7 @@ p.text {
 }
 .buy-button a{
     padding: .5em 2em;
-    border: 1px solid #ffd600;
+    border: 1px solid #08ccf7;
     color : #303030;
     border-radius: 5px;
     white-space: nowrap;
