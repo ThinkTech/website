@@ -1273,10 +1273,6 @@ a.w3ls_banner_more:hover{
     border: 1px solid #00dfff;
 }
 
-.w3l_banner_bottom_left.faq li {
-    border: 1px solid #ffd600;
-}
-
 .w3l_banner_bottom_left.guide li {
 	padding : 0;
 	background : transparent;
