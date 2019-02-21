@@ -4324,6 +4324,8 @@ p.footer {
 
 .table-striped>tbody>tr:nth-of-type(even) {
     background-color: #5d9cec;
+    border-top: 1px solid #303030;
+    border-bottom: 1px solid #303030;
 }
 
 .tld-domain-search-wrapper {
@@ -5006,7 +5008,7 @@ p.footer {
 	}
 	.domains.table {
      margin-top: 15px;
-     margin-bottom: 0px;
+     margin-bottom: 5px;
      width: 95%;
      margin-left: auto;
      margin-right: auto;
