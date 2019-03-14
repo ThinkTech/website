@@ -4323,9 +4323,9 @@ p.footer {
 }
 
 .table-striped>tbody>tr:nth-of-type(even) {
-    background-color: #5d9cec;
-    border-top: 1px solid #303030;
-    border-bottom: 1px solid #303030;
+    background-color: #2ea2d1;
+    border-top: 1px solid #08ccf7;
+    border-bottom: 1px solid #08ccf7;
 }
 
 .tld-domain-search-wrapper {
