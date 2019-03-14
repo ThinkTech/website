@@ -4771,6 +4771,12 @@ p.footer {
       border-top: none;
       margin-top: 0.3em;
     }
+    .w3l_banner_bottom_left.offer .w3ls-bottom ul li {
+      border-top: 1px solid #2ea2d1;
+    }
+    .w3l_banner_bottom_left.offer .w3ls-bottom ul li:last-of-type {
+     border-bottom: 1px solid #2ea2d1;
+    }
     .pricing-bottom {
       padding-top: 1em;
     }
